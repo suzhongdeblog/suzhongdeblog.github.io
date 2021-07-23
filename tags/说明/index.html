@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      Hexo
+      tag: 说明 | Hexo
     
   </title>
   <meta name="author" content="John Doe">
@@ -100,7 +100,7 @@
 	<!-- Page title -->
 	<p>
 		
-			Home
+			Tag
 		
 	</p>
 
@@ -220,132 +220,118 @@
 			
 		<!--main-->
 		<main>
-			
+			<!--
+	时间：2018-11-08
+	描述：The archive module refers to 'https://1984n.win/archives-post/' & 'http://1900.live/one-theme/', include js、css. Relevant rights reserved by them! 
+-->
+<div class="layout-archive">
+    <div class="i-container">
+        <i class="fa fa-book i-tag">
+			<!--
+	Thec counter of post number  for archive.ejs.  
+-->
 
-
-
-	<!--pure style-->
-	<div class="layout-pure">
-	<div id="layout-pure">	
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/07/23/hello-world/" itemprop="url">
-		Hello World
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
-
-More info: Writing
-Run server1$ hexo ...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/07/23/hello-world/" itemprop="url">
-		<time datetime="2021-07-23T15:27:06.507Z" itemprop="datePublished">
-	  		2021-07-23
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/07/23/hello-world/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2018/08/27/hello-world%20-%20%E5%89%AF%E6%9C%AC/" itemprop="url">
-		Annie主题使用说明
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
-
-More info: Writing
-Run server1$ hexo ...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2018/08/27/hello-world%20-%20%E5%89%AF%E6%9C%AC/" itemprop="url">
-		<time datetime="2018-08-27T12:16:19.000Z" itemprop="datePublished">
-	  		2018-08-27
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2018/08/27/hello-world%20-%20%E5%89%AF%E6%9C%AC/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-	</div>
-
+		 
 	
-	<div id="pagination">
+	说明 1 
 		
-	</div>
+
+		</i>
+    </div>
+
+    <!-- Archive by year, display in page( archive ) -->
+    <div id="layout-archive-year" style="display: 
+        
+        
+        <ul>
+            
+                <li>
+                    <a href="/2021/07/23/hello-world/">
+            			<em year="2021">
+                            07-23
+                        </em>
+        			    <span itemprop="name">
+                            Hello World
+                        </span>
+        			    
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/2018/08/27/hello-world%20-%20%E5%89%AF%E6%9C%AC/">
+            			<em year="2018">
+                            08-27
+                        </em>
+        			    <span itemprop="name">
+                            Annie主题使用说明
+                        </span>
+        			    
+                			<a href="/tags/%E8%AF%B4%E6%98%8E/" class="tag">
+                				说明
+                			</a>
+                        
+                			<a href="/tags/other-tag/" class="tag">
+                				other tag
+                			</a>
+                        
+                    </a>
+                </li>
+            
+        </ul>
+    </div>
+
+     <!-- Archive by month, called by page( categories, tags... ) -->
+    <div id="layout-archive-month" style="display: 
+         
+            block"> 
+        
+
+        
+        
+            
+
+            
+                
+                <h3 class="archive-year">
+                    <!-- <a href="/archives/2018/08"> -->
+                    <a>
+                        2018 - 08
+                    </a>
+                </h3>
+            
+
+            <ul>
+                <li>
+                    <a href="/2018/08/27/hello-world%20-%20%E5%89%AF%E6%9C%AC/">
+                        <em>
+                            08-27
+                        </em>
+                        <span itemprop="name">
+                            Annie主题使用说明
+                        </span>
+                        
+                            <a href="/tags/%E8%AF%B4%E6%98%8E/" class="tag">
+                                说明
+                            </a>
+                        
+                            <a href="/tags/other-tag/" class="tag">
+                                other tag
+                            </a>
+                               
+                    </a>
+                </li>
+            </ul>
+        
+    </div>
+
+    
+        
+	
 
 	
 
+    
 </div>
-
-
 		</main>
 
 		<!--footer-->
