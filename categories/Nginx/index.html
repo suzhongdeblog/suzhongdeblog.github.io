@@ -1,0 +1,995 @@
+<!--
+	作者：Sariay
+	时间：2018-08-26
+	描述：There may be a bug, but don't worry, Qiling(器灵) says that it can work normally! aha!
+-->
+<!DOCTYPE html>
+<html class="html-loading">
+		
+
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
+    
+      category: Nginx | suzhongdeBlog
+    
+  </title>
+  <meta name="author" content="suzhongde">
+  <meta name="keywords" content="" />
+  <meta name="description" content="suzhongdeBlog" />
+	<!-- favicon -->
+  <link rel="shortcut icon" href="/img/favicon.ico">
+
+  <!-- css -->
+  
+<link rel="stylesheet" href="/css/Annie.css">
+
+  
+  <!-- jquery -->
+	
+<script src="/plugin/jquery/jquery.min.js"></script>
+
+
+<script>
+    const CONFIG_BGIMAGE = {
+      mode: 'normal',
+      normalSrc: '/img/cart_cover.jpg',
+      randomYouMax: 110,
+      randomYouSrc: 'https://sariay.github.io/Random-img/',
+	  randomOtherSrc: 'https://api.berryapi.net/?service=App.Bing.Images&day=-0',
+	  preloaderEnable: true
+    }
+	
+    const CONFIG_LEACLOUD_COUNT = {
+      enable: false,
+	  appId: 'dXz',
+	  appKey: 'wzG',
+	  serverURLs: 'https://github.com/suzhongdeblog/Blog-Comment-Repo.git' || ' '
+    }
+  </script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+	<body>
+		<!-- Preloader -->
+
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
+
+
+<!-- header -->
+<header class="fixbackground bg-pan-br">
+	<div class="mask">
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<div class="motto text-shadow-pop-left">
+					<p class="content" id="motto-content">Fetching...</p>
+					<p>-<p>
+					<p class="author" id="motto-author">Just a minute...</p>
+				</div>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more" class="scroll-down">
+				<span class="icon-anchor1 animation-scroll-down"></span>
+			</a>
+		</div>
+	</div>
+</header>
+
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><span>0.0%</span></div>
+
+	<div class="toc-switch"><span class="switch-button">Catalog</span></div>
+
+	<!-- Page title -->
+	<p>
+		
+			Category
+		
+	</p>
+
+	
+	
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<span class="logo"> 
+			<img src="/img/logo.png">
+		</span>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	
+	<div class="nav-body">
+		<ul id="global-nav">
+	
+		<li class="menu-主页">
+			<a href="/" class="menu-item-主页" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-归档">
+			<a href="/archives" class="menu-item-归档" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-分类">
+			<a href="/categories" class="menu-item-分类" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-标签">
+			<a href="/tags" class="menu-item-标签" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-关于">
+			<a href="/about" class="menu-item-关于" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-相册">
+			<a href="/gallery" class="menu-item-相册" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">Search</a>
+		</li>
+	
+</ul>
+	</div>
+	
+	<div class="nav-footer">
+		<ul id="global-social">
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-zhihu"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-github"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-sina-weibo "></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-pinterest2"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-instagram"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-twitter"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/atom.xml" target="_blank">
+				<span class="icon-rss"></span>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+</nav>
+			
+		<!--main-->
+		<main>
+			<!--
+	时间：2018-11-08
+	描述：The archive module refers to 'https://1984n.win/archives-post/' & 'http://1900.live/one-theme/', include js、css. Relevant rights reserved by them! 
+-->
+<div class="layout-archive">
+    <div class="i-container">
+        <i class="fa fa-book i-tag">
+			<!--
+	Thec counter of post number  for archive.ejs.  
+-->
+
+	
+	
+	Nginx 1 
+		
+
+		</i>
+    </div>
+
+    <!-- Archive by year, display in page( archive ) -->
+    <div id="layout-archive-year" style="display: 
+        
+        
+        <ul>
+            
+                <li>
+                    <a href="/2021/08/24/MySql%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6%EF%BC%8C%E4%BB%8E%E5%8E%9F%E7%90%86%E5%88%B0%E5%AE%9E%E8%B7%B5/">
+            			<em year="2021">
+                            08-24
+                        </em>
+        			    <span itemprop="name">
+                            MySql主从复制从原理到实践
+                        </span>
+        			    
+                			<a href="/tags/MySql/" class="tag">
+                				MySql
+                			</a>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/2021/08/24/%E4%BD%BF%E7%94%A8MinIO%E8%87%AA%E5%BB%BA%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E6%9C%8D%E5%8A%A1/">
+            			<em year="2021">
+                            08-24
+                        </em>
+        			    <span itemprop="name">
+                            使用MinIO自建对象存储服务
+                        </span>
+        			    
+                			<a href="/tags/MinIO/" class="tag">
+                				MinIO
+                			</a>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/2021/08/24/%E4%BD%BF%E7%94%A8Jenkins%E4%B8%80%E9%94%AE%E6%89%93%E5%8C%85%E9%83%A8%E7%BD%B2%E5%89%8D%E7%AB%AF%E5%BA%94%E7%94%A8/">
+            			<em year="2021">
+                            08-24
+                        </em>
+        			    <span itemprop="name">
+                            使用Jenkins一键打包部署前端应用
+                        </span>
+        			    
+                			<a href="/tags/Jenkins/" class="tag">
+                				Jenkins
+                			</a>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/2021/08/24/%E4%BD%BF%E7%94%A8Jenkins%E4%B8%80%E9%94%AE%E6%89%93%E5%8C%85%E9%83%A8%E7%BD%B2SpringBoot%E5%BA%94%E7%94%A8/">
+            			<em year="2021">
+                            08-24
+                        </em>
+        			    <span itemprop="name">
+                            使用Jenkins一键打包部署SpringBoot应用
+                        </span>
+        			    
+                			<a href="/tags/Jenkins/" class="tag">
+                				Jenkins
+                			</a>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/2021/08/24/%E5%9C%A8Docker%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E5%AE%89%E8%A3%85Nginx/">
+            			<em year="2021">
+                            08-24
+                        </em>
+        			    <span itemprop="name">
+                            在Docker环境下的安装Nginx
+                        </span>
+        			    
+                			<a href="/tags/Nginx/" class="tag">
+                				Nginx
+                			</a>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/2021/08/24/Hutool%E4%B8%AD%E9%82%A3%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB%E5%92%8C%E6%96%B9%E6%B3%95/">
+            			<em year="2021">
+                            08-24
+                        </em>
+        			    <span itemprop="name">
+                            Hutool中那些常用的工具类和方法
+                        </span>
+        			    
+                			<a href="/tags/Hutool/" class="tag">
+                				Hutool
+                			</a>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/2021/08/24/%E4%BD%BF%E7%94%A8Docker%20Compose%E9%83%A8%E7%BD%B2SpringBoot%E5%BA%94%E7%94%A8/">
+            			<em year="2021">
+                            08-24
+                        </em>
+        			    <span itemprop="name">
+                            使用Docker Compose部署SpringBoot应用
+                        </span>
+        			    
+                			<a href="/tags/Docker/" class="tag">
+                				Docker
+                			</a>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/2021/08/23/%E4%BD%BF%E7%94%A8Dockerfile%E4%B8%BASpringBoot%E5%BA%94%E7%94%A8%E6%9E%84%E5%BB%BADocker%E9%95%9C%E5%83%8F/">
+            			<em year="2021">
+                            08-23
+                        </em>
+        			    <span itemprop="name">
+                            使用Dockerfile为SpringBoot应用构建Docker镜像
+                        </span>
+        			    
+                			<a href="/tags/Docker/" class="tag">
+                				Docker
+                			</a>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/2021/08/23/%E4%BD%BF%E7%94%A8Maven%E6%8F%92%E4%BB%B6%E4%B8%BASpringBoot%E5%BA%94%E7%94%A8%E6%9E%84%E5%BB%BADocker%E9%95%9C%E5%83%8F/">
+            			<em year="2021">
+                            08-23
+                        </em>
+        			    <span itemprop="name">
+                            使用Maven插件为SpringBoot应用构建Docker镜像
+                        </span>
+        			    
+                			<a href="/tags/Maven/" class="tag">
+                				Maven
+                			</a>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/2021/08/23/%E9%85%8D%E7%BD%AE%E5%AE%B9%E5%99%A8%E4%B8%AD%E7%9A%84host/">
+            			<em year="2021">
+                            08-23
+                        </em>
+        			    <span itemprop="name">
+                            配置容器中的host
+                        </span>
+        			    
+                			<a href="/tags/Docker/" class="tag">
+                				Docker
+                			</a>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/2021/08/23/%E5%AE%89%E8%A3%85tomcat%E8%BF%90%E8%A1%8Cwar%E5%8C%85/">
+            			<em year="2021">
+                            08-23
+                        </em>
+        			    <span itemprop="name">
+                            安装tomcat运行war包
+                        </span>
+        			    
+                			<a href="/tags/Docker/" class="tag">
+                				Docker
+                			</a>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/2021/08/23/docker-compose%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/">
+            			<em year="2021">
+                            08-23
+                        </em>
+        			    <span itemprop="name">
+                            docker-compose使用教程
+                        </span>
+        			    
+                			<a href="/tags/Docker/" class="tag">
+                				Docker
+                			</a>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/2021/08/23/Linux%E9%98%B2%E7%81%AB%E5%A2%99Firewall%E5%92%8CIptables%E7%9A%84%E4%BD%BF%E7%94%A8/">
+            			<em year="2021">
+                            08-23
+                        </em>
+        			    <span itemprop="name">
+                            Linux防火墙Firewall和Iptables的使用
+                        </span>
+        			    
+                			<a href="/tags/Linux/" class="tag">
+                				Linux
+                			</a>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/2021/08/23/%E5%BC%80%E5%8F%91%E8%80%85%E5%BF%85%E5%A4%87Docker%E5%91%BD%E4%BB%A4/">
+            			<em year="2021">
+                            08-23
+                        </em>
+        			    <span itemprop="name">
+                            开发者必备Docker命令
+                        </span>
+        			    
+                			<a href="/tags/Docker/" class="tag">
+                				Docker
+                			</a>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/2021/08/23/%E5%BC%80%E5%8F%91%E8%80%85Docker%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/">
+            			<em year="2021">
+                            08-23
+                        </em>
+        			    <span itemprop="name">
+                            开发者Docker入门教程
+                        </span>
+        			    
+                			<a href="/tags/Docker/" class="tag">
+                				Docker
+                			</a>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/2021/08/23/%E5%BC%80%E5%8F%91%E8%80%85Docker%E5%AE%89%E8%A3%85MYSQL%E6%95%B0%E6%8D%AE%E5%BA%93/">
+            			<em year="2021">
+                            08-23
+                        </em>
+        			    <span itemprop="name">
+                            开发者Docker安装MYSQL数据库
+                        </span>
+        			    
+                			<a href="/tags/Docker/" class="tag">
+                				Docker
+                			</a>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/2021/08/23/%E5%BC%80%E5%8F%91%E8%80%85%E5%BF%85%E5%A4%87Linux%E5%91%BD%E4%BB%A4/">
+            			<em year="2021">
+                            08-23
+                        </em>
+        			    <span itemprop="name">
+                            开发者必备Linux命令
+                        </span>
+        			    
+                			<a href="/tags/Linux/" class="tag">
+                				Linux
+                			</a>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/2021/08/23/%E5%BC%80%E5%8F%91%E8%80%85%E5%BF%85%E5%A4%87Mysql%E5%91%BD%E4%BB%A4/">
+            			<em year="2021">
+                            08-23
+                        </em>
+        			    <span itemprop="name">
+                            开发者必备Mysql命令
+                        </span>
+        			    
+                			<a href="/tags/Mysql/" class="tag">
+                				Mysql
+                			</a>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/2021/08/23/%E6%95%B4%E5%90%88OSS%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A009/">
+            			<em year="2021">
+                            08-23
+                        </em>
+        			    <span itemprop="name">
+                            mall-tiny-09-整合OSS实现文件上传
+                        </span>
+        			    
+                			<a href="/tags/OSS-%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-SpringBoot/" class="tag">
+                				OSS,文件上传,SpringBoot
+                			</a>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/2021/08/23/%E6%95%B4%E5%90%88rabbitmq%E5%AE%9E%E7%8E%B0%E5%BB%B6%E8%BF%9F%E6%B6%88%E6%81%AF08/">
+            			<em year="2021">
+                            08-23
+                        </em>
+        			    <span itemprop="name">
+                            mall-tiny-08-整合RabbitMQ实现延迟消息
+                        </span>
+        			    
+                			<a href="/tags/RabbitMQ-%E5%BB%B6%E8%BF%9F%E6%B6%88%E6%81%AF-SpringBoot/" class="tag">
+                				RabbitMQ,延迟消息,SpringBoot
+                			</a>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/2021/08/23/%E6%95%B4%E5%90%88Mongodb%E5%AE%9E%E7%8E%B0%E6%96%87%E6%A1%A3%E6%93%8D%E4%BD%9C07/">
+            			<em year="2021">
+                            08-23
+                        </em>
+        			    <span itemprop="name">
+                            mall-tiny-07-整合Mongodb实现文档操作
+                        </span>
+        			    
+                			<a href="/tags/Mongodb-%E6%96%87%E6%A1%A3%E6%93%8D%E4%BD%9C-SpringBoot/" class="tag">
+                				Mongodb,文档操作,SpringBoot
+                			</a>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/2021/08/23/%E6%95%B4%E5%90%88Elasticsearch%E5%AE%9E%E7%8E%B0%E5%95%86%E5%93%81%E6%90%9C%E7%B4%A206/">
+            			<em year="2021">
+                            08-23
+                        </em>
+        			    <span itemprop="name">
+                            mall-tiny-06-整合Elasticsearch实现商品搜索
+                        </span>
+        			    
+                			<a href="/tags/Elasticsearch-%E5%95%86%E5%93%81%E6%90%9C%E7%B4%A2-SpringBoot/" class="tag">
+                				Elasticsearch,商品搜索,SpringBoot
+                			</a>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/2021/08/23/%E6%95%B4%E5%90%88SpringTask%E5%AE%9E%E7%8E%B0%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A105/">
+            			<em year="2021">
+                            08-23
+                        </em>
+        			    <span itemprop="name">
+                            mall-tiny-05-整合SpringTask实现定时任务
+                        </span>
+        			    
+                			<a href="/tags/SpringTask-%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1-SpringBoot/" class="tag">
+                				SpringTask,定时任务,SpringBoot
+                			</a>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/2021/08/23/%E6%95%B4%E5%90%88SpringSecurity%E5%92%8CJWT%E5%AE%9E%E7%8E%B0%E8%AE%A4%E8%AF%81%E5%92%8C%E6%8E%88%E6%9D%8304/">
+            			<em year="2021">
+                            08-23
+                        </em>
+        			    <span itemprop="name">
+                            mall-tiny-04-整合SpringSecurity和JWT实现认证和授权
+                        </span>
+        			    
+                			<a href="/tags/SpringSecurity-JWT-%E8%AE%A4%E8%AF%81%E5%92%8C%E6%8E%88%E6%9D%83-SpringBoot/" class="tag">
+                				SpringSecurity,JWT,认证和授权,SpringBoot
+                			</a>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/2021/08/23/%E6%95%B4%E5%90%88Redis%E5%AE%9E%E7%8E%B0%E7%BC%93%E5%AD%98%E5%8A%9F%E8%83%BD03/">
+            			<em year="2021">
+                            08-23
+                        </em>
+        			    <span itemprop="name">
+                            mall-tiny-03-整合Redis实现缓存功能
+                        </span>
+        			    
+                			<a href="/tags/Redis-%E7%BC%93%E5%AD%98%E5%8A%9F%E8%83%BD-SpringBoot/" class="tag">
+                				Redis,缓存功能,SpringBoot
+                			</a>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/2021/08/23/%E6%95%B4%E5%90%88Swagger-UI%E5%AE%9E%E7%8E%B0%E5%9C%A8%E7%BA%BFAPI%E6%96%87%E6%A1%A302/">
+            			<em year="2021">
+                            08-23
+                        </em>
+        			    <span itemprop="name">
+                            mall-tiny-02-整合Swagger-UI实现在线API文档
+                        </span>
+        			    
+                			<a href="/tags/Swagger-UI-%E5%9C%A8%E7%BA%BFAPI%E6%96%87%E6%A1%A3-SpringBoot/" class="tag">
+                				Swagger-UI,在线API文档,SpringBoot
+                			</a>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/2021/08/23/%E6%95%B4%E5%90%88SpringBoot+MyBatis%E6%90%AD%E5%BB%BA%E5%9F%BA%E6%9C%AC%E9%AA%A8%E6%9E%B601/">
+            			<em year="2021">
+                            08-23
+                        </em>
+        			    <span itemprop="name">
+                            mall-tiny-01-整合SpringBoot+MyBatis搭建基本骨架
+                        </span>
+        			    
+                			<a href="/tags/MyBatis-%E6%90%AD%E5%BB%BA%E5%9F%BA%E6%9C%AC%E9%AA%A8%E6%9E%B6-SpringBoot/" class="tag">
+                				MyBatis,搭建基本骨架,SpringBoot
+                			</a>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/2021/08/15/%E5%85%B3%E9%97%AD%E7%94%B5%E8%84%91%E5%8D%A0%E7%94%A8%E7%AB%AF%E5%8F%A3/">
+            			<em year="2021">
+                            08-15
+                        </em>
+        			    <span itemprop="name">
+                            关闭电脑占用端口
+                        </span>
+        			    
+                			<a href="/tags/%E7%AB%AF%E5%8F%A3/" class="tag">
+                				端口
+                			</a>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/2021/08/08/Python%E7%88%AC%E8%99%AB%E5%88%86%E6%9E%90AJAX%E4%BC%A0%E9%80%92%E7%9A%84JSON%E8%8E%B7%E5%8F%96%E6%95%B0%E6%8D%AE-%E5%88%9D%E6%AD%A5%E5%88%86%E6%9E%90%E5%8A%A8%E6%80%81%E7%BD%91%E9%A1%B5/">
+            			<em year="2021">
+                            08-08
+                        </em>
+        			    <span itemprop="name">
+                            Python爬虫分析AJAX传递的JSON获取数据-初步分析动态网页
+                        </span>
+        			    
+                			<a href="/tags/%E7%88%AC%E8%99%AB/" class="tag">
+                				爬虫
+                			</a>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/2021/08/08/Python%E7%88%AC%E8%99%AB%E7%88%AC%E5%8F%96%E5%8A%A8%E6%80%81%E9%A1%B5%E9%9D%A2%E6%80%9D%E8%B7%AF%E5%92%8C%E5%AE%9E%E4%BE%8B000001/">
+            			<em year="2021">
+                            08-08
+                        </em>
+        			    <span itemprop="name">
+                            Python爬虫爬取动态页面思路+实例
+                        </span>
+        			    
+                			<a href="/tags/%E7%88%AC%E8%99%AB/" class="tag">
+                				爬虫
+                			</a>
+                        
+                    </a>
+                </li>
+            
+        </ul>
+    </div>
+
+     <!-- Archive by month, called by page( categories, tags... ) -->
+    <div id="layout-archive-month" style="display: 
+         
+            block"> 
+        
+
+        
+        
+            
+
+            
+                
+                <h3 class="archive-year">
+                    <!-- <a href="/archives/2021/08"> -->
+                    <a>
+                        2021 - 08
+                    </a>
+                </h3>
+            
+
+            <ul>
+                <li>
+                    <a href="/2021/08/24/%E5%9C%A8Docker%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E5%AE%89%E8%A3%85Nginx/">
+                        <em>
+                            08-24
+                        </em>
+                        <span itemprop="name">
+                            在Docker环境下的安装Nginx
+                        </span>
+                        
+                            <a href="/tags/Nginx/" class="tag">
+                                Nginx
+                            </a>
+                               
+                    </a>
+                </li>
+            </ul>
+        
+    </div>
+
+    
+        
+	
+
+	
+
+    
+</div>
+		</main>
+
+		<!--footer-->
+		<footer>
+	<div id="navigation-show">
+		<ul id="global-nav">
+	
+		<li class="menu-主页">
+			<a href="/" class="menu-item-主页" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-归档">
+			<a href="/archives" class="menu-item-归档" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-分类">
+			<a href="/categories" class="menu-item-分类" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-标签">
+			<a href="/tags" class="menu-item-标签" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-关于">
+			<a href="/about" class="menu-item-关于" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-相册">
+			<a href="/gallery" class="menu-item-相册" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">Search</a>
+		</li>
+	
+</ul>
+	</div>
+
+	<div class="copyright">
+		<p>
+			 
+				&copy;2017 - 2021, content by Sariay. All Rights Reserved.
+			
+			
+				<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			
+		</p>
+		<p>
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+		
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+
+		<span id="busuanzi_container_site_pv">
+	    	本站总访问量<span id="busuanzi_value_site_pv"></span>次
+		</span>
+
+		<span id="busuanzi_container_site_uv">
+	  		本站访客数<span id="busuanzi_value_site_uv"></span>人次
+		</span>
+		
+	
+
+
+
+
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p>
+	</div>		
+</footer>
+		
+	<!-- Local or hitokoto! -->
+
+	
+<script src="/plugin/motto/motto.js"></script>
+
+	
+	<script type="text/javascript">
+		(function motto(){
+			let mottoText = getMingYanContent().split('</br> - </br>'),
+			
+			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
+			
+			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
+			
+			mottoTextContent = mottoTextContent.trim().substring(0, 100);
+		
+			$("#motto-content").html( mottoTextContent);
+			$("#motto-author").html( mottoTextFrom  );
+		})();	
+	</script>	
+
+
+
+<!-- love effect -->
+
+
+<!-- back to top -->
+
+	<div id="totop">
+	<span class="icon-circle-up"></span>
+</div>
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+	
+	
+	
+	
+ 
+
+<!-- leancloud -->
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+  
+
+	<!--
+	时间：2018-10-3
+	描述：
+		插件名称：hexo-generator-search-zip
+		插件来源: https://github.com/SuperKieran/hexo-generator-search-zip
+		代码参考：https://github.com/SuperKieran/TKL/blob/master/layout/_partial/search.ejs(Include: js & css)	
+-->
+<div class="popup search-popup local-search-popup scrollbar" >
+	<div class="local-search-container">
+		<span class="popup-btn-close">
+      		ESC
+   		</span>
+		<div class="local-search-header">
+			<div class="input-prompt">				
+			</div>
+			<input autocomplete="off" placeholder="Search..." type="text" id="local-search-input">
+		</div>
+		<div class="local-search-body">
+			<div id="local-search-output"></div>
+		</div>
+		<div class="local-search-footer">
+			<div class="topN-post">				
+				
+								
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="/plugin/search/ziploader.js"></script>
+<script src="/js/search.js"></script>
+
+
+<script type="text/javascript">
+	var search_path = 'search.json',
+		zip_Path = '/search.zip',
+		version_Path = '/searchVersion.txt',
+		input_Trigger = 'auto',
+		top_N = '2';
+
+	themeLocalSearch({
+		search_path, 
+		zip_Path, 
+		version_Path, 
+		input_Trigger, 
+		top_N
+	});
+</script>
+
+
+
+<script src="/plugin/chinese/chinese.js"></script>
+<script src="/plugin/imagelazyloader/yall.min.js"></script>
+<script src="/plugin/imageloaded/imagesloaded.pkgd.min.js"></script>
+<script src="/plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="/plugin/resizediv/resizediv.js"></script>
+<script src="/js/main.js"></script>
+
+	</body>	
+</html>
