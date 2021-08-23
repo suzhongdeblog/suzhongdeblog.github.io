@@ -13,12 +13,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      Hexo
+      suzhongdeBlog
     
   </title>
-  <meta name="author" content="John Doe">
+  <meta name="author" content="suzhongde">
   <meta name="keywords" content="" />
-  <meta name="description" content="" />
+  <meta name="description" content="suzhongdeBlog" />
 	<!-- favicon -->
   <link rel="shortcut icon" href="/img/favicon.ico">
 
@@ -227,6 +227,444 @@
 	<!--pure style-->
 	<div class="layout-pure">
 	<div id="layout-pure">	
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/23/%E9%85%8D%E7%BD%AE%E5%AE%B9%E5%99%A8%E4%B8%AD%E7%9A%84host/" itemprop="url">
+		配置容器中的host
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							简介
+我们在配置服务器的时候经常会修改域名映射, 也就是/etc/hosts文件, 
+但是即便如此简单点的东西在网上写也是乱七八糟, 所以这里记录一个真正能用的方法.
+
+文章主要使用两种配置方法(命令配置和docker-compose配置):1. 命令行配置
+--add-host 使用该参数可以配置多个host.
+
+1234567891011➜  Desktop docker run -it --add-host host1:192.168.1.1 --add-host host2:192.168.1.2 alpine/ # cat /etc/hosts127.0.0.1   local...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/23/%E9%85%8D%E7%BD%AE%E5%AE%B9%E5%99%A8%E4%B8%AD%E7%9A%84host/" itemprop="url">
+		<time datetime="2021-08-23T15:19:30.985Z" itemprop="datePublished">
+	  		2021-08-23
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/23/%E9%85%8D%E7%BD%AE%E5%AE%B9%E5%99%A8%E4%B8%AD%E7%9A%84host/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/23/%E5%AE%89%E8%A3%85tomcat%E8%BF%90%E8%A1%8Cwar%E5%8C%85/" itemprop="url">
+		安装tomcat运行war包
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							简介
+开源小型web服务器 ，完全免费，主要用于中小型web项目，只支持Servlet和JSP 等少量javaee规范（就是JavaWeb编程接口）
+
+第一步快速开始
+这里介绍两种方法(官方镜像安装和Dockerfile安装):
+
+1. docker官方镜像安装
+首先拉取镜像, 会自动拉取最新版本 - docker pull tomcat
+
+1234567891011121314151617[root@master ~]# docker pull tomcatUsing default tag: latestTrying to pull repository docker.io/libr...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/23/%E5%AE%89%E8%A3%85tomcat%E8%BF%90%E8%A1%8Cwar%E5%8C%85/" itemprop="url">
+		<time datetime="2021-08-23T14:48:45.684Z" itemprop="datePublished">
+	  		2021-08-23
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/23/%E5%AE%89%E8%A3%85tomcat%E8%BF%90%E8%A1%8Cwar%E5%8C%85/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/23/docker-compose%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" itemprop="url">
+		docker-compose使用教程
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							简介英文解释
+Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a Compose file to configure your application’s services. Then, using a single command, you create and start all the services from your configuration.
+
+中文解释
+Compose是一个用于定义和运行多容器Docker应用程序的工...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/23/docker-compose%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" itemprop="url">
+		<time datetime="2021-08-23T14:26:06.260Z" itemprop="datePublished">
+	  		2021-08-23
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/23/docker-compose%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/23/Linux%E9%98%B2%E7%81%AB%E5%A2%99Firewall%E5%92%8CIptables%E7%9A%84%E4%BD%BF%E7%94%A8/" itemprop="url">
+		Linux防火墙Firewall和Iptables的使用
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							简介Linux防火墙Firewall和Iptables的使用
+
+Linux中有两种防火墙软件，ConterOS7.0以上使用的是firewall，ConterOS7.0以下使用的是iptables，本文将分别介绍两种防火墙软件的使用。
+
+-Firewall
+开启防火墙：
+
+1systemctl start firewalld
+
+
+关闭防火墙：
+
+1systemctl stop firewalld
+
+
+查看防火墙状态：
+
+1systemctl status firewalld
+
+
+设置开机启动：
+
+1systemctl enable firewalld
+
+
+禁用开机启动：
+
+1system...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/23/Linux%E9%98%B2%E7%81%AB%E5%A2%99Firewall%E5%92%8CIptables%E7%9A%84%E4%BD%BF%E7%94%A8/" itemprop="url">
+		<time datetime="2021-08-23T14:21:22.848Z" itemprop="datePublished">
+	  		2021-08-23
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/23/Linux%E9%98%B2%E7%81%AB%E5%A2%99Firewall%E5%92%8CIptables%E7%9A%84%E4%BD%BF%E7%94%A8/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/23/%E5%BC%80%E5%8F%91%E8%80%85%E5%BF%85%E5%A4%87Docker%E5%91%BD%E4%BB%A4/" itemprop="url">
+		开发者必备Docker命令
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							简介开发者必备Docker命令
+
+平时经常使用Docker来搭建各种环境，简单又好用！但是有时候往往会忘记命令，总结了一套非常实用的Docker命令，对于Java开发来说基本上够用了，希望对大家有所帮助！
+
+-Docker简介
+Docker是一个开源的应用容器引擎，让开发者可以打包应用及依赖包到一个可移植的镜像中，然后发布到任何流行的Linux或Windows机器上。使用Docker可以更方便地打包、测试以及部署应用程序。
+
+-Docker环境安装
+安装yum-utils；
+
+1yum install -y yum-utils device-mapper-persistent-data ...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/23/%E5%BC%80%E5%8F%91%E8%80%85%E5%BF%85%E5%A4%87Docker%E5%91%BD%E4%BB%A4/" itemprop="url">
+		<time datetime="2021-08-23T14:21:22.845Z" itemprop="datePublished">
+	  		2021-08-23
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/23/%E5%BC%80%E5%8F%91%E8%80%85%E5%BF%85%E5%A4%87Docker%E5%91%BD%E4%BB%A4/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/23/%E5%BC%80%E5%8F%91%E8%80%85Docker%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/" itemprop="url">
+		开发者Docker入门教程
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							Docker是什么?-官方解释1234Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口。 [1] - 摘自百度百科
+
+-通俗易懂解释123456你可以把Docker理解成一个轻量化的虚拟机, 在上面我们可以部署我们的后台项目, 而且部署后的项目可移植性非常强, 我们可以把他们导出为Docker镜像, 这个镜像可以运行在任何装有Docker的环境中, 几分钟就可以在别的系统上构建出一套一模一样的后台
+
+-第一步下载Docker
+下载地址...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/23/%E5%BC%80%E5%8F%91%E8%80%85Docker%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/" itemprop="url">
+		<time datetime="2021-08-23T14:21:22.843Z" itemprop="datePublished">
+	  		2021-08-23
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/23/%E5%BC%80%E5%8F%91%E8%80%85Docker%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/23/%E5%BC%80%E5%8F%91%E8%80%85Docker%E5%AE%89%E8%A3%85MYSQL%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url">
+		开发者Docker安装MYSQL数据库
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							开发者Docker安装MYSQL数据库第一步安装mysql
+使用docker镜像, 我们可以方便的进行安装
+
+1docker pull mysql
+
+
+输入上面的命令即可
+
+
+
+
+之后我们来查看一下镜像
+
+
+
+
+我们可以看到mysql已经安装完成了
+
+第二步运行mysql
+运行mysql我们只需要使用docker命令
+
+1docker run --name objcat-mysql -e MYSQL_ROOT_PASSWORD=123456 -p 3306:3306 -d mysql
+
+
+之后我们使用navicat来连接一下数据库吧
+
+
+
+
+初始密码为123456
+
+
+我们点击测试连接
+...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/23/%E5%BC%80%E5%8F%91%E8%80%85Docker%E5%AE%89%E8%A3%85MYSQL%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url">
+		<time datetime="2021-08-23T14:21:22.839Z" itemprop="datePublished">
+	  		2021-08-23
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/23/%E5%BC%80%E5%8F%91%E8%80%85Docker%E5%AE%89%E8%A3%85MYSQL%E6%95%B0%E6%8D%AE%E5%BA%93/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
 		
 			<div class="post" id="post">
 				<div class="post-text">
@@ -446,437 +884,6 @@ Bucket：存储空间，是存储对象的容器，所有存储对象都必须�
 						
 							<span class="right">      	
 								<a href="/2021/08/23/%E6%95%B4%E5%90%88OSS%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A009/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88rabbitmq%E5%AE%9E%E7%8E%B0%E5%BB%B6%E8%BF%9F%E6%B6%88%E6%81%AF08/" itemprop="url">
-		mall-tiny-08-整合RabbitMQ实现延迟消息
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							简介一个标准的整合RabbitMQ实现延迟消息
-
-本文主要讲解mall整合RabbitMQ实现延迟消息的过程，以发送延迟消息取消超时订单为例。
-
--项目使用框架介绍-RabbitMQ
-RabbitMQ是一个被广泛使用的开源消息队列。它是轻量级且易于部署的，它能支持多种消息协议。RabbitMQ可以部署在分布式和联合配置中，以满足高规模、高可用性的需求。
-
--RabbitMQ的安装和使用
-安装Erlang，下载地址：http://erlang.org/download/otp_win64_21.3.exe
-
-
-
-
-安装RabbitMQ，下载地址：https://dl.bintray.com...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88rabbitmq%E5%AE%9E%E7%8E%B0%E5%BB%B6%E8%BF%9F%E6%B6%88%E6%81%AF08/" itemprop="url">
-		<time datetime="2021-08-22T16:36:26.174Z" itemprop="datePublished">
-	  		2021-08-23
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/08/23/%E6%95%B4%E5%90%88rabbitmq%E5%AE%9E%E7%8E%B0%E5%BB%B6%E8%BF%9F%E6%B6%88%E6%81%AF08/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88Mongodb%E5%AE%9E%E7%8E%B0%E6%96%87%E6%A1%A3%E6%93%8D%E4%BD%9C07/" itemprop="url">
-		mall-tiny-07-整合Mongodb实现文档操作
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							简介一个标准的整合Mongodb实现文档操作
-
-本文主要讲解mall整合Mongodb的过程，以实现商品浏览记录在Mongodb中的添加、删除、查询为例。
-
--项目使用框架介绍-Mongodb
-Mongodb是为快速开发互联网Web应用而构建的数据库系统，其数据模型和持久化策略就是为了构建高读/写吞吐量和高自动灾备伸缩性的系统。
-
--Mongodb的安装和使用
-下载Mongodb安装包，下载地址：https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.2.21-signed.msi
-选择安装路径进行安装
-
-...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88Mongodb%E5%AE%9E%E7%8E%B0%E6%96%87%E6%A1%A3%E6%93%8D%E4%BD%9C07/" itemprop="url">
-		<time datetime="2021-08-22T16:35:39.848Z" itemprop="datePublished">
-	  		2021-08-23
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/08/23/%E6%95%B4%E5%90%88Mongodb%E5%AE%9E%E7%8E%B0%E6%96%87%E6%A1%A3%E6%93%8D%E4%BD%9C07/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88Elasticsearch%E5%AE%9E%E7%8E%B0%E5%95%86%E5%93%81%E6%90%9C%E7%B4%A206/" itemprop="url">
-		mall-tiny-06-整合Elasticsearch实现商品搜索
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							简介一个标准的整合Elasticsearch实现商品搜索
-
-本文主要讲解mall整合Elasticsearch的过程，以实现商品信息在Elasticsearch中的导入、查询、修改、删除为例。
-
--项目使用框架介绍-Elasticsearch
-Elasticsearch 是一个分布式、可扩展、实时的搜索与数据分析引擎。 它能从项目一开始就赋予你的数据以搜索、分析和探索的能力，可用于实现全文搜索和实时数据统计。
-
--Elasticsearch的安装和使用
-下载Elasticsearch6.2.2的zip包，并解压到指定目录，下载地址：https://www.elastic.co/cn/do...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88Elasticsearch%E5%AE%9E%E7%8E%B0%E5%95%86%E5%93%81%E6%90%9C%E7%B4%A206/" itemprop="url">
-		<time datetime="2021-08-22T16:35:05.677Z" itemprop="datePublished">
-	  		2021-08-23
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/08/23/%E6%95%B4%E5%90%88Elasticsearch%E5%AE%9E%E7%8E%B0%E5%95%86%E5%93%81%E6%90%9C%E7%B4%A206/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88SpringTask%E5%AE%9E%E7%8E%B0%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A105/" itemprop="url">
-		mall-tiny-05-整合SpringTask实现定时任务
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							简介一个标准的整合SpringTask实现定时任务
-
-本文主要讲解mall整合SpringTask的过程，以批量修改超时订单为例。
-
--项目使用框架介绍-SpringTask
-SpringTask是Spring自主研发的轻量级定时任务工具，相比于Quartz更加简单方便，且不需要引入其他依赖即可使用。
-
--Cron表达式
-Cron表达式是一个字符串，包括6~7个时间元素，在SpringTask中可以用于指定任务的执行时间。
-
--Cron的语法格式Seconds Minutes Hours DayofMonth Month DayofWeek
--Cron格式中每个时间元素的说明
-
-
-时间元...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88SpringTask%E5%AE%9E%E7%8E%B0%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A105/" itemprop="url">
-		<time datetime="2021-08-22T16:33:49.615Z" itemprop="datePublished">
-	  		2021-08-23
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/08/23/%E6%95%B4%E5%90%88SpringTask%E5%AE%9E%E7%8E%B0%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A105/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88SpringSecurity%E5%92%8CJWT%E5%AE%9E%E7%8E%B0%E8%AE%A4%E8%AF%81%E5%92%8C%E6%8E%88%E6%9D%8304/" itemprop="url">
-		mall-tiny-04-整合SpringSecurity和JWT实现认证和授权
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							简介一个标准的整合SpringSecurity和JWT实现认证和授权
-
-本文主要讲解mall通过整合SpringSecurity和JWT实现后台用户的登录和授权功能，同时改造Swagger-UI的配置使其可以自动记住登录令牌进行发送。
-
--项目使用框架介绍-SpringSecurity
-SpringSecurity是一个强大的可高度定制的认证和授权框架，对于Spring应用来说它是一套Web安全标准。SpringSecurity注重于为Java应用提供认证和授权功能，像所有的Spring项目一样，它对自定义需求具有强大的扩展性。
-
--JWT
-JWT是JSON WEB TOKEN的缩写，它...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88SpringSecurity%E5%92%8CJWT%E5%AE%9E%E7%8E%B0%E8%AE%A4%E8%AF%81%E5%92%8C%E6%8E%88%E6%9D%8304/" itemprop="url">
-		<time datetime="2021-08-22T16:33:07.176Z" itemprop="datePublished">
-	  		2021-08-23
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/08/23/%E6%95%B4%E5%90%88SpringSecurity%E5%92%8CJWT%E5%AE%9E%E7%8E%B0%E8%AE%A4%E8%AF%81%E5%92%8C%E6%8E%88%E6%9D%8304/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88Redis%E5%AE%9E%E7%8E%B0%E7%BC%93%E5%AD%98%E5%8A%9F%E8%83%BD03/" itemprop="url">
-		mall-tiny-03-整合Redis实现缓存功能
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							简介一个标准的整合Redis实现缓存功能
-
-本文主要讲解mall整合Redis的过程，以短信验证码的存储验证为例。
-
--Redis的安装和启动
-Redis是用C语言开发的一个高性能键值对数据库，可用于数据缓存，主要用于处理大量数据的高访问负载。
-
-
-下载Redis,下载地址：https://github.com/MicrosoftArchive/redis/releases
-
-
-
-
-下载完后解压到指定目录
-
-
-
-
-在当前地址栏输入cmd后，执行redis的启动命令：redis-server.exe redis.windows.conf
-
-
-
-- 整合Redis-添加项目依赖
-在pom.x...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88Redis%E5%AE%9E%E7%8E%B0%E7%BC%93%E5%AD%98%E5%8A%9F%E8%83%BD03/" itemprop="url">
-		<time datetime="2021-08-22T16:32:18.752Z" itemprop="datePublished">
-	  		2021-08-23
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/08/23/%E6%95%B4%E5%90%88Redis%E5%AE%9E%E7%8E%B0%E7%BC%93%E5%AD%98%E5%8A%9F%E8%83%BD03/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88Swagger-UI%E5%AE%9E%E7%8E%B0%E5%9C%A8%E7%BA%BFAPI%E6%96%87%E6%A1%A302/" itemprop="url">
-		mall-tiny-02-整合Swagger-UI实现在线API文档
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							简介一个标准的整合Swagger-UI实现在线API文档
-
-本文主要讲解mall是如何通过整合Swagger-UI来实现一份相当完善的在线API文档的。
-
-- 项目使用框架介绍-Swagger-UI
-Swagger-UI是HTML, Javascript, CSS的一个集合，可以动态地根据注解生成在线API文档。
-
-常用注解
-@Api：用于修饰Controller类，生成Controller相关文档信息
-@ApiOperation：用于修饰Controller类中的方法，生成接口方法相关文档信息
-@ApiParam：用于修饰接口中的参数，生成接口参数相关文档信息
-@ApiModelPro...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88Swagger-UI%E5%AE%9E%E7%8E%B0%E5%9C%A8%E7%BA%BFAPI%E6%96%87%E6%A1%A302/" itemprop="url">
-		<time datetime="2021-08-22T16:30:58.985Z" itemprop="datePublished">
-	  		2021-08-23
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/08/23/%E6%95%B4%E5%90%88Swagger-UI%E5%AE%9E%E7%8E%B0%E5%9C%A8%E7%BA%BFAPI%E6%96%87%E6%A1%A302/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
