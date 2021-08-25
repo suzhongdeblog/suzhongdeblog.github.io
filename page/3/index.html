@@ -232,26 +232,19 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88Mongodb%E5%AE%9E%E7%8E%B0%E6%96%87%E6%A1%A3%E6%93%8D%E4%BD%9C07/" itemprop="url">
-		mall-tiny-07-整合Mongodb实现文档操作
+	<a href="/2021/08/25/Kibana%E8%AE%BE%E7%BD%AE%E7%99%BB%E5%BD%95%E8%AE%A4%E8%AF%81/" itemprop="url">
+		Kibana设置登录认证
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							简介一个标准的整合Mongodb实现文档操作
+							Kibana设置登录认证
+在《你居然还去服务器上捞日志，搭个日志收集系统难道不香么！》一文中我们介绍过ELK日志收集系统的搭建，由于我们的Kibana没有任何安全保护机制，如果部署到公网上去的话，任何人都可以查看你的日志了。日志暴露在网络上可不是件好事情，今天教大家如何给Kibana设置登录认证来保护它。
 
-本文主要讲解mall整合Mongodb的过程，以实现商品浏览记录在Mongodb中的添加、删除、查询为例。
-
--项目使用框架介绍-Mongodb
-Mongodb是为快速开发互联网Web应用而构建的数据库系统，其数据模型和持久化策略就是为了构建高读/写吞吐量和高自动灾备伸缩性的系统。
-
--Mongodb的安装和使用
-下载Mongodb安装包，下载地址：https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.2.21-signed.msi
-选择安装路径进行安装
-
-...
+-实现原理
+由于Kibana的日志信息都存储在Elasticsearch中，所以只要给Elasticsearch开启X-PACK中的安全功能，并给预置的账号设置好密码即可。Elasticsearch设置好之后，就可以在Kibana中对用户、角色、权限进行管理了，本文使用的ELK组件版...
 						
 					</div>
 					
@@ -266,9 +259,9 @@ Mongodb是为快速开发互联网Web应用而构建的数据库系统，其数�
 
 
 
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88Mongodb%E5%AE%9E%E7%8E%B0%E6%96%87%E6%A1%A3%E6%93%8D%E4%BD%9C07/" itemprop="url">
-		<time datetime="2021-08-22T16:35:39.848Z" itemprop="datePublished">
-	  		2021-08-23
+	<a href="/2021/08/25/Kibana%E8%AE%BE%E7%BD%AE%E7%99%BB%E5%BD%95%E8%AE%A4%E8%AF%81/" itemprop="url">
+		<time datetime="2021-08-24T18:25:39.760Z" itemprop="datePublished">
+	  		2021-08-25
 	  </time>
 	</a> 
 
@@ -281,7 +274,7 @@ Mongodb是为快速开发互联网Web应用而构建的数据库系统，其数�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/23/%E6%95%B4%E5%90%88Mongodb%E5%AE%9E%E7%8E%B0%E6%96%87%E6%A1%A3%E6%93%8D%E4%BD%9C07/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/25/Kibana%E8%AE%BE%E7%BD%AE%E7%99%BB%E5%BD%95%E8%AE%A4%E8%AF%81/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -292,23 +285,25 @@ Mongodb是为快速开发互联网Web应用而构建的数据库系统，其数�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88Elasticsearch%E5%AE%9E%E7%8E%B0%E5%95%86%E5%93%81%E6%90%9C%E7%B4%A206/" itemprop="url">
-		mall-tiny-06-整合Elasticsearch实现商品搜索
+	<a href="/2021/08/25/Docker%E6%9C%8D%E5%8A%A1%E5%BC%80%E6%94%BE%E4%BA%86%E8%BF%99%E4%B8%AA%E7%AB%AF%E5%8F%A3%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%88%86%E5%88%86%E9%92%9F%E5%8F%98%E8%82%89%E6%9C%BA/" itemprop="url">
+		Docker服务开放了这个端口服务器分分钟变肉机
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							简介一个标准的整合Elasticsearch实现商品搜索
+							Docker服务开放了这个端口服务器分分钟变肉机
+之前有很多朋友提过，当使用docker-maven-plugin打包SpringBoot应用的Docker镜像时，服务器需要开放2375端口。由于开放了端口没有做任何安全保护，会引起安全漏洞，被人入侵、挖矿、CPU飙升这些情况都有发生，今天我们来聊聊如何解决这个问题。
 
-本文主要讲解mall整合Elasticsearch的过程，以实现商品信息在Elasticsearch中的导入、查询、修改、删除为例。
+-问题产生的原因
+首先我们要明白问题产生的原因，才能更好地解决问题！
 
--项目使用框架介绍-Elasticsearch
-Elasticsearch 是一个分布式、可扩展、实时的搜索与数据分析引擎。 它能从项目一开始就赋予你的数据以搜索、分析和探索的能力，可用于实现全文搜索和实时数据统计。
 
--Elasticsearch的安装和使用
-下载Elasticsearch6.2.2的zip包，并解压到指定目录，下载地址：https://www.elastic.co/cn/do...
+Docker为了实现集群管理，提供了远程管理的端口。Docker Daemon作为守护进程运行在后台，可以执行发送到管理端口上的Docker命令。
+
+
+当我们修改docker.service文件，修...
 						
 					</div>
 					
@@ -323,9 +318,9 @@ Elasticsearch 是一个分布式、可扩展、实时的搜索与数据分析引
 
 
 
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88Elasticsearch%E5%AE%9E%E7%8E%B0%E5%95%86%E5%93%81%E6%90%9C%E7%B4%A206/" itemprop="url">
-		<time datetime="2021-08-22T16:35:05.677Z" itemprop="datePublished">
-	  		2021-08-23
+	<a href="/2021/08/25/Docker%E6%9C%8D%E5%8A%A1%E5%BC%80%E6%94%BE%E4%BA%86%E8%BF%99%E4%B8%AA%E7%AB%AF%E5%8F%A3%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%88%86%E5%88%86%E9%92%9F%E5%8F%98%E8%82%89%E6%9C%BA/" itemprop="url">
+		<time datetime="2021-08-24T18:06:55.665Z" itemprop="datePublished">
+	  		2021-08-25
 	  </time>
 	</a> 
 
@@ -338,7 +333,7 @@ Elasticsearch 是一个分布式、可扩展、实时的搜索与数据分析引
 
 						
 							<span class="right">      	
-								<a href="/2021/08/23/%E6%95%B4%E5%90%88Elasticsearch%E5%AE%9E%E7%8E%B0%E5%95%86%E5%93%81%E6%90%9C%E7%B4%A206/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/25/Docker%E6%9C%8D%E5%8A%A1%E5%BC%80%E6%94%BE%E4%BA%86%E8%BF%99%E4%B8%AA%E7%AB%AF%E5%8F%A3%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%88%86%E5%88%86%E9%92%9F%E5%8F%98%E8%82%89%E6%9C%BA/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -349,29 +344,22 @@ Elasticsearch 是一个分布式、可扩展、实时的搜索与数据分析引
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88SpringTask%E5%AE%9E%E7%8E%B0%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A105/" itemprop="url">
-		mall-tiny-05-整合SpringTask实现定时任务
+	<a href="/2021/08/25/knife4j%E6%96%87%E6%A1%A3%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7/" itemprop="url">
+		knife4j文档生成工具
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							简介一个标准的整合SpringTask实现定时任务
+							knife4j文档生成工具
+Swagger作为一款API文档生成工具，虽然功能已经很完善了，但是还是有些不足的地方。偶然发现knife4j弥补了这些不足，赋予了Swagger更多的功能，今天我们来讲下它的使用方法。
 
-本文主要讲解mall整合SpringTask的过程，以批量修改超时订单为例。
+-knife4j简介
+knife4j是springfox-swagger的增强UI实现，为Java开发者在使用Swagger的时候，提供了简洁、强大的接口文档体验。knife4j完全遵循了springfox-swagger中的使用方式，并在此基础上做了增强功能，如果你用过Swagger，你就可以无缝切换到knife4j。
 
--项目使用框架介绍-SpringTask
-SpringTask是Spring自主研发的轻量级定时任务工具，相比于Quartz更加简单方便，且不需要引入其他依赖即可使用。
-
--Cron表达式
-Cron表达式是一个字符串，包括6~7个时间元素，在SpringTask中可以用于指定任务的执行时间。
-
--Cron的语法格式Seconds Minutes Hours DayofMonth Month DayofWeek
--Cron格式中每个时间元素的说明
-
-
-时间元...
+-快速开始
+接下来我们来介绍下如何在SpringB...
 						
 					</div>
 					
@@ -386,9 +374,9 @@ Cron表达式是一个字符串，包括6~7个时间元素，在SpringTask中可
 
 
 
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88SpringTask%E5%AE%9E%E7%8E%B0%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A105/" itemprop="url">
-		<time datetime="2021-08-22T16:33:49.615Z" itemprop="datePublished">
-	  		2021-08-23
+	<a href="/2021/08/25/knife4j%E6%96%87%E6%A1%A3%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7/" itemprop="url">
+		<time datetime="2021-08-24T17:43:12.501Z" itemprop="datePublished">
+	  		2021-08-25
 	  </time>
 	</a> 
 
@@ -401,7 +389,7 @@ Cron表达式是一个字符串，包括6~7个时间元素，在SpringTask中可
 
 						
 							<span class="right">      	
-								<a href="/2021/08/23/%E6%95%B4%E5%90%88SpringTask%E5%AE%9E%E7%8E%B0%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A105/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/25/knife4j%E6%96%87%E6%A1%A3%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -412,23 +400,22 @@ Cron表达式是一个字符串，包括6~7个时间元素，在SpringTask中可
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88SpringSecurity%E5%92%8CJWT%E5%AE%9E%E7%8E%B0%E8%AE%A4%E8%AF%81%E5%92%8C%E6%8E%88%E6%9D%8304/" itemprop="url">
-		mall-tiny-04-整合SpringSecurity和JWT实现认证和授权
+	<a href="/2021/08/25/JWT%E5%BA%93%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/" itemprop="url">
+		JWT库快速入门
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							简介一个标准的整合SpringSecurity和JWT实现认证和授权
+							JWT库快速入门
+以前一直使用的是jjwt这个JWT库，虽然小巧够用, 但对JWT的一些细节封装的不是很好。最近发现了一个更好用的JWT库nimbus-jose-jwt，简单易用，API非常易于理解，对称加密和非对称加密算法都支持，推荐给大家！
 
-本文主要讲解mall通过整合SpringSecurity和JWT实现后台用户的登录和授权功能，同时改造Swagger-UI的配置使其可以自动记住登录令牌进行发送。
+-简介
+nimbus-jose-jwt是最受欢迎的JWT开源库，基于Apache 2.0开源协议，支持所有标准的签名(JWS)和加密(JWE)算法。
 
--项目使用框架介绍-SpringSecurity
-SpringSecurity是一个强大的可高度定制的认证和授权框架，对于Spring应用来说它是一套Web安全标准。SpringSecurity注重于为Java应用提供认证和授权功能，像所有的Spring项目一样，它对自定义需求具有强大的扩展性。
-
--JWT
-JWT是JSON WEB TOKEN的缩写，它...
+-JWT概念关系
+这里我们需要了解下JWT、JWS、JWE三者之间的关系，其实JWT(JSON Web Token)指的是一种规范，这种规范允许我们使用JWT在两个组织之间传递安全可靠的信息。而...
 						
 					</div>
 					
@@ -443,9 +430,9 @@ JWT是JSON WEB TOKEN的缩写，它...
 
 
 
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88SpringSecurity%E5%92%8CJWT%E5%AE%9E%E7%8E%B0%E8%AE%A4%E8%AF%81%E5%92%8C%E6%8E%88%E6%9D%8304/" itemprop="url">
-		<time datetime="2021-08-22T16:33:07.176Z" itemprop="datePublished">
-	  		2021-08-23
+	<a href="/2021/08/25/JWT%E5%BA%93%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/" itemprop="url">
+		<time datetime="2021-08-24T17:07:30.620Z" itemprop="datePublished">
+	  		2021-08-25
 	  </time>
 	</a> 
 
@@ -458,7 +445,7 @@ JWT是JSON WEB TOKEN的缩写，它...
 
 						
 							<span class="right">      	
-								<a href="/2021/08/23/%E6%95%B4%E5%90%88SpringSecurity%E5%92%8CJWT%E5%AE%9E%E7%8E%B0%E8%AE%A4%E8%AF%81%E5%92%8C%E6%8E%88%E6%9D%8304/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/25/JWT%E5%BA%93%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -469,38 +456,23 @@ JWT是JSON WEB TOKEN的缩写，它...
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88Redis%E5%AE%9E%E7%8E%B0%E7%BC%93%E5%AD%98%E5%8A%9F%E8%83%BD03/" itemprop="url">
-		mall-tiny-03-整合Redis实现缓存功能
+	<a href="/2021/08/25/Fluentd%E6%97%A5%E5%BF%97%E6%94%B6%E9%9B%86%E5%B7%A5%E5%85%B7/" itemprop="url">
+		Fluentd日志收集工具
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							简介一个标准的整合Redis实现缓存功能
+							Fluentd日志收集工具
+ELK日志收集系统大家都知道，但是还有一种日志收集系统EFK，肯定有很多朋友不知道！这里的F指的是Fluentd，它具有Logstash类似的日志收集功能，但是内存占用连Logstash的十分之一都不到，性能优越、非常轻巧。本文将详细介绍Fluentd的使用，主要用来收集SpringBoot应用的日志，希望对大家有所帮助！
 
-本文主要讲解mall整合Redis的过程，以短信验证码的存储验证为例。
-
--Redis的安装和启动
-Redis是用C语言开发的一个高性能键值对数据库，可用于数据缓存，主要用于处理大量数据的高访问负载。
-
-
-下载Redis,下载地址：https://github.com/MicrosoftArchive/redis/releases
+-Fluentd 简介
+Fluentd是一款开源的日志收集功能，致力于为用户搭建统一的日志收集层，和Elasticsearch、Kibana一起使用可以搭建EFK日志收集系统。什么是统一的日志收集层呢？看下下面这张图就清楚了！
 
 
 
-
-下载完后解压到指定目录
-
-
-
-
-在当前地址栏输入cmd后，执行redis的启动命令：redis-server.exe redis.windows.conf
-
-
-
-- 整合Redis-添加项目依赖
-在pom.x...
+-安...
 						
 					</div>
 					
@@ -515,9 +487,9 @@ Redis是用C语言开发的一个高性能键值对数据库，可用于数据�
 
 
 
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88Redis%E5%AE%9E%E7%8E%B0%E7%BC%93%E5%AD%98%E5%8A%9F%E8%83%BD03/" itemprop="url">
-		<time datetime="2021-08-22T16:32:18.752Z" itemprop="datePublished">
-	  		2021-08-23
+	<a href="/2021/08/25/Fluentd%E6%97%A5%E5%BF%97%E6%94%B6%E9%9B%86%E5%B7%A5%E5%85%B7/" itemprop="url">
+		<time datetime="2021-08-24T16:37:15.325Z" itemprop="datePublished">
+	  		2021-08-25
 	  </time>
 	</a> 
 
@@ -530,7 +502,7 @@ Redis是用C语言开发的一个高性能键值对数据库，可用于数据�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/23/%E6%95%B4%E5%90%88Redis%E5%AE%9E%E7%8E%B0%E7%BC%93%E5%AD%98%E5%8A%9F%E8%83%BD03/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/25/Fluentd%E6%97%A5%E5%BF%97%E6%94%B6%E9%9B%86%E5%B7%A5%E5%85%B7/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -541,26 +513,21 @@ Redis是用C语言开发的一个高性能键值对数据库，可用于数据�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88Swagger-UI%E5%AE%9E%E7%8E%B0%E5%9C%A8%E7%BA%BFAPI%E6%96%87%E6%A1%A302/" itemprop="url">
-		mall-tiny-02-整合Swagger-UI实现在线API文档
+	<a href="/2021/08/25/ELK%E6%90%AD%E5%BB%BA%E6%97%A5%E5%BF%97%E6%94%B6%E9%9B%86%E7%B3%BB%E7%BB%9F/" itemprop="url">
+		ELK搭建日志收集系统
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							简介一个标准的整合Swagger-UI实现在线API文档
+							ELK搭建日志收集系统
+ELK日志收集系统进阶使用，本文主要讲解如何打造一个线上环境真实可用的日志收集系统。有了它，你就可以和去服务器上捞日志说再见了！
 
-本文主要讲解mall是如何通过整合Swagger-UI来实现一份相当完善的在线API文档的。
+-ELK环境安装
+ELK是指Elasticsearch、Kibana、Logstash这三种服务搭建的日志收集系统，具体搭建方式可以参考《SpringBoot应用整合ELK实现日志收集》。这里仅提供最新版本的docker-compose脚本和一些安装要点。
 
-- 项目使用框架介绍-Swagger-UI
-Swagger-UI是HTML, Javascript, CSS的一个集合，可以动态地根据注解生成在线API文档。
-
-常用注解
-@Api：用于修饰Controller类，生成Controller相关文档信息
-@ApiOperation：用于修饰Controller类中的方法，生成接口方法相关文档信息
-@ApiParam：用于修饰接口中的参数，生成接口参数相关文档信息
-@ApiModelPro...
+-docker-compose脚本123456789101112131415161718192021222324252627282930313233343536373839404...
 						
 					</div>
 					
@@ -575,9 +542,9 @@ Swagger-UI是HTML, Javascript, CSS的一个集合，可以动态地根据注解�
 
 
 
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88Swagger-UI%E5%AE%9E%E7%8E%B0%E5%9C%A8%E7%BA%BFAPI%E6%96%87%E6%A1%A302/" itemprop="url">
-		<time datetime="2021-08-22T16:30:58.985Z" itemprop="datePublished">
-	  		2021-08-23
+	<a href="/2021/08/25/ELK%E6%90%AD%E5%BB%BA%E6%97%A5%E5%BF%97%E6%94%B6%E9%9B%86%E7%B3%BB%E7%BB%9F/" itemprop="url">
+		<time datetime="2021-08-24T16:09:19.761Z" itemprop="datePublished">
+	  		2021-08-25
 	  </time>
 	</a> 
 
@@ -590,7 +557,7 @@ Swagger-UI是HTML, Javascript, CSS的一个集合，可以动态地根据注解�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/23/%E6%95%B4%E5%90%88Swagger-UI%E5%AE%9E%E7%8E%B0%E5%9C%A8%E7%BA%BFAPI%E6%96%87%E6%A1%A302/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/25/ELK%E6%90%AD%E5%BB%BA%E6%97%A5%E5%BF%97%E6%94%B6%E9%9B%86%E7%B3%BB%E7%BB%9F/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -601,24 +568,19 @@ Swagger-UI是HTML, Javascript, CSS的一个集合，可以动态地根据注解�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88SpringBoot+MyBatis%E6%90%AD%E5%BB%BA%E5%9F%BA%E6%9C%AC%E9%AA%A8%E6%9E%B601/" itemprop="url">
-		mall-tiny-01-整合SpringBoot+MyBatis搭建基本骨架
+	<a href="/2021/08/24/RabbitMQ%E7%9A%845%E7%A7%8D%E6%A0%B8%E5%BF%83%E6%B6%88%E6%81%AF%E6%A8%A1%E5%BC%8F/" itemprop="url">
+		RabbitMQ的5种核心消息模式
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							简介一个标准的整合SpringBoot+MyBatis搭建基本骨架
+							RabbitMQ的5种核心消息模式
+以前看过的关于RabbitMQ核心消息模式的文章都是基于Java API的，最近看了下官方文档，发现这些核心消息模式都可以通过Spring AMQP来实现。于是总结了下RabbitMQ的核心知识点，包括RabbitMQ在Windows和Linux下的安装、5种核心消息模式的Spring AMQP实现，相信对于想要学习和回顾RabbitMQ的朋友都会有所帮助。
 
-本文主要讲解mall整合SpringBoot+MyBatis搭建基本骨架，以商品品牌为例实现基本的CRUD操作及通过PageHelper实现分页查询。
-
--mysql数据库环境搭建
-下载并安装mysql5.7版本，下载地址：https://dev.mysql.com/downloads/installer/
-设置数据库帐号密码：root root
-下载并安装客户端连接工具Navicat,下载地址：http://www.formysql.com/xiazai.html
-创建数据库mall
-导入mall的数据库脚本，脚本地...
+-简介
+RabbitMQ是最受欢迎的开源消息中间件之一，在全球范围内被广泛应用。RabbitMQ是轻量级且易于部署的，能支持多种消息协议。RabbitMQ可以部署在分布式系统中，以满足大规模、高...
 						
 					</div>
 					
@@ -633,9 +595,9 @@ Swagger-UI是HTML, Javascript, CSS的一个集合，可以动态地根据注解�
 
 
 
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88SpringBoot+MyBatis%E6%90%AD%E5%BB%BA%E5%9F%BA%E6%9C%AC%E9%AA%A8%E6%9E%B601/" itemprop="url">
-		<time datetime="2021-08-22T16:30:14.344Z" itemprop="datePublished">
-	  		2021-08-23
+	<a href="/2021/08/24/RabbitMQ%E7%9A%845%E7%A7%8D%E6%A0%B8%E5%BF%83%E6%B6%88%E6%81%AF%E6%A8%A1%E5%BC%8F/" itemprop="url">
+		<time datetime="2021-08-24T15:16:08.440Z" itemprop="datePublished">
+	  		2021-08-24
 	  </time>
 	</a> 
 
@@ -648,7 +610,7 @@ Swagger-UI是HTML, Javascript, CSS的一个集合，可以动态地根据注解�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/23/%E6%95%B4%E5%90%88SpringBoot+MyBatis%E6%90%AD%E5%BB%BA%E5%9F%BA%E6%9C%AC%E9%AA%A8%E6%9E%B601/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/24/RabbitMQ%E7%9A%845%E7%A7%8D%E6%A0%B8%E5%BF%83%E6%B6%88%E6%81%AF%E6%A8%A1%E5%BC%8F/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -659,21 +621,28 @@ Swagger-UI是HTML, Javascript, CSS的一个集合，可以动态地根据注解�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/15/%E5%85%B3%E9%97%AD%E7%94%B5%E8%84%91%E5%8D%A0%E7%94%A8%E7%AB%AF%E5%8F%A3/" itemprop="url">
-		关闭电脑占用端口
+	<a href="/2021/08/24/Gogs%E6%90%AD%E5%BB%BAGit%E6%9C%8D%E5%8A%A1/" itemprop="url">
+		Gogs搭建Git服务
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							关闭电脑占用端口1、打开命令行，输入netstat -o -n -a | findstr :8080，我们就能看到相关的端口号及其状态。
-1TCP    0.0.0.0:3000      0.0.0.0:0              LISTENING       3116
+							Gogs搭建Git服务
+以前使用Gitlab搭建过Git服务，如果服务器配置低的话启动和访问都会特别慢。最近发现了Gogs这个开源项目，安装方便，特别轻量级，推荐给大家！
 
-2.关闭正处与监听状态（Listening）的端口号8080，最后一行对应的是进程的PID，输入命令taskkill /F /PID 3116
-1打开命令行，输入taskkill /F /PID 3116
+-推荐语
+一款极易搭建的自助Git服务，特别轻量级，推荐给大家！
+
+-Gogs简介
+Gogs是一款极易搭建的自助Git服务，使用Go语言开发，只要Go语言支持的平台它都支持，包括Linux、Mac OS X、Windows以及ARM平台。Gogs对系统硬件要求极低，你甚至可以在树莓派上搭建它。
 
 
+项目地址：https://github.com/gogs/gogs
+
+-安装
+Gogs在Docker环境下的安装非常简单...
 						
 					</div>
 					
@@ -688,9 +657,9 @@ Swagger-UI是HTML, Javascript, CSS的一个集合，可以动态地根据注解�
 
 
 
-	<a href="/2021/08/15/%E5%85%B3%E9%97%AD%E7%94%B5%E8%84%91%E5%8D%A0%E7%94%A8%E7%AB%AF%E5%8F%A3/" itemprop="url">
-		<time datetime="2021-08-15T10:00:19.907Z" itemprop="datePublished">
-	  		2021-08-15
+	<a href="/2021/08/24/Gogs%E6%90%AD%E5%BB%BAGit%E6%9C%8D%E5%8A%A1/" itemprop="url">
+		<time datetime="2021-08-24T14:42:42.254Z" itemprop="datePublished">
+	  		2021-08-24
 	  </time>
 	</a> 
 
@@ -703,7 +672,7 @@ Swagger-UI是HTML, Javascript, CSS的一个集合，可以动态地根据注解�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/15/%E5%85%B3%E9%97%AD%E7%94%B5%E8%84%91%E5%8D%A0%E7%94%A8%E7%AB%AF%E5%8F%A3/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/24/Gogs%E6%90%AD%E5%BB%BAGit%E6%9C%8D%E5%8A%A1/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -714,15 +683,22 @@ Swagger-UI是HTML, Javascript, CSS的一个集合，可以动态地根据注解�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/08/Python%E7%88%AC%E8%99%AB%E5%88%86%E6%9E%90AJAX%E4%BC%A0%E9%80%92%E7%9A%84JSON%E8%8E%B7%E5%8F%96%E6%95%B0%E6%8D%AE-%E5%88%9D%E6%AD%A5%E5%88%86%E6%9E%90%E5%8A%A8%E6%80%81%E7%BD%91%E9%A1%B5/" itemprop="url">
-		Python爬虫分析AJAX传递的JSON获取数据-初步分析动态网页
+	<a href="/2021/08/24/MongoDB%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/" itemprop="url">
+		MongoDB快速入门
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							Python爬虫分析AJAX传递的JSON获取数据-初步分析动态网页前言1234567891011我总结了最近学到的利用requests和bs4第三方库共同作用，基本可以应对python获取静态网页数据的相关问题。但是如果现实中的网页往往比想象中复杂的多，网页也早已不再是纯静态网页。就比如在第一篇文章中爬取的网易云课堂计算机专业大学课程中，如果我们进一步爬取计算机专业可以就业的岗位信息时，通过开发者工具，我们发现，我们所需要的数据位于id=&quot;j-smartSpec&quot; 的div中，然而，我们利用之前的方法进行会发现最后得到的list为空，那么我们检查一下源代码，好不容易...
+							MongoDB快速入门
+虽说现在关系型数据库还是主流，但是面对某些需求的时候，需要非关系型数据库来补充它，学习一个主流的NoSQL数据库还是很有必要的。MongoDB是一个功能丰富的NoSQL数据库，本文整理了它最常用的部分形成了这篇入门教程，希望对大家有所帮助。
+
+-简介
+MongoDB是一个基于分布式文件存储的数据库。由C++语言编写，旨在为WEB应用提供可扩展的高性能数据存储解决方案。MongoDB是一个介于关系型数据库和非关系型数据库之间的产品，是非关系型数据库当中功能最丰富，最像关系型数据库的。
+
+-安装
+以前写的MongoDB安装教程是基于3.2版本的，发现有的朋友使用新版本...
 						
 					</div>
 					
@@ -737,9 +713,9 @@ Swagger-UI是HTML, Javascript, CSS的一个集合，可以动态地根据注解�
 
 
 
-	<a href="/2021/08/08/Python%E7%88%AC%E8%99%AB%E5%88%86%E6%9E%90AJAX%E4%BC%A0%E9%80%92%E7%9A%84JSON%E8%8E%B7%E5%8F%96%E6%95%B0%E6%8D%AE-%E5%88%9D%E6%AD%A5%E5%88%86%E6%9E%90%E5%8A%A8%E6%80%81%E7%BD%91%E9%A1%B5/" itemprop="url">
-		<time datetime="2021-08-08T15:30:02.039Z" itemprop="datePublished">
-	  		2021-08-08
+	<a href="/2021/08/24/MongoDB%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/" itemprop="url">
+		<time datetime="2021-08-24T13:04:29.664Z" itemprop="datePublished">
+	  		2021-08-24
 	  </time>
 	</a> 
 
@@ -752,7 +728,7 @@ Swagger-UI是HTML, Javascript, CSS的一个集合，可以动态地根据注解�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/08/Python%E7%88%AC%E8%99%AB%E5%88%86%E6%9E%90AJAX%E4%BC%A0%E9%80%92%E7%9A%84JSON%E8%8E%B7%E5%8F%96%E6%95%B0%E6%8D%AE-%E5%88%9D%E6%AD%A5%E5%88%86%E6%9E%90%E5%8A%A8%E6%80%81%E7%BD%91%E9%A1%B5/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/24/MongoDB%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -763,15 +739,19 @@ Swagger-UI是HTML, Javascript, CSS的一个集合，可以动态地根据注解�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/08/Python%E7%88%AC%E8%99%AB%E7%88%AC%E5%8F%96%E5%8A%A8%E6%80%81%E9%A1%B5%E9%9D%A2%E6%80%9D%E8%B7%AF%E5%92%8C%E5%AE%9E%E4%BE%8B000001/" itemprop="url">
-		Python爬虫爬取动态页面思路+实例
+	<a href="/2021/08/24/Elasticsearch%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/" itemprop="url">
+		Elasticsearch快速入门
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							Python爬虫爬取动态页面思路+实例简介123456789有时候，我们天真无邪的使用urllib库或Scrapy下载HTML网页时会发现，我们要提取的网页元素并不在我们下载到的HTML之中，尽管它们在浏览器里看起来唾手可得。这说明我们想要的元素是在我们的某些操作下通过js事件动态生成的。举个例子，我们在刷QQ空间或者微博评论的时候，一直往下刷，网页越来越长，内容越来越多，就是这个让人又爱又恨的动态加载。爬取动态页面目前来说有两种方法1.分析页面请求（这篇介绍这个）2.selenium模拟浏览器行为（霸王硬上弓，以后再说）言归正传，下面介绍一下通过分析页面请求的方法爬取动态加载页面的思路...
+							Elasticsearch快速入门
+记得刚接触Elasticsearch的时候，没找啥资料，直接看了遍Elasticsearch的中文官方文档，中文文档很久没更新了，一直都是2.3的版本。最近又重新看了遍6.0的官方文档，由于官方文档介绍的内容比较多，每次看都很费力，所以这次整理了其中最常用部分，写下了这篇入门教程，希望对大家有所帮助。
+
+-简介
+Elasticsearch是一个基于Lucene的搜索服务器。它提供了一个分布式的全文搜索引擎，基于restful web接口。Elasticsearch是用Java语言开发的，基于Apache协议的开源项目，是目前最受欢迎的企业搜索引擎。El...
 						
 					</div>
 					
@@ -786,9 +766,9 @@ Swagger-UI是HTML, Javascript, CSS的一个集合，可以动态地根据注解�
 
 
 
-	<a href="/2021/08/08/Python%E7%88%AC%E8%99%AB%E7%88%AC%E5%8F%96%E5%8A%A8%E6%80%81%E9%A1%B5%E9%9D%A2%E6%80%9D%E8%B7%AF%E5%92%8C%E5%AE%9E%E4%BE%8B000001/" itemprop="url">
-		<time datetime="2021-08-07T19:27:17.081Z" itemprop="datePublished">
-	  		2021-08-08
+	<a href="/2021/08/24/Elasticsearch%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/" itemprop="url">
+		<time datetime="2021-08-24T07:52:28.903Z" itemprop="datePublished">
+	  		2021-08-24
 	  </time>
 	</a> 
 
@@ -801,7 +781,7 @@ Swagger-UI是HTML, Javascript, CSS的一个集合，可以动态地根据注解�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/08/Python%E7%88%AC%E8%99%AB%E7%88%AC%E5%8F%96%E5%8A%A8%E6%80%81%E9%A1%B5%E9%9D%A2%E6%80%9D%E8%B7%AF%E5%92%8C%E5%AE%9E%E4%BE%8B000001/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/24/Elasticsearch%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -812,6 +792,8 @@ Swagger-UI是HTML, Javascript, CSS的一个集合，可以动态地根据注解�
 
 	
 	<div id="pagination">
+		
+			<a href="/page/4/" data-title="Load more" data-status="End">Load more</a>
 		
 	</div>
 
