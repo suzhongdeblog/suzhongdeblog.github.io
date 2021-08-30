@@ -232,7 +232,555 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/24/Docker%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%A7%92%E5%BB%BARedis%E9%9B%86%E7%BE%A4/" itemprop="url">
+	<a href="/2021/08/29/%E6%88%91%E5%B8%B8%E7%94%A8%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E6%8A%80%E5%B7%A7%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
+		我常用的自动化部署技巧部署篇
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							我常用的自动化部署技巧部署篇
+SpringBoot+Jenkins自动化部署技巧，远程部署同样适用，附通用自动化脚本！本文将从半自动化部署讲起，到自动化部署，讲解一套生产环境切实可用的自动化部署方案！
+
+-半自动化部署
+之前写过的SpringBoot应用打包Docker镜像都是通过Maven插件来实现的，由于远程服务器需要开发2375端口，存在一定的安全隐患。这次介绍另一种方法，使用DockerFile+Jar+自动化脚本的形式来部署。由于需要一定的手动操作，我把它称之为半自动化部署。
+
+-项目打包
+这次我们不使用Docker的Maven插件来打包，先在pom.xml中注释掉它；
+
+
+
+...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/29/%E6%88%91%E5%B8%B8%E7%94%A8%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E6%8A%80%E5%B7%A7%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-28T20:50:41.265Z" itemprop="datePublished">
+	  		2021-08-29
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/29/%E6%88%91%E5%B8%B8%E7%94%A8%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E6%8A%80%E5%B7%A7%E9%83%A8%E7%BD%B2%E7%AF%87/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/29/mall-swarm%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE%E5%9C%A8K8S%E4%B8%8B%E7%9A%84%E5%AE%9E%E8%B7%B5%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
+		mall-swarm微服务项目在K8S下的实践部署篇
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							mall-swarm微服务项目在K8S下的实践部署篇
+由于K8S目前实在是太火了，之前一直说要给mall项目出个K8S部署方案，这次它来啦！在更新完K8S系列教程后，是时候来波实践了，拿mall-swarm项目来实践真的是刚刚好。如果你有在Docker下部署该项目的经历，而且已经学习了我的K8S系列教程的话，相信你能够轻松上手！
+
+-服务器规划
+我们先来说下服务器规划吧，之前一直使用的是单机部署所有服务，这次我们使用两台服务器来部署。
+
+
+基础服务器（192.168.3.101）：用于部署mall-swarm的依赖服务，包括MySql、Redis、Elasticsearch等与应用无关的...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/29/mall-swarm%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE%E5%9C%A8K8S%E4%B8%8B%E7%9A%84%E5%AE%9E%E8%B7%B5%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-28T20:00:06.606Z" itemprop="datePublished">
+	  		2021-08-29
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/29/mall-swarm%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE%E5%9C%A8K8S%E4%B8%8B%E7%9A%84%E5%AE%9E%E8%B7%B5%E9%83%A8%E7%BD%B2%E7%AF%87/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/29/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84%E4%B8%8B%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E4%BD%BF%E7%94%A8Jenkins%E6%9D%A5%E5%AE%9E%E7%8E%B0%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
+		微服务架构下的自动化部署使用Jenkins来实现部署篇
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							微服务架构下的自动化部署使用Jenkins来实现部署篇
+之前对mall-swarm项目做了升级，注册中心和配置中心都改为使用Nacos，但是Jenkins的自动化部署文档一直都没更新。有些朋友参考原来的文档部署有点小问题，这次对mall-swarm的自动化部署文档做个升级，希望对大家有所帮助！
+
+-Jenkins的基本使用
+使用该部署方案需要对Jenkins有所了解，关于Jenkins的基本使用可以参考：《使用Jenkins一键打包部署SpringBoot应用，就是这么6！》
+
+-部署准备
+部署之前需要先安装mall-swarm需要的依赖服务，并打包好所有应用的Docker镜像。由于之前...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/29/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84%E4%B8%8B%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E4%BD%BF%E7%94%A8Jenkins%E6%9D%A5%E5%AE%9E%E7%8E%B0%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-28T18:07:24.947Z" itemprop="datePublished">
+	  		2021-08-29
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/29/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84%E4%B8%8B%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E4%BD%BF%E7%94%A8Jenkins%E6%9D%A5%E5%AE%9E%E7%8E%B0%E9%83%A8%E7%BD%B2%E7%AF%87/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/29/mall-swarm%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EDocker%E5%AE%B9%E5%99%A8%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
+		mall-swarm在Linux环境基于Docker容器下的部署部署篇
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							mall-swarm在Linux环境基于Docker容器下的部署部署篇
+本文以mall-swarm项目为例，主要介绍一个微服务架构的电商项目如何在Docker容器下部署，涉及到大量系统组件的部署及多个Spring Cloud微服务应用的部署，基于CentOS7.6。
+
+-环境搭建-基础环境部署
+mall-swarm运行需要的系统组件如下，使用Docker Compose 批量安装更方便，Docker Compose使用请参考：使用Docker Compose部署SpringBoot应用 。
+
+
+
+
+组件
+版本号
+
+
+
+Mysql
+5.7
+
+
+Redis
+5.0
+
+
+MongoDb
+4.3...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/29/mall-swarm%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EDocker%E5%AE%B9%E5%99%A8%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-28T17:20:34.589Z" itemprop="datePublished">
+	  		2021-08-29
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/29/mall-swarm%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EDocker%E5%AE%B9%E5%99%A8%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E9%83%A8%E7%BD%B2%E7%AF%87/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/29/mall-swarm%E5%9C%A8Windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
+		mall-swarm在Windows环境下的部署部署篇
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							mall-swarm在Windows环境下的部署部署篇-开发环境搭建
+mall-swarm中使用到的环境和mall项目中大致相同，具体可以查看mall在Windows环境下的部署。
+
+-简易环境搭建流程
+安装IDEA并导入项目源码；
+安装MySQL，创建一个mall数据库，并导入/document/sql/mall.sql文件；
+安装Redis、Elasticsearch、MongoDB、RabbitMQ等环境。
+
+-Nacos注册中心搭建
+由于使用了Nacos注册中心，我们需要先搭建Nacos注册中心，下载地址：https://github.com/alibaba/nacos/rele...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/29/mall-swarm%E5%9C%A8Windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-28T17:12:18.588Z" itemprop="datePublished">
+	  		2021-08-29
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/29/mall-swarm%E5%9C%A8Windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E9%83%A8%E7%BD%B2%E7%AF%87/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/29/mall%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2/" itemprop="url">
+		mall前端项目的安装与部署
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							mall前端项目的安装与部署
+本文主要讲解mall前端项目mall-admin-web的在Windows和Linux环境下的安装及部署。
+
+-Windows下的安装及部署-下载nodejs并安装
+下载地址：https://nodejs.org/dist/v8.9.4/node-v8.9.4-x64.msi
+
+-下载mall-admin-web的代码
+下载地址（github）：https://github.com/macrozheng/mall-admin-web 下载地址（码云）：https://gitee.com/macrozheng/mall-admin-web
+
+-从IDEA中打开...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/29/mall%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2/" itemprop="url">
+		<time datetime="2021-08-28T16:53:16.864Z" itemprop="datePublished">
+	  		2021-08-29
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/29/mall%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/29/mall%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EJenkins%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
+		mall在Linux环境基于Jenkins自动化部署部署篇
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							mall在Linux环境基于Jenkins自动化部署部署篇
+本文是mall项目的专属Jenkins自动化部署方法。
+
+-Jenkins的基本使用
+关于Jenkins的基本使用可以参考：使用Jenkins一键打包部署SpringBoot应用，就是这么6！
+
+-执行脚本准备
+首先我们先把需要远程执行的脚本准备好。
+
+
+脚本文件都存放在了mall项目的/document/sh目录下：
+上传脚本前在IDEA中修改所有脚本文件的换行符格式为LF，否则脚本会无法执行；
+
+
+
+
+将所有脚本文件上传到指定目录，这里我们上传到/mydata/sh目录下；
+
+
+
+
+将所有脚本文件都修改为可执行文件:
+
+1c...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/29/mall%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EJenkins%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-28T16:38:43.021Z" itemprop="datePublished">
+	  		2021-08-29
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/29/mall%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EJenkins%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E9%83%A8%E7%BD%B2%E7%AF%87/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/29/mall%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EDockerCompose%E5%AE%B9%E5%99%A8%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
+		mall在Linux环境基于DockerCompose容器下的部署篇
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							mall在Linux环境基于DockerCompose容器下的部署篇
+最简单的mall在Linux下部署方式，使用两个Docker Compose脚本即可完成部署。第一个脚本用于部署mall运行所依赖的服务（MySQL、Redis、Nginx、RabbitMQ、MongoDB、Elasticsearch、Logstash、Kibana），第二个脚本用于部署mall中的应用（mall-admin、mall-search、mall-portal）。
+
+-docker环境搭建及使用
+具体参考：开发者必备Docker命令
+
+-docker-compose环境搭建及使用
+具体参考：使用Docker...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/29/mall%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EDockerCompose%E5%AE%B9%E5%99%A8%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-28T16:01:30.199Z" itemprop="datePublished">
+	  		2021-08-29
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/29/mall%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EDockerCompose%E5%AE%B9%E5%99%A8%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E7%AF%87/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/28/mall%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EDocker%E5%AE%B9%E5%99%A8%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
+		mall在Linux环境基于Docker容器下的部署篇
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							mall在Linux环境基于Docker容器下的部署篇
+本文主要以图文的形式讲解mall在Linux环境下的部署，涉及在Docker容器中安装MySQL、Redis、Nginx、RabbitMQ、MongoDB、Elasticsearch、Logstash、Kibana，以及SpringBoot应用部署，基于CenterOS7.6。
+
+-Docker环境安装
+安装yum-utils：
+
+1yum install -y yum-utils device-mapper-persistent-data lvm2
+
+
+为yum源添加docker仓库位置：
+
+1yum-config-manager...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/28/mall%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EDocker%E5%AE%B9%E5%99%A8%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-28T13:30:44.517Z" itemprop="datePublished">
+	  		2021-08-28
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/28/mall%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EDocker%E5%AE%B9%E5%99%A8%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E7%AF%87/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/28/mall%E5%9C%A8Windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
 		Docker环境下秒建Redis集群
 	</a>
 
@@ -240,14 +788,24 @@
 
 					<div class="post-content">
 						
-							Docker环境下秒建Redis集群
-为了提高Redis的存储容量和响应速度，有时候我们需要搭建Redis集群。本文主要讲述Redis集群环境的搭建步骤以及如何在SpringBoot中整合使用Redis集群。
+							mall在Windows环境下的部署篇
+本文主要以图文的形式讲解mall项目所需环境在windows下的安装，主要包括IDEA、Mysql、Redis、Mongodb、RabbitMQ、Elasticsearch、Logstash、Kibana、OSS。
 
--Redis集群搭建
-这里我们使用最方便的搭建方式，使用Docker Compose来搭建，对Docker Compose不了解的朋友可以参考下《使用Docker Compose部署SpringBoot应用》。我们将搭建一个6节点的Redis集群，包括3个主节点和3个从节点。
+-IDEA
+关于IDEA的安装与使用请参考：https://github.com/judasn/IntelliJ-IDEA-Tutorial
+搜索插件仓库，安装插件Lombok；
 
 
-在搭建Redis集群之前，我们需要修改下Redis的配置文件redis.conf，该文件的下载地址：...
+
+
+将项目下载到本地，然后直接打开。
+
+
+
+
+
+-Mysql
+下载并安装mysql5.7版本，下载地址：https://dev.mysql.com/do...
 						
 					</div>
 					
@@ -262,9 +820,9 @@
 
 
 
-	<a href="/2021/08/24/Docker%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%A7%92%E5%BB%BARedis%E9%9B%86%E7%BE%A4/" itemprop="url">
-		<time datetime="2021-08-24T07:39:09.940Z" itemprop="datePublished">
-	  		2021-08-24
+	<a href="/2021/08/28/mall%E5%9C%A8Windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-28T10:00:36.489Z" itemprop="datePublished">
+	  		2021-08-28
 	  </time>
 	</a> 
 
@@ -277,520 +835,7 @@
 
 						
 							<span class="right">      	
-								<a href="/2021/08/24/Docker%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%A7%92%E5%BB%BARedis%E9%9B%86%E7%BE%A4/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/08/24/SpringDataRedis%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/" itemprop="url">
-		SpringDataRedis最佳实践
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							SpringDataRedis最佳实践
-Spring Data Redis 是Spring 框架提供的用于操作Redis的方式，最近整理了下它的用法，解决了使用过程中遇到的一些难点与坑点，希望对大家有所帮助。本文涵盖了Redis的安装、Spring Cache结合Redis的使用、Redis连接池的使用和RedisTemplate的使用等内容。
-
--Redis安装
-这里提供Linux和Windows两种安装方式，由于Windows下的版本最高只有3.2版本，所以推荐使用Linux下的版本，目前最新稳定版本为5.0，也是本文中使用的版本。
-
--Linux
-这里我们使用Docker环境下的安...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/08/24/SpringDataRedis%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/" itemprop="url">
-		<time datetime="2021-08-24T07:00:06.721Z" itemprop="datePublished">
-	  		2021-08-24
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/08/24/SpringDataRedis%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/08/24/Gaea%E4%B8%AD%E9%97%B4%E4%BB%B6%E5%AE%9E%E7%8E%B0MySql%E8%AF%BB%E5%86%99%E5%88%86%E7%A6%BB/" itemprop="url">
-		Gaea中间件实现MySql读写分离
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							Gaea中间件实现MySql读写分离
-传统的MySql读写分离方案是通过在代码中根据SQL语句的类型动态切换数据源来实现的，那么有没有什么中间件可以自动实现读写分离呢？小米开源的数据库中间件Gaea就可以实现，接下来我们将详细讲解如何使用Gaea来实现MySql的读写分离。
-
--Gaea简介
-Gaea是小米中国区电商研发部研发的基于MySql协议的数据库中间件，目前在小米商城大陆和海外得到广泛使用，包括订单、社区、活动等多个业务。Gaea支持分库分表、SQL路由、读写分离等基本特性，其中分库分表方案兼容了mycat和kingshard两个项目的路由方式。
-
--MySql主从复制
-使用Ga...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/08/24/Gaea%E4%B8%AD%E9%97%B4%E4%BB%B6%E5%AE%9E%E7%8E%B0MySql%E8%AF%BB%E5%86%99%E5%88%86%E7%A6%BB/" itemprop="url">
-		<time datetime="2021-08-24T04:52:15.690Z" itemprop="datePublished">
-	  		2021-08-24
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/08/24/Gaea%E4%B8%AD%E9%97%B4%E4%BB%B6%E5%AE%9E%E7%8E%B0MySql%E8%AF%BB%E5%86%99%E5%88%86%E7%A6%BB/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/08/24/MySql%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6%EF%BC%8C%E4%BB%8E%E5%8E%9F%E7%90%86%E5%88%B0%E5%AE%9E%E8%B7%B5/" itemprop="url">
-		MySql主从复制从原理到实践
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							-MySql主从复制从原理到实践
-本文将从MySql主从复制的原理出发，详细介绍MySql在Docker环境下的主从复制搭建，以一个主实例和一个从实例实现主从复制为例。
-
--什么是主从复制？
-主从复制是指将主数据库的DDL和DML操作通过二进制日志传到从数据库上，然后在从数据库上对这些日志进行重新执行，从而使从数据库和主数据库的数据保持一致。
-
--主从复制的原理
-MySql主库在事务提交时会把数据变更作为事件记录在二进制日志Binlog中；
-主库推送二进制日志文件Binlog中的事件到从库的中继日志Relay Log中，之后从库根据中继日志重做数据变更操作，通过逻辑复制来达到主库和从库的...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/08/24/MySql%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6%EF%BC%8C%E4%BB%8E%E5%8E%9F%E7%90%86%E5%88%B0%E5%AE%9E%E8%B7%B5/" itemprop="url">
-		<time datetime="2021-08-23T20:51:33.052Z" itemprop="datePublished">
-	  		2021-08-24
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/08/24/MySql%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6%EF%BC%8C%E4%BB%8E%E5%8E%9F%E7%90%86%E5%88%B0%E5%AE%9E%E8%B7%B5/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/08/24/%E4%BD%BF%E7%94%A8MinIO%E8%87%AA%E5%BB%BA%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E6%9C%8D%E5%8A%A1/" itemprop="url">
-		使用MinIO自建对象存储服务
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							-使用MinIO自建对象存储服务
-对象存储服务可以用来存储各类文件，mall项目中的图片存储采用的是OSS，今天我们来讲下如何自己搭建一个对象存储服务来存储图片。
-
--MinIO简介
-MinIO 是一款基于Go语言的高性能对象存储服务，在Github上已有19K+Star。它采用了Apache License v2.0开源协议，非常适合于存储大容量非结构化的数据，例如图片、视频、日志文件、备份数据和容器/虚拟机镜像等。 本文将使用 MinIO 来自建一个对象存储服务用于存储图片。
-
--安装及部署
-MinIO的安装方式有很多，这里我们使用它在Docker环境下的安装方式。
-
-
-下载MinI...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/08/24/%E4%BD%BF%E7%94%A8MinIO%E8%87%AA%E5%BB%BA%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E6%9C%8D%E5%8A%A1/" itemprop="url">
-		<time datetime="2021-08-23T20:01:36.907Z" itemprop="datePublished">
-	  		2021-08-24
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/08/24/%E4%BD%BF%E7%94%A8MinIO%E8%87%AA%E5%BB%BA%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E6%9C%8D%E5%8A%A1/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/08/24/%E4%BD%BF%E7%94%A8Jenkins%E4%B8%80%E9%94%AE%E6%89%93%E5%8C%85%E9%83%A8%E7%BD%B2%E5%89%8D%E7%AB%AF%E5%BA%94%E7%94%A8/" itemprop="url">
-		使用Jenkins一键打包部署前端应用
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							-使用Jenkins一键打包部署前端应用
-上一次我们讲到了使用Jenkins一键打包部署SpringBoot应用，这一次我们来讲下如何一键打包部署前端应用，以Vue前端应用为例，这里我们使用mall-admin-web中的代码来进行演示。
-
--学前准备
-学习本文需要一些Jenkins和Nginx的知识，对这些不熟悉的小伙伴可以参考以下文章。
-
-
-使用Jenkins一键打包部署SpringBoot应用
-在Docker环境下的安装Nginx
-
--Jenkins中的自动化部署
-Vue前端应用的打包需要依赖NodeJS插件，所以我们先安装并配置该插件，然后创建任务来打包部署。
-
--安装NodeJ...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/08/24/%E4%BD%BF%E7%94%A8Jenkins%E4%B8%80%E9%94%AE%E6%89%93%E5%8C%85%E9%83%A8%E7%BD%B2%E5%89%8D%E7%AB%AF%E5%BA%94%E7%94%A8/" itemprop="url">
-		<time datetime="2021-08-23T19:44:32.593Z" itemprop="datePublished">
-	  		2021-08-24
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/08/24/%E4%BD%BF%E7%94%A8Jenkins%E4%B8%80%E9%94%AE%E6%89%93%E5%8C%85%E9%83%A8%E7%BD%B2%E5%89%8D%E7%AB%AF%E5%BA%94%E7%94%A8/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/08/24/%E4%BD%BF%E7%94%A8Jenkins%E4%B8%80%E9%94%AE%E6%89%93%E5%8C%85%E9%83%A8%E7%BD%B2SpringBoot%E5%BA%94%E7%94%A8/" itemprop="url">
-		使用Jenkins一键打包部署SpringBoot应用
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							-使用Jenkins一键打包部署SpringBoot应用
-任何简单操作的背后，都有一套相当复杂的机制。本文将以SpringBoot应用的在Docker环境下的打包部署为例，详细讲解如何使用Jenkins一键打包部署SpringBoot应用。
-
--Jenkins简介
-Jenkins是开源CI&amp;CD软件领导者，提供超过1000个插件来支持构建、部署、自动化，满足任何项目的需要。我们可以用Jenkins来构建和部署我们的项目，比如说从我们的代码仓库获取代码，然后将我们的代码打包成可执行的文件，之后通过远程的ssh工具执行脚本来运行我们的项目。
-
--Jenkins的安装及配置-Docke...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/08/24/%E4%BD%BF%E7%94%A8Jenkins%E4%B8%80%E9%94%AE%E6%89%93%E5%8C%85%E9%83%A8%E7%BD%B2SpringBoot%E5%BA%94%E7%94%A8/" itemprop="url">
-		<time datetime="2021-08-23T18:57:16.983Z" itemprop="datePublished">
-	  		2021-08-24
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/08/24/%E4%BD%BF%E7%94%A8Jenkins%E4%B8%80%E9%94%AE%E6%89%93%E5%8C%85%E9%83%A8%E7%BD%B2SpringBoot%E5%BA%94%E7%94%A8/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/08/24/%E5%9C%A8Docker%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E5%AE%89%E8%A3%85Nginx/" itemprop="url">
-		在Docker环境下的安装Nginx
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							-在Docker环境下的安装Nginx-下载nginx的docker镜像1docker pull nginx:1.10
-
--从容器中拷贝nginx配置
-先运行一次容器（为了拷贝配置文件）：
-
-1234docker run -p 80:80 --name nginx \-v /mydata/nginx/html:/usr/share/nginx/html \-v /mydata/nginx/logs:/var/log/nginx  \-d nginx:1.10
-
-
-将容器内的配置文件拷贝到指定目录：
-
-1docker container cp nginx:/etc/nginx /mydat...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/08/24/%E5%9C%A8Docker%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E5%AE%89%E8%A3%85Nginx/" itemprop="url">
-		<time datetime="2021-08-23T18:28:46.737Z" itemprop="datePublished">
-	  		2021-08-24
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/08/24/%E5%9C%A8Docker%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E5%AE%89%E8%A3%85Nginx/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/08/24/Hutool%E4%B8%AD%E9%82%A3%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB%E5%92%8C%E6%96%B9%E6%B3%95/" itemprop="url">
-		Hutool中那些常用的工具类和方法
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							Hutool中那些常用的工具类和方法
-Hutool是一个Java工具包，它帮助我们简化每一行代码，避免重复造轮子。如果你有需要用到某些工具方法的时候，不妨在Hutool里面找找，可能就有。本文将对Hutool中的常用工具类和方法进行介绍。
-
--安装
-maven项目在pom.xml添加以下依赖即可：
-
-12345&lt;dependency&gt;    &lt;groupId&gt;cn.hutool&lt;/groupId&gt;    &lt;artifactId&gt;hutool-all&lt;/artifactId&gt;    &lt;version&gt;4.6.3&lt;...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/08/24/Hutool%E4%B8%AD%E9%82%A3%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB%E5%92%8C%E6%96%B9%E6%B3%95/" itemprop="url">
-		<time datetime="2021-08-23T18:09:46.683Z" itemprop="datePublished">
-	  		2021-08-24
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/08/24/Hutool%E4%B8%AD%E9%82%A3%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB%E5%92%8C%E6%96%B9%E6%B3%95/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/08/24/%E4%BD%BF%E7%94%A8Docker%20Compose%E9%83%A8%E7%BD%B2SpringBoot%E5%BA%94%E7%94%A8/" itemprop="url">
-		使用Docker Compose部署SpringBoot应用
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							使用Docker Compose部署SpringBoot应用
-Docker Compose是一个用于定义和运行多个docker容器应用的工具。使用Compose你可以用YAML文件来配置你的应用服务，然后使用一个命令，你就可以部署你配置的所有服务了。
-
--安装-下载Docker Compose1curl -L https://get.daocloud.io/docker/compose/releases/download/1.24.0/docker-compose-`uname -s`-`uname -m` &gt; /usr/local/bin/docker-compose
-
--修改该...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/08/24/%E4%BD%BF%E7%94%A8Docker%20Compose%E9%83%A8%E7%BD%B2SpringBoot%E5%BA%94%E7%94%A8/" itemprop="url">
-		<time datetime="2021-08-23T17:50:03.564Z" itemprop="datePublished">
-	  		2021-08-24
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/08/24/%E4%BD%BF%E7%94%A8Docker%20Compose%E9%83%A8%E7%BD%B2SpringBoot%E5%BA%94%E7%94%A8/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/28/mall%E5%9C%A8Windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>

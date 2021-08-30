@@ -232,54 +232,22 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/23/%E5%BC%80%E5%8F%91%E8%80%85%E5%BF%85%E5%A4%87Mysql%E5%91%BD%E4%BB%A4/" itemprop="url">
-		开发者必备Mysql命令
+	<a href="/2021/08/28/SpringCloudGateway%E4%B9%8B%E6%96%B0%E4%B8%80%E4%BB%A3API%E7%BD%91%E5%85%B3%E6%9C%8D%E5%8A%A1%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		SpringCloudGateway之新一代API网关服务进阶篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							简介开发者必备Mysql命令
+							SpringCloudGateway之新一代API网关服务进阶篇
+Spring Cloud Gateway 为 SpringBoot 应用提供了API网关支持，具有强大的智能路由与过滤器功能，本文将对其用法进行详细介绍。
 
-开发者必备Mysql常用命令，涵盖了数据定义语句、数据操纵语句及数据控制语句，基于Mysql5.7。
+-Gateway 简介
+Gateway是在Spring生态系统之上构建的API网关服务，基于Spring 5，Spring Boot 2和 Project Reactor等技术。Gateway旨在提供一种简单而有效的方式来对API进行路由，以及提供一些强大的过滤器功能， 例如：熔断、限流、重试等。
 
--数据定义语句(DDL)-数据库操作
-登录数据库：
-
-1mysql -uroot -proot
-
-
-创建数据库：
-
-1create database test
-
-
-查看所有数据库：
-
-1show databases
-
-
-
-
-选择数据库并使用：
-
-1use test
-
-
-查看所有数据表：
-
-1show tables
-
-
-删除数据库：
-
-1drop database test
-
--表操作
-创建表：
-
-1create table emp(ename varch...
+-Spring Cloud Gateway 具有如下特性：
+基于Sp...
 						
 					</div>
 					
@@ -294,9 +262,9 @@
 
 
 
-	<a href="/2021/08/23/%E5%BC%80%E5%8F%91%E8%80%85%E5%BF%85%E5%A4%87Mysql%E5%91%BD%E4%BB%A4/" itemprop="url">
-		<time datetime="2021-08-22T18:11:42.838Z" itemprop="datePublished">
-	  		2021-08-23
+	<a href="/2021/08/28/SpringCloudGateway%E4%B9%8B%E6%96%B0%E4%B8%80%E4%BB%A3API%E7%BD%91%E5%85%B3%E6%9C%8D%E5%8A%A1%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-27T17:21:10.920Z" itemprop="datePublished">
+	  		2021-08-28
 	  </time>
 	</a> 
 
@@ -309,7 +277,7 @@
 
 						
 							<span class="right">      	
-								<a href="/2021/08/23/%E5%BC%80%E5%8F%91%E8%80%85%E5%BF%85%E5%A4%87Mysql%E5%91%BD%E4%BB%A4/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/28/SpringCloudGateway%E4%B9%8B%E6%96%B0%E4%B8%80%E4%BB%A3API%E7%BD%91%E5%85%B3%E6%9C%8D%E5%8A%A1%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -320,24 +288,22 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88OSS%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A009/" itemprop="url">
-		mall-tiny-09-整合OSS实现文件上传
+	<a href="/2021/08/28/SpringCloudConsul%E6%9C%8D%E5%8A%A1%E6%B2%BB%E7%90%86%E4%B8%8E%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		SpringCloudConsul服务治理与配置中心进阶篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							简介一个标准的整合OSS实现文件上传
+							SpringCloudConsul服务治理与配置中心进阶篇
+Spring Cloud Consul 为 SpringBoot 应用提供了 Consul的支持，Consul既可以作为注册中心使用，也可以作为配置中心使用，本文将对其用法进行详细介绍。
 
-本文主要讲解mall整合OSS实现文件上传的过程，采用的是服务端签名后前端直传的方式。
+-Consul 简介
+Consul是HashiCorp公司推出的开源软件，提供了微服务系统中的服务治理、配置中心、控制总线等功能。这些功能中的每一个都可以根据需要单独使用，也可以一起使用以构建全方位的服务网格，总之Consul提供了一种完整的服务网格解决方案。
 
--OSS
-阿里云对象存储服务（Object Storage Service，简称 OSS），是阿里云提供的海量、安全、低成本、高可靠的云存储服务。OSS可用于图片、音视频、日志等海量文件的存储。各种终端设备、Web网站程序、移动应用可以直接向OSS写入或读取数据。
-
--OSS中的相关概念
-Endpoint：访问域名，通过该域名可以访问OSS服务的API，进行文件上传、下载等操作。
-Bucket：存储空间，是存储对象的容器，所有存储对象都必须隶属于某个存储空间。...
+-Spring Cloud Consul 具有如下特性：
+支持服务治理：Cons...
 						
 					</div>
 					
@@ -352,9 +318,9 @@ Bucket：存储空间，是存储对象的容器，所有存储对象都必须�
 
 
 
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88OSS%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A009/" itemprop="url">
-		<time datetime="2021-08-22T16:36:54.770Z" itemprop="datePublished">
-	  		2021-08-23
+	<a href="/2021/08/28/SpringCloudConsul%E6%9C%8D%E5%8A%A1%E6%B2%BB%E7%90%86%E4%B8%8E%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-27T17:00:08.180Z" itemprop="datePublished">
+	  		2021-08-28
 	  </time>
 	</a> 
 
@@ -367,7 +333,7 @@ Bucket：存储空间，是存储对象的容器，所有存储对象都必须�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/23/%E6%95%B4%E5%90%88OSS%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A009/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/28/SpringCloudConsul%E6%9C%8D%E5%8A%A1%E6%B2%BB%E7%90%86%E4%B8%8E%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -378,28 +344,22 @@ Bucket：存储空间，是存储对象的容器，所有存储对象都必须�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88rabbitmq%E5%AE%9E%E7%8E%B0%E5%BB%B6%E8%BF%9F%E6%B6%88%E6%81%AF08/" itemprop="url">
-		mall-tiny-08-整合RabbitMQ实现延迟消息
+	<a href="/2021/08/27/SpringCloudSleuth%E4%B9%8B%E5%88%86%E5%B8%83%E5%BC%8F%E8%AF%B7%E6%B1%82%E9%93%BE%E8%B7%AF%E8%B7%9F%E8%B8%AA%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		SpringCloudSleuth之分布式请求链路跟踪进阶篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							简介一个标准的整合RabbitMQ实现延迟消息
+							SpringCloudSleuth之分布式请求链路跟踪进阶篇
+Spring Cloud Sleuth 是分布式系统中跟踪服务间调用的工具，它可以直观地展示出一次请求的调用过程，本文将对其用法进行详细介绍。
 
-本文主要讲解mall整合RabbitMQ实现延迟消息的过程，以发送延迟消息取消超时订单为例。
+-Spring Cloud Sleuth 简介
+随着我们的系统越来越庞大，各个服务间的调用关系也变得越来越复杂。当客户端发起一个请求时，这个请求经过多个服务后，最终返回了结果，经过的每一个服务都有可能发生延迟或错误，从而导致请求失败。这时候我们就需要请求链路跟踪工具来帮助我们，理清请求调用的服务链路，解决问题。
 
--项目使用框架介绍-RabbitMQ
-RabbitMQ是一个被广泛使用的开源消息队列。它是轻量级且易于部署的，它能支持多种消息协议。RabbitMQ可以部署在分布式和联合配置中，以满足高规模、高可用性的需求。
-
--RabbitMQ的安装和使用
-安装Erlang，下载地址：http://erlang.org/download/otp_win64_21.3.exe
-
-
-
-
-安装RabbitMQ，下载地址：https://dl.bintray.com...
+-给服务添加请求链路跟踪
+我们将通过user-service和ribb...
 						
 					</div>
 					
@@ -414,9 +374,9 @@ RabbitMQ是一个被广泛使用的开源消息队列。它是轻量级且易于
 
 
 
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88rabbitmq%E5%AE%9E%E7%8E%B0%E5%BB%B6%E8%BF%9F%E6%B6%88%E6%81%AF08/" itemprop="url">
-		<time datetime="2021-08-22T16:36:26.174Z" itemprop="datePublished">
-	  		2021-08-23
+	<a href="/2021/08/27/SpringCloudSleuth%E4%B9%8B%E5%88%86%E5%B8%83%E5%BC%8F%E8%AF%B7%E6%B1%82%E9%93%BE%E8%B7%AF%E8%B7%9F%E8%B8%AA%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-27T15:59:54.014Z" itemprop="datePublished">
+	  		2021-08-27
 	  </time>
 	</a> 
 
@@ -429,7 +389,7 @@ RabbitMQ是一个被广泛使用的开源消息队列。它是轻量级且易于
 
 						
 							<span class="right">      	
-								<a href="/2021/08/23/%E6%95%B4%E5%90%88rabbitmq%E5%AE%9E%E7%8E%B0%E5%BB%B6%E8%BF%9F%E6%B6%88%E6%81%AF08/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/27/SpringCloudSleuth%E4%B9%8B%E5%88%86%E5%B8%83%E5%BC%8F%E8%AF%B7%E6%B1%82%E9%93%BE%E8%B7%AF%E8%B7%9F%E8%B8%AA%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -440,26 +400,19 @@ RabbitMQ是一个被广泛使用的开源消息队列。它是轻量级且易于
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88Mongodb%E5%AE%9E%E7%8E%B0%E6%96%87%E6%A1%A3%E6%93%8D%E4%BD%9C07/" itemprop="url">
-		mall-tiny-07-整合Mongodb实现文档操作
+	<a href="/2021/08/27/SpringCloudBus%E4%B9%8B%E6%B6%88%E6%81%AF%E6%80%BB%E7%BA%BF%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		SpringCloudBus之消息总线进阶篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							简介一个标准的整合Mongodb实现文档操作
+							SpringCloudBus之消息总线进阶篇
+Spring Cloud Bus 使用轻量级的消息代理来连接微服务架构中的各个服务，可以将其用于广播状态更改（例如配置中心配置更改）或其他管理指令，本文将对其用法进行详细介绍。
 
-本文主要讲解mall整合Mongodb的过程，以实现商品浏览记录在Mongodb中的添加、删除、查询为例。
-
--项目使用框架介绍-Mongodb
-Mongodb是为快速开发互联网Web应用而构建的数据库系统，其数据模型和持久化策略就是为了构建高读/写吞吐量和高自动灾备伸缩性的系统。
-
--Mongodb的安装和使用
-下载Mongodb安装包，下载地址：https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.2.21-signed.msi
-选择安装路径进行安装
-
-...
+-Spring Cloud Bus 简介
+我们通常会使用消息代理来构建一个主题，然后把微服务架构中的所有服务都连接到这个主题上去，当我们向该主题发送消息时，所有订阅该主题的服务都会收到消息并进行消费。使用 Spring Cloud Bus 可以方便地构建起这套机制，所以 Spring Cloud Bus 又被称为消息总线。Spring Cloud Bus 配合 Sp...
 						
 					</div>
 					
@@ -474,9 +427,9 @@ Mongodb是为快速开发互联网Web应用而构建的数据库系统，其数�
 
 
 
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88Mongodb%E5%AE%9E%E7%8E%B0%E6%96%87%E6%A1%A3%E6%93%8D%E4%BD%9C07/" itemprop="url">
-		<time datetime="2021-08-22T16:35:39.848Z" itemprop="datePublished">
-	  		2021-08-23
+	<a href="/2021/08/27/SpringCloudBus%E4%B9%8B%E6%B6%88%E6%81%AF%E6%80%BB%E7%BA%BF%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-27T15:45:17.990Z" itemprop="datePublished">
+	  		2021-08-27
 	  </time>
 	</a> 
 
@@ -489,7 +442,7 @@ Mongodb是为快速开发互联网Web应用而构建的数据库系统，其数�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/23/%E6%95%B4%E5%90%88Mongodb%E5%AE%9E%E7%8E%B0%E6%96%87%E6%A1%A3%E6%93%8D%E4%BD%9C07/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/27/SpringCloudBus%E4%B9%8B%E6%B6%88%E6%81%AF%E6%80%BB%E7%BA%BF%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -500,23 +453,19 @@ Mongodb是为快速开发互联网Web应用而构建的数据库系统，其数�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88Elasticsearch%E5%AE%9E%E7%8E%B0%E5%95%86%E5%93%81%E6%90%9C%E7%B4%A206/" itemprop="url">
-		mall-tiny-06-整合Elasticsearch实现商品搜索
+	<a href="/2021/08/27/SpringCloudConfig%E4%B9%8B%E5%A4%96%E9%83%A8%E9%9B%86%E4%B8%AD%E5%8C%96%E9%85%8D%E7%BD%AE%E7%AE%A1%E7%90%86%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		SpringCloudConfig之外部集中化配置管理进阶篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							简介一个标准的整合Elasticsearch实现商品搜索
+							SpringCloudConfig之外部集中化配置管理进阶篇
+Spring Cloud Config 可以为微服务架构中的应用提供集中化的外部配置支持，它分为服务端和客户端两个部分，本文将对其用法进行详细介绍。
 
-本文主要讲解mall整合Elasticsearch的过程，以实现商品信息在Elasticsearch中的导入、查询、修改、删除为例。
-
--项目使用框架介绍-Elasticsearch
-Elasticsearch 是一个分布式、可扩展、实时的搜索与数据分析引擎。 它能从项目一开始就赋予你的数据以搜索、分析和探索的能力，可用于实现全文搜索和实时数据统计。
-
--Elasticsearch的安装和使用
-下载Elasticsearch6.2.2的zip包，并解压到指定目录，下载地址：https://www.elastic.co/cn/do...
+-Spring Cloud Config 简介
+Spring Cloud Config 分为服务端和客户端两个部分。服务端被称为分布式配置中心，它是个独立的应用，可以从配置仓库获取配置信息并提供给客户端使用。客户端可以通过配置中心来获取配置信息，在启动时加载配置。Spring Cloud Config 的配置中心默认采用Git来存储配置信息，所以天然就支持配置信息的版本管理，并...
 						
 					</div>
 					
@@ -531,9 +480,9 @@ Elasticsearch 是一个分布式、可扩展、实时的搜索与数据分析引
 
 
 
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88Elasticsearch%E5%AE%9E%E7%8E%B0%E5%95%86%E5%93%81%E6%90%9C%E7%B4%A206/" itemprop="url">
-		<time datetime="2021-08-22T16:35:05.677Z" itemprop="datePublished">
-	  		2021-08-23
+	<a href="/2021/08/27/SpringCloudConfig%E4%B9%8B%E5%A4%96%E9%83%A8%E9%9B%86%E4%B8%AD%E5%8C%96%E9%85%8D%E7%BD%AE%E7%AE%A1%E7%90%86%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-27T15:19:19.699Z" itemprop="datePublished">
+	  		2021-08-27
 	  </time>
 	</a> 
 
@@ -546,7 +495,7 @@ Elasticsearch 是一个分布式、可扩展、实时的搜索与数据分析引
 
 						
 							<span class="right">      	
-								<a href="/2021/08/23/%E6%95%B4%E5%90%88Elasticsearch%E5%AE%9E%E7%8E%B0%E5%95%86%E5%93%81%E6%90%9C%E7%B4%A206/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/27/SpringCloudConfig%E4%B9%8B%E5%A4%96%E9%83%A8%E9%9B%86%E4%B8%AD%E5%8C%96%E9%85%8D%E7%BD%AE%E7%AE%A1%E7%90%86%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -557,29 +506,22 @@ Elasticsearch 是一个分布式、可扩展、实时的搜索与数据分析引
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88SpringTask%E5%AE%9E%E7%8E%B0%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A105/" itemprop="url">
-		mall-tiny-05-整合SpringTask实现定时任务
+	<a href="/2021/08/27/SpringCloudZuul%E4%B9%8BAPI%E7%BD%91%E5%85%B3%E6%9C%8D%E5%8A%A1%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		SpringCloudZuul之API网关服务进阶篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							简介一个标准的整合SpringTask实现定时任务
+							SpringCloudZuul之API网关服务进阶篇
+Spring Cloud Zuul 是Spring Cloud Netflix 子项目的核心组件之一，可以作为微服务架构中的API网关使用，支持动态路由与过滤功能，本文将对其用法进行详细介绍。
 
-本文主要讲解mall整合SpringTask的过程，以批量修改超时订单为例。
+-Zuul简介
+API网关为微服务架构中的服务提供了统一的访问入口，客户端通过API网关访问相关服务。API网关的定义类似于设计模式中的门面模式，它相当于整个微服务架构中的门面，所有客户端的访问都通过它来进行路由及过滤。它实现了请求路由、负载均衡、校验过滤、服务容错、服务聚合等功能。
 
--项目使用框架介绍-SpringTask
-SpringTask是Spring自主研发的轻量级定时任务工具，相比于Quartz更加简单方便，且不需要引入其他依赖即可使用。
-
--Cron表达式
-Cron表达式是一个字符串，包括6~7个时间元素，在SpringTask中可以用于指定任务的执行时间。
-
--Cron的语法格式Seconds Minutes Hours DayofMonth Month DayofWeek
--Cron格式中每个时间元素的说明
-
-
-时间元...
+-创建一个zuul-proxy模块
+这里我们创建一个zu...
 						
 					</div>
 					
@@ -594,9 +536,9 @@ Cron表达式是一个字符串，包括6~7个时间元素，在SpringTask中可
 
 
 
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88SpringTask%E5%AE%9E%E7%8E%B0%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A105/" itemprop="url">
-		<time datetime="2021-08-22T16:33:49.615Z" itemprop="datePublished">
-	  		2021-08-23
+	<a href="/2021/08/27/SpringCloudZuul%E4%B9%8BAPI%E7%BD%91%E5%85%B3%E6%9C%8D%E5%8A%A1%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-27T13:12:18.732Z" itemprop="datePublished">
+	  		2021-08-27
 	  </time>
 	</a> 
 
@@ -609,7 +551,7 @@ Cron表达式是一个字符串，包括6~7个时间元素，在SpringTask中可
 
 						
 							<span class="right">      	
-								<a href="/2021/08/23/%E6%95%B4%E5%90%88SpringTask%E5%AE%9E%E7%8E%B0%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A105/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/27/SpringCloudZuul%E4%B9%8BAPI%E7%BD%91%E5%85%B3%E6%9C%8D%E5%8A%A1%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -620,23 +562,19 @@ Cron表达式是一个字符串，包括6~7个时间元素，在SpringTask中可
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88SpringSecurity%E5%92%8CJWT%E5%AE%9E%E7%8E%B0%E8%AE%A4%E8%AF%81%E5%92%8C%E6%8E%88%E6%9D%8304/" itemprop="url">
-		mall-tiny-04-整合SpringSecurity和JWT实现认证和授权
+	<a href="/2021/08/27/SpringCloudOpenFeign%E5%A3%B0%E6%98%8E%E5%BC%8F%E7%9A%84%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		SpringCloudOpenFeign声明式的服务调用工具进阶篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							简介一个标准的整合SpringSecurity和JWT实现认证和授权
+							SpringCloudOpenFeign声明式的服务调用工具进阶篇
+Spring Cloud OpenFeign 是声明式的服务调用工具，它整合了Ribbon和Hystrix，拥有负载均衡和服务容错功能，本文将对其用法进行详细介绍。
 
-本文主要讲解mall通过整合SpringSecurity和JWT实现后台用户的登录和授权功能，同时改造Swagger-UI的配置使其可以自动记住登录令牌进行发送。
-
--项目使用框架介绍-SpringSecurity
-SpringSecurity是一个强大的可高度定制的认证和授权框架，对于Spring应用来说它是一套Web安全标准。SpringSecurity注重于为Java应用提供认证和授权功能，像所有的Spring项目一样，它对自定义需求具有强大的扩展性。
-
--JWT
-JWT是JSON WEB TOKEN的缩写，它...
+-Feign简介
+Feign是声明式的服务调用工具，我们只需创建一个接口并用注解的方式来配置它，就可以实现对某个服务接口的调用，简化了直接使用RestTemplate来调用服务接口的开发量。Feign具备可插拔的注解支持，同时支持Feign注解、JAX-RS注解及SpringMvc注解。当使用Feign时，Spring Cloud集成了Ribbon和Eur...
 						
 					</div>
 					
@@ -651,9 +589,9 @@ JWT是JSON WEB TOKEN的缩写，它...
 
 
 
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88SpringSecurity%E5%92%8CJWT%E5%AE%9E%E7%8E%B0%E8%AE%A4%E8%AF%81%E5%92%8C%E6%8E%88%E6%9D%8304/" itemprop="url">
-		<time datetime="2021-08-22T16:33:07.176Z" itemprop="datePublished">
-	  		2021-08-23
+	<a href="/2021/08/27/SpringCloudOpenFeign%E5%A3%B0%E6%98%8E%E5%BC%8F%E7%9A%84%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-27T10:02:16.017Z" itemprop="datePublished">
+	  		2021-08-27
 	  </time>
 	</a> 
 
@@ -666,7 +604,7 @@ JWT是JSON WEB TOKEN的缩写，它...
 
 						
 							<span class="right">      	
-								<a href="/2021/08/23/%E6%95%B4%E5%90%88SpringSecurity%E5%92%8CJWT%E5%AE%9E%E7%8E%B0%E8%AE%A4%E8%AF%81%E5%92%8C%E6%8E%88%E6%9D%8304/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/27/SpringCloudOpenFeign%E5%A3%B0%E6%98%8E%E5%BC%8F%E7%9A%84%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -677,38 +615,22 @@ JWT是JSON WEB TOKEN的缩写，它...
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88Redis%E5%AE%9E%E7%8E%B0%E7%BC%93%E5%AD%98%E5%8A%9F%E8%83%BD03/" itemprop="url">
-		mall-tiny-03-整合Redis实现缓存功能
+	<a href="/2021/08/27/SpringCloudHystrixDashboard%E6%96%AD%E8%B7%AF%E5%99%A8%E6%89%A7%E8%A1%8C%E7%9B%91%E6%8E%A7%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		SpringCloudHystrixDashboard断路器执行监控进阶篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							简介一个标准的整合Redis实现缓存功能
+							SpringCloudHystrixDashboard断路器执行监控进阶篇
+Hystrix Dashboard 是Spring Cloud中查看Hystrix实例执行情况的一种仪表盘组件，支持查看单个实例和查看集群实例，本文将对其用法进行详细介绍。
 
-本文主要讲解mall整合Redis的过程，以短信验证码的存储验证为例。
+-简介
+Hystrix提供了Hystrix Dashboard来实时监控HystrixCommand方法的执行情况。 Hystrix Dashboard可以有效地反映出每个Hystrix实例的运行情况，帮助我们快速发现系统中的问题，从而采取对应措施。
 
--Redis的安装和启动
-Redis是用C语言开发的一个高性能键值对数据库，可用于数据缓存，主要用于处理大量数据的高访问负载。
-
-
-下载Redis,下载地址：https://github.com/MicrosoftArchive/redis/releases
-
-
-
-
-下载完后解压到指定目录
-
-
-
-
-在当前地址栏输入cmd后，执行redis的启动命令：redis-server.exe redis.windows.conf
-
-
-
-- 整合Redis-添加项目依赖
-在pom.x...
+-Hystrix 单个实例监控
+我们先通过使用Hystrix Dashboard监控单个...
 						
 					</div>
 					
@@ -723,9 +645,9 @@ Redis是用C语言开发的一个高性能键值对数据库，可用于数据�
 
 
 
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88Redis%E5%AE%9E%E7%8E%B0%E7%BC%93%E5%AD%98%E5%8A%9F%E8%83%BD03/" itemprop="url">
-		<time datetime="2021-08-22T16:32:18.752Z" itemprop="datePublished">
-	  		2021-08-23
+	<a href="/2021/08/27/SpringCloudHystrixDashboard%E6%96%AD%E8%B7%AF%E5%99%A8%E6%89%A7%E8%A1%8C%E7%9B%91%E6%8E%A7%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-27T09:41:38.079Z" itemprop="datePublished">
+	  		2021-08-27
 	  </time>
 	</a> 
 
@@ -738,7 +660,7 @@ Redis是用C语言开发的一个高性能键值对数据库，可用于数据�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/23/%E6%95%B4%E5%90%88Redis%E5%AE%9E%E7%8E%B0%E7%BC%93%E5%AD%98%E5%8A%9F%E8%83%BD03/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/27/SpringCloudHystrixDashboard%E6%96%AD%E8%B7%AF%E5%99%A8%E6%89%A7%E8%A1%8C%E7%9B%91%E6%8E%A7%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -749,26 +671,19 @@ Redis是用C语言开发的一个高性能键值对数据库，可用于数据�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88Swagger-UI%E5%AE%9E%E7%8E%B0%E5%9C%A8%E7%BA%BFAPI%E6%96%87%E6%A1%A302/" itemprop="url">
-		mall-tiny-02-整合Swagger-UI实现在线API文档
+	<a href="/2021/08/27/SpringCloudHystrix%E6%9C%8D%E5%8A%A1%E5%AE%B9%E9%94%99%E4%BF%9D%E6%8A%A4%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		SpringCloudHystrix服务容错保护进阶篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							简介一个标准的整合Swagger-UI实现在线API文档
+							SpringCloudHystrix服务容错保护进阶篇
+Spring Cloud Hystrix 是Spring Cloud Netflix 子项目的核心组件之一，具有服务容错及线程隔离等一系列服务保护功能，本文将对其用法进行详细介绍。
 
-本文主要讲解mall是如何通过整合Swagger-UI来实现一份相当完善的在线API文档的。
-
-- 项目使用框架介绍-Swagger-UI
-Swagger-UI是HTML, Javascript, CSS的一个集合，可以动态地根据注解生成在线API文档。
-
-常用注解
-@Api：用于修饰Controller类，生成Controller相关文档信息
-@ApiOperation：用于修饰Controller类中的方法，生成接口方法相关文档信息
-@ApiParam：用于修饰接口中的参数，生成接口参数相关文档信息
-@ApiModelPro...
+-Hystrix 简介
+在微服务架构中，服务与服务之间通过远程调用的方式进行通信，一旦某个被调用的服务发生了故障，其依赖服务也会发生故障，此时就会发生故障的蔓延，最终导致系统瘫痪。Hystrix实现了断路器模式，当某个服务发生故障时，通过断路器的监控，给调用方返回一个错误响应，而不是长时间的等待，这样就不会使得调用方由于长时间得不到响应而占用线程，从而...
 						
 					</div>
 					
@@ -783,9 +698,9 @@ Swagger-UI是HTML, Javascript, CSS的一个集合，可以动态地根据注解�
 
 
 
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88Swagger-UI%E5%AE%9E%E7%8E%B0%E5%9C%A8%E7%BA%BFAPI%E6%96%87%E6%A1%A302/" itemprop="url">
-		<time datetime="2021-08-22T16:30:58.985Z" itemprop="datePublished">
-	  		2021-08-23
+	<a href="/2021/08/27/SpringCloudHystrix%E6%9C%8D%E5%8A%A1%E5%AE%B9%E9%94%99%E4%BF%9D%E6%8A%A4%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-27T09:14:10.138Z" itemprop="datePublished">
+	  		2021-08-27
 	  </time>
 	</a> 
 
@@ -798,7 +713,7 @@ Swagger-UI是HTML, Javascript, CSS的一个集合，可以动态地根据注解�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/23/%E6%95%B4%E5%90%88Swagger-UI%E5%AE%9E%E7%8E%B0%E5%9C%A8%E7%BA%BFAPI%E6%96%87%E6%A1%A302/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/27/SpringCloudHystrix%E6%9C%8D%E5%8A%A1%E5%AE%B9%E9%94%99%E4%BF%9D%E6%8A%A4%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -809,24 +724,22 @@ Swagger-UI是HTML, Javascript, CSS的一个集合，可以动态地根据注解�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88SpringBoot+MyBatis%E6%90%AD%E5%BB%BA%E5%9F%BA%E6%9C%AC%E9%AA%A8%E6%9E%B601/" itemprop="url">
-		mall-tiny-01-整合SpringBoot+MyBatis搭建基本骨架
+	<a href="/2021/08/27/SpringCloudRibbon%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E7%9A%84%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		SpringCloudRibbon负载均衡的服务调用进阶篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							简介一个标准的整合SpringBoot+MyBatis搭建基本骨架
+							SpringCloudRibbon负载均衡的服务调用进阶篇
+Spring Cloud Ribbon 是Spring Cloud Netflix 子项目的核心组件之一，主要给服务间调用及API网关转发提供负载均衡的功能，本文将对其用法进行详细介绍。
 
-本文主要讲解mall整合SpringBoot+MyBatis搭建基本骨架，以商品品牌为例实现基本的CRUD操作及通过PageHelper实现分页查询。
+-Ribbon简介
+在微服务架构中，很多服务都会部署多个，其他服务去调用该服务的时候，如何保证负载均衡是个不得不去考虑的问题。负载均衡可以增加系统的可用性和扩展性，当我们使用RestTemplate来调用其他服务时，Ribbon可以很方便的实现负载均衡功能。
 
--mysql数据库环境搭建
-下载并安装mysql5.7版本，下载地址：https://dev.mysql.com/downloads/installer/
-设置数据库帐号密码：root root
-下载并安装客户端连接工具Navicat,下载地址：http://www.formysql.com/xiazai.html
-创建数据库mall
-导入mall的数据库脚本，脚本地...
+-RestTemplate的使用
+RestTemplate是一个HTTP客户端，使...
 						
 					</div>
 					
@@ -841,9 +754,9 @@ Swagger-UI是HTML, Javascript, CSS的一个集合，可以动态地根据注解�
 
 
 
-	<a href="/2021/08/23/%E6%95%B4%E5%90%88SpringBoot+MyBatis%E6%90%AD%E5%BB%BA%E5%9F%BA%E6%9C%AC%E9%AA%A8%E6%9E%B601/" itemprop="url">
-		<time datetime="2021-08-22T16:30:14.344Z" itemprop="datePublished">
-	  		2021-08-23
+	<a href="/2021/08/27/SpringCloudRibbon%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E7%9A%84%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-27T08:38:57.421Z" itemprop="datePublished">
+	  		2021-08-27
 	  </time>
 	</a> 
 
@@ -856,7 +769,7 @@ Swagger-UI是HTML, Javascript, CSS的一个集合，可以动态地根据注解�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/23/%E6%95%B4%E5%90%88SpringBoot+MyBatis%E6%90%AD%E5%BB%BA%E5%9F%BA%E6%9C%AC%E9%AA%A8%E6%9E%B601/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/27/SpringCloudRibbon%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E7%9A%84%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>

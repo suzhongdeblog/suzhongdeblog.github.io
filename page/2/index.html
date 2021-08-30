@@ -232,24 +232,21 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/25/SpringBoot%E6%95%B4%E5%90%88Swagger%E4%BD%BF%E7%94%A8%E5%AE%98%E6%96%B9Starter/" itemprop="url">
-		SpringBoot整合Swagger使用官方Starter
+	<a href="/2021/08/30/%E5%95%86%E5%93%81%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%BA%8C/" itemprop="url">
+		商品模块数据库表解析二
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							SpringBoot整合Swagger使用官方Starter
-之前项目中整合Swagger都是直接通过依赖springfox-swagger、springfox-swagger-ui两个jar包来实现的，最近发现springfox 3.0.0版本已经有了自己的SpringBoot Starter，使用起来更契合SpringBoot项目，非常方便，推荐给大家！
+							商品模块数据库表解析二
+接上一篇文章，本文主要对编辑商品、商品评价及回复、商品操作记录这三块功能的表进行解析，采用数据库表与功能对照的形式。
 
--使用官方Starter
-我们先使用官方Starter来整合Swagger看看是否够简单！
+-编辑商品-相关表结构-商品表
+商品信息主要包括四部分：商品的基本信息、商品的促销信息、商品的属性信息、商品的关联，商品表是整个商品的基本信息部分。
 
-
-首先在pom.xml中添加springfox官方Swagger依赖；
-
-123456&lt;!--springfox swagger官...
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546create table pms_product(   id                   bigint not null a...
 						
 					</div>
 					
@@ -264,9 +261,9 @@
 
 
 
-	<a href="/2021/08/25/SpringBoot%E6%95%B4%E5%90%88Swagger%E4%BD%BF%E7%94%A8%E5%AE%98%E6%96%B9Starter/" itemprop="url">
-		<time datetime="2021-08-25T08:14:53.953Z" itemprop="datePublished">
-	  		2021-08-25
+	<a href="/2021/08/30/%E5%95%86%E5%93%81%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%BA%8C/" itemprop="url">
+		<time datetime="2021-08-30T07:28:06.536Z" itemprop="datePublished">
+	  		2021-08-30
 	  </time>
 	</a> 
 
@@ -279,7 +276,7 @@
 
 						
 							<span class="right">      	
-								<a href="/2021/08/25/SpringBoot%E6%95%B4%E5%90%88Swagger%E4%BD%BF%E7%94%A8%E5%AE%98%E6%96%B9Starter/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/30/%E5%95%86%E5%93%81%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%BA%8C/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -290,24 +287,18 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/25/Nginx%E4%BB%8EHTTP%E5%8D%87%E7%BA%A7%E5%88%B0HTTPS%E6%94%AF%E6%8C%81%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E5%92%8CSpringBoot%E5%BA%94%E7%94%A8/" itemprop="url">
-		Nginx从HTTP升级到HTTPS支持静态网站和SpringBoot应用
+	<a href="/2021/08/30/%E5%95%86%E5%93%81%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%B8%80/" itemprop="url">
+		商品模块数据库表解析一
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							Nginx从HTTP升级到HTTPS支持静态网站和SpringBoot应用
-随着我们网站用户的增多，我们会逐渐意识到HTTPS加密的重要性。在不修改现有代码的情况下，要从HTTP升级到HTTPS，让Nginx支持HTTPS是个很好的选择。今天我们来讲下如何从Nginx入手，从HTTP升级到HTTPS，同时支持静态网站和SpringBoot应用，希望对大家有所帮助！
+							商品模块数据库表解析一
+本文主要对商品分类、品牌管理、商品类型这三个功能的表进行解析，采用功能与表结构对照的形式。表解析只会标注一些需要理解的字段，简单字段请自行对照表注释。
 
--生成SSL自签名证书
-虽然自签名证书浏览器认为并不是安全的，但是学习下SSL证书的生成还是很有必要的！
-
-
-首先创建SSL证书私钥，期间需要输入两次用户名和密码，生成文件为blog.key；
-
-1openssl genrs...
+-商品分类-商品分类表12345678910111213141516create table pms_product_category(   id                   bigint not null auto_increment,   parent_id            bigint comment &#x27;上级分类的编号：0表示一级分类&#x27;,   name           ...
 						
 					</div>
 					
@@ -322,9 +313,9 @@
 
 
 
-	<a href="/2021/08/25/Nginx%E4%BB%8EHTTP%E5%8D%87%E7%BA%A7%E5%88%B0HTTPS%E6%94%AF%E6%8C%81%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E5%92%8CSpringBoot%E5%BA%94%E7%94%A8/" itemprop="url">
-		<time datetime="2021-08-25T07:49:27.765Z" itemprop="datePublished">
-	  		2021-08-25
+	<a href="/2021/08/30/%E5%95%86%E5%93%81%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%B8%80/" itemprop="url">
+		<time datetime="2021-08-30T07:11:56.017Z" itemprop="datePublished">
+	  		2021-08-30
 	  </time>
 	</a> 
 
@@ -337,7 +328,7 @@
 
 						
 							<span class="right">      	
-								<a href="/2021/08/25/Nginx%E4%BB%8EHTTP%E5%8D%87%E7%BA%A7%E5%88%B0HTTPS%E6%94%AF%E6%8C%81%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E5%92%8CSpringBoot%E5%BA%94%E7%94%A8/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/30/%E5%95%86%E5%93%81%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%B8%80/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -348,19 +339,42 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/25/SpringBoot%E5%AE%98%E6%96%B9%E6%94%AF%E6%8C%81%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E6%A1%86%E6%9E%B6Quartz/" itemprop="url">
-		SpringBoot官方支持任务调度框架Quartz
+	<a href="/2021/08/30/mall%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E7%BB%93%E6%9E%84%E6%A6%82%E8%A7%88%E4%B8%9A%E5%8A%A1%E7%AF%87/" itemprop="url">
+		mall数据库表结构概览业务篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							SpringBoot官方支持任务调度框架Quartz
-之前我们讲过一个分布式任务调度框架PowerJob，可以通过可视化的方式来进行任务调度。但是有时候我们只是需要一个轻量级的任务调度功能，而PowerJob需要搭建调度中心未免有些重，这时候SpringBoot官方支持的任务调度框架Quartz就派上用场了！本文主要介绍Quartz在SpringBoot中的使用，让你在实现任务调度上有更多的选择！
+							mall数据库表结构概览业务篇
+mall是一套电商系统，后台系统主要包括商品管理、订单管理、营销管理（运营管理+促销管理）、内容管理、用户管理等模块，本文主要对这些模块的数据库表结构及功能做大概的介绍。
 
--Quartz简介
-Quartz是一款功能强大的开源任务调度框架，几乎可以集成到任何Java应用程序中（小到单机应用，大到分布式应用）。Quartz可用于创建简单或复杂的任务调度，用以执行数...
+-商品管理-数据库表结构
+
+-功能结构
+
+-订单管理-数据库表结构
+
+-功能结构
+
+-营销管理-数据库表结构
+
+-功能结构
+
+-内容管理-数据库表结构
+
+-功能结构
+
+-用户管理-数据库表结构
+
+-功能结构
+
+
+注意：部分功能暂未实现，只是对表结构进行了设计，商品管理、订单管理、营销管理大部分功能均已实现。
+
+-相关资料-PowerDesigner数据库设计文件
+商品管理：https:...
 						
 					</div>
 					
@@ -375,9 +389,9 @@ Quartz是一款功能强大的开源任务调度框架，几乎可以集成到�
 
 
 
-	<a href="/2021/08/25/SpringBoot%E5%AE%98%E6%96%B9%E6%94%AF%E6%8C%81%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E6%A1%86%E6%9E%B6Quartz/" itemprop="url">
-		<time datetime="2021-08-25T07:15:51.955Z" itemprop="datePublished">
-	  		2021-08-25
+	<a href="/2021/08/30/mall%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E7%BB%93%E6%9E%84%E6%A6%82%E8%A7%88%E4%B8%9A%E5%8A%A1%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-29T20:17:06.393Z" itemprop="datePublished">
+	  		2021-08-30
 	  </time>
 	</a> 
 
@@ -390,7 +404,7 @@ Quartz是一款功能强大的开源任务调度框架，几乎可以集成到�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/25/SpringBoot%E5%AE%98%E6%96%B9%E6%94%AF%E6%8C%81%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E6%A1%86%E6%9E%B6Quartz/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/30/mall%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E7%BB%93%E6%9E%84%E6%A6%82%E8%A7%88%E4%B8%9A%E5%8A%A1%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -401,19 +415,27 @@ Quartz是一款功能强大的开源任务调度框架，几乎可以集成到�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/25/RabbitMQ%E5%AE%9E%E7%8E%B0%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF/" itemprop="url">
-		RabbitMQ实现即时通讯
+	<a href="/2021/08/29/%E6%90%9E%E5%AE%9AMall%E9%A1%B9%E7%9B%AE%E4%B8%AD%E7%9A%84%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E5%8A%9F%E8%83%BD/" itemprop="url">
+		搞定Mall项目中的权限管理功能
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							RabbitMQ实现即时通讯
-有时候我们的项目中会用到即时通讯功能，比如电商系统中的客服聊天功能，还有在支付过程中，当用户支付成功后，第三方支付服务会回调我们的回调接口，此时我们需要通知前端支付成功。最近发现RabbitMQ可以很方便的实现即时通讯功能，如果你没有特殊的业务需求，甚至可以不写后端代码，今天给大家讲讲如何使用RabbitMQ来实现即时通讯！
+							搞定Mall项目中的权限管理功能
+最近发现很多朋友问我权限管理功能相关的问题，这里整理了下问的比较多的问题，统一答复下！
 
--MQTT协议
-MQTT（Message Queuing Telemetry Transport，消息队列遥测传输协议），是一种基于发布/订阅（publish/subscribe）模式的轻量级通讯协议，该协议构建于TCP/IP协议上。...
+-mall项目中的权限管理功能是如何实现的？
+之前写过几篇文章，包括了权限管理功能介绍、后端实现和前端实现，看一下基本就清楚了！
+
+
+《大家心心念念的权限管理功能，这次安排上了！》
+《手把手教你搞定权限管理，结合Spring Security实现接口的动态权限控制！》
+《手把手教你搞定权限管理，结合Vue实现菜单的动态权限控制！》
+
+-ums_permission表还在使用么？
+ums_permission表已经不再使用了，不再使用的表还包括ums_admin_pe...
 						
 					</div>
 					
@@ -428,9 +450,9 @@ MQTT（Message Queuing Telemetry Transport，消息队列遥测传输协议）�
 
 
 
-	<a href="/2021/08/25/RabbitMQ%E5%AE%9E%E7%8E%B0%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF/" itemprop="url">
-		<time datetime="2021-08-25T06:45:46.569Z" itemprop="datePublished">
-	  		2021-08-25
+	<a href="/2021/08/29/%E6%90%9E%E5%AE%9AMall%E9%A1%B9%E7%9B%AE%E4%B8%AD%E7%9A%84%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E5%8A%9F%E8%83%BD/" itemprop="url">
+		<time datetime="2021-08-29T15:14:32.890Z" itemprop="datePublished">
+	  		2021-08-29
 	  </time>
 	</a> 
 
@@ -443,7 +465,7 @@ MQTT（Message Queuing Telemetry Transport，消息队列遥测传输协议）�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/25/RabbitMQ%E5%AE%9E%E7%8E%B0%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/29/%E6%90%9E%E5%AE%9AMall%E9%A1%B9%E7%9B%AE%E4%B8%AD%E7%9A%84%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E5%8A%9F%E8%83%BD/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -454,19 +476,22 @@ MQTT（Message Queuing Telemetry Transport，消息队列遥测传输协议）�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/25/ElasticAPM%E5%AE%9E%E7%8E%B0%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%BA%94%E7%94%A8%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7/" itemprop="url">
-		ElasticAPM实现微服务应用性能监控
+	<a href="/2021/08/29/Elasticsearch%E5%8D%87%E7%BA%A77.x%E7%89%88%E6%9C%AC/" itemprop="url">
+		Elasticsearch升级7.x版本
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							ElasticAPM实现微服务应用性能监控
-当微服务系统越来越庞大，各个服务间的调用关系也变得越来越复杂，需要一个工具来帮忙理清请求调用的服务链路。之前在《Spring Cloud Sleuth：分布式请求链路跟踪》一文中使用的是Sleuth+Zipkin的解决方案，最近发现应用性能监控（Application Performance Monitoring，APM）也可以很好地解决该问题。对比SkyWalking和Elastic APM之后，发现Elastic APM更胜一筹，今天我们来一波Elastic APM的使用实践！
+							Elasticsearch升级7.x版本
+最近想把我的mall项目升级下，支持SpringBoot 2.3.0 版本。升级过程中发现需要升级Elasticsearch到7.x版本，学习过我的mall项目的朋友应该知道， 我用的Elasticsearch是6.x版本，升级到7.x以后ElasticsearchTemplate都不让用了。本文记录了Elasticsearch从6.x升级到7.x所遇到的一些问题，给大家排排坑！
 
--Elastic APM 简介
-Elastic APM是基于...
+-版本选择
+既然我们要升级到Elasticsearch7.x版本，首先要选择合适的版本。如何选择合适的版本，这里有个小技巧分享给大家。
+
+
+首先我们可以在pom.xm...
 						
 					</div>
 					
@@ -481,9 +506,9 @@ Elastic APM是基于...
 
 
 
-	<a href="/2021/08/25/ElasticAPM%E5%AE%9E%E7%8E%B0%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%BA%94%E7%94%A8%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7/" itemprop="url">
-		<time datetime="2021-08-25T04:40:09.963Z" itemprop="datePublished">
-	  		2021-08-25
+	<a href="/2021/08/29/Elasticsearch%E5%8D%87%E7%BA%A77.x%E7%89%88%E6%9C%AC/" itemprop="url">
+		<time datetime="2021-08-29T14:42:56.165Z" itemprop="datePublished">
+	  		2021-08-29
 	  </time>
 	</a> 
 
@@ -496,7 +521,7 @@ Elastic APM是基于...
 
 						
 							<span class="right">      	
-								<a href="/2021/08/25/ElasticAPM%E5%AE%9E%E7%8E%B0%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%BA%94%E7%94%A8%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/29/Elasticsearch%E5%8D%87%E7%BA%A77.x%E7%89%88%E6%9C%AC/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -507,25 +532,27 @@ Elastic APM是基于...
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/25/PowerJob%E5%AE%9E%E7%8E%B0%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E5%85%A5%E9%97%A8/" itemprop="url">
-		PowerJob实现任务调度入门
+	<a href="/2021/08/29/%E7%BB%99Swagger%E5%8D%87%E7%BA%A7%E4%BA%86%E6%96%B0%E7%89%88%E6%9C%AC%E6%B2%A1%E6%83%B3%E5%88%B0%E5%B1%85%E7%84%B6%E6%9C%89%E8%BF%99%E4%B9%88%E5%A4%9A%E5%9D%91/" itemprop="url">
+		给Swagger升级了新版本没想到居然有这么多坑
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							PowerJob实现任务调度入门
-在微服务系统中，经常会有用到任务调度的场景。比如每天定时同步数据、定时生成业务报表、定期清理日志等。今天给大家推荐一个分布式调度框架，助你你轻松完成任务调度工作！
+							给Swagger升级了新版本没想到居然有这么多坑
+看着mall项目中古老的Swagger API文档样式，这次我终于下定决心要给它升个级了。升级过程中遇到了好多坑，不过只要用好Maven，这些都不是个事！
 
--PowerJob 简介
-PowerJob是全新一代分布式调度与计算框架，能让你轻松完成任务的调度与繁杂任务的分布式计算。
+-选择升级版本
+首先我们选择下需要升级的版本，直接去Maven仓库看下，哪个版本使用的比较多。虽然有最新版本2.10.x，但是几乎没什么人用，而上一个版本2.9.x使用的人却很多，看样子还是2.9.x版本比较稳定，我们选择升级到2.9.2版本。
 
--主要特性：
-使用简单：提供前端Web界面，允许开发者可视化完成调度任务的管理及查看任务运行状态和日志。
-定时策略完善：支持CRON表达式、固定频率、固定延迟和API四种定时调度策略。
-执行模式丰富：支持单机、广播、Map、MapReduce四种执行模式。
-依赖精简：...
+
+
+-升级Swagger
+接下来我们就可以开始升级Swagger版本了，原来项目里用的是2.7.0版本。
+
+
+由于mall项目使用父项目来...
 						
 					</div>
 					
@@ -540,9 +567,9 @@ PowerJob是全新一代分布式调度与计算框架，能让你轻松完成任
 
 
 
-	<a href="/2021/08/25/PowerJob%E5%AE%9E%E7%8E%B0%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E5%85%A5%E9%97%A8/" itemprop="url">
-		<time datetime="2021-08-24T21:29:33.043Z" itemprop="datePublished">
-	  		2021-08-25
+	<a href="/2021/08/29/%E7%BB%99Swagger%E5%8D%87%E7%BA%A7%E4%BA%86%E6%96%B0%E7%89%88%E6%9C%AC%E6%B2%A1%E6%83%B3%E5%88%B0%E5%B1%85%E7%84%B6%E6%9C%89%E8%BF%99%E4%B9%88%E5%A4%9A%E5%9D%91/" itemprop="url">
+		<time datetime="2021-08-29T14:29:19.325Z" itemprop="datePublished">
+	  		2021-08-29
 	  </time>
 	</a> 
 
@@ -555,7 +582,7 @@ PowerJob是全新一代分布式调度与计算框架，能让你轻松完成任
 
 						
 							<span class="right">      	
-								<a href="/2021/08/25/PowerJob%E5%AE%9E%E7%8E%B0%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/29/%E7%BB%99Swagger%E5%8D%87%E7%BA%A7%E4%BA%86%E6%96%B0%E7%89%88%E6%9C%AC%E6%B2%A1%E6%83%B3%E5%88%B0%E5%B1%85%E7%84%B6%E6%9C%89%E8%BF%99%E4%B9%88%E5%A4%9A%E5%9D%91/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -566,19 +593,25 @@ PowerJob是全新一代分布式调度与计算框架，能让你轻松完成任
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/25/MyBatis%E7%9A%84CRUD%E6%8F%92%E4%BB%B6%E5%85%A5%E9%97%A8/" itemprop="url">
-		MyBatis的CRUD插件入门
+	<a href="/2021/08/29/RabbitMQ%E5%AE%9E%E7%8E%B0%E5%BB%B6%E8%BF%9F%E6%B6%88%E6%81%AF%E5%B1%85%E7%84%B6%E5%A6%82%E6%AD%A4%E7%AE%80%E5%8D%95/" itemprop="url">
+		RabbitMQ实现延迟消息居然如此简单
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							MyBatis的CRUD插件入门
-相信很多朋友在项目中使用的ORM框架都是MyBatis，如果单用MyBatis来操作数据库的话，需要手写很多单表查询的SQL实现。这时候我们往往会选择一个增强工具来实现这些单表CRUD操作，这里推荐一款好用的工具MyBatis-Plus！
+							RabbitMQ实现延迟消息居然如此简单
+RabbitMQ实现延迟消息的方式有两种，一种是使用死信队列实现，另一种是使用延迟插件实现。死信队列实现我们以前曾经讲过，具体参考《mall整合RabbitMQ实现延迟消息》，这次我们讲个更简单的，使用延迟插件实现。
 
--MyBatis-Plus简介
-MyBatis-Plus（简称 MP）是一个 MyBatis 的增强工具，在 MyBatis 的基础上只做增强不做改变，为简化开发、提高效率而生。MyBatis-Plus 提供了代码生成器，可以一键生成controller、service、mapper、model、mapper.xml...
+-学前准备
+学习本文需要对RabbitMQ有所了解，还不了解的朋友可以看下：《花了3天总结的RabbitMQ实用技巧，有点东西！》
+
+-插件安装
+首先我们需要下载并安装RabbitMQ的延迟插件。
+
+
+去RabbitMQ的官网下载插件，插件地址：https://www.rabbitmq.com/community-plugins....
 						
 					</div>
 					
@@ -593,9 +626,9 @@ MyBatis-Plus（简称 MP）是一个 MyBatis 的增强工具，在 MyBatis 的�
 
 
 
-	<a href="/2021/08/25/MyBatis%E7%9A%84CRUD%E6%8F%92%E4%BB%B6%E5%85%A5%E9%97%A8/" itemprop="url">
-		<time datetime="2021-08-24T21:04:59.949Z" itemprop="datePublished">
-	  		2021-08-25
+	<a href="/2021/08/29/RabbitMQ%E5%AE%9E%E7%8E%B0%E5%BB%B6%E8%BF%9F%E6%B6%88%E6%81%AF%E5%B1%85%E7%84%B6%E5%A6%82%E6%AD%A4%E7%AE%80%E5%8D%95/" itemprop="url">
+		<time datetime="2021-08-29T13:51:17.006Z" itemprop="datePublished">
+	  		2021-08-29
 	  </time>
 	</a> 
 
@@ -608,7 +641,7 @@ MyBatis-Plus（简称 MP）是一个 MyBatis 的增强工具，在 MyBatis 的�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/25/MyBatis%E7%9A%84CRUD%E6%8F%92%E4%BB%B6%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/29/RabbitMQ%E5%AE%9E%E7%8E%B0%E5%BB%B6%E8%BF%9F%E6%B6%88%E6%81%AF%E5%B1%85%E7%84%B6%E5%A6%82%E6%AD%A4%E7%AE%80%E5%8D%95/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -619,21 +652,22 @@ MyBatis-Plus（简称 MP）是一个 MyBatis 的增强工具，在 MyBatis 的�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/25/Hutool%E5%B7%A5%E5%85%B7%E7%B1%BB%E5%BA%93%E5%85%A5%E9%97%A8/" itemprop="url">
-		Hutool工具类库入门
+	<a href="/2021/08/29/Elasticsearch%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E5%95%86%E5%93%81%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" itemprop="url">
+		Elasticsearch项目实战商品搜索功能设计与实现
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							Hutool工具类库入门
-Hutool是一个小而全的Java工具类库，它帮助我们简化每一行代码，避免重复造轮子。如果你有需要用到某些工具类的时候，不妨在Hutool里面找找。本文总结了平时常用的16个工具类，希望对大家有所帮助！
+							Elasticsearch项目实战商品搜索功能设计与实现
+上次写了一篇《Elasticsearch快速入门，掌握这些刚刚好！》，带大家学习了下Elasticsearch的基本用法，这次我们来篇实战教程，以mall项目中的商品搜索为例，把Elasticsearch用起来！
 
--安装
-Hutool的安装非常简单，Maven项目中只需在pom.xml添加以下依赖即可。
+-中文分词器
+由于商品搜索会涉及中文搜索，Elasticsearch需要安装插件才可以支持，我们先来了解下中文分词器，这里使用的是IKAnalyzer。在《Elasticsearch快速入门，掌握这些刚刚好！》中已经讲过其安装方式，这里直接讲解它的用法。
 
-12345&lt;dependency&gt;    &lt;groupId&gt;cn.hutool&lt;/groupId&gt;    &lt;artifactId&gt;hutool-all&lt;/artifactId&gt;    &lt;version&...
+-使用IKAnalyzer
+使用默认分词器，可以发现默认分词器...
 						
 					</div>
 					
@@ -648,9 +682,9 @@ Hutool的安装非常简单，Maven项目中只需在pom.xml添加以下依赖�
 
 
 
-	<a href="/2021/08/25/Hutool%E5%B7%A5%E5%85%B7%E7%B1%BB%E5%BA%93%E5%85%A5%E9%97%A8/" itemprop="url">
-		<time datetime="2021-08-24T20:39:05.772Z" itemprop="datePublished">
-	  		2021-08-25
+	<a href="/2021/08/29/Elasticsearch%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E5%95%86%E5%93%81%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" itemprop="url">
+		<time datetime="2021-08-29T12:50:33.706Z" itemprop="datePublished">
+	  		2021-08-29
 	  </time>
 	</a> 
 
@@ -663,7 +697,7 @@ Hutool的安装非常简单，Maven项目中只需在pom.xml添加以下依赖�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/25/Hutool%E5%B7%A5%E5%85%B7%E7%B1%BB%E5%BA%93%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/29/Elasticsearch%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E5%95%86%E5%93%81%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -674,27 +708,22 @@ Hutool的安装非常简单，Maven项目中只需在pom.xml添加以下依赖�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/25/Maven%E4%BC%98%E7%A7%80%E6%8F%92%E4%BB%B6fabric8io%E5%87%BA%E5%93%81/" itemprop="url">
-		Maven优秀插件fabric8io出品
+	<a href="/2021/08/29/%E4%BD%BF%E7%94%A8Redis+AOP%E4%BC%98%E5%8C%96%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E5%8A%9F%E8%83%BD/" itemprop="url">
+		使用Redis+AOP优化权限管理功能
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							Maven优秀插件fabric8io出品
-最近又发现了一款好用的Maven插件，fabric8io出品的docker-maven-plugin，可以把SpringBoot应用方便的部署到Docker容器中去。该插件可以实现打包镜像、推送到镜像仓库、运行应用等一系列操作，本文将对其用法进行详细介绍，希望对大家有所帮助！
+							使用Redis+AOP优化权限管理功能
+之前有很多朋友提过，mall项目中的权限管理功能有性能问题，因为每次访问接口进行权限校验时都会从数据库中去查询用户信息。最近对这个问题进行了优化，通过Redis+AOP解决了该问题，下面来讲下我的优化思路。
 
--安装私有镜像仓库
-由于之后我们需要推送到私有镜像仓库，我们预先安装好，使用的是Docker公司开发的私有镜像仓库Registry。
+-前置知识
+学习本文需要一些Spring Data Redis的知识，不了解的朋友可以看下《Spring Data Redis 最佳实践！》。 还需要一些Spring AOP的知识，不了解的朋友可以看下《SpringBoot应用中使用AOP记录接口访问日志》。
 
-
-下载Registry的Docker镜像；
-
-1docker pull registry:2
-
-
-使用Docker容器运行Registr...
+-问题重现
+在mall-security模块中有一个过滤器，当用户登录后，请求会...
 						
 					</div>
 					
@@ -709,9 +738,9 @@ Hutool的安装非常简单，Maven项目中只需在pom.xml添加以下依赖�
 
 
 
-	<a href="/2021/08/25/Maven%E4%BC%98%E7%A7%80%E6%8F%92%E4%BB%B6fabric8io%E5%87%BA%E5%93%81/" itemprop="url">
-		<time datetime="2021-08-24T19:55:37.046Z" itemprop="datePublished">
-	  		2021-08-25
+	<a href="/2021/08/29/%E4%BD%BF%E7%94%A8Redis+AOP%E4%BC%98%E5%8C%96%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E5%8A%9F%E8%83%BD/" itemprop="url">
+		<time datetime="2021-08-29T12:43:59.029Z" itemprop="datePublished">
+	  		2021-08-29
 	  </time>
 	</a> 
 
@@ -724,7 +753,7 @@ Hutool的安装非常简单，Maven项目中只需在pom.xml添加以下依赖�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/25/Maven%E4%BC%98%E7%A7%80%E6%8F%92%E4%BB%B6fabric8io%E5%87%BA%E5%93%81/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/29/%E4%BD%BF%E7%94%A8Redis+AOP%E4%BC%98%E5%8C%96%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E5%8A%9F%E8%83%BD/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -735,19 +764,25 @@ Hutool的安装非常简单，Maven项目中只需在pom.xml添加以下依赖�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/25/Filebeat%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%97%A5%E5%BF%97%E9%87%87%E9%9B%86%E5%99%A8%E5%85%A5%E9%97%A8/" itemprop="url">
-		Filebeat轻量级日志采集器入门
+	<a href="/2021/08/29/SpringBoot%E4%B8%AD%E5%A4%84%E7%90%86%E6%A0%A1%E9%AA%8C%E9%80%BB%E8%BE%91%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E5%BC%8F/" itemprop="url">
+		SpringBoot中处理校验逻辑的两种方式
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							Filebeat轻量级日志采集器入门
-之前我们搭建的ELK日志收集系统，主要是用来收集SpringBoot应用的日志。其原理是应用通过Logstash插件，使用TCP向Logstash传输日志，从而存储到Elasticsearch中去。但是有很多中间件的日志都是直接存储在文件中的，比如Nginx、Elasticsearch和MySQL，此时我们就需要一个搬运工来把日志搬到Elasticsearch中去，Filebeat正是这样一个日志搬运工，本文将详细介绍它的使用方法，希望对大家有所帮助。
+							SpringBoot中处理校验逻辑的两种方式
+平时在开发接口的时候，常常会需要对参数进行校验，这里提供两种处理校验逻辑的方式。一种是使用Hibernate Validator来处理，另一种是使用全局异常来处理，下面我们讲下这两种方式的用法。
 
--Filebeat简介
-Filebeat是一款轻量级日志采集器，可用于转发和汇总日志与文件。Fi...
+-Hibernate Validator
+Hibernate Validator是SpringBoot内置的校验框架，只要集成了SpringBoot就自动集成了它，我们可以通过在对象上面使用它提供的注解来完成参数校验。
+
+-常用注解
+我们先来了解下常用的注解，对Hibernate Validator所提供的校验功能有个印象。
+
+
+@Null：被注释...
 						
 					</div>
 					
@@ -762,9 +797,9 @@ Filebeat是一款轻量级日志采集器，可用于转发和汇总日志与文
 
 
 
-	<a href="/2021/08/25/Filebeat%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%97%A5%E5%BF%97%E9%87%87%E9%9B%86%E5%99%A8%E5%85%A5%E9%97%A8/" itemprop="url">
-		<time datetime="2021-08-24T19:15:07.361Z" itemprop="datePublished">
-	  		2021-08-25
+	<a href="/2021/08/29/SpringBoot%E4%B8%AD%E5%A4%84%E7%90%86%E6%A0%A1%E9%AA%8C%E9%80%BB%E8%BE%91%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E5%BC%8F/" itemprop="url">
+		<time datetime="2021-08-29T09:57:01.521Z" itemprop="datePublished">
+	  		2021-08-29
 	  </time>
 	</a> 
 
@@ -777,7 +812,7 @@ Filebeat是一款轻量级日志采集器，可用于转发和汇总日志与文
 
 						
 							<span class="right">      	
-								<a href="/2021/08/25/Filebeat%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%97%A5%E5%BF%97%E9%87%87%E9%9B%86%E5%99%A8%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/29/SpringBoot%E4%B8%AD%E5%A4%84%E7%90%86%E6%A0%A1%E9%AA%8C%E9%80%BB%E8%BE%91%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E5%BC%8F/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>

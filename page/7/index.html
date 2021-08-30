@@ -232,21 +232,19 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/15/%E5%85%B3%E9%97%AD%E7%94%B5%E8%84%91%E5%8D%A0%E7%94%A8%E7%AB%AF%E5%8F%A3/" itemprop="url">
-		关闭电脑占用端口
+	<a href="/2021/08/27/SpringCloudEureka%E6%9C%8D%E5%8A%A1%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		SpringCloudEureka服务注册与发现进阶篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							关闭电脑占用端口1、打开命令行，输入netstat -o -n -a | findstr :8080，我们就能看到相关的端口号及其状态。
-1TCP    0.0.0.0:3000      0.0.0.0:0              LISTENING       3116
+							SpringCloudEureka服务注册与发现进阶篇
+Spring Cloud Eureka是Spring Cloud Netflix 子项目的核心组件之一，主要用于微服务架构中的服务治理。 本文将对搭建Eureka注册中心，搭建Eureka客户端，搭建Eureka集群及给Eureka注册中心添加登录认证进行介绍。
 
-2.关闭正处与监听状态（Listening）的端口号8080，最后一行对应的是进程的PID，输入命令taskkill /F /PID 3116
-1打开命令行，输入taskkill /F /PID 3116
-
-
+-Eureka简介
+在微服务架构中往往会有一个注册中心，每个微服务都会向注册中心去注册自己的地址及端口信息，注册中心维护着服务名称与服务实例的对应关系。每个微服务都会定时从注册中心获取服务列表，同时汇报自己的运行情况，这样当有的服务需要调用其他服务时，就可以从自己获取到的...
 						
 					</div>
 					
@@ -261,9 +259,9 @@
 
 
 
-	<a href="/2021/08/15/%E5%85%B3%E9%97%AD%E7%94%B5%E8%84%91%E5%8D%A0%E7%94%A8%E7%AB%AF%E5%8F%A3/" itemprop="url">
-		<time datetime="2021-08-15T10:00:19.907Z" itemprop="datePublished">
-	  		2021-08-15
+	<a href="/2021/08/27/SpringCloudEureka%E6%9C%8D%E5%8A%A1%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-27T07:25:56.824Z" itemprop="datePublished">
+	  		2021-08-27
 	  </time>
 	</a> 
 
@@ -276,7 +274,7 @@
 
 						
 							<span class="right">      	
-								<a href="/2021/08/15/%E5%85%B3%E9%97%AD%E7%94%B5%E8%84%91%E5%8D%A0%E7%94%A8%E7%AB%AF%E5%8F%A3/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/27/SpringCloudEureka%E6%9C%8D%E5%8A%A1%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -287,15 +285,23 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/08/Python%E7%88%AC%E8%99%AB%E5%88%86%E6%9E%90AJAX%E4%BC%A0%E9%80%92%E7%9A%84JSON%E8%8E%B7%E5%8F%96%E6%95%B0%E6%8D%AE-%E5%88%9D%E6%AD%A5%E5%88%86%E6%9E%90%E5%8A%A8%E6%80%81%E7%BD%91%E9%A1%B5/" itemprop="url">
-		Python爬虫分析AJAX传递的JSON获取数据-初步分析动态网页
+	<a href="/2021/08/27/SpringCloud%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84%E6%A6%82%E8%A7%88%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		SpringCloud整体架构概览进阶篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							Python爬虫分析AJAX传递的JSON获取数据-初步分析动态网页前言1234567891011我总结了最近学到的利用requests和bs4第三方库共同作用，基本可以应对python获取静态网页数据的相关问题。但是如果现实中的网页往往比想象中复杂的多，网页也早已不再是纯静态网页。就比如在第一篇文章中爬取的网易云课堂计算机专业大学课程中，如果我们进一步爬取计算机专业可以就业的岗位信息时，通过开发者工具，我们发现，我们所需要的数据位于id=&quot;j-smartSpec&quot; 的div中，然而，我们利用之前的方法进行会发现最后得到的list为空，那么我们检查一下源代码，好不容易...
+							SpringCloud整体架构概览进阶篇-什么是SpringCloud-目标
+协调任何服务，简化分布式系统开发。
+
+-简介
+构建分布式系统不应该是复杂的，SpringCloud对常见的分布式系统模式提供了简单易用的编程模型，帮助开发者构建弹性、可靠、协调的应用程序。 SpringCloud是在SpringBoot的基础上构建的，使开发者可以轻松入门并快速提高工作效率。 SpringCloud为开发人员提供了快速构建分布式系统架构的工具，例如配置管理，服务发现，断路器，智能路由，微代理，控制总线，一次性令牌，全局锁定，领导选举，分布式会话，集群状态等。
+
+-整体架构
+
+-SpringClo...
 						
 					</div>
 					
@@ -310,9 +316,9 @@
 
 
 
-	<a href="/2021/08/08/Python%E7%88%AC%E8%99%AB%E5%88%86%E6%9E%90AJAX%E4%BC%A0%E9%80%92%E7%9A%84JSON%E8%8E%B7%E5%8F%96%E6%95%B0%E6%8D%AE-%E5%88%9D%E6%AD%A5%E5%88%86%E6%9E%90%E5%8A%A8%E6%80%81%E7%BD%91%E9%A1%B5/" itemprop="url">
-		<time datetime="2021-08-08T15:30:02.039Z" itemprop="datePublished">
-	  		2021-08-08
+	<a href="/2021/08/27/SpringCloud%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84%E6%A6%82%E8%A7%88%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-27T06:42:02.640Z" itemprop="datePublished">
+	  		2021-08-27
 	  </time>
 	</a> 
 
@@ -325,7 +331,7 @@
 
 						
 							<span class="right">      	
-								<a href="/2021/08/08/Python%E7%88%AC%E8%99%AB%E5%88%86%E6%9E%90AJAX%E4%BC%A0%E9%80%92%E7%9A%84JSON%E8%8E%B7%E5%8F%96%E6%95%B0%E6%8D%AE-%E5%88%9D%E6%AD%A5%E5%88%86%E6%9E%90%E5%8A%A8%E6%80%81%E7%BD%91%E9%A1%B5/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/27/SpringCloud%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84%E6%A6%82%E8%A7%88%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -336,15 +342,27 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/08/Python%E7%88%AC%E8%99%AB%E7%88%AC%E5%8F%96%E5%8A%A8%E6%80%81%E9%A1%B5%E9%9D%A2%E6%80%9D%E8%B7%AF%E5%92%8C%E5%AE%9E%E4%BE%8B000001/" itemprop="url">
-		Python爬虫爬取动态页面思路+实例
+	<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7MySQLWorkbench%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		开发工具Postman接口调试工具入门篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							Python爬虫爬取动态页面思路+实例简介123456789有时候，我们天真无邪的使用urllib库或Scrapy下载HTML网页时会发现，我们要提取的网页元素并不在我们下载到的HTML之中，尽管它们在浏览器里看起来唾手可得。这说明我们想要的元素是在我们的某些操作下通过js事件动态生成的。举个例子，我们在刷QQ空间或者微博评论的时候，一直往下刷，网页越来越长，内容越来越多，就是这个让人又爱又恨的动态加载。爬取动态页面目前来说有两种方法1.分析页面请求（这篇介绍这个）2.selenium模拟浏览器行为（霸王硬上弓，以后再说）言归正传，下面介绍一下通过分析页面请求的方法爬取动态加载页面的思路...
+							开发工具MySQLWorkbench客户端工具入门篇
+在我们选择工具的时候，往往会优先选择那些免费又好用的工具！Navicat作为一款付费软件，虽然功能强大，但也阻止不了我们探索新工具的步伐。最近体验了一把MySQL的官方客户端工具MySQL Workbench，本文将对其和Navicat做个对比，看看它能否取代Navicat!
+
+-安装
+我们先把MySQL Workbench安装好，其中有个小坑需要注意下。
+
+
+首先我们需要下载MySQL Workbench的安装包，下载地址：https://dev.mysql.com/downloads/workbench/
+
+
+
+
+下载完成后我们双...
 						
 					</div>
 					
@@ -359,9 +377,9 @@
 
 
 
-	<a href="/2021/08/08/Python%E7%88%AC%E8%99%AB%E7%88%AC%E5%8F%96%E5%8A%A8%E6%80%81%E9%A1%B5%E9%9D%A2%E6%80%9D%E8%B7%AF%E5%92%8C%E5%AE%9E%E4%BE%8B000001/" itemprop="url">
-		<time datetime="2021-08-07T19:27:17.081Z" itemprop="datePublished">
-	  		2021-08-08
+	<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7MySQLWorkbench%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-26T21:38:19.953Z" itemprop="datePublished">
+	  		2021-08-27
 	  </time>
 	</a> 
 
@@ -374,7 +392,413 @@
 
 						
 							<span class="right">      	
-								<a href="/2021/08/08/Python%E7%88%AC%E8%99%AB%E7%88%AC%E5%8F%96%E5%8A%A8%E6%80%81%E9%A1%B5%E9%9D%A2%E6%80%9D%E8%B7%AF%E5%92%8C%E5%AE%9E%E4%BE%8B000001/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7MySQLWorkbench%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8%E7%AF%87/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Postman%E6%8E%A5%E5%8F%A3%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		开发工具Postman接口调试工具入门篇
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							开发工具Postman接口调试工具入门篇
+在使用Swagger的时候，你是否会有这种感觉：提交参数为JSON没法格式化，参数错了查找麻烦，返回结果没法折叠，太长了没法看！Swagger结合Postman使用后这一情况有很大改变，今天我们来讲下如何使用Postman增强Swagger的功能，希望对大家有所帮助！
+
+-Postman使用
+Postman是一款非常好用的接口调试工具，界面漂亮且功能强大，对Postman不了解的可以看下《Postman：API接口调试利器》。
+
+-Swagger结合Postman使用
+下面介绍下如何将Swagger API导入到Postman中去，然后使用Pos...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Postman%E6%8E%A5%E5%8F%A3%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-26T21:27:42.614Z" itemprop="datePublished">
+	  		2021-08-27
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Postman%E6%8E%A5%E5%8F%A3%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8%E7%AF%87/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%85%8D%E8%B4%B9%E5%8F%88%E5%A5%BD%E7%94%A8%E7%9A%84Redis%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		开发工具免费又好用的Redis客户端工具入门篇
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							开发工具免费又好用的Redis客户端工具入门篇
+最近在寻找一款免费又好用的Redis客户端工具，于是找到了AnotherRedisDesktopManager，界面漂亮而且支持Redis集群，推荐给大家！
+
+-RedisDesktopManager
+以前一直使用的是RedisDesktopManager这款Redis客户端工具，由于很久没更新界面有点古老，最近想更新升级下，进到官网一看，发现收费了……
+
+
+
+-AnotherRedisDesktopManager
+于是就去Github上找了下，发现了另一个RedisDesktopManager，界面漂亮而且免费，一看Star数量8K+，有...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%85%8D%E8%B4%B9%E5%8F%88%E5%A5%BD%E7%94%A8%E7%9A%84Redis%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-26T21:17:42.157Z" itemprop="datePublished">
+	  		2021-08-27
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%85%8D%E8%B4%B9%E5%8F%88%E5%A5%BD%E7%94%A8%E7%9A%84Redis%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8%E7%AF%87/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7IDEA%E7%9A%84DEBUG%E8%B0%83%E8%AF%95%E6%8A%80%E5%B7%A7%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		开发工具IDEA的DEBUG调试技巧入门篇
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							开发工具IDEA的DEBUG调试技巧入门篇
+在开发过程中，遇到问题，我们经常会使用搜索引擎来查找问题的解决方案，然后予以解决。但是有些问题一时半会搜索不到解决方案，需要自己去解决。这里分享下我解决这些问题使用的调试技巧，给大家一个解决问题的新思路！
+
+-问题描述
+在《我扒了半天源码，终于找到了Oauth2自定义处理结果的最佳方案！》一文中，当JWT令牌过期或者签名不正确时，我们想要自定义网关认证失败的返回结果。这个问题解决起来很简单，只需修改一行代码即可。但是当时查找解决方案确实花费了一番功夫，通过DEBUG源码才找到了Spring Security中提供的自定义配置，解决了该问题。下面...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7IDEA%E7%9A%84DEBUG%E8%B0%83%E8%AF%95%E6%8A%80%E5%B7%A7%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-26T21:01:19.199Z" itemprop="datePublished">
+	  		2021-08-27
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7IDEA%E7%9A%84DEBUG%E8%B0%83%E8%AF%95%E6%8A%80%E5%B7%A7%E5%85%A5%E9%97%A8%E7%AF%87/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Arthas%E7%9A%84Java%E8%AF%8A%E6%96%AD%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		开发工具Arthas的Java诊断工具入门篇
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							开发工具Arthas的Java诊断工具入门篇
+线上项目遇到问题无法调试，线下又无法重现，难道只能加日志再重新发布么？有了这款神器，既可以线上调试，又可以实现热修复，推荐给大家！
+
+-Arthas 简介
+Arthas是Alibaba开源的Java诊断工具，深受开发者喜爱。它采用命令行交互模式，同时提供丰富的 Tab 自动补全功能，进一步方便进行问题的定位和诊断。
+
+-安装
+为了还原一个真实的线上环境，我们将通过Arthas来对Docker容器中的Java程序进行诊断。
+
+
+使用arthas-boot，下载对应jar包，下载地址：https://alibaba.github.io/artha...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Arthas%E7%9A%84Java%E8%AF%8A%E6%96%AD%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-26T19:51:28.703Z" itemprop="datePublished">
+	  		2021-08-27
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Arthas%E7%9A%84Java%E8%AF%8A%E6%96%AD%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8%E7%AF%87/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%9C%A8%E7%BA%BF%E7%BC%96%E5%86%99%E6%96%87%E7%AB%A0%E5%B7%A5%E5%85%B7%E7%BD%91%E7%AB%99%E6%8E%A8%E8%8D%90%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		开发工具在线编写文章工具网站推荐入门篇
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							开发工具在线编写文章工具网站推荐入门篇
+不知不觉写博客已经一年多了，累计写了100多篇原创文章，今天给大家分享下我经常使用的在线工具网站，希望对大家有所帮助！
+
+-Markdown Nice
+支持自定义样式的在线Markdown编辑器，编辑完成后可以一键复制富文本到微信公众号、知乎和掘金等平台。多达17种主题，总有一种适合你的！平时用Typora写完文章以后，我都会用这个排版，然后复制到公众号，非常好用！
+
+
+地址：https://mdnice.com/
+
+
+
+-Process On
+一款在线作图工具，支持流程图、思维导图、原型图、UML、网络拓扑图、组织结构图等。平时文章中的流程图和思...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%9C%A8%E7%BA%BF%E7%BC%96%E5%86%99%E6%96%87%E7%AB%A0%E5%B7%A5%E5%85%B7%E7%BD%91%E7%AB%99%E6%8E%A8%E8%8D%90%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-26T19:31:56.432Z" itemprop="datePublished">
+	  		2021-08-27
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%9C%A8%E7%BA%BF%E7%BC%96%E5%86%99%E6%96%87%E7%AB%A0%E5%B7%A5%E5%85%B7%E7%BD%91%E7%AB%99%E6%8E%A8%E8%8D%90%E5%85%A5%E9%97%A8%E7%AF%87/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7IDEA%E5%90%8C%E6%AC%BE%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		开发工具IDEA同款数据库管理工具入门篇
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							开发工具IDEA同款数据库管理工具入门篇
+最近体验了一把Jetbrains出品的数据库管理工具DataGrip，发现SQL提示真的很全，写起SQL来特别顺手，各种数据库支持也很全。整理了下其用法和使用技巧，助大家码出更高质量的SQL。
+
+-下载
+直接从Jetbrains的官网下载即可，下载地址：https://www.jetbrains.com/datagrip/
+
+
+
+-外观配置
+有时候我们的电脑屏幕过大，需要调整下字体大小，要不然看起来太小不适应，可以修改下下面两个配置。
+
+
+软件的外观配置，通过File-&gt;Settings打开软件设置（用过IDEA的朋友一定很熟悉），然后可以...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7IDEA%E5%90%8C%E6%AC%BE%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-26T18:53:06.006Z" itemprop="datePublished">
+	  		2021-08-27
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7IDEA%E5%90%8C%E6%AC%BE%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8%E7%AF%87/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%B8%B8%E7%94%A8%E7%9A%84IDEA%E6%8F%92%E4%BB%B6%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		开发工具常用的IDEA插件入门篇
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							开发工具常用的IDEA插件入门篇
+总结了平时工作中常用的12款IDEA插件，后端和前端的都有了，附上我的使用技巧，看完之后开发效率杠杠的！
+
+-Lombok
+Lombok为Java项目提供了非常有趣的附加功能，使用它的注解可以有效的地解决那些繁琐又重复的代码，例如 Setter、Getter、toString、equals、hashCode 以及非空判断等。
+
+
+举个例子，我们给一个类添加@Getter和@Setter注解：
+
+123456789101112/** * 修改订单费用信息参数 * Created by macro on 2018/10/29. */@Getter@Sette...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%B8%B8%E7%94%A8%E7%9A%84IDEA%E6%8F%92%E4%BB%B6%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-26T18:09:56.792Z" itemprop="datePublished">
+	  		2021-08-27
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%B8%B8%E7%94%A8%E7%9A%84IDEA%E6%8F%92%E4%BB%B6%E5%85%A5%E9%97%A8%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -385,6 +809,8 @@
 
 	
 	<div id="pagination">
+		
+			<a href="/page/8/" data-title="Load more" data-status="End">Load more</a>
 		
 	</div>
 
