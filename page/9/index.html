@@ -232,21 +232,19 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/26/Flyway%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%81%E7%A7%BB%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8/" itemprop="url">
-		Flyway数据库迁移工具入门
+	<a href="/2021/08/27/SpringCloudOpenFeign%E5%A3%B0%E6%98%8E%E5%BC%8F%E7%9A%84%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		SpringCloudOpenFeign声明式的服务调用工具进阶篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							Flyway数据库迁移工具入门
-当我们的应用升级时往往会伴随着数据库表结构的升级，此时就需要迁移数据库的表结构。一般我们会使用工具或者脚本来实现，手动操作毕竟有一定风险，要是能在应用启动时自动升级数据库表结构就好了！Flyway正是这么一款工具，通过Flyway和SpringBoot结合使用，在应用启动时就可以自动升级数据库表结构，非常方便，推荐给大家！
+							SpringCloudOpenFeign声明式的服务调用工具进阶篇
+Spring Cloud OpenFeign 是声明式的服务调用工具，它整合了Ribbon和Hystrix，拥有负载均衡和服务容错功能，本文将对其用法进行详细介绍。
 
--Flyway简介
-Flyway是一款数据库迁移工具，它让数据库迁移变得更加简单。它能像Git一样对数据库进行版本控制，支持命令行工具、Maven插件、第三方工具（比如SpringBoot）等多种使用方式。
-
--Flyway具有如下特...
+-Feign简介
+Feign是声明式的服务调用工具，我们只需创建一个接口并用注解的方式来配置它，就可以实现对某个服务接口的调用，简化了直接使用RestTemplate来调用服务接口的开发量。Feign具备可插拔的注解支持，同时支持Feign注解、JAX-RS注解及SpringMvc注解。当使用Feign时，Spring Cloud集成了Ribbon和Eur...
 						
 					</div>
 					
@@ -261,9 +259,9 @@ Flyway是一款数据库迁移工具，它让数据库迁移变得更加简单�
 
 
 
-	<a href="/2021/08/26/Flyway%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%81%E7%A7%BB%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8/" itemprop="url">
-		<time datetime="2021-08-25T18:51:02.815Z" itemprop="datePublished">
-	  		2021-08-26
+	<a href="/2021/08/27/SpringCloudOpenFeign%E5%A3%B0%E6%98%8E%E5%BC%8F%E7%9A%84%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-27T10:02:16.017Z" itemprop="datePublished">
+	  		2021-08-27
 	  </time>
 	</a> 
 
@@ -276,7 +274,7 @@ Flyway是一款数据库迁移工具，它让数据库迁移变得更加简单�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/26/Flyway%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%81%E7%A7%BB%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/27/SpringCloudOpenFeign%E5%A3%B0%E6%98%8E%E5%BC%8F%E7%9A%84%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -287,353 +285,22 @@ Flyway是一款数据库迁移工具，它让数据库迁移变得更加简单�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/26/MyBatis%E9%9B%86%E6%88%90Dynamic%20SQL/" itemprop="url">
-		MyBatis集成Dynamic SQL
+	<a href="/2021/08/27/SpringCloudHystrixDashboard%E6%96%AD%E8%B7%AF%E5%99%A8%E6%89%A7%E8%A1%8C%E7%9B%91%E6%8E%A7%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		SpringCloudHystrixDashboard断路器执行监控进阶篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							MyBatis集成Dynamic SQL
-当我们使用MyBatis的时候，需要在mapper.xml中书写大量的SQL语句。当我们使用MyBatis Generator（MBG）作为代码生成器时，也会生成大量的mapper.xml文件。其实从MBG 1.3.6版本以后，MyBatis官方已经推荐使用Dynamic SQL，使用这一新特性基本就不用写mapper.xml文件了，使用起来非常方便，推荐给大家！
-
--Dynamic SQL简介
-在我们使用Spring的时候，有XML和Java两种配置方式。在使用SpringBoot时，已经推荐使用Java配置，基本不用xml配置了。使用Dyna...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/08/26/MyBatis%E9%9B%86%E6%88%90Dynamic%20SQL/" itemprop="url">
-		<time datetime="2021-08-25T17:16:59.942Z" itemprop="datePublished">
-	  		2021-08-26
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/08/26/MyBatis%E9%9B%86%E6%88%90Dynamic%20SQL/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/08/26/%E4%B8%80%E6%AC%BEJava%E4%BB%A3%E7%A0%81%E5%8A%9F%E8%83%BD%E5%A2%9E%E5%BC%BA%E5%BA%93Lombok%E5%85%A5%E9%97%A8/" itemprop="url">
-		一款Java代码功能增强库Lombok入门
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							一款Java代码功能增强库Lombok入门
-最近IDEA 2020最后一个版本发布了，已经内置了Lombok插件，SpringBoot 2.1.x之后的版本也在Starter中内置了Lombok依赖。为什么他们都要支持Lombok呢？今天我来讲讲Lombok的使用，看看它有何神奇之处！
-
--Lombok简介
-Lombok是一款Java代码功能增强库，在Github上已有9.8k+Star。它会自动集成到你的编辑器和构建工具中，从而使你的Java代码更加生动有趣。通过Lombok的注解，你可以不用再写getter、setter、equals等方法，Lombok将在编译时为你自动生成。
-
--...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/08/26/%E4%B8%80%E6%AC%BEJava%E4%BB%A3%E7%A0%81%E5%8A%9F%E8%83%BD%E5%A2%9E%E5%BC%BA%E5%BA%93Lombok%E5%85%A5%E9%97%A8/" itemprop="url">
-		<time datetime="2021-08-25T16:37:22.943Z" itemprop="datePublished">
-	  		2021-08-26
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/08/26/%E4%B8%80%E6%AC%BEJava%E4%BB%A3%E7%A0%81%E5%8A%9F%E8%83%BD%E5%A2%9E%E5%BC%BA%E5%BA%93Lombok%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/08/26/MyBatis%E9%9B%86%E6%88%90MBG/" itemprop="url">
-		MyBatis集成MBG
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							MyBatis集成MBG- 简介
-MyBatis Generator（简称MBG）是MyBatis官方提供的代码生成工具。可以通过数据库表直接生成实体类、单表CRUD代码、mapper.xml文件，从而解放我们的双手！
-
--开始使用
-首先我们通过一个入门示例将MBG用起来，该示例会包含基础的CRUD操作。
-
--集成MBG
-在pom.xml中添加如下依赖，主要添加了MyBatis、PageHelper、Druid、MBG和MySQL驱动等依赖；
-
-1234567891011121314151617181920212223242526272829303132&lt;dependencies&...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/08/26/MyBatis%E9%9B%86%E6%88%90MBG/" itemprop="url">
-		<time datetime="2021-08-25T16:15:56.844Z" itemprop="datePublished">
-	  		2021-08-26
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/08/26/MyBatis%E9%9B%86%E6%88%90MBG/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/08/25/Harbor%E4%B8%80%E6%AC%BE%E5%BC%80%E6%BA%90%E7%9A%84Docker%E9%95%9C%E5%83%8F%E4%BB%93%E5%BA%93%E6%9C%8D%E5%8A%A1/" itemprop="url">
-		Harbor一款开源的Docker镜像仓库服务
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							Harbor一款开源的Docker镜像仓库服务
-平时经常用Docker来部署各种环境，发现从DockerHub上下载镜像有时候比较慢。第三方的镜像还可以使用一些国内的镜像仓库来加速，如果我们自己构建的镜像那就不行了。这时候搭建一个私有的镜像仓库很有必要，最近发现Harbor这个企业级镜像仓库，非常好用且功能强大，推荐给大家！
-
--Harbor简介
-Harbor是一款开源的Docker镜像仓库服务，在Github上目前有13.4k+Star。提供了基于角色的镜像访问机制，可以保护你的镜像安全。
-
--安装
-学习开源项目的第一步，一般都是把它运行起来，我们先来把Harbor运行起来吧！
-
-
-下...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/08/25/Harbor%E4%B8%80%E6%AC%BE%E5%BC%80%E6%BA%90%E7%9A%84Docker%E9%95%9C%E5%83%8F%E4%BB%93%E5%BA%93%E6%9C%8D%E5%8A%A1/" itemprop="url">
-		<time datetime="2021-08-25T15:34:12.841Z" itemprop="datePublished">
-	  		2021-08-25
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/08/25/Harbor%E4%B8%80%E6%AC%BE%E5%BC%80%E6%BA%90%E7%9A%84Docker%E9%95%9C%E5%83%8F%E4%BB%93%E5%BA%93%E6%9C%8D%E5%8A%A1/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/08/25/YApi%E7%BB%93%E5%90%88Swagger%E4%BD%BF%E7%94%A8%E6%9E%9C%E7%84%B6%E5%BE%88%E5%BC%BA%E5%A4%A7/" itemprop="url">
-		YApi结合Swagger使用果然很强大
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							YApi结合Swagger使用果然很强大
-Swagger经常被人吐槽界面不够好看、功能不够强大，其实有很多工具可以和Swagger结合使用，结合之后就会变得非常好用。之前写过一篇文章《Swagger界面丑、功能弱怎么破？用Postman增强下就给力了！》，有朋友留言说YApi也很好用。最近体验了一把YApi，发现确实不错，推荐给大家！
-
--YApi简介
-YApi是高效、易用、功能强大的API管理平台，旨在为开发、产品、测试人员提供更优雅的接口管理服务。YApi在Github上已累计获得了18K+Star，具有优秀的交互体验，YApi不仅提供了常用的接口管理功能，还提供了权限管理、Mock...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/08/25/YApi%E7%BB%93%E5%90%88Swagger%E4%BD%BF%E7%94%A8%E6%9E%9C%E7%84%B6%E5%BE%88%E5%BC%BA%E5%A4%A7/" itemprop="url">
-		<time datetime="2021-08-25T14:26:53.062Z" itemprop="datePublished">
-	  		2021-08-25
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/08/25/YApi%E7%BB%93%E5%90%88Swagger%E4%BD%BF%E7%94%A8%E6%9E%9C%E7%84%B6%E5%BE%88%E5%BC%BA%E5%A4%A7/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/08/25/SpringBoot%E5%AE%98%E6%96%B9%E6%8F%92%E4%BB%B6Docker%E5%85%A5%E9%97%A8/" itemprop="url">
-		SpringBoot官方插件Docker入门
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							SpringBoot官方插件Docker入门
-为了方便为SpringBoot应用构建Docker镜像，我们经常会使用Maven插件来打包镜像。之前一直使用的是第三方插件，有spotify和fabric8出品的两种docker-maven-plugin。最近SpringBoot 2.4.0发布了，官方插件也增加了对Docker的支持，体验了一把发现也很好用，推荐给大家！
-
--第三方插件使用
-我们先了解下第三方插件的使用，方便和官方插件做对比，fabric8插件使用具体可以参考《还在手动部署SpringBoot应用？试试这个自动化插件！》。
-
-
-值得注意的是，在我们使用插件时，需要自己定义镜...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/08/25/SpringBoot%E5%AE%98%E6%96%B9%E6%8F%92%E4%BB%B6Docker%E5%85%A5%E9%97%A8/" itemprop="url">
-		<time datetime="2021-08-25T10:39:38.994Z" itemprop="datePublished">
-	  		2021-08-25
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/08/25/SpringBoot%E5%AE%98%E6%96%B9%E6%8F%92%E4%BB%B6Docker%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/08/25/Elasticsearch%E4%BD%BF%E7%94%A8SQL%E6%9F%A5%E8%AF%A2%E5%85%A5%E9%97%A8/" itemprop="url">
-		Elasticsearch使用SQL查询入门
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							Elasticsearch使用SQL查询入门
-平时使用Elasticsearch的时候，偶尔会在Kibana中使用Query DSL来查询数据。每次要用到Query DSL时都基本忘光了，需要重新在回顾一遍，最近发现Elasticsearch已经支持SQL查询了（6.3版本以后），整理了下其用法，希望对大家有所帮助！
+							SpringCloudHystrixDashboard断路器执行监控进阶篇
+Hystrix Dashboard 是Spring Cloud中查看Hystrix实例执行情况的一种仪表盘组件，支持查看单个实例和查看集群实例，本文将对其用法进行详细介绍。
 
 -简介
-Elasticsearch SQL是一个X-Pack组件，它允许针对Elasticsearch实时执行类似SQL的查询。无论使用REST接口，命令行还是JDBC，任何客户端都可以使用SQL对Elasticsearch中的数据进行原生搜索和聚合数据。可以将Elast...
+Hystrix提供了Hystrix Dashboard来实时监控HystrixCommand方法的执行情况。 Hystrix Dashboard可以有效地反映出每个Hystrix实例的运行情况，帮助我们快速发现系统中的问题，从而采取对应措施。
+
+-Hystrix 单个实例监控
+我们先通过使用Hystrix Dashboard监控单个...
 						
 					</div>
 					
@@ -648,9 +315,9 @@ Elasticsearch SQL是一个X-Pack组件，它允许针对Elasticsearch实时执�
 
 
 
-	<a href="/2021/08/25/Elasticsearch%E4%BD%BF%E7%94%A8SQL%E6%9F%A5%E8%AF%A2%E5%85%A5%E9%97%A8/" itemprop="url">
-		<time datetime="2021-08-25T10:02:21.393Z" itemprop="datePublished">
-	  		2021-08-25
+	<a href="/2021/08/27/SpringCloudHystrixDashboard%E6%96%AD%E8%B7%AF%E5%99%A8%E6%89%A7%E8%A1%8C%E7%9B%91%E6%8E%A7%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-27T09:41:38.079Z" itemprop="datePublished">
+	  		2021-08-27
 	  </time>
 	</a> 
 
@@ -663,7 +330,7 @@ Elasticsearch SQL是一个X-Pack组件，它允许针对Elasticsearch实时执�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/25/Elasticsearch%E4%BD%BF%E7%94%A8SQL%E6%9F%A5%E8%AF%A2%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/27/SpringCloudHystrixDashboard%E6%96%AD%E8%B7%AF%E5%99%A8%E6%89%A7%E8%A1%8C%E7%9B%91%E6%8E%A7%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -674,25 +341,19 @@ Elasticsearch SQL是一个X-Pack组件，它允许针对Elasticsearch实时执�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/25/%E5%BC%80%E5%8F%91%E8%80%85SpringBoot%E5%85%A5%E9%97%A8/" itemprop="url">
-		开发者SpringBoot入门
+	<a href="/2021/08/27/SpringCloudHystrix%E6%9C%8D%E5%8A%A1%E5%AE%B9%E9%94%99%E4%BF%9D%E6%8A%A4%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		SpringCloudHystrix服务容错保护进阶篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							开发者SpringBoot入门
-天天在用SpringBoot，但有些SpringBoot的实用知识点却不是很清楚！最近又对SpringBoot中的实用知识点做了个总结，相信对从Spring过渡到SpringBoot的朋友会很有帮助！
+							SpringCloudHystrix服务容错保护进阶篇
+Spring Cloud Hystrix 是Spring Cloud Netflix 子项目的核心组件之一，具有服务容错及线程隔离等一系列服务保护功能，本文将对其用法进行详细介绍。
 
--前言
-首先我们来了解下为什么要有SpringBoot？
-
-
-Spring作为J2EE的轻量级代替品，让我们无需开发重量级的Enterprise JavaBean（EJB），通过依赖注入和面向切面编程，使用简单的Java对象（POJO）即可实现EJB的功能。
-
-
-虽然Spring的组件代码是轻量级的，但它的配置却是重量级的。即使后来Spring引入了基于注...
+-Hystrix 简介
+在微服务架构中，服务与服务之间通过远程调用的方式进行通信，一旦某个被调用的服务发生了故障，其依赖服务也会发生故障，此时就会发生故障的蔓延，最终导致系统瘫痪。Hystrix实现了断路器模式，当某个服务发生故障时，通过断路器的监控，给调用方返回一个错误响应，而不是长时间的等待，这样就不会使得调用方由于长时间得不到响应而占用线程，从而...
 						
 					</div>
 					
@@ -707,9 +368,9 @@ Spring作为J2EE的轻量级代替品，让我们无需开发重量级的Enterpr
 
 
 
-	<a href="/2021/08/25/%E5%BC%80%E5%8F%91%E8%80%85SpringBoot%E5%85%A5%E9%97%A8/" itemprop="url">
-		<time datetime="2021-08-25T09:19:24.456Z" itemprop="datePublished">
-	  		2021-08-25
+	<a href="/2021/08/27/SpringCloudHystrix%E6%9C%8D%E5%8A%A1%E5%AE%B9%E9%94%99%E4%BF%9D%E6%8A%A4%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-27T09:14:10.138Z" itemprop="datePublished">
+	  		2021-08-27
 	  </time>
 	</a> 
 
@@ -722,7 +383,7 @@ Spring作为J2EE的轻量级代替品，让我们无需开发重量级的Enterpr
 
 						
 							<span class="right">      	
-								<a href="/2021/08/25/%E5%BC%80%E5%8F%91%E8%80%85SpringBoot%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/27/SpringCloudHystrix%E6%9C%8D%E5%8A%A1%E5%AE%B9%E9%94%99%E4%BF%9D%E6%8A%A4%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -733,22 +394,22 @@ Spring作为J2EE的轻量级代替品，让我们无需开发重量级的Enterpr
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/25/canal%E5%AF%B9MySQL%E7%9A%84%E5%A2%9E%E9%87%8F%E6%95%B0%E6%8D%AE%E8%BF%9B%E8%A1%8C%E5%AE%9E%E6%97%B6%E5%90%8C%E6%AD%A5/" itemprop="url">
-		canal对MySQL的增量数据进行实时同步
+	<a href="/2021/08/27/SpringCloudRibbon%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E7%9A%84%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		SpringCloudRibbon负载均衡的服务调用进阶篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							canal对MySQL的增量数据进行实时同步
-mall项目中的商品搜索功能，一直都没有做实时数据同步。最近发现阿里巴巴开源的canal可以把MySQL中的数据实时同步到Elasticsearch中，能很好地解决数据同步问题。今天我们来讲讲canal的使用，希望对大家有所帮助！
+							SpringCloudRibbon负载均衡的服务调用进阶篇
+Spring Cloud Ribbon 是Spring Cloud Netflix 子项目的核心组件之一，主要给服务间调用及API网关转发提供负载均衡的功能，本文将对其用法进行详细介绍。
 
--canal简介
-canal主要用途是对MySQL数据库增量日志进行解析，提供增量数据的订阅和消费，简单说就是可以对MySQL的增量数据进行实时同步，支持同步到MySQL、Elasticsearch、HBase等数据存储中去。
+-Ribbon简介
+在微服务架构中，很多服务都会部署多个，其他服务去调用该服务的时候，如何保证负载均衡是个不得不去考虑的问题。负载均衡可以增加系统的可用性和扩展性，当我们使用RestTemplate来调用其他服务时，Ribbon可以很方便的实现负载均衡功能。
 
--canal工作原理
-canal会模拟MySQL主库和从库的交互协议，从而伪装成My...
+-RestTemplate的使用
+RestTemplate是一个HTTP客户端，使...
 						
 					</div>
 					
@@ -763,9 +424,9 @@ canal会模拟MySQL主库和从库的交互协议，从而伪装成My...
 
 
 
-	<a href="/2021/08/25/canal%E5%AF%B9MySQL%E7%9A%84%E5%A2%9E%E9%87%8F%E6%95%B0%E6%8D%AE%E8%BF%9B%E8%A1%8C%E5%AE%9E%E6%97%B6%E5%90%8C%E6%AD%A5/" itemprop="url">
-		<time datetime="2021-08-25T08:38:07.530Z" itemprop="datePublished">
-	  		2021-08-25
+	<a href="/2021/08/27/SpringCloudRibbon%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E7%9A%84%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-27T08:38:57.421Z" itemprop="datePublished">
+	  		2021-08-27
 	  </time>
 	</a> 
 
@@ -778,7 +439,345 @@ canal会模拟MySQL主库和从库的交互协议，从而伪装成My...
 
 						
 							<span class="right">      	
-								<a href="/2021/08/25/canal%E5%AF%B9MySQL%E7%9A%84%E5%A2%9E%E9%87%8F%E6%95%B0%E6%8D%AE%E8%BF%9B%E8%A1%8C%E5%AE%9E%E6%97%B6%E5%90%8C%E6%AD%A5/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/27/SpringCloudRibbon%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E7%9A%84%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/27/SpringCloudEureka%E6%9C%8D%E5%8A%A1%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		SpringCloudEureka服务注册与发现进阶篇
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							SpringCloudEureka服务注册与发现进阶篇
+Spring Cloud Eureka是Spring Cloud Netflix 子项目的核心组件之一，主要用于微服务架构中的服务治理。 本文将对搭建Eureka注册中心，搭建Eureka客户端，搭建Eureka集群及给Eureka注册中心添加登录认证进行介绍。
+
+-Eureka简介
+在微服务架构中往往会有一个注册中心，每个微服务都会向注册中心去注册自己的地址及端口信息，注册中心维护着服务名称与服务实例的对应关系。每个微服务都会定时从注册中心获取服务列表，同时汇报自己的运行情况，这样当有的服务需要调用其他服务时，就可以从自己获取到的...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/27/SpringCloudEureka%E6%9C%8D%E5%8A%A1%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-27T07:25:56.824Z" itemprop="datePublished">
+	  		2021-08-27
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/27/SpringCloudEureka%E6%9C%8D%E5%8A%A1%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/27/SpringCloud%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84%E6%A6%82%E8%A7%88%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		SpringCloud整体架构概览进阶篇
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							SpringCloud整体架构概览进阶篇-什么是SpringCloud-目标
+协调任何服务，简化分布式系统开发。
+
+-简介
+构建分布式系统不应该是复杂的，SpringCloud对常见的分布式系统模式提供了简单易用的编程模型，帮助开发者构建弹性、可靠、协调的应用程序。 SpringCloud是在SpringBoot的基础上构建的，使开发者可以轻松入门并快速提高工作效率。 SpringCloud为开发人员提供了快速构建分布式系统架构的工具，例如配置管理，服务发现，断路器，智能路由，微代理，控制总线，一次性令牌，全局锁定，领导选举，分布式会话，集群状态等。
+
+-整体架构
+
+-SpringClo...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/27/SpringCloud%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84%E6%A6%82%E8%A7%88%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-27T06:42:02.640Z" itemprop="datePublished">
+	  		2021-08-27
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/27/SpringCloud%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84%E6%A6%82%E8%A7%88%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7MySQLWorkbench%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		开发工具Postman接口调试工具入门篇
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							开发工具MySQLWorkbench客户端工具入门篇
+在我们选择工具的时候，往往会优先选择那些免费又好用的工具！Navicat作为一款付费软件，虽然功能强大，但也阻止不了我们探索新工具的步伐。最近体验了一把MySQL的官方客户端工具MySQL Workbench，本文将对其和Navicat做个对比，看看它能否取代Navicat!
+
+-安装
+我们先把MySQL Workbench安装好，其中有个小坑需要注意下。
+
+
+首先我们需要下载MySQL Workbench的安装包，下载地址：https://dev.mysql.com/downloads/workbench/
+
+
+
+
+下载完成后我们双...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7MySQLWorkbench%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-26T21:38:19.953Z" itemprop="datePublished">
+	  		2021-08-27
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7MySQLWorkbench%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8%E7%AF%87/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Postman%E6%8E%A5%E5%8F%A3%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		开发工具Postman接口调试工具入门篇
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							开发工具Postman接口调试工具入门篇
+在使用Swagger的时候，你是否会有这种感觉：提交参数为JSON没法格式化，参数错了查找麻烦，返回结果没法折叠，太长了没法看！Swagger结合Postman使用后这一情况有很大改变，今天我们来讲下如何使用Postman增强Swagger的功能，希望对大家有所帮助！
+
+-Postman使用
+Postman是一款非常好用的接口调试工具，界面漂亮且功能强大，对Postman不了解的可以看下《Postman：API接口调试利器》。
+
+-Swagger结合Postman使用
+下面介绍下如何将Swagger API导入到Postman中去，然后使用Pos...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Postman%E6%8E%A5%E5%8F%A3%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-26T21:27:42.614Z" itemprop="datePublished">
+	  		2021-08-27
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Postman%E6%8E%A5%E5%8F%A3%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8%E7%AF%87/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%85%8D%E8%B4%B9%E5%8F%88%E5%A5%BD%E7%94%A8%E7%9A%84Redis%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		开发工具免费又好用的Redis客户端工具入门篇
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							开发工具免费又好用的Redis客户端工具入门篇
+最近在寻找一款免费又好用的Redis客户端工具，于是找到了AnotherRedisDesktopManager，界面漂亮而且支持Redis集群，推荐给大家！
+
+-RedisDesktopManager
+以前一直使用的是RedisDesktopManager这款Redis客户端工具，由于很久没更新界面有点古老，最近想更新升级下，进到官网一看，发现收费了……
+
+
+
+-AnotherRedisDesktopManager
+于是就去Github上找了下，发现了另一个RedisDesktopManager，界面漂亮而且免费，一看Star数量8K+，有...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%85%8D%E8%B4%B9%E5%8F%88%E5%A5%BD%E7%94%A8%E7%9A%84Redis%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-26T21:17:42.157Z" itemprop="datePublished">
+	  		2021-08-27
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%85%8D%E8%B4%B9%E5%8F%88%E5%A5%BD%E7%94%A8%E7%9A%84Redis%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8%E7%AF%87/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7IDEA%E7%9A%84DEBUG%E8%B0%83%E8%AF%95%E6%8A%80%E5%B7%A7%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		开发工具IDEA的DEBUG调试技巧入门篇
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							开发工具IDEA的DEBUG调试技巧入门篇
+在开发过程中，遇到问题，我们经常会使用搜索引擎来查找问题的解决方案，然后予以解决。但是有些问题一时半会搜索不到解决方案，需要自己去解决。这里分享下我解决这些问题使用的调试技巧，给大家一个解决问题的新思路！
+
+-问题描述
+在《我扒了半天源码，终于找到了Oauth2自定义处理结果的最佳方案！》一文中，当JWT令牌过期或者签名不正确时，我们想要自定义网关认证失败的返回结果。这个问题解决起来很简单，只需修改一行代码即可。但是当时查找解决方案确实花费了一番功夫，通过DEBUG源码才找到了Spring Security中提供的自定义配置，解决了该问题。下面...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7IDEA%E7%9A%84DEBUG%E8%B0%83%E8%AF%95%E6%8A%80%E5%B7%A7%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-26T21:01:19.199Z" itemprop="datePublished">
+	  		2021-08-27
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7IDEA%E7%9A%84DEBUG%E8%B0%83%E8%AF%95%E6%8A%80%E5%B7%A7%E5%85%A5%E9%97%A8%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>

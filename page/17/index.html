@@ -1,0 +1,859 @@
+<!--
+	作者：Sariay
+	时间：2018-08-26
+	描述：There may be a bug, but don't worry, Qiling(器灵) says that it can work normally! aha!
+-->
+<!DOCTYPE html>
+<html class="html-loading">
+		
+
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
+    
+      suzhongdeBlog
+    
+  </title>
+  <meta name="author" content="suzhongde">
+  <meta name="keywords" content="" />
+  <meta name="description" content="suzhongdeBlog" />
+	<!-- favicon -->
+  <link rel="shortcut icon" href="/img/favicon.ico">
+
+  <!-- css -->
+  
+<link rel="stylesheet" href="/css/Annie.css">
+
+  
+  <!-- jquery -->
+	
+<script src="/plugin/jquery/jquery.min.js"></script>
+
+
+<script>
+    const CONFIG_BGIMAGE = {
+      mode: 'normal',
+      normalSrc: '/img/cart_cover.jpg',
+      randomYouMax: 110,
+      randomYouSrc: 'https://sariay.github.io/Random-img/',
+	  randomOtherSrc: 'https://api.berryapi.net/?service=App.Bing.Images&day=-0',
+	  preloaderEnable: true
+    }
+	
+    const CONFIG_LEACLOUD_COUNT = {
+      enable: false,
+	  appId: 'dXz',
+	  appKey: 'wzG',
+	  serverURLs: 'https://github.com/suzhongdeblog/Blog-Comment-Repo.git' || ' '
+    }
+  </script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+	<body>
+		<!-- Preloader -->
+
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
+
+
+<!-- header -->
+<header class="fixbackground bg-pan-br">
+	<div class="mask">
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<div class="motto text-shadow-pop-left">
+					<p class="content" id="motto-content">Fetching...</p>
+					<p>-<p>
+					<p class="author" id="motto-author">Just a minute...</p>
+				</div>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more" class="scroll-down">
+				<span class="icon-anchor1 animation-scroll-down"></span>
+			</a>
+		</div>
+	</div>
+</header>
+
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><span>0.0%</span></div>
+
+	<div class="toc-switch"><span class="switch-button">Catalog</span></div>
+
+	<!-- Page title -->
+	<p>
+		
+			Home
+		
+	</p>
+
+	
+	
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<span class="logo"> 
+			<img src="/img/logo.png">
+		</span>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	
+	<div class="nav-body">
+		<ul id="global-nav">
+	
+		<li class="menu-主页">
+			<a href="/" class="menu-item-主页" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-归档">
+			<a href="/archives" class="menu-item-归档" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-分类">
+			<a href="/categories" class="menu-item-分类" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-标签">
+			<a href="/tags" class="menu-item-标签" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-关于">
+			<a href="/about" class="menu-item-关于" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-相册">
+			<a href="/gallery" class="menu-item-相册" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">Search</a>
+		</li>
+	
+</ul>
+	</div>
+	
+	<div class="nav-footer">
+		<ul id="global-social">
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-zhihu"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-github"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-sina-weibo "></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-pinterest2"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-instagram"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-twitter"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/atom.xml" target="_blank">
+				<span class="icon-rss"></span>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+</nav>
+			
+		<!--main-->
+		<main>
+			
+
+
+
+	<!--pure style-->
+	<div class="layout-pure">
+	<div id="layout-pure">	
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/23/%E6%95%B4%E5%90%88SpringSecurity%E5%92%8CJWT%E5%AE%9E%E7%8E%B0%E8%AE%A4%E8%AF%81%E5%92%8C%E6%8E%88%E6%9D%8304/" itemprop="url">
+		mall-tiny-04-整合SpringSecurity和JWT实现认证和授权
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							简介一个标准的整合SpringSecurity和JWT实现认证和授权
+
+本文主要讲解mall通过整合SpringSecurity和JWT实现后台用户的登录和授权功能，同时改造Swagger-UI的配置使其可以自动记住登录令牌进行发送。
+
+-项目使用框架介绍-SpringSecurity
+SpringSecurity是一个强大的可高度定制的认证和授权框架，对于Spring应用来说它是一套Web安全标准。SpringSecurity注重于为Java应用提供认证和授权功能，像所有的Spring项目一样，它对自定义需求具有强大的扩展性。
+
+-JWT
+JWT是JSON WEB TOKEN的缩写，它...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/23/%E6%95%B4%E5%90%88SpringSecurity%E5%92%8CJWT%E5%AE%9E%E7%8E%B0%E8%AE%A4%E8%AF%81%E5%92%8C%E6%8E%88%E6%9D%8304/" itemprop="url">
+		<time datetime="2021-08-22T16:33:07.176Z" itemprop="datePublished">
+	  		2021-08-23
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/23/%E6%95%B4%E5%90%88SpringSecurity%E5%92%8CJWT%E5%AE%9E%E7%8E%B0%E8%AE%A4%E8%AF%81%E5%92%8C%E6%8E%88%E6%9D%8304/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/23/%E6%95%B4%E5%90%88Redis%E5%AE%9E%E7%8E%B0%E7%BC%93%E5%AD%98%E5%8A%9F%E8%83%BD03/" itemprop="url">
+		mall-tiny-03-整合Redis实现缓存功能
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							简介一个标准的整合Redis实现缓存功能
+
+本文主要讲解mall整合Redis的过程，以短信验证码的存储验证为例。
+
+-Redis的安装和启动
+Redis是用C语言开发的一个高性能键值对数据库，可用于数据缓存，主要用于处理大量数据的高访问负载。
+
+
+下载Redis,下载地址：https://github.com/MicrosoftArchive/redis/releases
+
+
+
+
+下载完后解压到指定目录
+
+
+
+
+在当前地址栏输入cmd后，执行redis的启动命令：redis-server.exe redis.windows.conf
+
+
+
+- 整合Redis-添加项目依赖
+在pom.x...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/23/%E6%95%B4%E5%90%88Redis%E5%AE%9E%E7%8E%B0%E7%BC%93%E5%AD%98%E5%8A%9F%E8%83%BD03/" itemprop="url">
+		<time datetime="2021-08-22T16:32:18.752Z" itemprop="datePublished">
+	  		2021-08-23
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/23/%E6%95%B4%E5%90%88Redis%E5%AE%9E%E7%8E%B0%E7%BC%93%E5%AD%98%E5%8A%9F%E8%83%BD03/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/23/%E6%95%B4%E5%90%88Swagger-UI%E5%AE%9E%E7%8E%B0%E5%9C%A8%E7%BA%BFAPI%E6%96%87%E6%A1%A302/" itemprop="url">
+		mall-tiny-02-整合Swagger-UI实现在线API文档
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							简介一个标准的整合Swagger-UI实现在线API文档
+
+本文主要讲解mall是如何通过整合Swagger-UI来实现一份相当完善的在线API文档的。
+
+- 项目使用框架介绍-Swagger-UI
+Swagger-UI是HTML, Javascript, CSS的一个集合，可以动态地根据注解生成在线API文档。
+
+常用注解
+@Api：用于修饰Controller类，生成Controller相关文档信息
+@ApiOperation：用于修饰Controller类中的方法，生成接口方法相关文档信息
+@ApiParam：用于修饰接口中的参数，生成接口参数相关文档信息
+@ApiModelPro...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/23/%E6%95%B4%E5%90%88Swagger-UI%E5%AE%9E%E7%8E%B0%E5%9C%A8%E7%BA%BFAPI%E6%96%87%E6%A1%A302/" itemprop="url">
+		<time datetime="2021-08-22T16:30:58.985Z" itemprop="datePublished">
+	  		2021-08-23
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/23/%E6%95%B4%E5%90%88Swagger-UI%E5%AE%9E%E7%8E%B0%E5%9C%A8%E7%BA%BFAPI%E6%96%87%E6%A1%A302/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/23/%E6%95%B4%E5%90%88SpringBoot+MyBatis%E6%90%AD%E5%BB%BA%E5%9F%BA%E6%9C%AC%E9%AA%A8%E6%9E%B601/" itemprop="url">
+		mall-tiny-01-整合SpringBoot+MyBatis搭建基本骨架
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							简介一个标准的整合SpringBoot+MyBatis搭建基本骨架
+
+本文主要讲解mall整合SpringBoot+MyBatis搭建基本骨架，以商品品牌为例实现基本的CRUD操作及通过PageHelper实现分页查询。
+
+-mysql数据库环境搭建
+下载并安装mysql5.7版本，下载地址：https://dev.mysql.com/downloads/installer/
+设置数据库帐号密码：root root
+下载并安装客户端连接工具Navicat,下载地址：http://www.formysql.com/xiazai.html
+创建数据库mall
+导入mall的数据库脚本，脚本地...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/23/%E6%95%B4%E5%90%88SpringBoot+MyBatis%E6%90%AD%E5%BB%BA%E5%9F%BA%E6%9C%AC%E9%AA%A8%E6%9E%B601/" itemprop="url">
+		<time datetime="2021-08-22T16:30:14.344Z" itemprop="datePublished">
+	  		2021-08-23
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/23/%E6%95%B4%E5%90%88SpringBoot+MyBatis%E6%90%AD%E5%BB%BA%E5%9F%BA%E6%9C%AC%E9%AA%A8%E6%9E%B601/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/15/%E5%85%B3%E9%97%AD%E7%94%B5%E8%84%91%E5%8D%A0%E7%94%A8%E7%AB%AF%E5%8F%A3/" itemprop="url">
+		关闭电脑占用端口
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							关闭电脑占用端口1、打开命令行，输入netstat -o -n -a | findstr :8080，我们就能看到相关的端口号及其状态。
+1TCP    0.0.0.0:3000      0.0.0.0:0              LISTENING       3116
+
+2.关闭正处与监听状态（Listening）的端口号8080，最后一行对应的是进程的PID，输入命令taskkill /F /PID 3116
+1打开命令行，输入taskkill /F /PID 3116
+
+
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/15/%E5%85%B3%E9%97%AD%E7%94%B5%E8%84%91%E5%8D%A0%E7%94%A8%E7%AB%AF%E5%8F%A3/" itemprop="url">
+		<time datetime="2021-08-15T10:00:19.907Z" itemprop="datePublished">
+	  		2021-08-15
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/15/%E5%85%B3%E9%97%AD%E7%94%B5%E8%84%91%E5%8D%A0%E7%94%A8%E7%AB%AF%E5%8F%A3/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/08/Python%E7%88%AC%E8%99%AB%E5%88%86%E6%9E%90AJAX%E4%BC%A0%E9%80%92%E7%9A%84JSON%E8%8E%B7%E5%8F%96%E6%95%B0%E6%8D%AE-%E5%88%9D%E6%AD%A5%E5%88%86%E6%9E%90%E5%8A%A8%E6%80%81%E7%BD%91%E9%A1%B5/" itemprop="url">
+		Python爬虫分析AJAX传递的JSON获取数据-初步分析动态网页
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							Python爬虫分析AJAX传递的JSON获取数据-初步分析动态网页前言1234567891011我总结了最近学到的利用requests和bs4第三方库共同作用，基本可以应对python获取静态网页数据的相关问题。但是如果现实中的网页往往比想象中复杂的多，网页也早已不再是纯静态网页。就比如在第一篇文章中爬取的网易云课堂计算机专业大学课程中，如果我们进一步爬取计算机专业可以就业的岗位信息时，通过开发者工具，我们发现，我们所需要的数据位于id=&quot;j-smartSpec&quot; 的div中，然而，我们利用之前的方法进行会发现最后得到的list为空，那么我们检查一下源代码，好不容易...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/08/Python%E7%88%AC%E8%99%AB%E5%88%86%E6%9E%90AJAX%E4%BC%A0%E9%80%92%E7%9A%84JSON%E8%8E%B7%E5%8F%96%E6%95%B0%E6%8D%AE-%E5%88%9D%E6%AD%A5%E5%88%86%E6%9E%90%E5%8A%A8%E6%80%81%E7%BD%91%E9%A1%B5/" itemprop="url">
+		<time datetime="2021-08-08T15:30:02.039Z" itemprop="datePublished">
+	  		2021-08-08
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/08/Python%E7%88%AC%E8%99%AB%E5%88%86%E6%9E%90AJAX%E4%BC%A0%E9%80%92%E7%9A%84JSON%E8%8E%B7%E5%8F%96%E6%95%B0%E6%8D%AE-%E5%88%9D%E6%AD%A5%E5%88%86%E6%9E%90%E5%8A%A8%E6%80%81%E7%BD%91%E9%A1%B5/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/08/Python%E7%88%AC%E8%99%AB%E7%88%AC%E5%8F%96%E5%8A%A8%E6%80%81%E9%A1%B5%E9%9D%A2%E6%80%9D%E8%B7%AF%E5%92%8C%E5%AE%9E%E4%BE%8B000001/" itemprop="url">
+		Python爬虫爬取动态页面思路+实例
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							Python爬虫爬取动态页面思路+实例简介123456789有时候，我们天真无邪的使用urllib库或Scrapy下载HTML网页时会发现，我们要提取的网页元素并不在我们下载到的HTML之中，尽管它们在浏览器里看起来唾手可得。这说明我们想要的元素是在我们的某些操作下通过js事件动态生成的。举个例子，我们在刷QQ空间或者微博评论的时候，一直往下刷，网页越来越长，内容越来越多，就是这个让人又爱又恨的动态加载。爬取动态页面目前来说有两种方法1.分析页面请求（这篇介绍这个）2.selenium模拟浏览器行为（霸王硬上弓，以后再说）言归正传，下面介绍一下通过分析页面请求的方法爬取动态加载页面的思路...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/08/Python%E7%88%AC%E8%99%AB%E7%88%AC%E5%8F%96%E5%8A%A8%E6%80%81%E9%A1%B5%E9%9D%A2%E6%80%9D%E8%B7%AF%E5%92%8C%E5%AE%9E%E4%BE%8B000001/" itemprop="url">
+		<time datetime="2021-08-07T19:27:17.081Z" itemprop="datePublished">
+	  		2021-08-08
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/08/Python%E7%88%AC%E8%99%AB%E7%88%AC%E5%8F%96%E5%8A%A8%E6%80%81%E9%A1%B5%E9%9D%A2%E6%80%9D%E8%B7%AF%E5%92%8C%E5%AE%9E%E4%BE%8B000001/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+	</div>
+
+	
+	<div id="pagination">
+		
+	</div>
+
+	
+
+</div>
+
+
+		</main>
+
+		<!--footer-->
+		<footer>
+	<div id="navigation-show">
+		<ul id="global-nav">
+	
+		<li class="menu-主页">
+			<a href="/" class="menu-item-主页" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-归档">
+			<a href="/archives" class="menu-item-归档" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-分类">
+			<a href="/categories" class="menu-item-分类" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-标签">
+			<a href="/tags" class="menu-item-标签" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-关于">
+			<a href="/about" class="menu-item-关于" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-相册">
+			<a href="/gallery" class="menu-item-相册" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">Search</a>
+		</li>
+	
+</ul>
+	</div>
+
+	<div class="copyright">
+		<p>
+			 
+				&copy;2017 - 2021, content by Sariay. All Rights Reserved.
+			
+			
+				<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			
+		</p>
+		<p>
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+		
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+
+		<span id="busuanzi_container_site_pv">
+	    	本站总访问量<span id="busuanzi_value_site_pv"></span>次
+		</span>
+
+		<span id="busuanzi_container_site_uv">
+	  		本站访客数<span id="busuanzi_value_site_uv"></span>人次
+		</span>
+		
+	
+
+
+
+
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p>
+	</div>		
+</footer>
+		
+	<!-- Local or hitokoto! -->
+
+	
+<script src="/plugin/motto/motto.js"></script>
+
+	
+	<script type="text/javascript">
+		(function motto(){
+			let mottoText = getMingYanContent().split('</br> - </br>'),
+			
+			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
+			
+			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
+			
+			mottoTextContent = mottoTextContent.trim().substring(0, 100);
+		
+			$("#motto-content").html( mottoTextContent);
+			$("#motto-author").html( mottoTextFrom  );
+		})();	
+	</script>	
+
+
+
+<!-- love effect -->
+
+
+<!-- back to top -->
+
+	<div id="totop">
+	<span class="icon-circle-up"></span>
+</div>
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+	
+	
+	
+	
+ 
+
+<!-- leancloud -->
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+  
+
+	<!--
+	时间：2018-10-3
+	描述：
+		插件名称：hexo-generator-search-zip
+		插件来源: https://github.com/SuperKieran/hexo-generator-search-zip
+		代码参考：https://github.com/SuperKieran/TKL/blob/master/layout/_partial/search.ejs(Include: js & css)	
+-->
+<div class="popup search-popup local-search-popup scrollbar" >
+	<div class="local-search-container">
+		<span class="popup-btn-close">
+      		ESC
+   		</span>
+		<div class="local-search-header">
+			<div class="input-prompt">				
+			</div>
+			<input autocomplete="off" placeholder="Search..." type="text" id="local-search-input">
+		</div>
+		<div class="local-search-body">
+			<div id="local-search-output"></div>
+		</div>
+		<div class="local-search-footer">
+			<div class="topN-post">				
+				
+								
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="/plugin/search/ziploader.js"></script>
+<script src="/js/search.js"></script>
+
+
+<script type="text/javascript">
+	var search_path = 'search.json',
+		zip_Path = '/search.zip',
+		version_Path = '/searchVersion.txt',
+		input_Trigger = 'auto',
+		top_N = '2';
+
+	themeLocalSearch({
+		search_path, 
+		zip_Path, 
+		version_Path, 
+		input_Trigger, 
+		top_N
+	});
+</script>
+
+
+
+<script src="/plugin/chinese/chinese.js"></script>
+<script src="/plugin/imagelazyloader/yall.min.js"></script>
+<script src="/plugin/imageloaded/imagesloaded.pkgd.min.js"></script>
+<script src="/plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="/plugin/resizediv/resizediv.js"></script>
+<script src="/js/main.js"></script>
+
+	</body>	
+</html>

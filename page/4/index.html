@@ -232,26 +232,21 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/29/%E6%88%91%E5%B8%B8%E7%94%A8%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E6%8A%80%E5%B7%A7%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
-		我常用的自动化部署技巧部署篇
+	<a href="/2021/08/30/%E8%90%A5%E9%94%80%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%B8%80/" itemprop="url">
+		营销模块数据库表解析一
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							我常用的自动化部署技巧部署篇
-SpringBoot+Jenkins自动化部署技巧，远程部署同样适用，附通用自动化脚本！本文将从半自动化部署讲起，到自动化部署，讲解一套生产环境切实可用的自动化部署方案！
+							营销模块数据库表解析一
+本文主要对限时购（秒杀）功能相关表进行解析，采用数据库表与功能对照的形式。
 
--半自动化部署
-之前写过的SpringBoot应用打包Docker镜像都是通过Maven插件来实现的，由于远程服务器需要开发2375端口，存在一定的安全隐患。这次介绍另一种方法，使用DockerFile+Jar+自动化脚本的形式来部署。由于需要一定的手动操作，我把它称之为半自动化部署。
+-相关表结构-限时购表
+用于存储限时购活动的信息，包括开始时间、结束时间以及上下线状态。
 
--项目打包
-这次我们不使用Docker的Maven插件来打包，先在pom.xml中注释掉它；
-
-
-
-...
+12345678910create table sms_flash_promotion(   id                   bigint not null auto_increment,   title                varchar(200) comment &#x27;标题&#x27;,   start_date           date comment &#x2...
 						
 					</div>
 					
@@ -266,8 +261,417 @@ SpringBoot+Jenkins自动化部署技巧，远程部署同样适用，附通用�
 
 
 
-	<a href="/2021/08/29/%E6%88%91%E5%B8%B8%E7%94%A8%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E6%8A%80%E5%B7%A7%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
-		<time datetime="2021-08-28T20:50:41.265Z" itemprop="datePublished">
+	<a href="/2021/08/30/%E8%90%A5%E9%94%80%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%B8%80/" itemprop="url">
+		<time datetime="2021-08-30T09:11:22.981Z" itemprop="datePublished">
+	  		2021-08-30
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/30/%E8%90%A5%E9%94%80%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%B8%80/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/30/%E8%AE%A2%E5%8D%95%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%B8%89/" itemprop="url">
+		订单模块数据库表解析三
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							订单模块数据库表解析三
+本文主要对订单退货及订单退货原因设置功能相关表进行解析，采用数据库表与功能对照的形式。
+
+-订单退货-相关表结构-订单退货申请表
+主要用于存储会员退货申请信息，需要注意的是订单退货申请表的四种状态：0-&gt;待处理；1-&gt;退货中；2-&gt;已完成；3-&gt;已拒绝。
+
+12345678910111213141516171819202122232425262728293031create table oms_order_return_apply(   id                   bigint not null auto_increment,...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/30/%E8%AE%A2%E5%8D%95%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%B8%89/" itemprop="url">
+		<time datetime="2021-08-30T08:53:21.720Z" itemprop="datePublished">
+	  		2021-08-30
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/30/%E8%AE%A2%E5%8D%95%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%B8%89/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/30/%E8%AE%A2%E5%8D%95%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%BA%8C/" itemprop="url">
+		订单模块数据库表解析二
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							订单模块数据库表解析二
+本文主要对购物车功能相关表进行解析，介绍从商品加入购物车到下单的整个流程，涉及购物车优惠计算流程、确认单生成流程、下单流程及取消订单流程。
+
+-购物车表
+用于存储购物车中每个商品信息，可用于计算商品优惠金额。
+
+12345678910111213141516171819202122232425create table oms_cart_item(   id                   bigint not null auto_increment,   product_id           bigint comment &#x27;商品的id&#x27;...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/30/%E8%AE%A2%E5%8D%95%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%BA%8C/" itemprop="url">
+		<time datetime="2021-08-30T08:12:19.874Z" itemprop="datePublished">
+	  		2021-08-30
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/30/%E8%AE%A2%E5%8D%95%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%BA%8C/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/30/%E8%AE%A2%E5%8D%95%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%B8%80/" itemprop="url">
+		订单模块数据库表解析一
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							订单模块数据库表解析一
+本文主要对订单及订单设置功能的表进行解析，采用数据库表与功能对照的形式。
+
+-订单-相关表结构-订单表
+订单表，需要注意的是订单状态：0-&gt;待付款；1-&gt;待发货；2-&gt;已发货；3-&gt;已完成；4-&gt;已关闭；5-&gt;无效订单。
+
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748create table oms_order(   id                   bigint not null auto_...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/30/%E8%AE%A2%E5%8D%95%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%B8%80/" itemprop="url">
+		<time datetime="2021-08-30T07:45:37.377Z" itemprop="datePublished">
+	  		2021-08-30
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/30/%E8%AE%A2%E5%8D%95%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%B8%80/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/30/%E5%95%86%E5%93%81%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%BA%8C/" itemprop="url">
+		商品模块数据库表解析二
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							商品模块数据库表解析二
+接上一篇文章，本文主要对编辑商品、商品评价及回复、商品操作记录这三块功能的表进行解析，采用数据库表与功能对照的形式。
+
+-编辑商品-相关表结构-商品表
+商品信息主要包括四部分：商品的基本信息、商品的促销信息、商品的属性信息、商品的关联，商品表是整个商品的基本信息部分。
+
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546create table pms_product(   id                   bigint not null a...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/30/%E5%95%86%E5%93%81%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%BA%8C/" itemprop="url">
+		<time datetime="2021-08-30T07:28:06.536Z" itemprop="datePublished">
+	  		2021-08-30
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/30/%E5%95%86%E5%93%81%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%BA%8C/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/30/%E5%95%86%E5%93%81%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%B8%80/" itemprop="url">
+		商品模块数据库表解析一
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							商品模块数据库表解析一
+本文主要对商品分类、品牌管理、商品类型这三个功能的表进行解析，采用功能与表结构对照的形式。表解析只会标注一些需要理解的字段，简单字段请自行对照表注释。
+
+-商品分类-商品分类表12345678910111213141516create table pms_product_category(   id                   bigint not null auto_increment,   parent_id            bigint comment &#x27;上级分类的编号：0表示一级分类&#x27;,   name           ...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/30/%E5%95%86%E5%93%81%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%B8%80/" itemprop="url">
+		<time datetime="2021-08-30T07:11:56.017Z" itemprop="datePublished">
+	  		2021-08-30
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/30/%E5%95%86%E5%93%81%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%B8%80/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/30/mall%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E7%BB%93%E6%9E%84%E6%A6%82%E8%A7%88%E4%B8%9A%E5%8A%A1%E7%AF%87/" itemprop="url">
+		mall数据库表结构概览业务篇
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							mall数据库表结构概览业务篇
+mall是一套电商系统，后台系统主要包括商品管理、订单管理、营销管理（运营管理+促销管理）、内容管理、用户管理等模块，本文主要对这些模块的数据库表结构及功能做大概的介绍。
+
+-商品管理-数据库表结构
+
+-功能结构
+
+-订单管理-数据库表结构
+
+-功能结构
+
+-营销管理-数据库表结构
+
+-功能结构
+
+-内容管理-数据库表结构
+
+-功能结构
+
+-用户管理-数据库表结构
+
+-功能结构
+
+
+注意：部分功能暂未实现，只是对表结构进行了设计，商品管理、订单管理、营销管理大部分功能均已实现。
+
+-相关资料-PowerDesigner数据库设计文件
+商品管理：https:...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/30/mall%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E7%BB%93%E6%9E%84%E6%A6%82%E8%A7%88%E4%B8%9A%E5%8A%A1%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-29T20:17:06.393Z" itemprop="datePublished">
+	  		2021-08-30
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/30/mall%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E7%BB%93%E6%9E%84%E6%A6%82%E8%A7%88%E4%B8%9A%E5%8A%A1%E7%AF%87/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/29/%E6%90%9E%E5%AE%9AMall%E9%A1%B9%E7%9B%AE%E4%B8%AD%E7%9A%84%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E5%8A%9F%E8%83%BD/" itemprop="url">
+		搞定Mall项目中的权限管理功能
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							搞定Mall项目中的权限管理功能
+最近发现很多朋友问我权限管理功能相关的问题，这里整理了下问的比较多的问题，统一答复下！
+
+-mall项目中的权限管理功能是如何实现的？
+之前写过几篇文章，包括了权限管理功能介绍、后端实现和前端实现，看一下基本就清楚了！
+
+
+《大家心心念念的权限管理功能，这次安排上了！》
+《手把手教你搞定权限管理，结合Spring Security实现接口的动态权限控制！》
+《手把手教你搞定权限管理，结合Vue实现菜单的动态权限控制！》
+
+-ums_permission表还在使用么？
+ums_permission表已经不再使用了，不再使用的表还包括ums_admin_pe...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/29/%E6%90%9E%E5%AE%9AMall%E9%A1%B9%E7%9B%AE%E4%B8%AD%E7%9A%84%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E5%8A%9F%E8%83%BD/" itemprop="url">
+		<time datetime="2021-08-29T15:14:32.890Z" itemprop="datePublished">
 	  		2021-08-29
 	  </time>
 	</a> 
@@ -281,7 +685,7 @@ SpringBoot+Jenkins自动化部署技巧，远程部署同样适用，附通用�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/29/%E6%88%91%E5%B8%B8%E7%94%A8%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E6%8A%80%E5%B7%A7%E9%83%A8%E7%BD%B2%E7%AF%87/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/29/%E6%90%9E%E5%AE%9AMall%E9%A1%B9%E7%9B%AE%E4%B8%AD%E7%9A%84%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E5%8A%9F%E8%83%BD/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -292,22 +696,22 @@ SpringBoot+Jenkins自动化部署技巧，远程部署同样适用，附通用�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/29/mall-swarm%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE%E5%9C%A8K8S%E4%B8%8B%E7%9A%84%E5%AE%9E%E8%B7%B5%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
-		mall-swarm微服务项目在K8S下的实践部署篇
+	<a href="/2021/08/29/Elasticsearch%E5%8D%87%E7%BA%A77.x%E7%89%88%E6%9C%AC/" itemprop="url">
+		Elasticsearch升级7.x版本
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							mall-swarm微服务项目在K8S下的实践部署篇
-由于K8S目前实在是太火了，之前一直说要给mall项目出个K8S部署方案，这次它来啦！在更新完K8S系列教程后，是时候来波实践了，拿mall-swarm项目来实践真的是刚刚好。如果你有在Docker下部署该项目的经历，而且已经学习了我的K8S系列教程的话，相信你能够轻松上手！
+							Elasticsearch升级7.x版本
+最近想把我的mall项目升级下，支持SpringBoot 2.3.0 版本。升级过程中发现需要升级Elasticsearch到7.x版本，学习过我的mall项目的朋友应该知道， 我用的Elasticsearch是6.x版本，升级到7.x以后ElasticsearchTemplate都不让用了。本文记录了Elasticsearch从6.x升级到7.x所遇到的一些问题，给大家排排坑！
 
--服务器规划
-我们先来说下服务器规划吧，之前一直使用的是单机部署所有服务，这次我们使用两台服务器来部署。
+-版本选择
+既然我们要升级到Elasticsearch7.x版本，首先要选择合适的版本。如何选择合适的版本，这里有个小技巧分享给大家。
 
 
-基础服务器（192.168.3.101）：用于部署mall-swarm的依赖服务，包括MySql、Redis、Elasticsearch等与应用无关的...
+首先我们可以在pom.xm...
 						
 					</div>
 					
@@ -322,8 +726,8 @@ SpringBoot+Jenkins自动化部署技巧，远程部署同样适用，附通用�
 
 
 
-	<a href="/2021/08/29/mall-swarm%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE%E5%9C%A8K8S%E4%B8%8B%E7%9A%84%E5%AE%9E%E8%B7%B5%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
-		<time datetime="2021-08-28T20:00:06.606Z" itemprop="datePublished">
+	<a href="/2021/08/29/Elasticsearch%E5%8D%87%E7%BA%A77.x%E7%89%88%E6%9C%AC/" itemprop="url">
+		<time datetime="2021-08-29T14:42:56.165Z" itemprop="datePublished">
 	  		2021-08-29
 	  </time>
 	</a> 
@@ -337,7 +741,7 @@ SpringBoot+Jenkins自动化部署技巧，远程部署同样适用，附通用�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/29/mall-swarm%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE%E5%9C%A8K8S%E4%B8%8B%E7%9A%84%E5%AE%9E%E8%B7%B5%E9%83%A8%E7%BD%B2%E7%AF%87/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/29/Elasticsearch%E5%8D%87%E7%BA%A77.x%E7%89%88%E6%9C%AC/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -348,22 +752,27 @@ SpringBoot+Jenkins自动化部署技巧，远程部署同样适用，附通用�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/29/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84%E4%B8%8B%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E4%BD%BF%E7%94%A8Jenkins%E6%9D%A5%E5%AE%9E%E7%8E%B0%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
-		微服务架构下的自动化部署使用Jenkins来实现部署篇
+	<a href="/2021/08/29/%E7%BB%99Swagger%E5%8D%87%E7%BA%A7%E4%BA%86%E6%96%B0%E7%89%88%E6%9C%AC%E6%B2%A1%E6%83%B3%E5%88%B0%E5%B1%85%E7%84%B6%E6%9C%89%E8%BF%99%E4%B9%88%E5%A4%9A%E5%9D%91/" itemprop="url">
+		给Swagger升级了新版本没想到居然有这么多坑
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							微服务架构下的自动化部署使用Jenkins来实现部署篇
-之前对mall-swarm项目做了升级，注册中心和配置中心都改为使用Nacos，但是Jenkins的自动化部署文档一直都没更新。有些朋友参考原来的文档部署有点小问题，这次对mall-swarm的自动化部署文档做个升级，希望对大家有所帮助！
+							给Swagger升级了新版本没想到居然有这么多坑
+看着mall项目中古老的Swagger API文档样式，这次我终于下定决心要给它升个级了。升级过程中遇到了好多坑，不过只要用好Maven，这些都不是个事！
 
--Jenkins的基本使用
-使用该部署方案需要对Jenkins有所了解，关于Jenkins的基本使用可以参考：《使用Jenkins一键打包部署SpringBoot应用，就是这么6！》
+-选择升级版本
+首先我们选择下需要升级的版本，直接去Maven仓库看下，哪个版本使用的比较多。虽然有最新版本2.10.x，但是几乎没什么人用，而上一个版本2.9.x使用的人却很多，看样子还是2.9.x版本比较稳定，我们选择升级到2.9.2版本。
 
--部署准备
-部署之前需要先安装mall-swarm需要的依赖服务，并打包好所有应用的Docker镜像。由于之前...
+
+
+-升级Swagger
+接下来我们就可以开始升级Swagger版本了，原来项目里用的是2.7.0版本。
+
+
+由于mall项目使用父项目来...
 						
 					</div>
 					
@@ -378,8 +787,8 @@ SpringBoot+Jenkins自动化部署技巧，远程部署同样适用，附通用�
 
 
 
-	<a href="/2021/08/29/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84%E4%B8%8B%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E4%BD%BF%E7%94%A8Jenkins%E6%9D%A5%E5%AE%9E%E7%8E%B0%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
-		<time datetime="2021-08-28T18:07:24.947Z" itemprop="datePublished">
+	<a href="/2021/08/29/%E7%BB%99Swagger%E5%8D%87%E7%BA%A7%E4%BA%86%E6%96%B0%E7%89%88%E6%9C%AC%E6%B2%A1%E6%83%B3%E5%88%B0%E5%B1%85%E7%84%B6%E6%9C%89%E8%BF%99%E4%B9%88%E5%A4%9A%E5%9D%91/" itemprop="url">
+		<time datetime="2021-08-29T14:29:19.325Z" itemprop="datePublished">
 	  		2021-08-29
 	  </time>
 	</a> 
@@ -393,449 +802,7 @@ SpringBoot+Jenkins自动化部署技巧，远程部署同样适用，附通用�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/29/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84%E4%B8%8B%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E4%BD%BF%E7%94%A8Jenkins%E6%9D%A5%E5%AE%9E%E7%8E%B0%E9%83%A8%E7%BD%B2%E7%AF%87/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/08/29/mall-swarm%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EDocker%E5%AE%B9%E5%99%A8%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
-		mall-swarm在Linux环境基于Docker容器下的部署部署篇
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							mall-swarm在Linux环境基于Docker容器下的部署部署篇
-本文以mall-swarm项目为例，主要介绍一个微服务架构的电商项目如何在Docker容器下部署，涉及到大量系统组件的部署及多个Spring Cloud微服务应用的部署，基于CentOS7.6。
-
--环境搭建-基础环境部署
-mall-swarm运行需要的系统组件如下，使用Docker Compose 批量安装更方便，Docker Compose使用请参考：使用Docker Compose部署SpringBoot应用 。
-
-
-
-
-组件
-版本号
-
-
-
-Mysql
-5.7
-
-
-Redis
-5.0
-
-
-MongoDb
-4.3...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/08/29/mall-swarm%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EDocker%E5%AE%B9%E5%99%A8%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
-		<time datetime="2021-08-28T17:20:34.589Z" itemprop="datePublished">
-	  		2021-08-29
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/08/29/mall-swarm%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EDocker%E5%AE%B9%E5%99%A8%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E9%83%A8%E7%BD%B2%E7%AF%87/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/08/29/mall-swarm%E5%9C%A8Windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
-		mall-swarm在Windows环境下的部署部署篇
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							mall-swarm在Windows环境下的部署部署篇-开发环境搭建
-mall-swarm中使用到的环境和mall项目中大致相同，具体可以查看mall在Windows环境下的部署。
-
--简易环境搭建流程
-安装IDEA并导入项目源码；
-安装MySQL，创建一个mall数据库，并导入/document/sql/mall.sql文件；
-安装Redis、Elasticsearch、MongoDB、RabbitMQ等环境。
-
--Nacos注册中心搭建
-由于使用了Nacos注册中心，我们需要先搭建Nacos注册中心，下载地址：https://github.com/alibaba/nacos/rele...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/08/29/mall-swarm%E5%9C%A8Windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
-		<time datetime="2021-08-28T17:12:18.588Z" itemprop="datePublished">
-	  		2021-08-29
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/08/29/mall-swarm%E5%9C%A8Windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E9%83%A8%E7%BD%B2%E7%AF%87/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/08/29/mall%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2/" itemprop="url">
-		mall前端项目的安装与部署
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							mall前端项目的安装与部署
-本文主要讲解mall前端项目mall-admin-web的在Windows和Linux环境下的安装及部署。
-
--Windows下的安装及部署-下载nodejs并安装
-下载地址：https://nodejs.org/dist/v8.9.4/node-v8.9.4-x64.msi
-
--下载mall-admin-web的代码
-下载地址（github）：https://github.com/macrozheng/mall-admin-web 下载地址（码云）：https://gitee.com/macrozheng/mall-admin-web
-
--从IDEA中打开...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/08/29/mall%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2/" itemprop="url">
-		<time datetime="2021-08-28T16:53:16.864Z" itemprop="datePublished">
-	  		2021-08-29
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/08/29/mall%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/08/29/mall%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EJenkins%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
-		mall在Linux环境基于Jenkins自动化部署部署篇
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							mall在Linux环境基于Jenkins自动化部署部署篇
-本文是mall项目的专属Jenkins自动化部署方法。
-
--Jenkins的基本使用
-关于Jenkins的基本使用可以参考：使用Jenkins一键打包部署SpringBoot应用，就是这么6！
-
--执行脚本准备
-首先我们先把需要远程执行的脚本准备好。
-
-
-脚本文件都存放在了mall项目的/document/sh目录下：
-上传脚本前在IDEA中修改所有脚本文件的换行符格式为LF，否则脚本会无法执行；
-
-
-
-
-将所有脚本文件上传到指定目录，这里我们上传到/mydata/sh目录下；
-
-
-
-
-将所有脚本文件都修改为可执行文件:
-
-1c...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/08/29/mall%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EJenkins%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
-		<time datetime="2021-08-28T16:38:43.021Z" itemprop="datePublished">
-	  		2021-08-29
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/08/29/mall%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EJenkins%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E9%83%A8%E7%BD%B2%E7%AF%87/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/08/29/mall%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EDockerCompose%E5%AE%B9%E5%99%A8%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
-		mall在Linux环境基于DockerCompose容器下的部署篇
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							mall在Linux环境基于DockerCompose容器下的部署篇
-最简单的mall在Linux下部署方式，使用两个Docker Compose脚本即可完成部署。第一个脚本用于部署mall运行所依赖的服务（MySQL、Redis、Nginx、RabbitMQ、MongoDB、Elasticsearch、Logstash、Kibana），第二个脚本用于部署mall中的应用（mall-admin、mall-search、mall-portal）。
-
--docker环境搭建及使用
-具体参考：开发者必备Docker命令
-
--docker-compose环境搭建及使用
-具体参考：使用Docker...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/08/29/mall%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EDockerCompose%E5%AE%B9%E5%99%A8%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
-		<time datetime="2021-08-28T16:01:30.199Z" itemprop="datePublished">
-	  		2021-08-29
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/08/29/mall%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EDockerCompose%E5%AE%B9%E5%99%A8%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E7%AF%87/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/08/28/mall%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EDocker%E5%AE%B9%E5%99%A8%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
-		mall在Linux环境基于Docker容器下的部署篇
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							mall在Linux环境基于Docker容器下的部署篇
-本文主要以图文的形式讲解mall在Linux环境下的部署，涉及在Docker容器中安装MySQL、Redis、Nginx、RabbitMQ、MongoDB、Elasticsearch、Logstash、Kibana，以及SpringBoot应用部署，基于CenterOS7.6。
-
--Docker环境安装
-安装yum-utils：
-
-1yum install -y yum-utils device-mapper-persistent-data lvm2
-
-
-为yum源添加docker仓库位置：
-
-1yum-config-manager...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/08/28/mall%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EDocker%E5%AE%B9%E5%99%A8%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
-		<time datetime="2021-08-28T13:30:44.517Z" itemprop="datePublished">
-	  		2021-08-28
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/08/28/mall%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EDocker%E5%AE%B9%E5%99%A8%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E7%AF%87/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/08/28/mall%E5%9C%A8Windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
-		Docker环境下秒建Redis集群
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							mall在Windows环境下的部署篇
-本文主要以图文的形式讲解mall项目所需环境在windows下的安装，主要包括IDEA、Mysql、Redis、Mongodb、RabbitMQ、Elasticsearch、Logstash、Kibana、OSS。
-
--IDEA
-关于IDEA的安装与使用请参考：https://github.com/judasn/IntelliJ-IDEA-Tutorial
-搜索插件仓库，安装插件Lombok；
-
-
-
-
-将项目下载到本地，然后直接打开。
-
-
-
-
-
--Mysql
-下载并安装mysql5.7版本，下载地址：https://dev.mysql.com/do...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/08/28/mall%E5%9C%A8Windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
-		<time datetime="2021-08-28T10:00:36.489Z" itemprop="datePublished">
-	  		2021-08-28
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/08/28/mall%E5%9C%A8Windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E7%AF%87/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/29/%E7%BB%99Swagger%E5%8D%87%E7%BA%A7%E4%BA%86%E6%96%B0%E7%89%88%E6%9C%AC%E6%B2%A1%E6%83%B3%E5%88%B0%E5%B1%85%E7%84%B6%E6%9C%89%E8%BF%99%E4%B9%88%E5%A4%9A%E5%9D%91/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>

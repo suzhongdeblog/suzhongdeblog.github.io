@@ -232,26 +232,19 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/23/%E4%BD%BF%E7%94%A8Dockerfile%E4%B8%BASpringBoot%E5%BA%94%E7%94%A8%E6%9E%84%E5%BB%BADocker%E9%95%9C%E5%83%8F/" itemprop="url">
-		使用Dockerfile为SpringBoot应用构建Docker镜像
+	<a href="/2021/08/25/MyBatis%E7%9A%84CRUD%E6%8F%92%E4%BB%B6%E5%85%A5%E9%97%A8/" itemprop="url">
+		MyBatis的CRUD插件入门
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							使用Dockerfile为SpringBoot应用构建Docker镜像
-上次写过一篇使用Maven插件构建Docker镜像 ，讲述了通过docker-maven-plugin来构建docker镜像的方式，此种方式需要依赖自建的Registry镜像仓库。本文将讲述另一种方式，使用Dockerfile来构建docker镜像，此种方式不需要依赖自建的镜像仓库，只需要应用的jar包和一个Dockerfile文件即可。
+							MyBatis的CRUD插件入门
+相信很多朋友在项目中使用的ORM框架都是MyBatis，如果单用MyBatis来操作数据库的话，需要手写很多单表查询的SQL实现。这时候我们往往会选择一个增强工具来实现这些单表CRUD操作，这里推荐一款好用的工具MyBatis-Plus！
 
--Dockerfile常用指令-ADD
-用于复制文件，格式：
-
-1ADD &lt;src&gt; &lt;dest&gt;
-
-
-示例：
-
-12# 将当前目录下的mall-tiny...
+-MyBatis-Plus简介
+MyBatis-Plus（简称 MP）是一个 MyBatis 的增强工具，在 MyBatis 的基础上只做增强不做改变，为简化开发、提高效率而生。MyBatis-Plus 提供了代码生成器，可以一键生成controller、service、mapper、model、mapper.xml...
 						
 					</div>
 					
@@ -266,9 +259,9 @@
 
 
 
-	<a href="/2021/08/23/%E4%BD%BF%E7%94%A8Dockerfile%E4%B8%BASpringBoot%E5%BA%94%E7%94%A8%E6%9E%84%E5%BB%BADocker%E9%95%9C%E5%83%8F/" itemprop="url">
-		<time datetime="2021-08-23T15:57:26.732Z" itemprop="datePublished">
-	  		2021-08-23
+	<a href="/2021/08/25/MyBatis%E7%9A%84CRUD%E6%8F%92%E4%BB%B6%E5%85%A5%E9%97%A8/" itemprop="url">
+		<time datetime="2021-08-24T21:04:59.949Z" itemprop="datePublished">
+	  		2021-08-25
 	  </time>
 	</a> 
 
@@ -281,7 +274,7 @@
 
 						
 							<span class="right">      	
-								<a href="/2021/08/23/%E4%BD%BF%E7%94%A8Dockerfile%E4%B8%BASpringBoot%E5%BA%94%E7%94%A8%E6%9E%84%E5%BB%BADocker%E9%95%9C%E5%83%8F/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/25/MyBatis%E7%9A%84CRUD%E6%8F%92%E4%BB%B6%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -292,21 +285,21 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/23/%E4%BD%BF%E7%94%A8Maven%E6%8F%92%E4%BB%B6%E4%B8%BASpringBoot%E5%BA%94%E7%94%A8%E6%9E%84%E5%BB%BADocker%E9%95%9C%E5%83%8F/" itemprop="url">
-		使用Maven插件为SpringBoot应用构建Docker镜像
+	<a href="/2021/08/25/Hutool%E5%B7%A5%E5%85%B7%E7%B1%BB%E5%BA%93%E5%85%A5%E9%97%A8/" itemprop="url">
+		Hutool工具类库入门
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							使用Maven插件为SpringBoot应用构建Docker镜像
-本文主要介绍如何使用Maven插件将SpringBoot应用打包为Docker镜像，并上传到私有镜像仓库Docker Registry的过程。
+							Hutool工具类库入门
+Hutool是一个小而全的Java工具类库，它帮助我们简化每一行代码，避免重复造轮子。如果你有需要用到某些工具类的时候，不妨在Hutool里面找找。本文总结了平时常用的16个工具类，希望对大家有所帮助！
 
--Docker Registry-Docker Registry 2.0搭建1docker run -d -p 5000:5000 --restart=always --name registry2 registry:2
+-安装
+Hutool的安装非常简单，Maven项目中只需在pom.xml添加以下依赖即可。
 
-
-如果遇到镜像下载不下来的情况，需要修改 /etc/docker/daemon.json 文件并添加上 registry-mirrors 键值，然后重启doc...
+12345&lt;dependency&gt;    &lt;groupId&gt;cn.hutool&lt;/groupId&gt;    &lt;artifactId&gt;hutool-all&lt;/artifactId&gt;    &lt;version&...
 						
 					</div>
 					
@@ -321,9 +314,9 @@
 
 
 
-	<a href="/2021/08/23/%E4%BD%BF%E7%94%A8Maven%E6%8F%92%E4%BB%B6%E4%B8%BASpringBoot%E5%BA%94%E7%94%A8%E6%9E%84%E5%BB%BADocker%E9%95%9C%E5%83%8F/" itemprop="url">
-		<time datetime="2021-08-23T15:39:27.102Z" itemprop="datePublished">
-	  		2021-08-23
+	<a href="/2021/08/25/Hutool%E5%B7%A5%E5%85%B7%E7%B1%BB%E5%BA%93%E5%85%A5%E9%97%A8/" itemprop="url">
+		<time datetime="2021-08-24T20:39:05.772Z" itemprop="datePublished">
+	  		2021-08-25
 	  </time>
 	</a> 
 
@@ -336,7 +329,7 @@
 
 						
 							<span class="right">      	
-								<a href="/2021/08/23/%E4%BD%BF%E7%94%A8Maven%E6%8F%92%E4%BB%B6%E4%B8%BASpringBoot%E5%BA%94%E7%94%A8%E6%9E%84%E5%BB%BADocker%E9%95%9C%E5%83%8F/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/25/Hutool%E5%B7%A5%E5%85%B7%E7%B1%BB%E5%BA%93%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -347,22 +340,27 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/23/%E9%85%8D%E7%BD%AE%E5%AE%B9%E5%99%A8%E4%B8%AD%E7%9A%84host/" itemprop="url">
-		配置容器中的host
+	<a href="/2021/08/25/Maven%E4%BC%98%E7%A7%80%E6%8F%92%E4%BB%B6fabric8io%E5%87%BA%E5%93%81/" itemprop="url">
+		Maven优秀插件fabric8io出品
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							简介
-我们在配置服务器的时候经常会修改域名映射, 也就是/etc/hosts文件, 
-但是即便如此简单点的东西在网上写也是乱七八糟, 所以这里记录一个真正能用的方法.
+							Maven优秀插件fabric8io出品
+最近又发现了一款好用的Maven插件，fabric8io出品的docker-maven-plugin，可以把SpringBoot应用方便的部署到Docker容器中去。该插件可以实现打包镜像、推送到镜像仓库、运行应用等一系列操作，本文将对其用法进行详细介绍，希望对大家有所帮助！
 
-文章主要使用两种配置方法(命令配置和docker-compose配置):1. 命令行配置
---add-host 使用该参数可以配置多个host.
+-安装私有镜像仓库
+由于之后我们需要推送到私有镜像仓库，我们预先安装好，使用的是Docker公司开发的私有镜像仓库Registry。
 
-1234567891011➜  Desktop docker run -it --add-host host1:192.168.1.1 --add-host host2:192.168.1.2 alpine/ # cat /etc/hosts127.0.0.1   local...
+
+下载Registry的Docker镜像；
+
+1docker pull registry:2
+
+
+使用Docker容器运行Registr...
 						
 					</div>
 					
@@ -377,9 +375,9 @@
 
 
 
-	<a href="/2021/08/23/%E9%85%8D%E7%BD%AE%E5%AE%B9%E5%99%A8%E4%B8%AD%E7%9A%84host/" itemprop="url">
-		<time datetime="2021-08-23T15:19:30.985Z" itemprop="datePublished">
-	  		2021-08-23
+	<a href="/2021/08/25/Maven%E4%BC%98%E7%A7%80%E6%8F%92%E4%BB%B6fabric8io%E5%87%BA%E5%93%81/" itemprop="url">
+		<time datetime="2021-08-24T19:55:37.046Z" itemprop="datePublished">
+	  		2021-08-25
 	  </time>
 	</a> 
 
@@ -392,7 +390,7 @@
 
 						
 							<span class="right">      	
-								<a href="/2021/08/23/%E9%85%8D%E7%BD%AE%E5%AE%B9%E5%99%A8%E4%B8%AD%E7%9A%84host/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/25/Maven%E4%BC%98%E7%A7%80%E6%8F%92%E4%BB%B6fabric8io%E5%87%BA%E5%93%81/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -403,24 +401,19 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/23/%E5%AE%89%E8%A3%85tomcat%E8%BF%90%E8%A1%8Cwar%E5%8C%85/" itemprop="url">
-		安装tomcat运行war包
+	<a href="/2021/08/25/Filebeat%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%97%A5%E5%BF%97%E9%87%87%E9%9B%86%E5%99%A8%E5%85%A5%E9%97%A8/" itemprop="url">
+		Filebeat轻量级日志采集器入门
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							简介
-开源小型web服务器 ，完全免费，主要用于中小型web项目，只支持Servlet和JSP 等少量javaee规范（就是JavaWeb编程接口）
+							Filebeat轻量级日志采集器入门
+之前我们搭建的ELK日志收集系统，主要是用来收集SpringBoot应用的日志。其原理是应用通过Logstash插件，使用TCP向Logstash传输日志，从而存储到Elasticsearch中去。但是有很多中间件的日志都是直接存储在文件中的，比如Nginx、Elasticsearch和MySQL，此时我们就需要一个搬运工来把日志搬到Elasticsearch中去，Filebeat正是这样一个日志搬运工，本文将详细介绍它的使用方法，希望对大家有所帮助。
 
-第一步快速开始
-这里介绍两种方法(官方镜像安装和Dockerfile安装):
-
-1. docker官方镜像安装
-首先拉取镜像, 会自动拉取最新版本 - docker pull tomcat
-
-1234567891011121314151617[root@master ~]# docker pull tomcatUsing default tag: latestTrying to pull repository docker.io/libr...
+-Filebeat简介
+Filebeat是一款轻量级日志采集器，可用于转发和汇总日志与文件。Fi...
 						
 					</div>
 					
@@ -435,9 +428,9 @@
 
 
 
-	<a href="/2021/08/23/%E5%AE%89%E8%A3%85tomcat%E8%BF%90%E8%A1%8Cwar%E5%8C%85/" itemprop="url">
-		<time datetime="2021-08-23T14:48:45.684Z" itemprop="datePublished">
-	  		2021-08-23
+	<a href="/2021/08/25/Filebeat%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%97%A5%E5%BF%97%E9%87%87%E9%9B%86%E5%99%A8%E5%85%A5%E9%97%A8/" itemprop="url">
+		<time datetime="2021-08-24T19:15:07.361Z" itemprop="datePublished">
+	  		2021-08-25
 	  </time>
 	</a> 
 
@@ -450,7 +443,7 @@
 
 						
 							<span class="right">      	
-								<a href="/2021/08/23/%E5%AE%89%E8%A3%85tomcat%E8%BF%90%E8%A1%8Cwar%E5%8C%85/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/25/Filebeat%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%97%A5%E5%BF%97%E9%87%87%E9%9B%86%E5%99%A8%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -461,19 +454,19 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/23/docker-compose%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" itemprop="url">
-		docker-compose使用教程
+	<a href="/2021/08/25/Kibana%E8%AE%BE%E7%BD%AE%E7%99%BB%E5%BD%95%E8%AE%A4%E8%AF%81/" itemprop="url">
+		Kibana设置登录认证
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							简介英文解释
-Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a Compose file to configure your application’s services. Then, using a single command, you create and start all the services from your configuration.
+							Kibana设置登录认证
+在《你居然还去服务器上捞日志，搭个日志收集系统难道不香么！》一文中我们介绍过ELK日志收集系统的搭建，由于我们的Kibana没有任何安全保护机制，如果部署到公网上去的话，任何人都可以查看你的日志了。日志暴露在网络上可不是件好事情，今天教大家如何给Kibana设置登录认证来保护它。
 
-中文解释
-Compose是一个用于定义和运行多容器Docker应用程序的工...
+-实现原理
+由于Kibana的日志信息都存储在Elasticsearch中，所以只要给Elasticsearch开启X-PACK中的安全功能，并给预置的账号设置好密码即可。Elasticsearch设置好之后，就可以在Kibana中对用户、角色、权限进行管理了，本文使用的ELK组件版...
 						
 					</div>
 					
@@ -488,9 +481,9 @@ Compose是一个用于定义和运行多容器Docker应用程序的工...
 
 
 
-	<a href="/2021/08/23/docker-compose%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" itemprop="url">
-		<time datetime="2021-08-23T14:26:06.260Z" itemprop="datePublished">
-	  		2021-08-23
+	<a href="/2021/08/25/Kibana%E8%AE%BE%E7%BD%AE%E7%99%BB%E5%BD%95%E8%AE%A4%E8%AF%81/" itemprop="url">
+		<time datetime="2021-08-24T18:25:39.760Z" itemprop="datePublished">
+	  		2021-08-25
 	  </time>
 	</a> 
 
@@ -503,7 +496,7 @@ Compose是一个用于定义和运行多容器Docker应用程序的工...
 
 						
 							<span class="right">      	
-								<a href="/2021/08/23/docker-compose%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/25/Kibana%E8%AE%BE%E7%BD%AE%E7%99%BB%E5%BD%95%E8%AE%A4%E8%AF%81/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -514,42 +507,25 @@ Compose是一个用于定义和运行多容器Docker应用程序的工...
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/23/Linux%E9%98%B2%E7%81%AB%E5%A2%99Firewall%E5%92%8CIptables%E7%9A%84%E4%BD%BF%E7%94%A8/" itemprop="url">
-		Linux防火墙Firewall和Iptables的使用
+	<a href="/2021/08/25/Docker%E6%9C%8D%E5%8A%A1%E5%BC%80%E6%94%BE%E4%BA%86%E8%BF%99%E4%B8%AA%E7%AB%AF%E5%8F%A3%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%88%86%E5%88%86%E9%92%9F%E5%8F%98%E8%82%89%E6%9C%BA/" itemprop="url">
+		Docker服务开放了这个端口服务器分分钟变肉机
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							简介Linux防火墙Firewall和Iptables的使用
+							Docker服务开放了这个端口服务器分分钟变肉机
+之前有很多朋友提过，当使用docker-maven-plugin打包SpringBoot应用的Docker镜像时，服务器需要开放2375端口。由于开放了端口没有做任何安全保护，会引起安全漏洞，被人入侵、挖矿、CPU飙升这些情况都有发生，今天我们来聊聊如何解决这个问题。
 
-Linux中有两种防火墙软件，ConterOS7.0以上使用的是firewall，ConterOS7.0以下使用的是iptables，本文将分别介绍两种防火墙软件的使用。
-
--Firewall
-开启防火墙：
-
-1systemctl start firewalld
+-问题产生的原因
+首先我们要明白问题产生的原因，才能更好地解决问题！
 
 
-关闭防火墙：
-
-1systemctl stop firewalld
+Docker为了实现集群管理，提供了远程管理的端口。Docker Daemon作为守护进程运行在后台，可以执行发送到管理端口上的Docker命令。
 
 
-查看防火墙状态：
-
-1systemctl status firewalld
-
-
-设置开机启动：
-
-1systemctl enable firewalld
-
-
-禁用开机启动：
-
-1system...
+当我们修改docker.service文件，修...
 						
 					</div>
 					
@@ -564,9 +540,9 @@ Linux中有两种防火墙软件，ConterOS7.0以上使用的是firewall，Conte
 
 
 
-	<a href="/2021/08/23/Linux%E9%98%B2%E7%81%AB%E5%A2%99Firewall%E5%92%8CIptables%E7%9A%84%E4%BD%BF%E7%94%A8/" itemprop="url">
-		<time datetime="2021-08-23T14:21:22.848Z" itemprop="datePublished">
-	  		2021-08-23
+	<a href="/2021/08/25/Docker%E6%9C%8D%E5%8A%A1%E5%BC%80%E6%94%BE%E4%BA%86%E8%BF%99%E4%B8%AA%E7%AB%AF%E5%8F%A3%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%88%86%E5%88%86%E9%92%9F%E5%8F%98%E8%82%89%E6%9C%BA/" itemprop="url">
+		<time datetime="2021-08-24T18:06:55.665Z" itemprop="datePublished">
+	  		2021-08-25
 	  </time>
 	</a> 
 
@@ -579,7 +555,7 @@ Linux中有两种防火墙软件，ConterOS7.0以上使用的是firewall，Conte
 
 						
 							<span class="right">      	
-								<a href="/2021/08/23/Linux%E9%98%B2%E7%81%AB%E5%A2%99Firewall%E5%92%8CIptables%E7%9A%84%E4%BD%BF%E7%94%A8/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/25/Docker%E6%9C%8D%E5%8A%A1%E5%BC%80%E6%94%BE%E4%BA%86%E8%BF%99%E4%B8%AA%E7%AB%AF%E5%8F%A3%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%88%86%E5%88%86%E9%92%9F%E5%8F%98%E8%82%89%E6%9C%BA/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -590,25 +566,22 @@ Linux中有两种防火墙软件，ConterOS7.0以上使用的是firewall，Conte
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/23/%E5%BC%80%E5%8F%91%E8%80%85%E5%BF%85%E5%A4%87Docker%E5%91%BD%E4%BB%A4/" itemprop="url">
-		开发者必备Docker命令
+	<a href="/2021/08/25/knife4j%E6%96%87%E6%A1%A3%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7/" itemprop="url">
+		knife4j文档生成工具
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							简介开发者必备Docker命令
+							knife4j文档生成工具
+Swagger作为一款API文档生成工具，虽然功能已经很完善了，但是还是有些不足的地方。偶然发现knife4j弥补了这些不足，赋予了Swagger更多的功能，今天我们来讲下它的使用方法。
 
-平时经常使用Docker来搭建各种环境，简单又好用！但是有时候往往会忘记命令，总结了一套非常实用的Docker命令，对于Java开发来说基本上够用了，希望对大家有所帮助！
+-knife4j简介
+knife4j是springfox-swagger的增强UI实现，为Java开发者在使用Swagger的时候，提供了简洁、强大的接口文档体验。knife4j完全遵循了springfox-swagger中的使用方式，并在此基础上做了增强功能，如果你用过Swagger，你就可以无缝切换到knife4j。
 
--Docker简介
-Docker是一个开源的应用容器引擎，让开发者可以打包应用及依赖包到一个可移植的镜像中，然后发布到任何流行的Linux或Windows机器上。使用Docker可以更方便地打包、测试以及部署应用程序。
-
--Docker环境安装
-安装yum-utils；
-
-1yum install -y yum-utils device-mapper-persistent-data ...
+-快速开始
+接下来我们来介绍下如何在SpringB...
 						
 					</div>
 					
@@ -623,9 +596,9 @@ Docker是一个开源的应用容器引擎，让开发者可以打包应用及�
 
 
 
-	<a href="/2021/08/23/%E5%BC%80%E5%8F%91%E8%80%85%E5%BF%85%E5%A4%87Docker%E5%91%BD%E4%BB%A4/" itemprop="url">
-		<time datetime="2021-08-23T14:21:22.845Z" itemprop="datePublished">
-	  		2021-08-23
+	<a href="/2021/08/25/knife4j%E6%96%87%E6%A1%A3%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7/" itemprop="url">
+		<time datetime="2021-08-24T17:43:12.501Z" itemprop="datePublished">
+	  		2021-08-25
 	  </time>
 	</a> 
 
@@ -638,7 +611,7 @@ Docker是一个开源的应用容器引擎，让开发者可以打包应用及�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/23/%E5%BC%80%E5%8F%91%E8%80%85%E5%BF%85%E5%A4%87Docker%E5%91%BD%E4%BB%A4/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/25/knife4j%E6%96%87%E6%A1%A3%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -649,20 +622,22 @@ Docker是一个开源的应用容器引擎，让开发者可以打包应用及�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/23/%E5%BC%80%E5%8F%91%E8%80%85Docker%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/" itemprop="url">
-		开发者Docker入门教程
+	<a href="/2021/08/25/JWT%E5%BA%93%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/" itemprop="url">
+		JWT库快速入门
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							Docker是什么?-官方解释1234Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口。 [1] - 摘自百度百科
+							JWT库快速入门
+以前一直使用的是jjwt这个JWT库，虽然小巧够用, 但对JWT的一些细节封装的不是很好。最近发现了一个更好用的JWT库nimbus-jose-jwt，简单易用，API非常易于理解，对称加密和非对称加密算法都支持，推荐给大家！
 
--通俗易懂解释123456你可以把Docker理解成一个轻量化的虚拟机, 在上面我们可以部署我们的后台项目, 而且部署后的项目可移植性非常强, 我们可以把他们导出为Docker镜像, 这个镜像可以运行在任何装有Docker的环境中, 几分钟就可以在别的系统上构建出一套一模一样的后台
+-简介
+nimbus-jose-jwt是最受欢迎的JWT开源库，基于Apache 2.0开源协议，支持所有标准的签名(JWS)和加密(JWE)算法。
 
--第一步下载Docker
-下载地址...
+-JWT概念关系
+这里我们需要了解下JWT、JWS、JWE三者之间的关系，其实JWT(JSON Web Token)指的是一种规范，这种规范允许我们使用JWT在两个组织之间传递安全可靠的信息。而...
 						
 					</div>
 					
@@ -677,9 +652,9 @@ Docker是一个开源的应用容器引擎，让开发者可以打包应用及�
 
 
 
-	<a href="/2021/08/23/%E5%BC%80%E5%8F%91%E8%80%85Docker%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/" itemprop="url">
-		<time datetime="2021-08-23T14:21:22.843Z" itemprop="datePublished">
-	  		2021-08-23
+	<a href="/2021/08/25/JWT%E5%BA%93%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/" itemprop="url">
+		<time datetime="2021-08-24T17:07:30.620Z" itemprop="datePublished">
+	  		2021-08-25
 	  </time>
 	</a> 
 
@@ -692,7 +667,7 @@ Docker是一个开源的应用容器引擎，让开发者可以打包应用及�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/23/%E5%BC%80%E5%8F%91%E8%80%85Docker%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/25/JWT%E5%BA%93%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -703,48 +678,23 @@ Docker是一个开源的应用容器引擎，让开发者可以打包应用及�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/23/%E5%BC%80%E5%8F%91%E8%80%85Docker%E5%AE%89%E8%A3%85MYSQL%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url">
-		开发者Docker安装MYSQL数据库
+	<a href="/2021/08/25/Fluentd%E6%97%A5%E5%BF%97%E6%94%B6%E9%9B%86%E5%B7%A5%E5%85%B7/" itemprop="url">
+		Fluentd日志收集工具
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							开发者Docker安装MYSQL数据库第一步安装mysql
-使用docker镜像, 我们可以方便的进行安装
+							Fluentd日志收集工具
+ELK日志收集系统大家都知道，但是还有一种日志收集系统EFK，肯定有很多朋友不知道！这里的F指的是Fluentd，它具有Logstash类似的日志收集功能，但是内存占用连Logstash的十分之一都不到，性能优越、非常轻巧。本文将详细介绍Fluentd的使用，主要用来收集SpringBoot应用的日志，希望对大家有所帮助！
 
-1docker pull mysql
-
-
-输入上面的命令即可
+-Fluentd 简介
+Fluentd是一款开源的日志收集功能，致力于为用户搭建统一的日志收集层，和Elasticsearch、Kibana一起使用可以搭建EFK日志收集系统。什么是统一的日志收集层呢？看下下面这张图就清楚了！
 
 
 
-
-之后我们来查看一下镜像
-
-
-
-
-我们可以看到mysql已经安装完成了
-
-第二步运行mysql
-运行mysql我们只需要使用docker命令
-
-1docker run --name objcat-mysql -e MYSQL_ROOT_PASSWORD=123456 -p 3306:3306 -d mysql
-
-
-之后我们使用navicat来连接一下数据库吧
-
-
-
-
-初始密码为123456
-
-
-我们点击测试连接
-...
+-安...
 						
 					</div>
 					
@@ -759,9 +709,9 @@ Docker是一个开源的应用容器引擎，让开发者可以打包应用及�
 
 
 
-	<a href="/2021/08/23/%E5%BC%80%E5%8F%91%E8%80%85Docker%E5%AE%89%E8%A3%85MYSQL%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url">
-		<time datetime="2021-08-23T14:21:22.839Z" itemprop="datePublished">
-	  		2021-08-23
+	<a href="/2021/08/25/Fluentd%E6%97%A5%E5%BF%97%E6%94%B6%E9%9B%86%E5%B7%A5%E5%85%B7/" itemprop="url">
+		<time datetime="2021-08-24T16:37:15.325Z" itemprop="datePublished">
+	  		2021-08-25
 	  </time>
 	</a> 
 
@@ -774,7 +724,7 @@ Docker是一个开源的应用容器引擎，让开发者可以打包应用及�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/23/%E5%BC%80%E5%8F%91%E8%80%85Docker%E5%AE%89%E8%A3%85MYSQL%E6%95%B0%E6%8D%AE%E5%BA%93/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/25/Fluentd%E6%97%A5%E5%BF%97%E6%94%B6%E9%9B%86%E5%B7%A5%E5%85%B7/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -785,44 +735,21 @@ Docker是一个开源的应用容器引擎，让开发者可以打包应用及�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/23/%E5%BC%80%E5%8F%91%E8%80%85%E5%BF%85%E5%A4%87Linux%E5%91%BD%E4%BB%A4/" itemprop="url">
-		开发者必备Linux命令
+	<a href="/2021/08/25/ELK%E6%90%AD%E5%BB%BA%E6%97%A5%E5%BF%97%E6%94%B6%E9%9B%86%E7%B3%BB%E7%BB%9F/" itemprop="url">
+		ELK搭建日志收集系统
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							简介开发者必备Linux命令
+							ELK搭建日志收集系统
+ELK日志收集系统进阶使用，本文主要讲解如何打造一个线上环境真实可用的日志收集系统。有了它，你就可以和去服务器上捞日志说再见了！
 
-作为一位Java后端开发，怎能不会点Linux命令？总结了一套非常实用的Linux命令（基于CentOS 7.6），希望对大家有所帮助！
+-ELK环境安装
+ELK是指Elasticsearch、Kibana、Logstash这三种服务搭建的日志收集系统，具体搭建方式可以参考《SpringBoot应用整合ELK实现日志收集》。这里仅提供最新版本的docker-compose脚本和一些安装要点。
 
--系统服务管理-systemctl
-systemctl命令是service和chkconfig命令的组合体，可用于管理系统。
-
-
-输出系统中各个服务的状态：
-
-1systemctl list-units --type=service
-
-
-
-
-查看服务的运行状态：
-
-1systemctl status firewalld
-
-
-
-
-启动服务：
-
-1systemctl start firewalld
-
-
-
-
-重新启动服务（不...
+-docker-compose脚本123456789101112131415161718192021222324252627282930313233343536373839404...
 						
 					</div>
 					
@@ -837,9 +764,9 @@ systemctl命令是service和chkconfig命令的组合体，可用于管理系统�
 
 
 
-	<a href="/2021/08/23/%E5%BC%80%E5%8F%91%E8%80%85%E5%BF%85%E5%A4%87Linux%E5%91%BD%E4%BB%A4/" itemprop="url">
-		<time datetime="2021-08-22T19:41:28.061Z" itemprop="datePublished">
-	  		2021-08-23
+	<a href="/2021/08/25/ELK%E6%90%AD%E5%BB%BA%E6%97%A5%E5%BF%97%E6%94%B6%E9%9B%86%E7%B3%BB%E7%BB%9F/" itemprop="url">
+		<time datetime="2021-08-24T16:09:19.761Z" itemprop="datePublished">
+	  		2021-08-25
 	  </time>
 	</a> 
 
@@ -852,7 +779,7 @@ systemctl命令是service和chkconfig命令的组合体，可用于管理系统�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/23/%E5%BC%80%E5%8F%91%E8%80%85%E5%BF%85%E5%A4%87Linux%E5%91%BD%E4%BB%A4/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/25/ELK%E6%90%AD%E5%BB%BA%E6%97%A5%E5%BF%97%E6%94%B6%E9%9B%86%E7%B3%BB%E7%BB%9F/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>

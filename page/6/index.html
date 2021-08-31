@@ -232,22 +232,22 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/28/SpringCloudGateway%E4%B9%8B%E6%96%B0%E4%B8%80%E4%BB%A3API%E7%BD%91%E5%85%B3%E6%9C%8D%E5%8A%A1%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		SpringCloudGateway之新一代API网关服务进阶篇
+	<a href="/2021/08/29/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E9%A1%B9%E7%9B%AE%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/" itemprop="url">
+		前后端分离项目如何解决跨域问题
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							SpringCloudGateway之新一代API网关服务进阶篇
-Spring Cloud Gateway 为 SpringBoot 应用提供了API网关支持，具有强大的智能路由与过滤器功能，本文将对其用法进行详细介绍。
+							前后端分离项目如何解决跨域问题
+跨域资源共享（CORS）是前后端分离项目很常见的问题，本文主要介绍当SpringBoot应用整合SpringSecurity以后如何解决该问题。
 
--Gateway 简介
-Gateway是在Spring生态系统之上构建的API网关服务，基于Spring 5，Spring Boot 2和 Project Reactor等技术。Gateway旨在提供一种简单而有效的方式来对API进行路由，以及提供一些强大的过滤器功能， 例如：熔断、限流、重试等。
+-什么是跨域问题
+CORS全称Cross-Origin Resource Sharing，意为跨域资源共享。当一个资源去访问另一个不同域名或者同域名不同端口的资源时，就会发出跨域请求。如果此时另一个资源不允许其进行跨域资源访问，那么访问的那个资源就会遇到跨域问题。
 
--Spring Cloud Gateway 具有如下特性：
-基于Sp...
+-跨域问题演示及解决
+我们使用mall项目的源代码来演示一下跨域问题。此时前端代码运行在8090端口上，后端代码运行在8080端口上，由于其域名都...
 						
 					</div>
 					
@@ -262,9 +262,9 @@ Gateway是在Spring生态系统之上构建的API网关服务，基于Spring 5�
 
 
 
-	<a href="/2021/08/28/SpringCloudGateway%E4%B9%8B%E6%96%B0%E4%B8%80%E4%BB%A3API%E7%BD%91%E5%85%B3%E6%9C%8D%E5%8A%A1%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		<time datetime="2021-08-27T17:21:10.920Z" itemprop="datePublished">
-	  		2021-08-28
+	<a href="/2021/08/29/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E9%A1%B9%E7%9B%AE%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/" itemprop="url">
+		<time datetime="2021-08-29T07:51:51.228Z" itemprop="datePublished">
+	  		2021-08-29
 	  </time>
 	</a> 
 
@@ -277,7 +277,7 @@ Gateway是在Spring生态系统之上构建的API网关服务，基于Spring 5�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/28/SpringCloudGateway%E4%B9%8B%E6%96%B0%E4%B8%80%E4%BB%A3API%E7%BD%91%E5%85%B3%E6%9C%8D%E5%8A%A1%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/29/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E9%A1%B9%E7%9B%AE%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -288,22 +288,25 @@ Gateway是在Spring生态系统之上构建的API网关服务，基于Spring 5�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/28/SpringCloudConsul%E6%9C%8D%E5%8A%A1%E6%B2%BB%E7%90%86%E4%B8%8E%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		SpringCloudConsul服务治理与配置中心进阶篇
+	<a href="/2021/08/29/SpringBoot%E5%BA%94%E7%94%A8%E6%95%B4%E5%90%88ELK%E5%AE%9E%E7%8E%B0%E6%97%A5%E5%BF%97%E6%94%B6%E9%9B%86/" itemprop="url">
+		SpringBoot应用整合ELK实现日志收集
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							SpringCloudConsul服务治理与配置中心进阶篇
-Spring Cloud Consul 为 SpringBoot 应用提供了 Consul的支持，Consul既可以作为注册中心使用，也可以作为配置中心使用，本文将对其用法进行详细介绍。
+							SpringBoot应用整合ELK实现日志收集
+ELK即Elasticsearch、Logstash、Kibana,组合起来可以搭建线上日志系统，本文主要讲解使用ELK来收集SpringBoot应用产生的日志。
 
--Consul 简介
-Consul是HashiCorp公司推出的开源软件，提供了微服务系统中的服务治理、配置中心、控制总线等功能。这些功能中的每一个都可以根据需要单独使用，也可以一起使用以构建全方位的服务网格，总之Consul提供了一种完整的服务网格解决方案。
+-学习前需要了解的内容
+开发者必备Docker命令
+使用Docker Compose部署SpringBoot应用
+SpringBoot应用中使用AOP记录接口访问日志
 
--Spring Cloud Consul 具有如下特性：
-支持服务治理：Cons...
+-ELK中各个服务的作用
+Elasticsearch:用于存储收集到的日志信息；
+Logstash:用于收集日志，SpringBoot应用整合了Logstash以后会把日志发送给Logstash,Logstas...
 						
 					</div>
 					
@@ -318,9 +321,9 @@ Consul是HashiCorp公司推出的开源软件，提供了微服务系统中的�
 
 
 
-	<a href="/2021/08/28/SpringCloudConsul%E6%9C%8D%E5%8A%A1%E6%B2%BB%E7%90%86%E4%B8%8E%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		<time datetime="2021-08-27T17:00:08.180Z" itemprop="datePublished">
-	  		2021-08-28
+	<a href="/2021/08/29/SpringBoot%E5%BA%94%E7%94%A8%E6%95%B4%E5%90%88ELK%E5%AE%9E%E7%8E%B0%E6%97%A5%E5%BF%97%E6%94%B6%E9%9B%86/" itemprop="url">
+		<time datetime="2021-08-29T07:34:26.807Z" itemprop="datePublished">
+	  		2021-08-29
 	  </time>
 	</a> 
 
@@ -333,7 +336,7 @@ Consul是HashiCorp公司推出的开源软件，提供了微服务系统中的�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/28/SpringCloudConsul%E6%9C%8D%E5%8A%A1%E6%B2%BB%E7%90%86%E4%B8%8E%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/29/SpringBoot%E5%BA%94%E7%94%A8%E6%95%B4%E5%90%88ELK%E5%AE%9E%E7%8E%B0%E6%97%A5%E5%BF%97%E6%94%B6%E9%9B%86/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -344,22 +347,22 @@ Consul是HashiCorp公司推出的开源软件，提供了微服务系统中的�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/27/SpringCloudSleuth%E4%B9%8B%E5%88%86%E5%B8%83%E5%BC%8F%E8%AF%B7%E6%B1%82%E9%93%BE%E8%B7%AF%E8%B7%9F%E8%B8%AA%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		SpringCloudSleuth之分布式请求链路跟踪进阶篇
+	<a href="/2021/08/29/SpringBoot%E5%BA%94%E7%94%A8%E4%B8%AD%E4%BD%BF%E7%94%A8AOP%E8%AE%B0%E5%BD%95%E6%8E%A5%E5%8F%A3%E8%AE%BF%E9%97%AE%E6%97%A5%E5%BF%97/" itemprop="url">
+		SpringBoot应用中使用AOP记录接口访问日志
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							SpringCloudSleuth之分布式请求链路跟踪进阶篇
-Spring Cloud Sleuth 是分布式系统中跟踪服务间调用的工具，它可以直观地展示出一次请求的调用过程，本文将对其用法进行详细介绍。
+							SpringBoot应用中使用AOP记录接口访问日志
+本文主要讲述AOP在mall项目中的应用，通过在controller层建一个切面来实现接口访问的统一日志记录。
 
--Spring Cloud Sleuth 简介
-随着我们的系统越来越庞大，各个服务间的调用关系也变得越来越复杂。当客户端发起一个请求时，这个请求经过多个服务后，最终返回了结果，经过的每一个服务都有可能发生延迟或错误，从而导致请求失败。这时候我们就需要请求链路跟踪工具来帮助我们，理清请求调用的服务链路，解决问题。
+-AOP
+AOP为Aspect Oriented Programming的缩写，意为：面向切面编程，通过预编译方式和运行期动态代理实现程序功能的统一维护的一种技术。利用AOP可以对业务逻辑的各个部分进行隔离，从而使得业务逻辑各部分之间的耦合度降低，提高程序的可重用性，同时提高了开发的效率。
 
--给服务添加请求链路跟踪
-我们将通过user-service和ribb...
+-AOP的相关术语-通知（Advice）
+通知描述了切面要完成的工作以及何时执行。比如我们的日志切面需要记录每个接口调用时长，就需要...
 						
 					</div>
 					
@@ -374,9 +377,9 @@ Spring Cloud Sleuth 是分布式系统中跟踪服务间调用的工具，它可
 
 
 
-	<a href="/2021/08/27/SpringCloudSleuth%E4%B9%8B%E5%88%86%E5%B8%83%E5%BC%8F%E8%AF%B7%E6%B1%82%E9%93%BE%E8%B7%AF%E8%B7%9F%E8%B8%AA%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		<time datetime="2021-08-27T15:59:54.014Z" itemprop="datePublished">
-	  		2021-08-27
+	<a href="/2021/08/29/SpringBoot%E5%BA%94%E7%94%A8%E4%B8%AD%E4%BD%BF%E7%94%A8AOP%E8%AE%B0%E5%BD%95%E6%8E%A5%E5%8F%A3%E8%AE%BF%E9%97%AE%E6%97%A5%E5%BF%97/" itemprop="url">
+		<time datetime="2021-08-29T07:12:55.775Z" itemprop="datePublished">
+	  		2021-08-29
 	  </time>
 	</a> 
 
@@ -389,7 +392,7 @@ Spring Cloud Sleuth 是分布式系统中跟踪服务间调用的工具，它可
 
 						
 							<span class="right">      	
-								<a href="/2021/08/27/SpringCloudSleuth%E4%B9%8B%E5%88%86%E5%B8%83%E5%BC%8F%E8%AF%B7%E6%B1%82%E9%93%BE%E8%B7%AF%E8%B7%9F%E8%B8%AA%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/29/SpringBoot%E5%BA%94%E7%94%A8%E4%B8%AD%E4%BD%BF%E7%94%A8AOP%E8%AE%B0%E5%BD%95%E6%8E%A5%E5%8F%A3%E8%AE%BF%E9%97%AE%E6%97%A5%E5%BF%97/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -400,19 +403,26 @@ Spring Cloud Sleuth 是分布式系统中跟踪服务间调用的工具，它可
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/27/SpringCloudBus%E4%B9%8B%E6%B6%88%E6%81%AF%E6%80%BB%E7%BA%BF%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		SpringCloudBus之消息总线进阶篇
+	<a href="/2021/08/29/MyBatis%20Generator%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E4%B8%AD%E8%B8%A9%E8%BF%87%E7%9A%84%E4%B8%80%E4%B8%AA%E5%9D%91/" itemprop="url">
+		MyBatis Generator使用过程中踩过的一个坑
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							SpringCloudBus之消息总线进阶篇
-Spring Cloud Bus 使用轻量级的消息代理来连接微服务架构中的各个服务，可以将其用于广播状态更改（例如配置中心配置更改）或其他管理指令，本文将对其用法进行详细介绍。
+							MyBatis Generator使用过程中踩过的一个坑
+在使用MyBatis Generator生成代码的过程中，曾经遇到一个坑，每次生成mapper.xml的时候并不是直接覆盖原文件，而是在原文件中追加了新的内容，导致运行项目出错，本文主要讲解如何解决这个问题。
 
--Spring Cloud Bus 简介
-我们通常会使用消息代理来构建一个主题，然后把微服务架构中的所有服务都连接到这个主题上去，当我们向该主题发送消息时，所有订阅该主题的服务都会收到消息并进行消费。使用 Spring Cloud Bus 可以方便地构建起这套机制，所以 Spring Cloud Bus 又被称为消息总线。Spring Cloud Bus 配合 Sp...
+-问题重现-示例代码
+使用的是mall-tiny-02的代码，代码地址：https://github.com/macrozheng/mall-learning/tree/master/mall-tiny-02
+
+-直接运行MallTinyApplication的main函数
+发现正常运行，启动成功！
+
+
+
+-运行代码生成器...
 						
 					</div>
 					
@@ -427,9 +437,9 @@ Spring Cloud Bus 使用轻量级的消息代理来连接微服务架构中的各
 
 
 
-	<a href="/2021/08/27/SpringCloudBus%E4%B9%8B%E6%B6%88%E6%81%AF%E6%80%BB%E7%BA%BF%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		<time datetime="2021-08-27T15:45:17.990Z" itemprop="datePublished">
-	  		2021-08-27
+	<a href="/2021/08/29/MyBatis%20Generator%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E4%B8%AD%E8%B8%A9%E8%BF%87%E7%9A%84%E4%B8%80%E4%B8%AA%E5%9D%91/" itemprop="url">
+		<time datetime="2021-08-29T06:25:12.979Z" itemprop="datePublished">
+	  		2021-08-29
 	  </time>
 	</a> 
 
@@ -442,7 +452,7 @@ Spring Cloud Bus 使用轻量级的消息代理来连接微服务架构中的各
 
 						
 							<span class="right">      	
-								<a href="/2021/08/27/SpringCloudBus%E4%B9%8B%E6%B6%88%E6%81%AF%E6%80%BB%E7%BA%BF%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/29/MyBatis%20Generator%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E4%B8%AD%E8%B8%A9%E8%BF%87%E7%9A%84%E4%B8%80%E4%B8%AA%E5%9D%91/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -453,19 +463,26 @@ Spring Cloud Bus 使用轻量级的消息代理来连接微服务架构中的各
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/27/SpringCloudConfig%E4%B9%8B%E5%A4%96%E9%83%A8%E9%9B%86%E4%B8%AD%E5%8C%96%E9%85%8D%E7%BD%AE%E7%AE%A1%E7%90%86%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		SpringCloudConfig之外部集中化配置管理进阶篇
+	<a href="/2021/08/29/%E6%88%91%E5%B8%B8%E7%94%A8%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E6%8A%80%E5%B7%A7%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
+		我常用的自动化部署技巧部署篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							SpringCloudConfig之外部集中化配置管理进阶篇
-Spring Cloud Config 可以为微服务架构中的应用提供集中化的外部配置支持，它分为服务端和客户端两个部分，本文将对其用法进行详细介绍。
+							我常用的自动化部署技巧部署篇
+SpringBoot+Jenkins自动化部署技巧，远程部署同样适用，附通用自动化脚本！本文将从半自动化部署讲起，到自动化部署，讲解一套生产环境切实可用的自动化部署方案！
 
--Spring Cloud Config 简介
-Spring Cloud Config 分为服务端和客户端两个部分。服务端被称为分布式配置中心，它是个独立的应用，可以从配置仓库获取配置信息并提供给客户端使用。客户端可以通过配置中心来获取配置信息，在启动时加载配置。Spring Cloud Config 的配置中心默认采用Git来存储配置信息，所以天然就支持配置信息的版本管理，并...
+-半自动化部署
+之前写过的SpringBoot应用打包Docker镜像都是通过Maven插件来实现的，由于远程服务器需要开发2375端口，存在一定的安全隐患。这次介绍另一种方法，使用DockerFile+Jar+自动化脚本的形式来部署。由于需要一定的手动操作，我把它称之为半自动化部署。
+
+-项目打包
+这次我们不使用Docker的Maven插件来打包，先在pom.xml中注释掉它；
+
+
+
+...
 						
 					</div>
 					
@@ -480,9 +497,9 @@ Spring Cloud Config 分为服务端和客户端两个部分。服务端被称为
 
 
 
-	<a href="/2021/08/27/SpringCloudConfig%E4%B9%8B%E5%A4%96%E9%83%A8%E9%9B%86%E4%B8%AD%E5%8C%96%E9%85%8D%E7%BD%AE%E7%AE%A1%E7%90%86%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		<time datetime="2021-08-27T15:19:19.699Z" itemprop="datePublished">
-	  		2021-08-27
+	<a href="/2021/08/29/%E6%88%91%E5%B8%B8%E7%94%A8%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E6%8A%80%E5%B7%A7%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-28T20:50:41.265Z" itemprop="datePublished">
+	  		2021-08-29
 	  </time>
 	</a> 
 
@@ -495,7 +512,7 @@ Spring Cloud Config 分为服务端和客户端两个部分。服务端被称为
 
 						
 							<span class="right">      	
-								<a href="/2021/08/27/SpringCloudConfig%E4%B9%8B%E5%A4%96%E9%83%A8%E9%9B%86%E4%B8%AD%E5%8C%96%E9%85%8D%E7%BD%AE%E7%AE%A1%E7%90%86%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/29/%E6%88%91%E5%B8%B8%E7%94%A8%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E6%8A%80%E5%B7%A7%E9%83%A8%E7%BD%B2%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -506,22 +523,22 @@ Spring Cloud Config 分为服务端和客户端两个部分。服务端被称为
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/27/SpringCloudZuul%E4%B9%8BAPI%E7%BD%91%E5%85%B3%E6%9C%8D%E5%8A%A1%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		SpringCloudZuul之API网关服务进阶篇
+	<a href="/2021/08/29/mall-swarm%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE%E5%9C%A8K8S%E4%B8%8B%E7%9A%84%E5%AE%9E%E8%B7%B5%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
+		mall-swarm微服务项目在K8S下的实践部署篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							SpringCloudZuul之API网关服务进阶篇
-Spring Cloud Zuul 是Spring Cloud Netflix 子项目的核心组件之一，可以作为微服务架构中的API网关使用，支持动态路由与过滤功能，本文将对其用法进行详细介绍。
+							mall-swarm微服务项目在K8S下的实践部署篇
+由于K8S目前实在是太火了，之前一直说要给mall项目出个K8S部署方案，这次它来啦！在更新完K8S系列教程后，是时候来波实践了，拿mall-swarm项目来实践真的是刚刚好。如果你有在Docker下部署该项目的经历，而且已经学习了我的K8S系列教程的话，相信你能够轻松上手！
 
--Zuul简介
-API网关为微服务架构中的服务提供了统一的访问入口，客户端通过API网关访问相关服务。API网关的定义类似于设计模式中的门面模式，它相当于整个微服务架构中的门面，所有客户端的访问都通过它来进行路由及过滤。它实现了请求路由、负载均衡、校验过滤、服务容错、服务聚合等功能。
+-服务器规划
+我们先来说下服务器规划吧，之前一直使用的是单机部署所有服务，这次我们使用两台服务器来部署。
 
--创建一个zuul-proxy模块
-这里我们创建一个zu...
+
+基础服务器（192.168.3.101）：用于部署mall-swarm的依赖服务，包括MySql、Redis、Elasticsearch等与应用无关的...
 						
 					</div>
 					
@@ -536,9 +553,9 @@ API网关为微服务架构中的服务提供了统一的访问入口，客户�
 
 
 
-	<a href="/2021/08/27/SpringCloudZuul%E4%B9%8BAPI%E7%BD%91%E5%85%B3%E6%9C%8D%E5%8A%A1%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		<time datetime="2021-08-27T13:12:18.732Z" itemprop="datePublished">
-	  		2021-08-27
+	<a href="/2021/08/29/mall-swarm%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE%E5%9C%A8K8S%E4%B8%8B%E7%9A%84%E5%AE%9E%E8%B7%B5%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-28T20:00:06.606Z" itemprop="datePublished">
+	  		2021-08-29
 	  </time>
 	</a> 
 
@@ -551,7 +568,7 @@ API网关为微服务架构中的服务提供了统一的访问入口，客户�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/27/SpringCloudZuul%E4%B9%8BAPI%E7%BD%91%E5%85%B3%E6%9C%8D%E5%8A%A1%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/29/mall-swarm%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE%E5%9C%A8K8S%E4%B8%8B%E7%9A%84%E5%AE%9E%E8%B7%B5%E9%83%A8%E7%BD%B2%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -562,19 +579,22 @@ API网关为微服务架构中的服务提供了统一的访问入口，客户�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/27/SpringCloudOpenFeign%E5%A3%B0%E6%98%8E%E5%BC%8F%E7%9A%84%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		SpringCloudOpenFeign声明式的服务调用工具进阶篇
+	<a href="/2021/08/29/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84%E4%B8%8B%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E4%BD%BF%E7%94%A8Jenkins%E6%9D%A5%E5%AE%9E%E7%8E%B0%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
+		微服务架构下的自动化部署使用Jenkins来实现部署篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							SpringCloudOpenFeign声明式的服务调用工具进阶篇
-Spring Cloud OpenFeign 是声明式的服务调用工具，它整合了Ribbon和Hystrix，拥有负载均衡和服务容错功能，本文将对其用法进行详细介绍。
+							微服务架构下的自动化部署使用Jenkins来实现部署篇
+之前对mall-swarm项目做了升级，注册中心和配置中心都改为使用Nacos，但是Jenkins的自动化部署文档一直都没更新。有些朋友参考原来的文档部署有点小问题，这次对mall-swarm的自动化部署文档做个升级，希望对大家有所帮助！
 
--Feign简介
-Feign是声明式的服务调用工具，我们只需创建一个接口并用注解的方式来配置它，就可以实现对某个服务接口的调用，简化了直接使用RestTemplate来调用服务接口的开发量。Feign具备可插拔的注解支持，同时支持Feign注解、JAX-RS注解及SpringMvc注解。当使用Feign时，Spring Cloud集成了Ribbon和Eur...
+-Jenkins的基本使用
+使用该部署方案需要对Jenkins有所了解，关于Jenkins的基本使用可以参考：《使用Jenkins一键打包部署SpringBoot应用，就是这么6！》
+
+-部署准备
+部署之前需要先安装mall-swarm需要的依赖服务，并打包好所有应用的Docker镜像。由于之前...
 						
 					</div>
 					
@@ -589,9 +609,9 @@ Feign是声明式的服务调用工具，我们只需创建一个接口并用注
 
 
 
-	<a href="/2021/08/27/SpringCloudOpenFeign%E5%A3%B0%E6%98%8E%E5%BC%8F%E7%9A%84%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		<time datetime="2021-08-27T10:02:16.017Z" itemprop="datePublished">
-	  		2021-08-27
+	<a href="/2021/08/29/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84%E4%B8%8B%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E4%BD%BF%E7%94%A8Jenkins%E6%9D%A5%E5%AE%9E%E7%8E%B0%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-28T18:07:24.947Z" itemprop="datePublished">
+	  		2021-08-29
 	  </time>
 	</a> 
 
@@ -604,7 +624,7 @@ Feign是声明式的服务调用工具，我们只需创建一个接口并用注
 
 						
 							<span class="right">      	
-								<a href="/2021/08/27/SpringCloudOpenFeign%E5%A3%B0%E6%98%8E%E5%BC%8F%E7%9A%84%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/29/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84%E4%B8%8B%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E4%BD%BF%E7%94%A8Jenkins%E6%9D%A5%E5%AE%9E%E7%8E%B0%E9%83%A8%E7%BD%B2%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -615,22 +635,38 @@ Feign是声明式的服务调用工具，我们只需创建一个接口并用注
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/27/SpringCloudHystrixDashboard%E6%96%AD%E8%B7%AF%E5%99%A8%E6%89%A7%E8%A1%8C%E7%9B%91%E6%8E%A7%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		SpringCloudHystrixDashboard断路器执行监控进阶篇
+	<a href="/2021/08/29/mall-swarm%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EDocker%E5%AE%B9%E5%99%A8%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
+		mall-swarm在Linux环境基于Docker容器下的部署部署篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							SpringCloudHystrixDashboard断路器执行监控进阶篇
-Hystrix Dashboard 是Spring Cloud中查看Hystrix实例执行情况的一种仪表盘组件，支持查看单个实例和查看集群实例，本文将对其用法进行详细介绍。
+							mall-swarm在Linux环境基于Docker容器下的部署部署篇
+本文以mall-swarm项目为例，主要介绍一个微服务架构的电商项目如何在Docker容器下部署，涉及到大量系统组件的部署及多个Spring Cloud微服务应用的部署，基于CentOS7.6。
 
--简介
-Hystrix提供了Hystrix Dashboard来实时监控HystrixCommand方法的执行情况。 Hystrix Dashboard可以有效地反映出每个Hystrix实例的运行情况，帮助我们快速发现系统中的问题，从而采取对应措施。
+-环境搭建-基础环境部署
+mall-swarm运行需要的系统组件如下，使用Docker Compose 批量安装更方便，Docker Compose使用请参考：使用Docker Compose部署SpringBoot应用 。
 
--Hystrix 单个实例监控
-我们先通过使用Hystrix Dashboard监控单个...
+
+
+
+组件
+版本号
+
+
+
+Mysql
+5.7
+
+
+Redis
+5.0
+
+
+MongoDb
+4.3...
 						
 					</div>
 					
@@ -645,9 +681,9 @@ Hystrix提供了Hystrix Dashboard来实时监控HystrixCommand方法的执行情
 
 
 
-	<a href="/2021/08/27/SpringCloudHystrixDashboard%E6%96%AD%E8%B7%AF%E5%99%A8%E6%89%A7%E8%A1%8C%E7%9B%91%E6%8E%A7%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		<time datetime="2021-08-27T09:41:38.079Z" itemprop="datePublished">
-	  		2021-08-27
+	<a href="/2021/08/29/mall-swarm%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EDocker%E5%AE%B9%E5%99%A8%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-28T17:20:34.589Z" itemprop="datePublished">
+	  		2021-08-29
 	  </time>
 	</a> 
 
@@ -660,7 +696,7 @@ Hystrix提供了Hystrix Dashboard来实时监控HystrixCommand方法的执行情
 
 						
 							<span class="right">      	
-								<a href="/2021/08/27/SpringCloudHystrixDashboard%E6%96%AD%E8%B7%AF%E5%99%A8%E6%89%A7%E8%A1%8C%E7%9B%91%E6%8E%A7%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/29/mall-swarm%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EDocker%E5%AE%B9%E5%99%A8%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E9%83%A8%E7%BD%B2%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -671,19 +707,24 @@ Hystrix提供了Hystrix Dashboard来实时监控HystrixCommand方法的执行情
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/27/SpringCloudHystrix%E6%9C%8D%E5%8A%A1%E5%AE%B9%E9%94%99%E4%BF%9D%E6%8A%A4%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		SpringCloudHystrix服务容错保护进阶篇
+	<a href="/2021/08/29/mall-swarm%E5%9C%A8Windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
+		mall-swarm在Windows环境下的部署部署篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							SpringCloudHystrix服务容错保护进阶篇
-Spring Cloud Hystrix 是Spring Cloud Netflix 子项目的核心组件之一，具有服务容错及线程隔离等一系列服务保护功能，本文将对其用法进行详细介绍。
+							mall-swarm在Windows环境下的部署部署篇-开发环境搭建
+mall-swarm中使用到的环境和mall项目中大致相同，具体可以查看mall在Windows环境下的部署。
 
--Hystrix 简介
-在微服务架构中，服务与服务之间通过远程调用的方式进行通信，一旦某个被调用的服务发生了故障，其依赖服务也会发生故障，此时就会发生故障的蔓延，最终导致系统瘫痪。Hystrix实现了断路器模式，当某个服务发生故障时，通过断路器的监控，给调用方返回一个错误响应，而不是长时间的等待，这样就不会使得调用方由于长时间得不到响应而占用线程，从而...
+-简易环境搭建流程
+安装IDEA并导入项目源码；
+安装MySQL，创建一个mall数据库，并导入/document/sql/mall.sql文件；
+安装Redis、Elasticsearch、MongoDB、RabbitMQ等环境。
+
+-Nacos注册中心搭建
+由于使用了Nacos注册中心，我们需要先搭建Nacos注册中心，下载地址：https://github.com/alibaba/nacos/rele...
 						
 					</div>
 					
@@ -698,9 +739,9 @@ Spring Cloud Hystrix 是Spring Cloud Netflix 子项目的核心组件之一，�
 
 
 
-	<a href="/2021/08/27/SpringCloudHystrix%E6%9C%8D%E5%8A%A1%E5%AE%B9%E9%94%99%E4%BF%9D%E6%8A%A4%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		<time datetime="2021-08-27T09:14:10.138Z" itemprop="datePublished">
-	  		2021-08-27
+	<a href="/2021/08/29/mall-swarm%E5%9C%A8Windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-28T17:12:18.588Z" itemprop="datePublished">
+	  		2021-08-29
 	  </time>
 	</a> 
 
@@ -713,7 +754,7 @@ Spring Cloud Hystrix 是Spring Cloud Netflix 子项目的核心组件之一，�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/27/SpringCloudHystrix%E6%9C%8D%E5%8A%A1%E5%AE%B9%E9%94%99%E4%BF%9D%E6%8A%A4%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/29/mall-swarm%E5%9C%A8Windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E9%83%A8%E7%BD%B2%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -724,22 +765,24 @@ Spring Cloud Hystrix 是Spring Cloud Netflix 子项目的核心组件之一，�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/27/SpringCloudRibbon%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E7%9A%84%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		SpringCloudRibbon负载均衡的服务调用进阶篇
+	<a href="/2021/08/29/mall%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2/" itemprop="url">
+		mall前端项目的安装与部署
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							SpringCloudRibbon负载均衡的服务调用进阶篇
-Spring Cloud Ribbon 是Spring Cloud Netflix 子项目的核心组件之一，主要给服务间调用及API网关转发提供负载均衡的功能，本文将对其用法进行详细介绍。
+							mall前端项目的安装与部署
+本文主要讲解mall前端项目mall-admin-web的在Windows和Linux环境下的安装及部署。
 
--Ribbon简介
-在微服务架构中，很多服务都会部署多个，其他服务去调用该服务的时候，如何保证负载均衡是个不得不去考虑的问题。负载均衡可以增加系统的可用性和扩展性，当我们使用RestTemplate来调用其他服务时，Ribbon可以很方便的实现负载均衡功能。
+-Windows下的安装及部署-下载nodejs并安装
+下载地址：https://nodejs.org/dist/v8.9.4/node-v8.9.4-x64.msi
 
--RestTemplate的使用
-RestTemplate是一个HTTP客户端，使...
+-下载mall-admin-web的代码
+下载地址（github）：https://github.com/macrozheng/mall-admin-web 下载地址（码云）：https://gitee.com/macrozheng/mall-admin-web
+
+-从IDEA中打开...
 						
 					</div>
 					
@@ -754,9 +797,9 @@ RestTemplate是一个HTTP客户端，使...
 
 
 
-	<a href="/2021/08/27/SpringCloudRibbon%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E7%9A%84%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		<time datetime="2021-08-27T08:38:57.421Z" itemprop="datePublished">
-	  		2021-08-27
+	<a href="/2021/08/29/mall%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2/" itemprop="url">
+		<time datetime="2021-08-28T16:53:16.864Z" itemprop="datePublished">
+	  		2021-08-29
 	  </time>
 	</a> 
 
@@ -769,7 +812,7 @@ RestTemplate是一个HTTP客户端，使...
 
 						
 							<span class="right">      	
-								<a href="/2021/08/27/SpringCloudRibbon%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E7%9A%84%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/29/mall%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
