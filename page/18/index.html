@@ -1,0 +1,1022 @@
+<!--
+	作者：Sariay
+	时间：2018-08-26
+	描述：There may be a bug, but don't worry, Qiling(器灵) says that it can work normally! aha!
+-->
+<!DOCTYPE html>
+<html class="html-loading">
+		
+
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
+    
+      suzhongdeBlog
+    
+  </title>
+  <meta name="author" content="suzhongde">
+  <meta name="keywords" content="" />
+  <meta name="description" content="suzhongdeBlog" />
+	<!-- favicon -->
+  <link rel="shortcut icon" href="/img/favicon.ico">
+
+  <!-- css -->
+  
+<link rel="stylesheet" href="/css/Annie.css">
+
+  
+  <!-- jquery -->
+	
+<script src="/plugin/jquery/jquery.min.js"></script>
+
+
+<script>
+    const CONFIG_BGIMAGE = {
+      mode: 'normal',
+      normalSrc: '/img/cart_cover.jpg',
+      randomYouMax: 110,
+      randomYouSrc: 'https://sariay.github.io/Random-img/',
+	  randomOtherSrc: 'https://api.berryapi.net/?service=App.Bing.Images&day=-0',
+	  preloaderEnable: true
+    }
+	
+    const CONFIG_LEACLOUD_COUNT = {
+      enable: false,
+	  appId: 'dXz',
+	  appKey: 'wzG',
+	  serverURLs: 'https://github.com/suzhongdeblog/Blog-Comment-Repo.git' || ' '
+    }
+  </script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+	<body>
+		<!-- Preloader -->
+
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
+
+
+<!-- header -->
+<header class="fixbackground bg-pan-br">
+	<div class="mask">
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<div class="motto text-shadow-pop-left">
+					<p class="content" id="motto-content">Fetching...</p>
+					<p>-<p>
+					<p class="author" id="motto-author">Just a minute...</p>
+				</div>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more" class="scroll-down">
+				<span class="icon-anchor1 animation-scroll-down"></span>
+			</a>
+		</div>
+	</div>
+</header>
+
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><span>0.0%</span></div>
+
+	<div class="toc-switch"><span class="switch-button">Catalog</span></div>
+
+	<!-- Page title -->
+	<p>
+		
+			Home
+		
+	</p>
+
+	
+	
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<span class="logo"> 
+			<img src="/img/logo.png">
+		</span>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	
+	<div class="nav-body">
+		<ul id="global-nav">
+	
+		<li class="menu-主页">
+			<a href="/" class="menu-item-主页" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-归档">
+			<a href="/archives" class="menu-item-归档" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-分类">
+			<a href="/categories" class="menu-item-分类" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-标签">
+			<a href="/tags" class="menu-item-标签" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-关于">
+			<a href="/about" class="menu-item-关于" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-相册">
+			<a href="/gallery" class="menu-item-相册" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">Search</a>
+		</li>
+	
+</ul>
+	</div>
+	
+	<div class="nav-footer">
+		<ul id="global-social">
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-zhihu"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-github"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-sina-weibo "></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-pinterest2"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-instagram"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-twitter"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/atom.xml" target="_blank">
+				<span class="icon-rss"></span>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+</nav>
+			
+		<!--main-->
+		<main>
+			
+
+
+
+	<!--pure style-->
+	<div class="layout-pure">
+	<div id="layout-pure">	
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/25/Fluentd%E6%97%A5%E5%BF%97%E6%94%B6%E9%9B%86%E5%B7%A5%E5%85%B7/" itemprop="url">
+		Fluentd日志收集工具
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							Fluentd日志收集工具
+ELK日志收集系统大家都知道，但是还有一种日志收集系统EFK，肯定有很多朋友不知道！这里的F指的是Fluentd，它具有Logstash类似的日志收集功能，但是内存占用连Logstash的十分之一都不到，性能优越、非常轻巧。本文将详细介绍Fluentd的使用，主要用来收集SpringBoot应用的日志，希望对大家有所帮助！
+
+-Fluentd 简介
+Fluentd是一款开源的日志收集功能，致力于为用户搭建统一的日志收集层，和Elasticsearch、Kibana一起使用可以搭建EFK日志收集系统。什么是统一的日志收集层呢？看下下面这张图就清楚了！
+
+
+
+-安...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/25/Fluentd%E6%97%A5%E5%BF%97%E6%94%B6%E9%9B%86%E5%B7%A5%E5%85%B7/" itemprop="url">
+		<time datetime="2021-08-24T16:37:15.325Z" itemprop="datePublished">
+	  		2021-08-25
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/25/Fluentd%E6%97%A5%E5%BF%97%E6%94%B6%E9%9B%86%E5%B7%A5%E5%85%B7/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/25/ELK%E6%90%AD%E5%BB%BA%E6%97%A5%E5%BF%97%E6%94%B6%E9%9B%86%E7%B3%BB%E7%BB%9F/" itemprop="url">
+		ELK搭建日志收集系统
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							ELK搭建日志收集系统
+ELK日志收集系统进阶使用，本文主要讲解如何打造一个线上环境真实可用的日志收集系统。有了它，你就可以和去服务器上捞日志说再见了！
+
+-ELK环境安装
+ELK是指Elasticsearch、Kibana、Logstash这三种服务搭建的日志收集系统，具体搭建方式可以参考《SpringBoot应用整合ELK实现日志收集》。这里仅提供最新版本的docker-compose脚本和一些安装要点。
+
+-docker-compose脚本123456789101112131415161718192021222324252627282930313233343536373839404...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/25/ELK%E6%90%AD%E5%BB%BA%E6%97%A5%E5%BF%97%E6%94%B6%E9%9B%86%E7%B3%BB%E7%BB%9F/" itemprop="url">
+		<time datetime="2021-08-24T16:09:19.761Z" itemprop="datePublished">
+	  		2021-08-25
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/25/ELK%E6%90%AD%E5%BB%BA%E6%97%A5%E5%BF%97%E6%94%B6%E9%9B%86%E7%B3%BB%E7%BB%9F/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/24/RabbitMQ%E7%9A%845%E7%A7%8D%E6%A0%B8%E5%BF%83%E6%B6%88%E6%81%AF%E6%A8%A1%E5%BC%8F/" itemprop="url">
+		RabbitMQ的5种核心消息模式
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							RabbitMQ的5种核心消息模式
+以前看过的关于RabbitMQ核心消息模式的文章都是基于Java API的，最近看了下官方文档，发现这些核心消息模式都可以通过Spring AMQP来实现。于是总结了下RabbitMQ的核心知识点，包括RabbitMQ在Windows和Linux下的安装、5种核心消息模式的Spring AMQP实现，相信对于想要学习和回顾RabbitMQ的朋友都会有所帮助。
+
+-简介
+RabbitMQ是最受欢迎的开源消息中间件之一，在全球范围内被广泛应用。RabbitMQ是轻量级且易于部署的，能支持多种消息协议。RabbitMQ可以部署在分布式系统中，以满足大规模、高...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/24/RabbitMQ%E7%9A%845%E7%A7%8D%E6%A0%B8%E5%BF%83%E6%B6%88%E6%81%AF%E6%A8%A1%E5%BC%8F/" itemprop="url">
+		<time datetime="2021-08-24T15:16:08.440Z" itemprop="datePublished">
+	  		2021-08-24
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/24/RabbitMQ%E7%9A%845%E7%A7%8D%E6%A0%B8%E5%BF%83%E6%B6%88%E6%81%AF%E6%A8%A1%E5%BC%8F/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/24/Gogs%E6%90%AD%E5%BB%BAGit%E6%9C%8D%E5%8A%A1/" itemprop="url">
+		Gogs搭建Git服务
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							Gogs搭建Git服务
+以前使用Gitlab搭建过Git服务，如果服务器配置低的话启动和访问都会特别慢。最近发现了Gogs这个开源项目，安装方便，特别轻量级，推荐给大家！
+
+-推荐语
+一款极易搭建的自助Git服务，特别轻量级，推荐给大家！
+
+-Gogs简介
+Gogs是一款极易搭建的自助Git服务，使用Go语言开发，只要Go语言支持的平台它都支持，包括Linux、Mac OS X、Windows以及ARM平台。Gogs对系统硬件要求极低，你甚至可以在树莓派上搭建它。
+
+
+项目地址：https://github.com/gogs/gogs
+
+-安装
+Gogs在Docker环境下的安装非常简单...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/24/Gogs%E6%90%AD%E5%BB%BAGit%E6%9C%8D%E5%8A%A1/" itemprop="url">
+		<time datetime="2021-08-24T14:42:42.254Z" itemprop="datePublished">
+	  		2021-08-24
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/24/Gogs%E6%90%AD%E5%BB%BAGit%E6%9C%8D%E5%8A%A1/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/24/MongoDB%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/" itemprop="url">
+		MongoDB快速入门
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							MongoDB快速入门
+虽说现在关系型数据库还是主流，但是面对某些需求的时候，需要非关系型数据库来补充它，学习一个主流的NoSQL数据库还是很有必要的。MongoDB是一个功能丰富的NoSQL数据库，本文整理了它最常用的部分形成了这篇入门教程，希望对大家有所帮助。
+
+-简介
+MongoDB是一个基于分布式文件存储的数据库。由C++语言编写，旨在为WEB应用提供可扩展的高性能数据存储解决方案。MongoDB是一个介于关系型数据库和非关系型数据库之间的产品，是非关系型数据库当中功能最丰富，最像关系型数据库的。
+
+-安装
+以前写的MongoDB安装教程是基于3.2版本的，发现有的朋友使用新版本...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/24/MongoDB%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/" itemprop="url">
+		<time datetime="2021-08-24T13:04:29.664Z" itemprop="datePublished">
+	  		2021-08-24
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/24/MongoDB%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/24/Elasticsearch%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/" itemprop="url">
+		Elasticsearch快速入门
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							Elasticsearch快速入门
+记得刚接触Elasticsearch的时候，没找啥资料，直接看了遍Elasticsearch的中文官方文档，中文文档很久没更新了，一直都是2.3的版本。最近又重新看了遍6.0的官方文档，由于官方文档介绍的内容比较多，每次看都很费力，所以这次整理了其中最常用部分，写下了这篇入门教程，希望对大家有所帮助。
+
+-简介
+Elasticsearch是一个基于Lucene的搜索服务器。它提供了一个分布式的全文搜索引擎，基于restful web接口。Elasticsearch是用Java语言开发的，基于Apache协议的开源项目，是目前最受欢迎的企业搜索引擎。El...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/24/Elasticsearch%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/" itemprop="url">
+		<time datetime="2021-08-24T07:52:28.903Z" itemprop="datePublished">
+	  		2021-08-24
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/24/Elasticsearch%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/24/Docker%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%A7%92%E5%BB%BARedis%E9%9B%86%E7%BE%A4/" itemprop="url">
+		Docker环境下秒建Redis集群
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							Docker环境下秒建Redis集群
+为了提高Redis的存储容量和响应速度，有时候我们需要搭建Redis集群。本文主要讲述Redis集群环境的搭建步骤以及如何在SpringBoot中整合使用Redis集群。
+
+-Redis集群搭建
+这里我们使用最方便的搭建方式，使用Docker Compose来搭建，对Docker Compose不了解的朋友可以参考下《使用Docker Compose部署SpringBoot应用》。我们将搭建一个6节点的Redis集群，包括3个主节点和3个从节点。
+
+
+在搭建Redis集群之前，我们需要修改下Redis的配置文件redis.conf，该文件的下载地址：...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/24/Docker%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%A7%92%E5%BB%BARedis%E9%9B%86%E7%BE%A4/" itemprop="url">
+		<time datetime="2021-08-24T07:39:09.940Z" itemprop="datePublished">
+	  		2021-08-24
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/24/Docker%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%A7%92%E5%BB%BARedis%E9%9B%86%E7%BE%A4/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/24/SpringDataRedis%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/" itemprop="url">
+		SpringDataRedis最佳实践
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							SpringDataRedis最佳实践
+Spring Data Redis 是Spring 框架提供的用于操作Redis的方式，最近整理了下它的用法，解决了使用过程中遇到的一些难点与坑点，希望对大家有所帮助。本文涵盖了Redis的安装、Spring Cache结合Redis的使用、Redis连接池的使用和RedisTemplate的使用等内容。
+
+-Redis安装
+这里提供Linux和Windows两种安装方式，由于Windows下的版本最高只有3.2版本，所以推荐使用Linux下的版本，目前最新稳定版本为5.0，也是本文中使用的版本。
+
+-Linux
+这里我们使用Docker环境下的安...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/24/SpringDataRedis%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/" itemprop="url">
+		<time datetime="2021-08-24T07:00:06.721Z" itemprop="datePublished">
+	  		2021-08-24
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/24/SpringDataRedis%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/24/Gaea%E4%B8%AD%E9%97%B4%E4%BB%B6%E5%AE%9E%E7%8E%B0MySql%E8%AF%BB%E5%86%99%E5%88%86%E7%A6%BB/" itemprop="url">
+		Gaea中间件实现MySql读写分离
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							Gaea中间件实现MySql读写分离
+传统的MySql读写分离方案是通过在代码中根据SQL语句的类型动态切换数据源来实现的，那么有没有什么中间件可以自动实现读写分离呢？小米开源的数据库中间件Gaea就可以实现，接下来我们将详细讲解如何使用Gaea来实现MySql的读写分离。
+
+-Gaea简介
+Gaea是小米中国区电商研发部研发的基于MySql协议的数据库中间件，目前在小米商城大陆和海外得到广泛使用，包括订单、社区、活动等多个业务。Gaea支持分库分表、SQL路由、读写分离等基本特性，其中分库分表方案兼容了mycat和kingshard两个项目的路由方式。
+
+-MySql主从复制
+使用Ga...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/24/Gaea%E4%B8%AD%E9%97%B4%E4%BB%B6%E5%AE%9E%E7%8E%B0MySql%E8%AF%BB%E5%86%99%E5%88%86%E7%A6%BB/" itemprop="url">
+		<time datetime="2021-08-24T04:52:15.690Z" itemprop="datePublished">
+	  		2021-08-24
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/24/Gaea%E4%B8%AD%E9%97%B4%E4%BB%B6%E5%AE%9E%E7%8E%B0MySql%E8%AF%BB%E5%86%99%E5%88%86%E7%A6%BB/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/24/MySql%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6%EF%BC%8C%E4%BB%8E%E5%8E%9F%E7%90%86%E5%88%B0%E5%AE%9E%E8%B7%B5/" itemprop="url">
+		MySql主从复制从原理到实践
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							-MySql主从复制从原理到实践
+本文将从MySql主从复制的原理出发，详细介绍MySql在Docker环境下的主从复制搭建，以一个主实例和一个从实例实现主从复制为例。
+
+-什么是主从复制？
+主从复制是指将主数据库的DDL和DML操作通过二进制日志传到从数据库上，然后在从数据库上对这些日志进行重新执行，从而使从数据库和主数据库的数据保持一致。
+
+-主从复制的原理
+MySql主库在事务提交时会把数据变更作为事件记录在二进制日志Binlog中；
+主库推送二进制日志文件Binlog中的事件到从库的中继日志Relay Log中，之后从库根据中继日志重做数据变更操作，通过逻辑复制来达到主库和从库的...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/24/MySql%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6%EF%BC%8C%E4%BB%8E%E5%8E%9F%E7%90%86%E5%88%B0%E5%AE%9E%E8%B7%B5/" itemprop="url">
+		<time datetime="2021-08-23T20:51:33.052Z" itemprop="datePublished">
+	  		2021-08-24
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/24/MySql%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6%EF%BC%8C%E4%BB%8E%E5%8E%9F%E7%90%86%E5%88%B0%E5%AE%9E%E8%B7%B5/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+	</div>
+
+	
+	<div id="pagination">
+		
+			<a href="/page/19/" data-title="Load more" data-status="End">Load more</a>
+		
+	</div>
+
+	
+
+</div>
+
+
+		</main>
+
+		<!--footer-->
+		<footer>
+	<div id="navigation-show">
+		<ul id="global-nav">
+	
+		<li class="menu-主页">
+			<a href="/" class="menu-item-主页" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-归档">
+			<a href="/archives" class="menu-item-归档" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-分类">
+			<a href="/categories" class="menu-item-分类" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-标签">
+			<a href="/tags" class="menu-item-标签" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-关于">
+			<a href="/about" class="menu-item-关于" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-相册">
+			<a href="/gallery" class="menu-item-相册" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">Search</a>
+		</li>
+	
+</ul>
+	</div>
+
+	<div class="copyright">
+		<p>
+			 
+				&copy;2017 - 2021, content by Sariay. All Rights Reserved.
+			
+			
+				<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			
+		</p>
+		<p>
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+		
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+
+		<span id="busuanzi_container_site_pv">
+	    	本站总访问量<span id="busuanzi_value_site_pv"></span>次
+		</span>
+
+		<span id="busuanzi_container_site_uv">
+	  		本站访客数<span id="busuanzi_value_site_uv"></span>人次
+		</span>
+		
+	
+
+
+
+
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p>
+	</div>		
+</footer>
+		
+	<!-- Local or hitokoto! -->
+
+	
+<script src="/plugin/motto/motto.js"></script>
+
+	
+	<script type="text/javascript">
+		(function motto(){
+			let mottoText = getMingYanContent().split('</br> - </br>'),
+			
+			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
+			
+			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
+			
+			mottoTextContent = mottoTextContent.trim().substring(0, 100);
+		
+			$("#motto-content").html( mottoTextContent);
+			$("#motto-author").html( mottoTextFrom  );
+		})();	
+	</script>	
+
+
+
+<!-- love effect -->
+
+
+<!-- back to top -->
+
+	<div id="totop">
+	<span class="icon-circle-up"></span>
+</div>
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+	
+	
+	
+	
+ 
+
+<!-- leancloud -->
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+  
+
+	<!--
+	时间：2018-10-3
+	描述：
+		插件名称：hexo-generator-search-zip
+		插件来源: https://github.com/SuperKieran/hexo-generator-search-zip
+		代码参考：https://github.com/SuperKieran/TKL/blob/master/layout/_partial/search.ejs(Include: js & css)	
+-->
+<div class="popup search-popup local-search-popup scrollbar" >
+	<div class="local-search-container">
+		<span class="popup-btn-close">
+      		ESC
+   		</span>
+		<div class="local-search-header">
+			<div class="input-prompt">				
+			</div>
+			<input autocomplete="off" placeholder="Search..." type="text" id="local-search-input">
+		</div>
+		<div class="local-search-body">
+			<div id="local-search-output"></div>
+		</div>
+		<div class="local-search-footer">
+			<div class="topN-post">				
+				
+								
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="/plugin/search/ziploader.js"></script>
+<script src="/js/search.js"></script>
+
+
+<script type="text/javascript">
+	var search_path = 'search.json',
+		zip_Path = '/search.zip',
+		version_Path = '/searchVersion.txt',
+		input_Trigger = 'auto',
+		top_N = '2';
+
+	themeLocalSearch({
+		search_path, 
+		zip_Path, 
+		version_Path, 
+		input_Trigger, 
+		top_N
+	});
+</script>
+
+
+
+<script src="/plugin/chinese/chinese.js"></script>
+<script src="/plugin/imagelazyloader/yall.min.js"></script>
+<script src="/plugin/imageloaded/imagesloaded.pkgd.min.js"></script>
+<script src="/plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="/plugin/resizediv/resizediv.js"></script>
+<script src="/js/main.js"></script>
+
+	</body>	
+</html>

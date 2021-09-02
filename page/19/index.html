@@ -1,0 +1,1034 @@
+<!--
+	作者：Sariay
+	时间：2018-08-26
+	描述：There may be a bug, but don't worry, Qiling(器灵) says that it can work normally! aha!
+-->
+<!DOCTYPE html>
+<html class="html-loading">
+		
+
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
+    
+      suzhongdeBlog
+    
+  </title>
+  <meta name="author" content="suzhongde">
+  <meta name="keywords" content="" />
+  <meta name="description" content="suzhongdeBlog" />
+	<!-- favicon -->
+  <link rel="shortcut icon" href="/img/favicon.ico">
+
+  <!-- css -->
+  
+<link rel="stylesheet" href="/css/Annie.css">
+
+  
+  <!-- jquery -->
+	
+<script src="/plugin/jquery/jquery.min.js"></script>
+
+
+<script>
+    const CONFIG_BGIMAGE = {
+      mode: 'normal',
+      normalSrc: '/img/cart_cover.jpg',
+      randomYouMax: 110,
+      randomYouSrc: 'https://sariay.github.io/Random-img/',
+	  randomOtherSrc: 'https://api.berryapi.net/?service=App.Bing.Images&day=-0',
+	  preloaderEnable: true
+    }
+	
+    const CONFIG_LEACLOUD_COUNT = {
+      enable: false,
+	  appId: 'dXz',
+	  appKey: 'wzG',
+	  serverURLs: 'https://github.com/suzhongdeblog/Blog-Comment-Repo.git' || ' '
+    }
+  </script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+	<body>
+		<!-- Preloader -->
+
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
+
+
+<!-- header -->
+<header class="fixbackground bg-pan-br">
+	<div class="mask">
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<div class="motto text-shadow-pop-left">
+					<p class="content" id="motto-content">Fetching...</p>
+					<p>-<p>
+					<p class="author" id="motto-author">Just a minute...</p>
+				</div>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more" class="scroll-down">
+				<span class="icon-anchor1 animation-scroll-down"></span>
+			</a>
+		</div>
+	</div>
+</header>
+
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><span>0.0%</span></div>
+
+	<div class="toc-switch"><span class="switch-button">Catalog</span></div>
+
+	<!-- Page title -->
+	<p>
+		
+			Home
+		
+	</p>
+
+	
+	
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<span class="logo"> 
+			<img src="/img/logo.png">
+		</span>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	
+	<div class="nav-body">
+		<ul id="global-nav">
+	
+		<li class="menu-主页">
+			<a href="/" class="menu-item-主页" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-归档">
+			<a href="/archives" class="menu-item-归档" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-分类">
+			<a href="/categories" class="menu-item-分类" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-标签">
+			<a href="/tags" class="menu-item-标签" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-关于">
+			<a href="/about" class="menu-item-关于" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-相册">
+			<a href="/gallery" class="menu-item-相册" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">Search</a>
+		</li>
+	
+</ul>
+	</div>
+	
+	<div class="nav-footer">
+		<ul id="global-social">
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-zhihu"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-github"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-sina-weibo "></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-pinterest2"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-instagram"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-twitter"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/atom.xml" target="_blank">
+				<span class="icon-rss"></span>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+</nav>
+			
+		<!--main-->
+		<main>
+			
+
+
+
+	<!--pure style-->
+	<div class="layout-pure">
+	<div id="layout-pure">	
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/24/%E4%BD%BF%E7%94%A8MinIO%E8%87%AA%E5%BB%BA%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E6%9C%8D%E5%8A%A1/" itemprop="url">
+		使用MinIO自建对象存储服务
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							-使用MinIO自建对象存储服务
+对象存储服务可以用来存储各类文件，mall项目中的图片存储采用的是OSS，今天我们来讲下如何自己搭建一个对象存储服务来存储图片。
+
+-MinIO简介
+MinIO 是一款基于Go语言的高性能对象存储服务，在Github上已有19K+Star。它采用了Apache License v2.0开源协议，非常适合于存储大容量非结构化的数据，例如图片、视频、日志文件、备份数据和容器/虚拟机镜像等。 本文将使用 MinIO 来自建一个对象存储服务用于存储图片。
+
+-安装及部署
+MinIO的安装方式有很多，这里我们使用它在Docker环境下的安装方式。
+
+
+下载MinI...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/24/%E4%BD%BF%E7%94%A8MinIO%E8%87%AA%E5%BB%BA%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E6%9C%8D%E5%8A%A1/" itemprop="url">
+		<time datetime="2021-08-23T20:01:36.907Z" itemprop="datePublished">
+	  		2021-08-24
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/24/%E4%BD%BF%E7%94%A8MinIO%E8%87%AA%E5%BB%BA%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E6%9C%8D%E5%8A%A1/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/24/%E4%BD%BF%E7%94%A8Jenkins%E4%B8%80%E9%94%AE%E6%89%93%E5%8C%85%E9%83%A8%E7%BD%B2%E5%89%8D%E7%AB%AF%E5%BA%94%E7%94%A8/" itemprop="url">
+		使用Jenkins一键打包部署前端应用
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							-使用Jenkins一键打包部署前端应用
+上一次我们讲到了使用Jenkins一键打包部署SpringBoot应用，这一次我们来讲下如何一键打包部署前端应用，以Vue前端应用为例，这里我们使用mall-admin-web中的代码来进行演示。
+
+-学前准备
+学习本文需要一些Jenkins和Nginx的知识，对这些不熟悉的小伙伴可以参考以下文章。
+
+
+使用Jenkins一键打包部署SpringBoot应用
+在Docker环境下的安装Nginx
+
+-Jenkins中的自动化部署
+Vue前端应用的打包需要依赖NodeJS插件，所以我们先安装并配置该插件，然后创建任务来打包部署。
+
+-安装NodeJ...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/24/%E4%BD%BF%E7%94%A8Jenkins%E4%B8%80%E9%94%AE%E6%89%93%E5%8C%85%E9%83%A8%E7%BD%B2%E5%89%8D%E7%AB%AF%E5%BA%94%E7%94%A8/" itemprop="url">
+		<time datetime="2021-08-23T19:44:32.593Z" itemprop="datePublished">
+	  		2021-08-24
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/24/%E4%BD%BF%E7%94%A8Jenkins%E4%B8%80%E9%94%AE%E6%89%93%E5%8C%85%E9%83%A8%E7%BD%B2%E5%89%8D%E7%AB%AF%E5%BA%94%E7%94%A8/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/24/%E4%BD%BF%E7%94%A8Jenkins%E4%B8%80%E9%94%AE%E6%89%93%E5%8C%85%E9%83%A8%E7%BD%B2SpringBoot%E5%BA%94%E7%94%A8/" itemprop="url">
+		使用Jenkins一键打包部署SpringBoot应用
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							-使用Jenkins一键打包部署SpringBoot应用
+任何简单操作的背后，都有一套相当复杂的机制。本文将以SpringBoot应用的在Docker环境下的打包部署为例，详细讲解如何使用Jenkins一键打包部署SpringBoot应用。
+
+-Jenkins简介
+Jenkins是开源CI&amp;CD软件领导者，提供超过1000个插件来支持构建、部署、自动化，满足任何项目的需要。我们可以用Jenkins来构建和部署我们的项目，比如说从我们的代码仓库获取代码，然后将我们的代码打包成可执行的文件，之后通过远程的ssh工具执行脚本来运行我们的项目。
+
+-Jenkins的安装及配置-Docke...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/24/%E4%BD%BF%E7%94%A8Jenkins%E4%B8%80%E9%94%AE%E6%89%93%E5%8C%85%E9%83%A8%E7%BD%B2SpringBoot%E5%BA%94%E7%94%A8/" itemprop="url">
+		<time datetime="2021-08-23T18:57:16.983Z" itemprop="datePublished">
+	  		2021-08-24
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/24/%E4%BD%BF%E7%94%A8Jenkins%E4%B8%80%E9%94%AE%E6%89%93%E5%8C%85%E9%83%A8%E7%BD%B2SpringBoot%E5%BA%94%E7%94%A8/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/24/%E5%9C%A8Docker%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E5%AE%89%E8%A3%85Nginx/" itemprop="url">
+		在Docker环境下的安装Nginx
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							-在Docker环境下的安装Nginx-下载nginx的docker镜像1docker pull nginx:1.10
+
+-从容器中拷贝nginx配置
+先运行一次容器（为了拷贝配置文件）：
+
+1234docker run -p 80:80 --name nginx \-v /mydata/nginx/html:/usr/share/nginx/html \-v /mydata/nginx/logs:/var/log/nginx  \-d nginx:1.10
+
+
+将容器内的配置文件拷贝到指定目录：
+
+1docker container cp nginx:/etc/nginx /mydat...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/24/%E5%9C%A8Docker%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E5%AE%89%E8%A3%85Nginx/" itemprop="url">
+		<time datetime="2021-08-23T18:28:46.737Z" itemprop="datePublished">
+	  		2021-08-24
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/24/%E5%9C%A8Docker%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E5%AE%89%E8%A3%85Nginx/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/24/Hutool%E4%B8%AD%E9%82%A3%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB%E5%92%8C%E6%96%B9%E6%B3%95/" itemprop="url">
+		Hutool中那些常用的工具类和方法
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							Hutool中那些常用的工具类和方法
+Hutool是一个Java工具包，它帮助我们简化每一行代码，避免重复造轮子。如果你有需要用到某些工具方法的时候，不妨在Hutool里面找找，可能就有。本文将对Hutool中的常用工具类和方法进行介绍。
+
+-安装
+maven项目在pom.xml添加以下依赖即可：
+
+12345&lt;dependency&gt;    &lt;groupId&gt;cn.hutool&lt;/groupId&gt;    &lt;artifactId&gt;hutool-all&lt;/artifactId&gt;    &lt;version&gt;4.6.3&lt;...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/24/Hutool%E4%B8%AD%E9%82%A3%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB%E5%92%8C%E6%96%B9%E6%B3%95/" itemprop="url">
+		<time datetime="2021-08-23T18:09:46.683Z" itemprop="datePublished">
+	  		2021-08-24
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/24/Hutool%E4%B8%AD%E9%82%A3%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB%E5%92%8C%E6%96%B9%E6%B3%95/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/24/%E4%BD%BF%E7%94%A8Docker%20Compose%E9%83%A8%E7%BD%B2SpringBoot%E5%BA%94%E7%94%A8/" itemprop="url">
+		使用Docker Compose部署SpringBoot应用
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							使用Docker Compose部署SpringBoot应用
+Docker Compose是一个用于定义和运行多个docker容器应用的工具。使用Compose你可以用YAML文件来配置你的应用服务，然后使用一个命令，你就可以部署你配置的所有服务了。
+
+-安装-下载Docker Compose1curl -L https://get.daocloud.io/docker/compose/releases/download/1.24.0/docker-compose-`uname -s`-`uname -m` &gt; /usr/local/bin/docker-compose
+
+-修改该...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/24/%E4%BD%BF%E7%94%A8Docker%20Compose%E9%83%A8%E7%BD%B2SpringBoot%E5%BA%94%E7%94%A8/" itemprop="url">
+		<time datetime="2021-08-23T17:50:03.564Z" itemprop="datePublished">
+	  		2021-08-24
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/24/%E4%BD%BF%E7%94%A8Docker%20Compose%E9%83%A8%E7%BD%B2SpringBoot%E5%BA%94%E7%94%A8/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/23/%E4%BD%BF%E7%94%A8Dockerfile%E4%B8%BASpringBoot%E5%BA%94%E7%94%A8%E6%9E%84%E5%BB%BADocker%E9%95%9C%E5%83%8F/" itemprop="url">
+		使用Dockerfile为SpringBoot应用构建Docker镜像
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							使用Dockerfile为SpringBoot应用构建Docker镜像
+上次写过一篇使用Maven插件构建Docker镜像 ，讲述了通过docker-maven-plugin来构建docker镜像的方式，此种方式需要依赖自建的Registry镜像仓库。本文将讲述另一种方式，使用Dockerfile来构建docker镜像，此种方式不需要依赖自建的镜像仓库，只需要应用的jar包和一个Dockerfile文件即可。
+
+-Dockerfile常用指令-ADD
+用于复制文件，格式：
+
+1ADD &lt;src&gt; &lt;dest&gt;
+
+
+示例：
+
+12# 将当前目录下的mall-tiny...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/23/%E4%BD%BF%E7%94%A8Dockerfile%E4%B8%BASpringBoot%E5%BA%94%E7%94%A8%E6%9E%84%E5%BB%BADocker%E9%95%9C%E5%83%8F/" itemprop="url">
+		<time datetime="2021-08-23T15:57:26.732Z" itemprop="datePublished">
+	  		2021-08-23
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/23/%E4%BD%BF%E7%94%A8Dockerfile%E4%B8%BASpringBoot%E5%BA%94%E7%94%A8%E6%9E%84%E5%BB%BADocker%E9%95%9C%E5%83%8F/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/23/%E4%BD%BF%E7%94%A8Maven%E6%8F%92%E4%BB%B6%E4%B8%BASpringBoot%E5%BA%94%E7%94%A8%E6%9E%84%E5%BB%BADocker%E9%95%9C%E5%83%8F/" itemprop="url">
+		使用Maven插件为SpringBoot应用构建Docker镜像
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							使用Maven插件为SpringBoot应用构建Docker镜像
+本文主要介绍如何使用Maven插件将SpringBoot应用打包为Docker镜像，并上传到私有镜像仓库Docker Registry的过程。
+
+-Docker Registry-Docker Registry 2.0搭建1docker run -d -p 5000:5000 --restart=always --name registry2 registry:2
+
+
+如果遇到镜像下载不下来的情况，需要修改 /etc/docker/daemon.json 文件并添加上 registry-mirrors 键值，然后重启doc...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/23/%E4%BD%BF%E7%94%A8Maven%E6%8F%92%E4%BB%B6%E4%B8%BASpringBoot%E5%BA%94%E7%94%A8%E6%9E%84%E5%BB%BADocker%E9%95%9C%E5%83%8F/" itemprop="url">
+		<time datetime="2021-08-23T15:39:27.102Z" itemprop="datePublished">
+	  		2021-08-23
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/23/%E4%BD%BF%E7%94%A8Maven%E6%8F%92%E4%BB%B6%E4%B8%BASpringBoot%E5%BA%94%E7%94%A8%E6%9E%84%E5%BB%BADocker%E9%95%9C%E5%83%8F/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/23/%E9%85%8D%E7%BD%AE%E5%AE%B9%E5%99%A8%E4%B8%AD%E7%9A%84host/" itemprop="url">
+		配置容器中的host
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							简介
+我们在配置服务器的时候经常会修改域名映射, 也就是/etc/hosts文件, 
+但是即便如此简单点的东西在网上写也是乱七八糟, 所以这里记录一个真正能用的方法.
+
+文章主要使用两种配置方法(命令配置和docker-compose配置):1. 命令行配置
+--add-host 使用该参数可以配置多个host.
+
+1234567891011➜  Desktop docker run -it --add-host host1:192.168.1.1 --add-host host2:192.168.1.2 alpine/ # cat /etc/hosts127.0.0.1   local...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/23/%E9%85%8D%E7%BD%AE%E5%AE%B9%E5%99%A8%E4%B8%AD%E7%9A%84host/" itemprop="url">
+		<time datetime="2021-08-23T15:19:30.985Z" itemprop="datePublished">
+	  		2021-08-23
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/23/%E9%85%8D%E7%BD%AE%E5%AE%B9%E5%99%A8%E4%B8%AD%E7%9A%84host/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/23/%E5%AE%89%E8%A3%85tomcat%E8%BF%90%E8%A1%8Cwar%E5%8C%85/" itemprop="url">
+		安装tomcat运行war包
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							简介
+开源小型web服务器 ，完全免费，主要用于中小型web项目，只支持Servlet和JSP 等少量javaee规范（就是JavaWeb编程接口）
+
+第一步快速开始
+这里介绍两种方法(官方镜像安装和Dockerfile安装):
+
+1. docker官方镜像安装
+首先拉取镜像, 会自动拉取最新版本 - docker pull tomcat
+
+1234567891011121314151617[root@master ~]# docker pull tomcatUsing default tag: latestTrying to pull repository docker.io/libr...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/23/%E5%AE%89%E8%A3%85tomcat%E8%BF%90%E8%A1%8Cwar%E5%8C%85/" itemprop="url">
+		<time datetime="2021-08-23T14:48:45.684Z" itemprop="datePublished">
+	  		2021-08-23
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/23/%E5%AE%89%E8%A3%85tomcat%E8%BF%90%E8%A1%8Cwar%E5%8C%85/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+	</div>
+
+	
+	<div id="pagination">
+		
+			<a href="/page/20/" data-title="Load more" data-status="End">Load more</a>
+		
+	</div>
+
+	
+
+</div>
+
+
+		</main>
+
+		<!--footer-->
+		<footer>
+	<div id="navigation-show">
+		<ul id="global-nav">
+	
+		<li class="menu-主页">
+			<a href="/" class="menu-item-主页" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-归档">
+			<a href="/archives" class="menu-item-归档" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-分类">
+			<a href="/categories" class="menu-item-分类" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-标签">
+			<a href="/tags" class="menu-item-标签" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-关于">
+			<a href="/about" class="menu-item-关于" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-相册">
+			<a href="/gallery" class="menu-item-相册" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">Search</a>
+		</li>
+	
+</ul>
+	</div>
+
+	<div class="copyright">
+		<p>
+			 
+				&copy;2017 - 2021, content by Sariay. All Rights Reserved.
+			
+			
+				<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			
+		</p>
+		<p>
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+		
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+
+		<span id="busuanzi_container_site_pv">
+	    	本站总访问量<span id="busuanzi_value_site_pv"></span>次
+		</span>
+
+		<span id="busuanzi_container_site_uv">
+	  		本站访客数<span id="busuanzi_value_site_uv"></span>人次
+		</span>
+		
+	
+
+
+
+
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p>
+	</div>		
+</footer>
+		
+	<!-- Local or hitokoto! -->
+
+	
+<script src="/plugin/motto/motto.js"></script>
+
+	
+	<script type="text/javascript">
+		(function motto(){
+			let mottoText = getMingYanContent().split('</br> - </br>'),
+			
+			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
+			
+			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
+			
+			mottoTextContent = mottoTextContent.trim().substring(0, 100);
+		
+			$("#motto-content").html( mottoTextContent);
+			$("#motto-author").html( mottoTextFrom  );
+		})();	
+	</script>	
+
+
+
+<!-- love effect -->
+
+
+<!-- back to top -->
+
+	<div id="totop">
+	<span class="icon-circle-up"></span>
+</div>
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+	
+	
+	
+	
+ 
+
+<!-- leancloud -->
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+  
+
+	<!--
+	时间：2018-10-3
+	描述：
+		插件名称：hexo-generator-search-zip
+		插件来源: https://github.com/SuperKieran/hexo-generator-search-zip
+		代码参考：https://github.com/SuperKieran/TKL/blob/master/layout/_partial/search.ejs(Include: js & css)	
+-->
+<div class="popup search-popup local-search-popup scrollbar" >
+	<div class="local-search-container">
+		<span class="popup-btn-close">
+      		ESC
+   		</span>
+		<div class="local-search-header">
+			<div class="input-prompt">				
+			</div>
+			<input autocomplete="off" placeholder="Search..." type="text" id="local-search-input">
+		</div>
+		<div class="local-search-body">
+			<div id="local-search-output"></div>
+		</div>
+		<div class="local-search-footer">
+			<div class="topN-post">				
+				
+								
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="/plugin/search/ziploader.js"></script>
+<script src="/js/search.js"></script>
+
+
+<script type="text/javascript">
+	var search_path = 'search.json',
+		zip_Path = '/search.zip',
+		version_Path = '/searchVersion.txt',
+		input_Trigger = 'auto',
+		top_N = '2';
+
+	themeLocalSearch({
+		search_path, 
+		zip_Path, 
+		version_Path, 
+		input_Trigger, 
+		top_N
+	});
+</script>
+
+
+
+<script src="/plugin/chinese/chinese.js"></script>
+<script src="/plugin/imagelazyloader/yall.min.js"></script>
+<script src="/plugin/imageloaded/imagesloaded.pkgd.min.js"></script>
+<script src="/plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="/plugin/resizediv/resizediv.js"></script>
+<script src="/js/main.js"></script>
+
+	</body>	
+</html>

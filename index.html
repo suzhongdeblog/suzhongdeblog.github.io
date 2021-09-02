@@ -232,30 +232,24 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E7%A5%9E%E5%99%A8%E6%8F%92%E4%BB%B6/" itemprop="url">
-		IntelliJ IDEA 中神器插件
+	<a href="/2021/09/03/%E9%85%8D%E7%BD%AESpring%E7%AE%A1%E7%90%86%E7%9A%84bean%E7%9A%84%E4%BD%9C%E7%94%A8%E5%9F%9F/" itemprop="url">
+		配置Spring管理的bean的作用域
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							IntelliJ IDEA 中神器插件
-IDEA 插件安装 步骤IDEA里面，选择打开 File –&gt; Settings –&gt; Plugins
-在Plugins里面, 可以搜索需要的插件 **(下面的标题)**，然后安装
+							配置Spring管理的bean的作用域
+Spring管理的bean的作用域有：
 
 
-如下图:
+singleton
 
 
+在每个Spring IoC容器中，一个bean定义只有一个对象实例。以Spring的三种实例化Bean的方式的案例为基础，我们举例说明。首先我们将Spring的配置文件——beans.xml的内容改为：
 
-
-
--1.Lombok
-Lombok能以简单的注解形式来简化java代码，提高开发人员的开发效率。
-
-
-例如开发中经常需要写的javabean，都需要花时间去添加相应的getter/setter，也许还要去写构造器、equals 等方法，而且需要维护，当属性多时会出现大量的getter/setter方法，这些显得很冗长也没有太多技术含量，...
+123456789&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;beans xmlns=&quot;http://www.springframework.org/schema/beans&q...
 						
 					</div>
 					
@@ -270,9 +264,9 @@ Lombok能以简单的注解形式来简化java代码，提高开发人员的开�
 
 
 
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E7%A5%9E%E5%99%A8%E6%8F%92%E4%BB%B6/" itemprop="url">
-		<time datetime="2021-08-31T13:14:55.457Z" itemprop="datePublished">
-	  		2021-08-31
+	<a href="/2021/09/03/%E9%85%8D%E7%BD%AESpring%E7%AE%A1%E7%90%86%E7%9A%84bean%E7%9A%84%E4%BD%9C%E7%94%A8%E5%9F%9F/" itemprop="url">
+		<time datetime="2021-09-02T21:13:19.597Z" itemprop="datePublished">
+	  		2021-09-03
 	  </time>
 	</a> 
 
@@ -285,7 +279,7 @@ Lombok能以简单的注解形式来简化java代码，提高开发人员的开�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E7%A5%9E%E5%99%A8%E6%8F%92%E4%BB%B6/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/03/%E9%85%8D%E7%BD%AESpring%E7%AE%A1%E7%90%86%E7%9A%84bean%E7%9A%84%E4%BD%9C%E7%94%A8%E5%9F%9F/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -296,34 +290,30 @@ Lombok能以简单的注解形式来简化java代码，提高开发人员的开�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E5%85%B3%E9%97%AD%E5%8F%82%E6%95%B0%E6%8F%90%E7%A4%BA/" itemprop="url">
-		IntelliJ IDEA 中关闭参数提示
+	<a href="/2021/09/03/Spring%E7%9A%84%E4%B8%89%E7%A7%8D%E5%AE%9E%E4%BE%8B%E5%8C%96Bean%E7%9A%84%E6%96%B9%E5%BC%8F/" itemprop="url">
+		Spring的三种实例化Bean的方式
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							IntelliJ IDEA 中关闭参数提示
-在 IntelliJ IDEA 2016.3.4(64) 这个版本更新之后，发现在代码中，方法调用的地方，会显示一些方法参数的提示，点不到，也不是一下就能看懂，对于阅读代码，很是不得劲。所以，还是找到地方，给他关闭了吧。具体现象，如下图：
+							Spring的三种实例化Bean的方式
+Spring提供了三种实例化Bean的方式。
 
 
+使用类构造器实例化。
+
+1&lt;bean id=&quot;personService&quot; class=&quot;cn.itcast.service.impl.PersonServiceBean&quot;&gt;&lt;/bean&gt;
 
 
-如何关闭 intelliJ IDEA 的参数提示功能：
+不难看出，我们以前使用的就是该方式。上面的配置默认使用的是PersonServiceBean类的默认构造函数来实例化PersonServiceBean对象的。
 
 
+使用静态工厂方法实例化。
 
 
-如上操作即可关闭这个提示功能。
-暂时，我是不接受这个功能有什么好的地方。
-
-
-管了之后，这下代码看着就舒爽多啦。
-
-
-
-
+我们在编码剖析Spring管理Bean的原理案例的基...
 						
 					</div>
 					
@@ -338,9 +328,9 @@ Lombok能以简单的注解形式来简化java代码，提高开发人员的开�
 
 
 
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E5%85%B3%E9%97%AD%E5%8F%82%E6%95%B0%E6%8F%90%E7%A4%BA/" itemprop="url">
-		<time datetime="2021-08-31T09:49:26.548Z" itemprop="datePublished">
-	  		2021-08-31
+	<a href="/2021/09/03/Spring%E7%9A%84%E4%B8%89%E7%A7%8D%E5%AE%9E%E4%BE%8B%E5%8C%96Bean%E7%9A%84%E6%96%B9%E5%BC%8F/" itemprop="url">
+		<time datetime="2021-09-02T21:08:11.875Z" itemprop="datePublished">
+	  		2021-09-03
 	  </time>
 	</a> 
 
@@ -353,7 +343,7 @@ Lombok能以简单的注解形式来简化java代码，提高开发人员的开�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E5%85%B3%E9%97%AD%E5%8F%82%E6%95%B0%E6%8F%90%E7%A4%BA/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/03/Spring%E7%9A%84%E4%B8%89%E7%A7%8D%E5%AE%9E%E4%BE%8B%E5%8C%96Bean%E7%9A%84%E6%96%B9%E5%BC%8F/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -364,42 +354,18 @@ Lombok能以简单的注解形式来简化java代码，提高开发人员的开�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E8%AE%BE%E7%BD%AE%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F/" itemprop="url">
-		IntelliJ IDEA 中设置字体大小
+	<a href="/2021/09/03/%E7%BC%96%E7%A0%81%E5%89%96%E6%9E%90Spring%E7%AE%A1%E7%90%86Bean%E7%9A%84%E5%8E%9F%E7%90%86/" itemprop="url">
+		编码剖析Spring管理Bean的原理
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							IntelliJ IDEA 中设置字体大小
-在使用这个intelliJ IDEA (JetBrains PyCharm)编辑器的时候，可能刚刚开始要设置合适的字体大小，但是除了设置，编辑代码时的文本的字体大小外。
-在现实console，就是那个log框的字体也是很小。这个地方的设置，也不是一下两下就能找到的。
+							编码剖析Spring管理Bean的原理
+在Spring的第一个案例中，我们已经知道了怎么将bean交给Spring容器进行管理，并且明白了怎么从Spring容器中获取bean。那我们就有一个疑问了：Spring是如何创建并管理bean的呢？现在我们就来编码剖析Spring管理Bean的原理。本文是在Spring的第一个案例的基础上展开的。我们要使用dom4j读取Sping的配置文件——beans.xml
 
-
-*一开始未设置字体大小的图：*
-
-
-
-
-*1，设置普通文本的字体大小*
-这就是我们写代码的地方的字体大小的设置。
-
-
-
-
-*2，设置log的字体大小*
-这个是设置下面显示log，报错信息的地方的字体大小。
-
-
-
-
-最后，都设置完之后，的整体效果。
-
-
-
-
-*3，设置界面字体的大...
+123456789&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;beans xmlns=&qu...
 						
 					</div>
 					
@@ -414,9 +380,9 @@ Lombok能以简单的注解形式来简化java代码，提高开发人员的开�
 
 
 
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E8%AE%BE%E7%BD%AE%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F/" itemprop="url">
-		<time datetime="2021-08-31T09:44:19.813Z" itemprop="datePublished">
-	  		2021-08-31
+	<a href="/2021/09/03/%E7%BC%96%E7%A0%81%E5%89%96%E6%9E%90Spring%E7%AE%A1%E7%90%86Bean%E7%9A%84%E5%8E%9F%E7%90%86/" itemprop="url">
+		<time datetime="2021-09-02T21:04:12.937Z" itemprop="datePublished">
+	  		2021-09-03
 	  </time>
 	</a> 
 
@@ -429,7 +395,7 @@ Lombok能以简单的注解形式来简化java代码，提高开发人员的开�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E8%AE%BE%E7%BD%AE%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/03/%E7%BC%96%E7%A0%81%E5%89%96%E6%9E%90Spring%E7%AE%A1%E7%90%86Bean%E7%9A%84%E5%8E%9F%E7%90%86/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -440,27 +406,21 @@ Lombok能以简单的注解形式来简化java代码，提高开发人员的开�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AAjdk%E7%89%88%E6%9C%AC/" itemprop="url">
-		IntelliJ IDEA 中如何配置多个jdk版本
+	<a href="/2021/09/03/%E7%BC%96%E5%86%99Spring%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%A1%88%E4%BE%8B%E5%B9%B6%E6%B5%8B%E8%AF%95Spring%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" itemprop="url">
+		编写Spring的第一个案例并测试Spring的开发环境
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							IntelliJ IDEA 中如何配置多个jdk版本
-有时候需要看Java源码，但是 Java 1.7 和 Java 1.8的差别的关系，有时候你想查看不同jdk版本的Java源码。或者你的项目需要测试不同Java jdk 版本的通用与否。那么这个编辑器支持多个版本的jdk同时存在，可以自由的切换具体实现，看下图，一次配置，可以随便使用，省事 安心。
+							编写Spring的第一个案例并测试Spring的开发环境
+Spring4.2.5的开发环境搭建好了之后，我们来编写Spring的第一个案例，并测试Spring的开发环境。首先在Eclipse中新建一个普通的Java Project，名称为spring_first，迅速搭建好Spring4.2.5的开发环境。然后在src目录下新建一个cn.itcast.service包，并在该包下创建一个接口——PersonService.java，其代码如下：
+
+12345public interface PersonService &#123;    void save();&#125;
 
 
-
-
-
-
-
-这是选择的是1.8版本的jdk
-
-一般像使用eclipse的时候，还得整个环境变量，但是我的这个1.7的时候，好像也没修改环境变量，我的那个测试用 的helloworld项目的Java照样跑起来啦。
-不知道是不是这个配置可以无...
+在Spr...
 						
 					</div>
 					
@@ -475,9 +435,9 @@ Lombok能以简单的注解形式来简化java代码，提高开发人员的开�
 
 
 
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AAjdk%E7%89%88%E6%9C%AC/" itemprop="url">
-		<time datetime="2021-08-31T09:30:59.721Z" itemprop="datePublished">
-	  		2021-08-31
+	<a href="/2021/09/03/%E7%BC%96%E5%86%99Spring%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%A1%88%E4%BE%8B%E5%B9%B6%E6%B5%8B%E8%AF%95Spring%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" itemprop="url">
+		<time datetime="2021-09-02T20:46:46.415Z" itemprop="datePublished">
+	  		2021-09-03
 	  </time>
 	</a> 
 
@@ -490,7 +450,7 @@ Lombok能以简单的注解形式来简化java代码，提高开发人员的开�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AAjdk%E7%89%88%E6%9C%AC/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/03/%E7%BC%96%E5%86%99Spring%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%A1%88%E4%BE%8B%E5%B9%B6%E6%B5%8B%E8%AF%95Spring%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -501,29 +461,24 @@ Lombok能以简单的注解形式来简化java代码，提高开发人员的开�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E5%88%9B%E5%BB%BA%E7%B1%BB%E6%B3%A8%E9%87%8A%E6%A8%A1%E6%9D%BF%E5%92%8C%E6%96%B9%E6%B3%95%E6%B3%A8%E9%87%8A%E6%A8%A1%E6%9D%BF/" itemprop="url">
-		IntelliJ IDEA 中创建类注释模板和方法注释模板
+	<a href="/2021/09/03/%E6%90%AD%E5%BB%BASpring4.x.x%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" itemprop="url">
+		搭建Spring4.x.x开发环境
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							IntelliJ IDEA 中创建类注释模板和方法注释模板
-  在使用Idea的时候，它的注释模板很简单，不够详细；所有大多数开发者都想设置一个比较详细的注释模板，我现在把我了解的创建类注释模板和方法注释模板的操作记录下来，分享给大家
+							搭建Spring4.x.x开发环境
+先去Spring官网下载Spring4.x.x开发包(本人使用的版本是Spring4.2.5)，这个网上有一大堆博客有介绍，故省略。下载下来之后，我就来详细说明如何在Eclipse中搭建Spring4.2.5开发环境。
 
 
-我们需要定义的注释模板如下：类注释模板：
+首先在Eclipse中新建一个普通Java Project，名为spring_first。
 
+接着我们就要导入Spring需要的jar包，进入到下载并解压的spring-framework-4.2.5.RELEASE的目录中，进入libs文件夹，找到如下jar包：
 
-
-
-方法注释模板：
-
-
-
-
-一、设置IDEA 中的类注释模板File -&gt; Settings -&gt; Editor -&gt; File and Code Templates -&gt; Files选择Class , Interface ，Enum 等等，我们都可以看到，在右侧区域中，在publi...
+spring-core-4.2.5.RELEASE.jar
+spr...
 						
 					</div>
 					
@@ -538,9 +493,9 @@ Lombok能以简单的注解形式来简化java代码，提高开发人员的开�
 
 
 
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E5%88%9B%E5%BB%BA%E7%B1%BB%E6%B3%A8%E9%87%8A%E6%A8%A1%E6%9D%BF%E5%92%8C%E6%96%B9%E6%B3%95%E6%B3%A8%E9%87%8A%E6%A8%A1%E6%9D%BF/" itemprop="url">
-		<time datetime="2021-08-31T07:07:44.340Z" itemprop="datePublished">
-	  		2021-08-31
+	<a href="/2021/09/03/%E6%90%AD%E5%BB%BASpring4.x.x%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" itemprop="url">
+		<time datetime="2021-09-02T20:33:37.083Z" itemprop="datePublished">
+	  		2021-09-03
 	  </time>
 	</a> 
 
@@ -553,7 +508,7 @@ Lombok能以简单的注解形式来简化java代码，提高开发人员的开�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E5%88%9B%E5%BB%BA%E7%B1%BB%E6%B3%A8%E9%87%8A%E6%A8%A1%E6%9D%BF%E5%92%8C%E6%96%B9%E6%B3%95%E6%B3%A8%E9%87%8A%E6%A8%A1%E6%9D%BF/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/03/%E6%90%AD%E5%BB%BASpring4.x.x%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -564,31 +519,24 @@ Lombok能以简单的注解形式来简化java代码，提高开发人员的开�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%A0%81%E7%9A%84%E5%BF%AB%E6%8D%B7%E7%BC%96%E8%BE%91%E6%A8%A1%E6%9D%BF/" itemprop="url">
-		IntelliJ IDEA 中如何设置代码的快捷编辑模板
+	<a href="/2021/09/03/Spring%E7%AE%80%E4%BB%8B/" itemprop="url">
+		Spring简介
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							IntelliJ IDEA 中如何设置代码的快捷编辑模板
-看到老师在给你示范的时候，是不是sys，一回车，就直接System.out.println(“自己敲要输出的东西”);然后，估计你学习的时候，老师用的是eclipse编辑器，当你换了这个IntelliJ IDEA编辑器的时候，就不知道在哪设置了吧。
+							Spring简介
+阿昀以一个初学者的身份学习Spring框架，并按照一个小白的思路详细总结学习过程中的知识点，整理成一个系列，供后来人借鉴。
 
+-Spring是什么
+Spring是一个开源的控制反转(Inversion of Control，IoC)和面向切面(AOP)的容器框架，它的主要目得是简化企业开发。
 
-看下图，示范如何设置：
+-控制反转(IOC)
+大概以前，业务逻辑层的代码很有可能这样写：
 
-
-
-
-
-
-图中只是简单的示范了一下，告诉你这个在哪找，然后自己要用什么模板，就可以自己在这地方设置了。我就有如下几个设置：
-
-
-for循环：fori效果如下：   for (int i = 0; i &lt; ; i++) {
-   }
-123&gt;fo...
+1234567public class PersonServiceBean &#123;     private PersonDao personDao = new PersonDaoBean();      p...
 						
 					</div>
 					
@@ -603,9 +551,9 @@ for循环：fori效果如下：   for (int i = 0; i &lt; ; i++) {
 
 
 
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%A0%81%E7%9A%84%E5%BF%AB%E6%8D%B7%E7%BC%96%E8%BE%91%E6%A8%A1%E6%9D%BF/" itemprop="url">
-		<time datetime="2021-08-31T06:54:27.282Z" itemprop="datePublished">
-	  		2021-08-31
+	<a href="/2021/09/03/Spring%E7%AE%80%E4%BB%8B/" itemprop="url">
+		<time datetime="2021-09-02T20:04:27.723Z" itemprop="datePublished">
+	  		2021-09-03
 	  </time>
 	</a> 
 
@@ -618,7 +566,7 @@ for循环：fori效果如下：   for (int i = 0; i &lt; ; i++) {
 
 						
 							<span class="right">      	
-								<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%A0%81%E7%9A%84%E5%BF%AB%E6%8D%B7%E7%BC%96%E8%BE%91%E6%A8%A1%E6%9D%BF/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/03/Spring%E7%AE%80%E4%BB%8B/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -629,29 +577,16 @@ for循环：fori效果如下：   for (int i = 0; i &lt; ; i++) {
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE%E5%90%8C%E6%97%B6%E6%89%93%E5%BC%80%E5%A4%9A%E4%B8%AA%E6%96%87%E4%BB%B6%E4%B8%94%E5%88%86%E8%A1%8C%E6%98%BE%E7%A4%BA/" itemprop="url">
-		IntelliJ IDEA 中如何设置同时打开多个文件且分行显示
+	<a href="/2021/09/03/Spring4.2.5+Hibernate4.3.11+Struts2.3.24%E6%95%B4%E5%90%88%E5%BC%80%E5%8F%91/" itemprop="url">
+		Spring4.2.5+Hibernate4.3.11+Struts2.3.24整合开发
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							IntelliJ IDEA 中如何设置同时打开多个文件且分行显示
-有时候要是打开多个文件，要么都显示在一行，要么因为空间不足，就给省略显示，这样看着，或者点着，都不是很方便IntelliJ IDEA 这个编辑器就提供了应对办法，要是知道怎么设置，那是最好，不知道的可以参考如下图的修改：1，修改上限值，可以最多显示30个tabs，2，多行显示，不会拥挤在一行，或者干脆就收缩起来。
-
-
-具体显示效果如下：
-
-
-
-
-
-
-
-
-
-
+							Spring4.2.5+Hibernate4.3.11+Struts2.3.24整合开发
+前面我们已经学会了Spring4.2.5+Hibernate4.3.11+Struts1.3.8的整合开发，现在再来学习Spring4.2.5+Hibernate4.3.11+Struts2.3.24的整合开发应该是得心应手的事了，但我们还是有必要说一下，下面开始本文的介绍。在学习Spring4.2.5+Hibernate4.3.11+Struts2.3.24的整合开发时，不要一口气的把这3个框架整合好，而是应该分步整合，通常应该先整合Spring4.2.5+Hibernate4.3.11这2个框架...
 						
 					</div>
 					
@@ -666,9 +601,9 @@ for循环：fori效果如下：   for (int i = 0; i &lt; ; i++) {
 
 
 
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE%E5%90%8C%E6%97%B6%E6%89%93%E5%BC%80%E5%A4%9A%E4%B8%AA%E6%96%87%E4%BB%B6%E4%B8%94%E5%88%86%E8%A1%8C%E6%98%BE%E7%A4%BA/" itemprop="url">
-		<time datetime="2021-08-31T06:44:57.309Z" itemprop="datePublished">
-	  		2021-08-31
+	<a href="/2021/09/03/Spring4.2.5+Hibernate4.3.11+Struts2.3.24%E6%95%B4%E5%90%88%E5%BC%80%E5%8F%91/" itemprop="url">
+		<time datetime="2021-09-02T19:41:15.182Z" itemprop="datePublished">
+	  		2021-09-03
 	  </time>
 	</a> 
 
@@ -681,7 +616,7 @@ for循环：fori效果如下：   for (int i = 0; i &lt; ; i++) {
 
 						
 							<span class="right">      	
-								<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE%E5%90%8C%E6%97%B6%E6%89%93%E5%BC%80%E5%A4%9A%E4%B8%AA%E6%96%87%E4%BB%B6%E4%B8%94%E5%88%86%E8%A1%8C%E6%98%BE%E7%A4%BA/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/03/Spring4.2.5+Hibernate4.3.11+Struts2.3.24%E6%95%B4%E5%90%88%E5%BC%80%E5%8F%91/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -692,25 +627,18 @@ for循环：fori效果如下：   for (int i = 0; i &lt; ; i++) {
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E5%A6%82%E4%BD%95%E9%87%8D%E5%91%BD%E5%90%8D%E5%8F%98%E9%87%8F%E6%96%87%E4%BB%B6%E6%96%87%E4%BB%B6%E5%A4%B9/" itemprop="url">
-		IntelliJ IDEA 如何重命名变量文件文件夹
+	<a href="/2021/09/03/Spring%E6%8F%90%E4%BE%9B%E7%9A%84CharacterEncoding%E5%92%8COpenSessionInView%E5%8A%9F%E8%83%BD/" itemprop="url">
+		Spring提供的CharacterEncoding和OpenSessionInView功能
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							IntelliJ IDEA 如何重命名变量文件文件夹
-我表示，我在刚刚使用这个编辑器的时候，还真不知道怎么去重命名一个变量，重命名一个文件，或者一个文件夹。
-理论上讲，你要是改动一个地方，那么，其他所有引用的地方，应该跟着都给自动的改了的。
-不然，你一个个的改，要是引用的地方多了去了，那不改死你啊。
-所以，这肯定有个方便快捷的地方来实现这个功能的。说这么多，也就一个快捷键的事。
-（有兄台表示：我这个是eclipse的快捷键。没错，这就是eclipse上的快捷键吧，这个是可以设置的）
+							Spring提供的CharacterEncoding和OpenSessionInView功能
+前面我们以一种更加优雅的方式集成了Spring4.2.5+Hibernate4.3.11+Struts1.3.8，但是在实际开发中我们会碰到两个问题，在此先不言表，只通过例子将其引出来。我们先在SSH项目的根目录WebRoot下新建一个JSP页面——index.jsp，即项目首页，其内容为：
 
-
-
-
-至于这个快捷键，不要太在意，因为，我们使用的系统不同，键盘映射不同，也就是keymap不同，可能有...
+1234567891011121314151617&lt;%@ page language=&quot;java&quot; contentType=&quot;text/html; charset=UT...
 						
 					</div>
 					
@@ -725,9 +653,9 @@ for循环：fori效果如下：   for (int i = 0; i &lt; ; i++) {
 
 
 
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E5%A6%82%E4%BD%95%E9%87%8D%E5%91%BD%E5%90%8D%E5%8F%98%E9%87%8F%E6%96%87%E4%BB%B6%E6%96%87%E4%BB%B6%E5%A4%B9/" itemprop="url">
-		<time datetime="2021-08-30T20:44:46.498Z" itemprop="datePublished">
-	  		2021-08-31
+	<a href="/2021/09/03/Spring%E6%8F%90%E4%BE%9B%E7%9A%84CharacterEncoding%E5%92%8COpenSessionInView%E5%8A%9F%E8%83%BD/" itemprop="url">
+		<time datetime="2021-09-02T19:24:14.676Z" itemprop="datePublished">
+	  		2021-09-03
 	  </time>
 	</a> 
 
@@ -740,7 +668,7 @@ for循环：fori效果如下：   for (int i = 0; i &lt; ; i++) {
 
 						
 							<span class="right">      	
-								<a href="/2021/08/31/IntelliJ%20IDEA%20%E5%A6%82%E4%BD%95%E9%87%8D%E5%91%BD%E5%90%8D%E5%8F%98%E9%87%8F%E6%96%87%E4%BB%B6%E6%96%87%E4%BB%B6%E5%A4%B9/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/03/Spring%E6%8F%90%E4%BE%9B%E7%9A%84CharacterEncoding%E5%92%8COpenSessionInView%E5%8A%9F%E8%83%BD/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -751,28 +679,21 @@ for循环：fori效果如下：   for (int i = 0; i &lt; ; i++) {
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/31/IntelliJ%20IDEA%E4%B8%AD%E4%B8%80%E6%AC%A1%E6%80%A7%E6%8A%98%E5%8F%A0%E6%89%80%E6%9C%89Java%E4%BB%A3%E7%A0%81%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%AE%BE%E7%BD%AE/" itemprop="url">
-		IntelliJ IDEA中一次性折叠所有Java代码的快捷键设置
+	<a href="/2021/09/03/%E4%B8%BASpring%E9%9B%86%E6%88%90%E7%9A%84Hibernate%E9%85%8D%E7%BD%AE%E4%BA%8C%E7%BA%A7%E7%BC%93%E5%AD%98/" itemprop="url">
+		为Spring集成的Hibernate配置二级缓存
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							IntelliJ IDEA中一次性折叠所有Java代码的快捷键设置
-问题：在Java文件中，想把所有的Java方法代码都一次性给折叠起来，用哪个点开哪个。问题来源：在新建model bean的时候，要是属性很多，那么对应的getter和setter就会很多，要是所有的方法代码都是展开状态，那么这个文件看着也不甚美观，所以，可以把方法都折叠起来。
-下面看怎么设置快捷键：
+							为Spring集成的Hibernate配置二级缓存
+前面我们已经集成了Spring4.2.5+Hibernate4.3.11+Struts1.3.8了，接下来我们就要为Spring4.2.5集成的Hibernate4.3.11配置二级缓存了，因为在企业开发中，会大量使用到Hibernate的二级缓存。由于要在SSH项目中使用到Hibernate4.3.11的二级缓存，所以我们需要向项目中导入Hibernate4.3.11中与二级缓存相关的jar文件，所以要导入如下jar文件：
 
 
 
 
-
-
-
-
-要是看不懂，系统自带的快捷键配置，大可以，自己再修改个，就像这个折叠代码的这个快件，折叠一个方法的快捷键是：  ctrl + 减号。
-我就把折叠所有的快捷键设置成：ctrl+shift+减号。
-这样也好记忆...
+注意：以上三个jar文件都要导入到项目中，否则会出现各种异常，比如类找不到等等。这样，总共需要向SSH项...
 						
 					</div>
 					
@@ -787,9 +708,9 @@ for循环：fori效果如下：   for (int i = 0; i &lt; ; i++) {
 
 
 
-	<a href="/2021/08/31/IntelliJ%20IDEA%E4%B8%AD%E4%B8%80%E6%AC%A1%E6%80%A7%E6%8A%98%E5%8F%A0%E6%89%80%E6%9C%89Java%E4%BB%A3%E7%A0%81%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%AE%BE%E7%BD%AE/" itemprop="url">
-		<time datetime="2021-08-30T20:41:09.987Z" itemprop="datePublished">
-	  		2021-08-31
+	<a href="/2021/09/03/%E4%B8%BASpring%E9%9B%86%E6%88%90%E7%9A%84Hibernate%E9%85%8D%E7%BD%AE%E4%BA%8C%E7%BA%A7%E7%BC%93%E5%AD%98/" itemprop="url">
+		<time datetime="2021-09-02T19:03:34.901Z" itemprop="datePublished">
+	  		2021-09-03
 	  </time>
 	</a> 
 
@@ -802,7 +723,7 @@ for循环：fori效果如下：   for (int i = 0; i &lt; ; i++) {
 
 						
 							<span class="right">      	
-								<a href="/2021/08/31/IntelliJ%20IDEA%E4%B8%AD%E4%B8%80%E6%AC%A1%E6%80%A7%E6%8A%98%E5%8F%A0%E6%89%80%E6%9C%89Java%E4%BB%A3%E7%A0%81%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%AE%BE%E7%BD%AE/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/03/%E4%B8%BASpring%E9%9B%86%E6%88%90%E7%9A%84Hibernate%E9%85%8D%E7%BD%AE%E4%BA%8C%E7%BA%A7%E7%BC%93%E5%AD%98/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -813,23 +734,21 @@ for循环：fori效果如下：   for (int i = 0; i &lt; ; i++) {
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/31/IntelliJ%20IDEA%E4%B8%AD%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8Bmaven%E9%A1%B9%E7%9B%AE%E4%B8%AD%E6%89%80%E6%9C%89jar%E5%8C%85%E7%9A%84%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB%E5%9B%BE/" itemprop="url">
-		IntelliJ IDEA中如何查看maven项目中所有jar包的依赖关系图
+	<a href="/2021/09/03/Spring4.2.5+Hibernate4.3.11+Struts1.3.8%E9%9B%86%E6%88%90%E6%96%B9%E6%A1%88%E4%BA%8C/" itemprop="url">
+		Spring4.2.5+Hibernate4.3.11+Struts1.3.8集成方案二
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							IntelliJ IDEA中如何查看maven项目中所有jar包的依赖关系图
-Maven 组件界面介绍
+							Spring4.2.5+Hibernate4.3.11+Struts1.3.8集成方案二
+前面我们已经集成了Spring4.2.5+Hibernate4.3.11+Struts1.3.8，但是集成的方案并不完美，因为我们在Action里面每次要取得Spring容器实例，都必须有这样的代码：
+
+12WebApplicationContext ctx = WebApplicationContextUtils.getWebApplicationContext(                this.getServlet().getServletContext());
 
 
-
-
-如上图标注 1 所示，为常用的 Maven 工具栏，其中最常用的有：
-第一个按钮：Reimport All Maven Projects 表示根据 pom.xml 重新载入项目。一般单我们在 pom.xml 添加了依赖包或是插件的时候，发现标注 4 的依赖区中没有看到最新写的依赖的话，可以尝试点击此按钮进行项目的重新载入。
-第六个按钮：Execute Maven Goal 弹出可执行的 Maven 命令的输入框。有些情况下我们需要通过书写某些执行命令来构建项目，就可以通过此按钮...
+是不是很招人烦啊！而...
 						
 					</div>
 					
@@ -844,9 +763,9 @@ Maven 组件界面介绍
 
 
 
-	<a href="/2021/08/31/IntelliJ%20IDEA%E4%B8%AD%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8Bmaven%E9%A1%B9%E7%9B%AE%E4%B8%AD%E6%89%80%E6%9C%89jar%E5%8C%85%E7%9A%84%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB%E5%9B%BE/" itemprop="url">
-		<time datetime="2021-08-30T20:28:09.355Z" itemprop="datePublished">
-	  		2021-08-31
+	<a href="/2021/09/03/Spring4.2.5+Hibernate4.3.11+Struts1.3.8%E9%9B%86%E6%88%90%E6%96%B9%E6%A1%88%E4%BA%8C/" itemprop="url">
+		<time datetime="2021-09-02T18:28:39.829Z" itemprop="datePublished">
+	  		2021-09-03
 	  </time>
 	</a> 
 
@@ -859,7 +778,7 @@ Maven 组件界面介绍
 
 						
 							<span class="right">      	
-								<a href="/2021/08/31/IntelliJ%20IDEA%E4%B8%AD%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8Bmaven%E9%A1%B9%E7%9B%AE%E4%B8%AD%E6%89%80%E6%9C%89jar%E5%8C%85%E7%9A%84%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB%E5%9B%BE/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/03/Spring4.2.5+Hibernate4.3.11+Struts1.3.8%E9%9B%86%E6%88%90%E6%96%B9%E6%A1%88%E4%BA%8C/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>

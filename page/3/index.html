@@ -232,52 +232,18 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%AE%B2%E8%A7%A3Win%E5%92%8CLinux/" itemprop="url">
-		IntelliJ IDEA 常用快捷键讲解Win和Linux
+	<a href="/2021/09/02/%E4%BD%BF%E7%94%A8Spring%E7%9A%84%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0AOP%E7%9A%84%E7%BB%86%E8%8A%82/" itemprop="url">
+		使用Spring的注解方式实现AOP的细节
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							IntelliJ IDEA 常用快捷键讲解Win和LinuxCtrl
+							使用Spring的注解方式实现AOP的细节
+前面我们已经入门使用Spring的注解方式实现AOP了，现在我们再来学习使用Spring的注解方式实现AOP的一些细节。本文是建立在使用Spring的注解方式实现AOP入门的案例的基础之上的。本文是来讲解使用Spring的注解方式实现AOP的一些细节，其实说白了就是学习如何使用各种通知而已，例如前置通知、后置通知、异常通知、最终通知、环绕通知等，之前我们已经学习了前置通知，现在就来学习剩余的通知。我们先来看后置通知，此时须将MyInterceptor类的代码修改为：
 
-
-快捷键
-介绍
-
-
-
-Ctrl + F
-在当前文件进行文本查找 （必备）
-
-
-Ctrl + R
-在当前文件进行文本替换 （必备）
-
-
-Ctrl + Z
-撤销 （必备）
-
-
-Ctrl + Y
-删除光标所在行 或 删除选中的行 （必备）
-
-
-Ctrl + X
-剪切光标所在行 或 剪切选择内容
-
-
-Ctrl + C
-复制光标所在行 或 复制选择内容
-
-
-Ctrl + D
-复制光标所在行 或 复制选择内容，并把复制内容插入光标位置下面 （必备）
-
-
-Ctrl + W
-递进式选择代码块。可选中光标所在的单词或段落，连续按会在原...
+12345678910111213141516171819202122/**...
 						
 					</div>
 					
@@ -292,9 +258,9 @@ Ctrl + W
 
 
 
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%AE%B2%E8%A7%A3Win%E5%92%8CLinux/" itemprop="url">
-		<time datetime="2021-08-30T17:01:06.624Z" itemprop="datePublished">
-	  		2021-08-31
+	<a href="/2021/09/02/%E4%BD%BF%E7%94%A8Spring%E7%9A%84%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0AOP%E7%9A%84%E7%BB%86%E8%8A%82/" itemprop="url">
+		<time datetime="2021-09-02T13:51:44.292Z" itemprop="datePublished">
+	  		2021-09-02
 	  </time>
 	</a> 
 
@@ -307,7 +273,7 @@ Ctrl + W
 
 						
 							<span class="right">      	
-								<a href="/2021/08/31/IntelliJ%20IDEA%20%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%AE%B2%E8%A7%A3Win%E5%92%8CLinux/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/02/%E4%BD%BF%E7%94%A8Spring%E7%9A%84%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0AOP%E7%9A%84%E7%BB%86%E8%8A%82/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -318,25 +284,16 @@ Ctrl + W
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E8%AF%A6%E7%BB%86%E5%9B%BE%E8%A7%A3%E6%9C%80%E5%B8%B8%E7%94%A8%E7%9A%84%E9%85%8D%E7%BD%AE/" itemprop="url">
-		IntelliJ IDEA 详细图解最常用的配置
+	<a href="/2021/09/02/%E4%BD%BF%E7%94%A8JDK%E4%B8%AD%E7%9A%84Proxy%E6%8A%80%E6%9C%AF%E5%AE%9E%E7%8E%B0AOP%E5%8A%9F%E8%83%BD/" itemprop="url">
+		使用JDK中的Proxy技术实现AOP功能
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							IntelliJ IDEA 详细图解最常用的配置-前言
-刚刚使用IntelliJ IDEA 编辑器的时候，会有很多设置，会方便以后的开发。比如：设置文件字体大小，代码自动完成提示，版本管理，本地代码历史，自动导入包，修改注释，修改tab的显示的数量和行数，打开项目方式，等等一大堆东西。总结一下，免得下次换了系统，还得再找一遍配置。
-
--设置外观和字体大小
-
-设置弹窗状态栏的字体大小
-
--设置编辑器的快捷键，也就是keymap
-
-
-这个是修改咱习惯的快捷键映射表，因为我是从eclipse转来的，估计大部分都和我差不多啦，那就可以在这配置成eclipse的快捷键映射表，那么就没有必要再去记一...
+							使用JDK中的Proxy技术实现AOP功能
+AOP技术在企业开发中或多或少都会用到，但用的最多的大概就是做权限系统时，在做权限系统时，我们可能需要粗粒度的权限控制和细粒度的权限控制，对于细粒度的权限控制，我们主要是对方法进行拦截，对方法进行拦截之后，判断用户是否是有权限，有权限就执行该方法，没有权限就不能执行该方法。现在我们借助一个例子来说明怎么使用JDK中的Proxy技术来实现AOP功能，并且不借助任何其他的框架。首先新建一个普通的Java Project，名称为AOP。接着在src目录下新建一个it.cast.service包，并在该包下创建PersonService接口，其代码为：...
 						
 					</div>
 					
@@ -351,9 +308,9 @@ Ctrl + W
 
 
 
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E8%AF%A6%E7%BB%86%E5%9B%BE%E8%A7%A3%E6%9C%80%E5%B8%B8%E7%94%A8%E7%9A%84%E9%85%8D%E7%BD%AE/" itemprop="url">
-		<time datetime="2021-08-30T16:30:34.495Z" itemprop="datePublished">
-	  		2021-08-31
+	<a href="/2021/09/02/%E4%BD%BF%E7%94%A8JDK%E4%B8%AD%E7%9A%84Proxy%E6%8A%80%E6%9C%AF%E5%AE%9E%E7%8E%B0AOP%E5%8A%9F%E8%83%BD/" itemprop="url">
+		<time datetime="2021-09-02T13:31:25.314Z" itemprop="datePublished">
+	  		2021-09-02
 	  </time>
 	</a> 
 
@@ -366,7 +323,7 @@ Ctrl + W
 
 						
 							<span class="right">      	
-								<a href="/2021/08/31/IntelliJ%20IDEA%20%E8%AF%A6%E7%BB%86%E5%9B%BE%E8%A7%A3%E6%9C%80%E5%B8%B8%E7%94%A8%E7%9A%84%E9%85%8D%E7%BD%AE/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/02/%E4%BD%BF%E7%94%A8JDK%E4%B8%AD%E7%9A%84Proxy%E6%8A%80%E6%9C%AF%E5%AE%9E%E7%8E%B0AOP%E5%8A%9F%E8%83%BD/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -377,18 +334,16 @@ Ctrl + W
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E5%AF%B9%E7%A1%AC%E4%BB%B6%E7%9A%84%E8%A6%81%E6%B1%82/" itemprop="url">
-		IntelliJ IDEA 对硬件的要求
+	<a href="/2021/09/02/%E4%BD%BF%E7%94%A8CGLIB%E5%AE%9E%E7%8E%B0AOP%E5%8A%9F%E8%83%BD%E4%B8%8EAOP%E6%A6%82%E5%BF%B5%E8%A7%A3%E9%87%8A/" itemprop="url">
+		使用CGLIB实现AOP功能与AOP概念解释
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							IntelliJ IDEA 对硬件的要求IntelliJ IDEA 对硬件的要求看上去不是很高。可是实际在开发中其实并不是这样的，特别是开发 Java Web 的项目的计算机，2G根本不够，4G 内存是基本不够用的。
-他之所以快，是因为给代码建了很多索引，这些个索引都是需要空间的，这个空间必须得是内存。
-我们现在来假设一种国内常见的开发环境：
-有 一个在开发的 Java Web 项目，它使用的框架为主流的：Struts + Spring + Hibernate，使用者三个框架的过程中，我们要引入大量的框架架包，在我们的 Web 容器启动时，这些框架架包就要占用大量的内存，而且 Intel...
+							使用CGLIB实现AOP功能与AOP概念解释-使用CGLIB实现AOP功能
+在Java里面，我们要产生某个对象的代理对象，这个对象必须要有一个特点，即这个对象必须实现一个接口，动态代理技术只能基于接口进行代理。有时候我们在做开发的时候，这个对象就没有实现接口，有人可能会说，它既然没有接口，那我就给它定义一个接口，这是不行的，因为有时候我们拿到一个对象，而这个对象是服务器产生给我们的，是服务器提供给我们的，又不是我们自己写的，动不动就给它定义一个接口，给它找个爸爸，哪那行呢？但我们现在要对它进行增强，这时用动态代理技术就不行了，动态代理技术只能是基于接口，那如果这个对象没有接口，又该怎么做...
 						
 					</div>
 					
@@ -403,9 +358,9 @@ Ctrl + W
 
 
 
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E5%AF%B9%E7%A1%AC%E4%BB%B6%E7%9A%84%E8%A6%81%E6%B1%82/" itemprop="url">
-		<time datetime="2021-08-30T16:18:51.867Z" itemprop="datePublished">
-	  		2021-08-31
+	<a href="/2021/09/02/%E4%BD%BF%E7%94%A8CGLIB%E5%AE%9E%E7%8E%B0AOP%E5%8A%9F%E8%83%BD%E4%B8%8EAOP%E6%A6%82%E5%BF%B5%E8%A7%A3%E9%87%8A/" itemprop="url">
+		<time datetime="2021-09-02T13:16:47.215Z" itemprop="datePublished">
+	  		2021-09-02
 	  </time>
 	</a> 
 
@@ -418,7 +373,7 @@ Ctrl + W
 
 						
 							<span class="right">      	
-								<a href="/2021/08/31/IntelliJ%20IDEA%20%E5%AF%B9%E7%A1%AC%E4%BB%B6%E7%9A%84%E8%A6%81%E6%B1%82/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/02/%E4%BD%BF%E7%94%A8CGLIB%E5%AE%9E%E7%8E%B0AOP%E5%8A%9F%E8%83%BD%E4%B8%8EAOP%E6%A6%82%E5%BF%B5%E8%A7%A3%E9%87%8A/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -429,27 +384,18 @@ Ctrl + W
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/31/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7IntelliJ%20IDEA%E6%95%99%E7%A8%8B%E5%BA%8F%E7%AB%A0%E6%A6%82%E8%A7%88/" itemprop="url">
-		开发工具IntelliJ IDEA教程序章概览
+	<a href="/2021/09/02/%E8%AE%A9Spring%E8%87%AA%E5%8A%A8%E6%89%AB%E6%8F%8F%E5%92%8C%E7%AE%A1%E7%90%86Bean/" itemprop="url">
+		让Spring自动扫描和管理Bean
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							开发工具IntelliJ IDEA教程序章概览-简介
-IntelliJ IDEA 主要用于支持 Java、Scala、Groovy 等语言的开发工具，同时具备支持目前主流的技术和框架，擅长于企业应用、移动应用和 Web 应用的开发。
+							让Spring自动扫描和管理Bean
+前面的例子我们都是使用XML的bean定义来配置组件。在一个稍大的项目中，通常会有上百个组件，如果这些组件采用XML的bean定义来配置，显然会增加配置文件的体积，查找及维护起来也不太方便。Spring2.5为我们引入了组件自动扫描机制，它可以在类路径底下寻找标注了@Component、@Service、@Controller、@Repository注解的类，并把这些类纳入进Spring容器中管理。它的作用和在XML文件中使用bean节点配置组件是一样的。要使用自动扫描机制，我们需要打开以下配置信息：
 
--1.硬件要求
-请阅读文章:《IntelliJ IDEA 对硬件的要求》
-
--2.常用配置
-请阅读文章:《IntelliJ IDEA 详细图解最常用的配置》
-
--3.IntelliJ IDEA 修改内存大小，使得idea运行更流畅。
-请阅读文章:《IntelliJ IDEA 修改内存大小Mac》
-
--4.Intellij IDEA debug断点调试技巧与...
+123456789101112&lt;?xml...
 						
 					</div>
 					
@@ -464,9 +410,9 @@ IntelliJ IDEA 主要用于支持 Java、Scala、Groovy 等语言的开发工具�
 
 
 
-	<a href="/2021/08/31/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7IntelliJ%20IDEA%E6%95%99%E7%A8%8B%E5%BA%8F%E7%AB%A0%E6%A6%82%E8%A7%88/" itemprop="url">
-		<time datetime="2021-08-30T16:07:26.223Z" itemprop="datePublished">
-	  		2021-08-31
+	<a href="/2021/09/02/%E8%AE%A9Spring%E8%87%AA%E5%8A%A8%E6%89%AB%E6%8F%8F%E5%92%8C%E7%AE%A1%E7%90%86Bean/" itemprop="url">
+		<time datetime="2021-09-02T12:54:58.839Z" itemprop="datePublished">
+	  		2021-09-02
 	  </time>
 	</a> 
 
@@ -479,7 +425,7 @@ IntelliJ IDEA 主要用于支持 Java、Scala、Groovy 等语言的开发工具�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/31/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7IntelliJ%20IDEA%E6%95%99%E7%A8%8B%E5%BA%8F%E7%AB%A0%E6%A6%82%E8%A7%88/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/02/%E8%AE%A9Spring%E8%87%AA%E5%8A%A8%E6%89%AB%E6%8F%8F%E5%92%8C%E7%AE%A1%E7%90%86Bean/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -490,25 +436,22 @@ IntelliJ IDEA 主要用于支持 Java、Scala、Groovy 等语言的开发工具�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/30/mall%E5%AD%A6%E4%B9%A0%E6%89%80%E9%9C%80%E7%9F%A5%E8%AF%86%E7%82%B9/" itemprop="url">
-		mall学习所需知识点
+	<a href="/2021/09/02/%E4%BD%BF%E7%94%A8@Autowire%E6%B3%A8%E8%A7%A3%E4%B8%8E%E8%87%AA%E5%8A%A8%E8%A3%85%E9%85%8D/" itemprop="url">
+		使用@Autowire注解与自动装配
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							mall学习所需知识点
-由于mall项目涉及到很多知识点，比如SpringBoot、ElasticSearch、Redis、Mongodb等，本教程不会详细讲述这些，只会讲述本项目相关部分，所以推荐以下资料。对其中一些知识点并不熟悉的同学，可以看下下面推荐的资料。
+							使用@Autowire注解与自动装配
 
--推荐资料-IDEA
-《IntelliJ-IDEA-Tutorial》：https://github.com/judasn/IntelliJ-IDEA-Tutorial
+前面我们已经学会使用@Resource注解注入属性，并且我们还编码剖析了@Resource注解的实现原理。现在我们来学习使用@Autowire注解注入属性，本文是建立在编码剖析@Resource注解的实现原理的案例基础上的。
 
+-用@Autowire注解完成属性装配
+@Autowire注解和@Resource一样，同样也可以标注在字段或属性的setter方法上，但它默认按类型装配。我们将@Autowire注解标注在字段上，如将PersonServiceBean类的代码修改为：
 
-特别全的IDEA使用教程，可以学到很多实用的技巧。
-
--Spring
-《Spring实战（第4版）》：https://book.douban.com/s...
+123456789101112public class PersonS...
 						
 					</div>
 					
@@ -523,9 +466,9 @@ IntelliJ IDEA 主要用于支持 Java、Scala、Groovy 等语言的开发工具�
 
 
 
-	<a href="/2021/08/30/mall%E5%AD%A6%E4%B9%A0%E6%89%80%E9%9C%80%E7%9F%A5%E8%AF%86%E7%82%B9/" itemprop="url">
-		<time datetime="2021-08-30T13:20:00.282Z" itemprop="datePublished">
-	  		2021-08-30
+	<a href="/2021/09/02/%E4%BD%BF%E7%94%A8@Autowire%E6%B3%A8%E8%A7%A3%E4%B8%8E%E8%87%AA%E5%8A%A8%E8%A3%85%E9%85%8D/" itemprop="url">
+		<time datetime="2021-09-02T10:13:14.877Z" itemprop="datePublished">
+	  		2021-09-02
 	  </time>
 	</a> 
 
@@ -538,7 +481,7 @@ IntelliJ IDEA 主要用于支持 Java、Scala、Groovy 等语言的开发工具�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/30/mall%E5%AD%A6%E4%B9%A0%E6%89%80%E9%9C%80%E7%9F%A5%E8%AF%86%E7%82%B9/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/02/%E4%BD%BF%E7%94%A8@Autowire%E6%B3%A8%E8%A7%A3%E4%B8%8E%E8%87%AA%E5%8A%A8%E8%A3%85%E9%85%8D/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -549,23 +492,25 @@ IntelliJ IDEA 主要用于支持 Java、Scala、Groovy 等语言的开发工具�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/30/mall%E6%9E%B6%E6%9E%84%E5%8F%8A%E5%8A%9F%E8%83%BD%E6%A6%82%E8%A7%88/" itemprop="url">
-		mall架构及功能概览
+	<a href="/2021/09/02/%E7%BC%96%E7%A0%81%E5%89%96%E6%9E%90@Resource%E6%B3%A8%E8%A7%A3%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/" itemprop="url">
+		编码剖析@Resource注解的实现原理
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							mall架构及功能概览
-mall架构、功能及数据库结构概览
+							编码剖析@Resource注解的实现原理
+上文我们已经学会使用@Resource注解注入属性。学是学会了，但也仅限于会使用而已，故我们要深入剖析其内部原理，才算真正明白。接下来我们就来编码剖析@Resource注解的实现原理，但这都是建立在用@Resource注解完成属性装配的案例基础上的。由于我们要使用dom4j工具来读取Sping的配置文件——beans.xml，所以需要将dom4j所需的jar包导入项目中。dom4j所需的jar包为：
 
--mall项目简介
-mall项目是一套电商系统，包括前台商城系统及后台管理系统，基于SpringBoot+MyBatis实现。 前台商城系统包含首页门户、商品推荐、商品搜索、商品展示、购物车、订单流程、会员中心、客户服务、帮助中心等模块。 后台管理系统包含商品管理、订单管理、会员管理、促销管理、运营管理、内容管理、统计报表、财务管理、权限管理、设置等模块。
 
--项目演示
-后台项目演示：http://www.macrozheng.com/admin/index.html
-移动端项目演示：http://www.macrozheng...
+dom4j-1.6.1.jar
+jaxen-1.1-beta-6.jar
+
+
+使用dom4j工具读取到诸如
+
+123&lt;bean id=&q...
 						
 					</div>
 					
@@ -580,9 +525,9 @@ mall项目是一套电商系统，包括前台商城系统及后台管理系统�
 
 
 
-	<a href="/2021/08/30/mall%E6%9E%B6%E6%9E%84%E5%8F%8A%E5%8A%9F%E8%83%BD%E6%A6%82%E8%A7%88/" itemprop="url">
-		<time datetime="2021-08-30T12:51:12.109Z" itemprop="datePublished">
-	  		2021-08-30
+	<a href="/2021/09/02/%E7%BC%96%E7%A0%81%E5%89%96%E6%9E%90@Resource%E6%B3%A8%E8%A7%A3%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/" itemprop="url">
+		<time datetime="2021-09-02T10:01:40.666Z" itemprop="datePublished">
+	  		2021-09-02
 	  </time>
 	</a> 
 
@@ -595,7 +540,7 @@ mall项目是一套电商系统，包括前台商城系统及后台管理系统�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/30/mall%E6%9E%B6%E6%9E%84%E5%8F%8A%E5%8A%9F%E8%83%BD%E6%A6%82%E8%A7%88/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/02/%E7%BC%96%E7%A0%81%E5%89%96%E6%9E%90@Resource%E6%B3%A8%E8%A7%A3%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -606,23 +551,28 @@ mall项目是一套电商系统，包括前台商城系统及后台管理系统�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/30/%E5%95%86%E5%93%81SKU%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1%E4%B8%8E%E4%BC%98%E5%8C%96/" itemprop="url">
-		商品SKU功能设计与优化
+	<a href="/2021/09/02/%E7%94%A8@Resource%E6%B3%A8%E8%A7%A3%E5%AE%8C%E6%88%90%E5%B1%9E%E6%80%A7%E8%A3%85%E9%85%8D/" itemprop="url">
+		用@Resource注解完成属性装配
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							商品SKU功能设计与优化
-原来的商品SKU设计存在着两个问题，一个是SKU表设计上面比较固化，无法扩展。另一个是当修改了商品信息之后，商品SKU的ID会发生变化，由于购物车表和订单商品表都关联了商品SKU的ID，这样就会导致匹配不上。最近对这两个问题做了点优化，下面来聊聊优化的思路。
-
--商品的SPU和SKU
-首先我们来了解下商品SPU和SKU的概念，可能很多没有接触过电商的朋友都不了解。
+							用@Resource注解完成属性装配
+前面我们讲过spring的依赖注入有两种方式：
 
 
-SPU（Standard Product Unit ）:指的是标准商品单位，商品信息聚合的最小单位，是一组可复用、易检索的标准化信息的集合，该集合描述了一个商品的特性；
-SKU（Stock Kee...
+使用构造器注入。
+使用属性setter方法注入。
+
+
+但其实还有一种注入方式，我们没讲，那就是使用Field注入（用于注解方式）。在详细讲解这种方式之前，我们还须知道以下的知识点。注入依赖对象可以采用手工装配或自动装配，在实际应用中建议使用手工装配，因为自动装配会产生未知情况，开发人员无法预见最终的装配结果。手工装配依赖对象，在这种方式中又有两种编程方式：
+
+
+在xml配置文件中，通过在bean节点下配置，如：
+
+1234&lt;bean id=&quot;personService&quot; c...
 						
 					</div>
 					
@@ -637,9 +587,9 @@ SKU（Stock Kee...
 
 
 
-	<a href="/2021/08/30/%E5%95%86%E5%93%81SKU%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1%E4%B8%8E%E4%BC%98%E5%8C%96/" itemprop="url">
-		<time datetime="2021-08-30T09:59:37.340Z" itemprop="datePublished">
-	  		2021-08-30
+	<a href="/2021/09/02/%E7%94%A8@Resource%E6%B3%A8%E8%A7%A3%E5%AE%8C%E6%88%90%E5%B1%9E%E6%80%A7%E8%A3%85%E9%85%8D/" itemprop="url">
+		<time datetime="2021-09-02T09:41:24.537Z" itemprop="datePublished">
+	  		2021-09-02
 	  </time>
 	</a> 
 
@@ -652,7 +602,7 @@ SKU（Stock Kee...
 
 						
 							<span class="right">      	
-								<a href="/2021/08/30/%E5%95%86%E5%93%81SKU%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1%E4%B8%8E%E4%BC%98%E5%8C%96/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/02/%E7%94%A8@Resource%E6%B3%A8%E8%A7%A3%E5%AE%8C%E6%88%90%E5%B1%9E%E6%80%A7%E8%A3%85%E9%85%8D/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -663,25 +613,21 @@ SKU（Stock Kee...
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/30/%E5%A4%A7%E5%AE%B6%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5%E7%9A%84%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E5%8A%9F%E8%83%BD/" itemprop="url">
-		大家心心念念的权限管理功能
+	<a href="/2021/09/02/Spring%E5%A6%82%E4%BD%95%E8%A3%85%E9%85%8D%E5%90%84%E7%A7%8D%E9%9B%86%E5%90%88%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%B1%9E%E6%80%A7/" itemprop="url">
+		Spring如何装配各种集合类型的属性
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							大家心心念念的权限管理功能
-mall项目的权限管理功能发布啦！权限管理作为后台管理系统的必要功能，mall项目之前的权限管理并不完善。最近我对原先的权限管理进行了重新设计，打造了一套切实可用的权限管理功能。
+							Spring如何装配各种集合类型的属性
+在前面我们已经会注入基本类型对象和其他bean，现在我们就来学习如何注入各种集合类型。
 
--功能清单
-菜单管理：可以实现对后台管理系统左侧菜单的管理，支持更换图标、更换名称、控制菜单显示和排序；
-资源管理：实现了基于访问路径的后台动态权限控制，控制的权限可以精确到接口级别；
-角色管理：可以自定义角色，并为角色分配菜单和资源；
-后台用户管理：可以对后台用户进行管理并分配角色，支持分配多个角色。
+-Spring如何装配各种集合类型的属性
+首先新建一个普通的Java Project，名称为spring_collection，并迅速搭建好Spring的开发环境。接着在src目录下新建一个cn.itcast.service包，并在该包下创建PersonService接口，其代码为：
 
--功能介绍
-接下了我们对权限管理功能做个介绍，演示一个完整的权限管理的流程。...
+123456789101112public interface PersonService &#123;    Set&lt;String&gt; getSets();    ...
 						
 					</div>
 					
@@ -696,9 +642,9 @@ mall项目的权限管理功能发布啦！权限管理作为后台管理系统�
 
 
 
-	<a href="/2021/08/30/%E5%A4%A7%E5%AE%B6%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5%E7%9A%84%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E5%8A%9F%E8%83%BD/" itemprop="url">
-		<time datetime="2021-08-30T09:47:35.390Z" itemprop="datePublished">
-	  		2021-08-30
+	<a href="/2021/09/02/Spring%E5%A6%82%E4%BD%95%E8%A3%85%E9%85%8D%E5%90%84%E7%A7%8D%E9%9B%86%E5%90%88%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%B1%9E%E6%80%A7/" itemprop="url">
+		<time datetime="2021-09-02T09:34:04.448Z" itemprop="datePublished">
+	  		2021-09-02
 	  </time>
 	</a> 
 
@@ -711,7 +657,7 @@ mall项目的权限管理功能发布啦！权限管理作为后台管理系统�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/30/%E5%A4%A7%E5%AE%B6%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5%E7%9A%84%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E5%8A%9F%E8%83%BD/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/02/Spring%E5%A6%82%E4%BD%95%E8%A3%85%E9%85%8D%E5%90%84%E7%A7%8D%E9%9B%86%E5%90%88%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%B1%9E%E6%80%A7/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -722,21 +668,23 @@ mall项目的权限管理功能发布啦！权限管理作为后台管理系统�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/30/%E8%90%A5%E9%94%80%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%B8%89/" itemprop="url">
-		营销模块数据库表解析三
+	<a href="/2021/09/02/Spring+JDBC%E7%BB%84%E5%90%88%E5%BC%80%E5%8F%91/" itemprop="url">
+		Spring+JDBC组合开发
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							营销模块数据库表解析三
-本文主要对首页内容推荐功能相关表进行解析，采用数据库表与功能对照的形式。
+							Spring+JDBC组合开发-搭建和配置Spring与JDBC整合的环境
+使用Spring+JDBC集成步骤如下：第一步，配置数据源。我们使用DBCP数据库连接池。我们首先在Eclipse中新建一个普通的Java Project，名称为springAndJDBC。接着导入所需Jar包到项目中，所需Jar包共有：
 
--相关表结构-首页品牌推荐表
-用于管理首页显示的品牌制造商直供信息。
 
-123456789create table sms_home_brand(   id                   bigint not null auto_increment,   brand_id             bigint comment &#x27;商品品牌id&#x27;,   brand_name           varchar(64) comment &#x27;商品品牌名称&#x27...
+
+
+然后我们在Sping配置文件中——beans.xml配置数据源，即在beans.xml中加入如下内容：
+
+12345678910111213141516&lt;bean id=&quot;dataSource&quot; class=&quot;org.apache.c...
 						
 					</div>
 					
@@ -751,9 +699,9 @@ mall项目的权限管理功能发布啦！权限管理作为后台管理系统�
 
 
 
-	<a href="/2021/08/30/%E8%90%A5%E9%94%80%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%B8%89/" itemprop="url">
-		<time datetime="2021-08-30T09:28:25.651Z" itemprop="datePublished">
-	  		2021-08-30
+	<a href="/2021/09/02/Spring+JDBC%E7%BB%84%E5%90%88%E5%BC%80%E5%8F%91/" itemprop="url">
+		<time datetime="2021-09-02T08:31:18.745Z" itemprop="datePublished">
+	  		2021-09-02
 	  </time>
 	</a> 
 
@@ -766,7 +714,7 @@ mall项目的权限管理功能发布啦！权限管理作为后台管理系统�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/30/%E8%90%A5%E9%94%80%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%B8%89/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/02/Spring+JDBC%E7%BB%84%E5%90%88%E5%BC%80%E5%8F%91/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -777,21 +725,19 @@ mall项目的权限管理功能发布啦！权限管理作为后台管理系统�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/30/%E8%90%A5%E9%94%80%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%BA%8C/" itemprop="url">
-		营销模块数据库表解析二
+	<a href="/2021/09/02/Hibernate-5.0.7+Struts-2.3.24+Spring-4.2.4%E4%B8%89%E5%A4%A7%E6%A1%86%E6%9E%B6%E7%BA%AF%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F%E7%9A%84%E6%95%B4%E5%90%88/" itemprop="url">
+		Hibernate-5.0.7+Struts-2.3.24+Spring-4.2.4三大框架纯注解方式的整合
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							营销模块数据库表解析二
-本文主要对优惠券功能相关表进行解析，采用数据库表与功能对照的形式。
+							Hibernate-5.0.7+Struts-2.3.24+Spring-4.2.4三大框架纯注解方式的整合
+还记得我在《Spring入门第十讲——Hibernate-5.0.7+Struts-2.3.24+Spring-4.2.4三大框架整合开发》这一讲中介绍SSH三大框架整合的时候，说过这三个框架的整合一共有三种方式，其中前两种方式已经讲过了，本讲介绍第三种方式，即纯注解的方式。
 
--相关表结构-优惠券表
-用于存储优惠券信息，需要注意的是优惠券的使用类型：0-&gt;全场通用；1-&gt;指定分类；2-&gt;指定商品，不同使用类型的优惠券使用范围不一样。
-
-12345678910111213141516171819202122create table sms_coupon(   id                   bigint not null auto_increment,   type                 int(1) comment &#x27;优...
+-搭建SSH注解开发的环境-创建web项目，引入jar包
+创建一个web项目，例如ssh3，并引入相关的jar包，那到底引入哪些jar包呢？相信你看过我的这篇文章——《Spring入门第十讲——Hiber...
 						
 					</div>
 					
@@ -806,9 +752,9 @@ mall项目的权限管理功能发布啦！权限管理作为后台管理系统�
 
 
 
-	<a href="/2021/08/30/%E8%90%A5%E9%94%80%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%BA%8C/" itemprop="url">
-		<time datetime="2021-08-30T09:22:01.169Z" itemprop="datePublished">
-	  		2021-08-30
+	<a href="/2021/09/02/Hibernate-5.0.7+Struts-2.3.24+Spring-4.2.4%E4%B8%89%E5%A4%A7%E6%A1%86%E6%9E%B6%E7%BA%AF%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F%E7%9A%84%E6%95%B4%E5%90%88/" itemprop="url">
+		<time datetime="2021-09-02T08:10:08.817Z" itemprop="datePublished">
+	  		2021-09-02
 	  </time>
 	</a> 
 
@@ -821,7 +767,7 @@ mall项目的权限管理功能发布啦！权限管理作为后台管理系统�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/30/%E8%90%A5%E9%94%80%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%BA%8C/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/02/Hibernate-5.0.7+Struts-2.3.24+Spring-4.2.4%E4%B8%89%E5%A4%A7%E6%A1%86%E6%9E%B6%E7%BA%AF%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F%E7%9A%84%E6%95%B4%E5%90%88/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>

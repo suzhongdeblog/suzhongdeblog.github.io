@@ -232,21 +232,22 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/24/%E4%BD%BF%E7%94%A8Jenkins%E4%B8%80%E9%94%AE%E6%89%93%E5%8C%85%E9%83%A8%E7%BD%B2SpringBoot%E5%BA%94%E7%94%A8/" itemprop="url">
-		使用Jenkins一键打包部署SpringBoot应用
+	<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7VirtualBox%E4%B8%ADLinux%E6%93%8D%E4%BD%9C%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		开发工具VirtualBox中Linux操作入门篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							-使用Jenkins一键打包部署SpringBoot应用
-任何简单操作的背后，都有一套相当复杂的机制。本文将以SpringBoot应用的在Docker环境下的打包部署为例，详细讲解如何使用Jenkins一键打包部署SpringBoot应用。
+							开发工具VirtualBox中Linux操作入门篇
+本文将从虚拟机安装、Linux系统安装、SSH客户端工具使用三方面来详细介绍Linux系统的安装及使用。
 
--Jenkins简介
-Jenkins是开源CI&amp;CD软件领导者，提供超过1000个插件来支持构建、部署、自动化，满足任何项目的需要。我们可以用Jenkins来构建和部署我们的项目，比如说从我们的代码仓库获取代码，然后将我们的代码打包成可执行的文件，之后通过远程的ssh工具执行脚本来运行我们的项目。
+-虚拟机安装
+VirtualBox 是一款开源虚拟机软件，由Sun公司出品，现在则由Oracle进行开发。VirtualBox号称是最强的免费虚拟机软件，它性能优异且简单易用。可虚拟的系统包括Windows、Linux、MacOS、Android等操作系统！本文将使用VirtualBox作为虚拟机来安装Linux系统。
 
--Jenkins的安装及配置-Docke...
+-VirtualBox的安装
+我们先下载VirtualBox安装包，下载地址：https://www.virt...
 						
 					</div>
 					
@@ -261,9 +262,9 @@ Jenkins是开源CI&amp;CD软件领导者，提供超过1000个插件来支持构
 
 
 
-	<a href="/2021/08/24/%E4%BD%BF%E7%94%A8Jenkins%E4%B8%80%E9%94%AE%E6%89%93%E5%8C%85%E9%83%A8%E7%BD%B2SpringBoot%E5%BA%94%E7%94%A8/" itemprop="url">
-		<time datetime="2021-08-23T18:57:16.983Z" itemprop="datePublished">
-	  		2021-08-24
+	<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7VirtualBox%E4%B8%ADLinux%E6%93%8D%E4%BD%9C%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-26T15:09:36.394Z" itemprop="datePublished">
+	  		2021-08-26
 	  </time>
 	</a> 
 
@@ -276,7 +277,7 @@ Jenkins是开源CI&amp;CD软件领导者，提供超过1000个插件来支持构
 
 						
 							<span class="right">      	
-								<a href="/2021/08/24/%E4%BD%BF%E7%94%A8Jenkins%E4%B8%80%E9%94%AE%E6%89%93%E5%8C%85%E9%83%A8%E7%BD%B2SpringBoot%E5%BA%94%E7%94%A8/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7VirtualBox%E4%B8%ADLinux%E6%93%8D%E4%BD%9C%E5%85%A5%E9%97%A8%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -287,25 +288,32 @@ Jenkins是开源CI&amp;CD软件领导者，提供超过1000个插件来支持构
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/24/%E5%9C%A8Docker%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E5%AE%89%E8%A3%85Nginx/" itemprop="url">
-		在Docker环境下的安装Nginx
+	<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7IDEA%E4%B8%AD%E7%9A%84Git%E6%93%8D%E4%BD%9C%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		开发工具IDEA中的Git操作入门篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							-在Docker环境下的安装Nginx-下载nginx的docker镜像1docker pull nginx:1.10
+							开发工具IDEA中的Git操作入门篇
+大家在使用Git时，都会选择一种Git客户端，在IDEA中内置了这种客户端，可以让你不需要使用Git命令就可以方便地进行操作，本文将讲述IDEA中的一些常用Git操作。
 
--从容器中拷贝nginx配置
-先运行一次容器（为了拷贝配置文件）：
+-环境准备
+使用前需要安装一个远程的Git仓库和本地的Git客户端，具体参考：10分钟搭建自己的Git仓库。
 
-1234docker run -p 80:80 --name nginx \-v /mydata/nginx/html:/usr/share/nginx/html \-v /mydata/nginx/logs:/var/log/nginx  \-d nginx:1.10
+由于IDEA中的Git插件需要依赖本地Git客户端，所以需要进行如下配置：
 
 
-将容器内的配置文件拷贝到指定目录：
 
-1docker container cp nginx:/etc/nginx /mydat...
+
+-操作流程
+我们这里使用mall-tiny项目的源代码来演示，尽可能还原一个正式的操作流程。
+
+-在Gitlab中创建一个项目并添加README文件
+
+-clone项目到本地
+打开从Git...
 						
 					</div>
 					
@@ -320,9 +328,9 @@ Jenkins是开源CI&amp;CD软件领导者，提供超过1000个插件来支持构
 
 
 
-	<a href="/2021/08/24/%E5%9C%A8Docker%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E5%AE%89%E8%A3%85Nginx/" itemprop="url">
-		<time datetime="2021-08-23T18:28:46.737Z" itemprop="datePublished">
-	  		2021-08-24
+	<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7IDEA%E4%B8%AD%E7%9A%84Git%E6%93%8D%E4%BD%9C%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-26T15:07:51.468Z" itemprop="datePublished">
+	  		2021-08-26
 	  </time>
 	</a> 
 
@@ -335,7 +343,7 @@ Jenkins是开源CI&amp;CD软件领导者，提供超过1000个插件来支持构
 
 						
 							<span class="right">      	
-								<a href="/2021/08/24/%E5%9C%A8Docker%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E5%AE%89%E8%A3%85Nginx/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7IDEA%E4%B8%AD%E7%9A%84Git%E6%93%8D%E4%BD%9C%E5%85%A5%E9%97%A8%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -346,21 +354,24 @@ Jenkins是开源CI&amp;CD软件领导者，提供超过1000个插件来支持构
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/24/Hutool%E4%B8%AD%E9%82%A3%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB%E5%92%8C%E6%96%B9%E6%B3%95/" itemprop="url">
-		Hutool中那些常用的工具类和方法
+	<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7GitLab10%E5%88%86%E9%92%9F%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84Git%E4%BB%93%E5%BA%93%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		开发工具GitLab10分钟搭建自己的Git仓库入门篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							Hutool中那些常用的工具类和方法
-Hutool是一个Java工具包，它帮助我们简化每一行代码，避免重复造轮子。如果你有需要用到某些工具方法的时候，不妨在Hutool里面找找，可能就有。本文将对Hutool中的常用工具类和方法进行介绍。
+							开发工具GitLab10分钟搭建自己的Git仓库入门篇
+GitLab是一款使用MIT许可证的基于网络的Git仓库管理工具，我们可以使用它来搭建自己的Git仓库，本文将介绍如何使用Gitlab在Linux下快速搭建Git仓库。
 
--安装
-maven项目在pom.xml添加以下依赖即可：
+-Gitlab服务端搭建
+在Linux（CenterOS7.6）下我们会以Docker的方式来安装Gitlab，对Docker不了解的朋友可以参考：开发者必备Docker命令。
 
-12345&lt;dependency&gt;    &lt;groupId&gt;cn.hutool&lt;/groupId&gt;    &lt;artifactId&gt;hutool-all&lt;/artifactId&gt;    &lt;version&gt;4.6.3&lt;...
+-下载Gitlab的Docker镜像1docker pull gitlab/gitlab-ce
+
+-运行如下命令来启动Gitlab
+需要注意的是我们的Gitlab的http服务运行在宿主...
 						
 					</div>
 					
@@ -375,9 +386,9 @@ maven项目在pom.xml添加以下依赖即可：
 
 
 
-	<a href="/2021/08/24/Hutool%E4%B8%AD%E9%82%A3%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB%E5%92%8C%E6%96%B9%E6%B3%95/" itemprop="url">
-		<time datetime="2021-08-23T18:09:46.683Z" itemprop="datePublished">
-	  		2021-08-24
+	<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7GitLab10%E5%88%86%E9%92%9F%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84Git%E4%BB%93%E5%BA%93%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-26T13:45:38.032Z" itemprop="datePublished">
+	  		2021-08-26
 	  </time>
 	</a> 
 
@@ -390,7 +401,7 @@ maven项目在pom.xml添加以下依赖即可：
 
 						
 							<span class="right">      	
-								<a href="/2021/08/24/Hutool%E4%B8%AD%E9%82%A3%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB%E5%92%8C%E6%96%B9%E6%B3%95/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7GitLab10%E5%88%86%E9%92%9F%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84Git%E4%BB%93%E5%BA%93%E5%85%A5%E9%97%A8%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -401,20 +412,26 @@ maven项目在pom.xml添加以下依赖即可：
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/24/%E4%BD%BF%E7%94%A8Docker%20Compose%E9%83%A8%E7%BD%B2SpringBoot%E5%BA%94%E7%94%A8/" itemprop="url">
-		使用Docker Compose部署SpringBoot应用
+	<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Postman%E6%8E%A5%E5%8F%A3%E8%B0%83%E8%AF%95%E5%88%A9%E5%99%A8%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		开发工具Postman接口调试利器入门篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							使用Docker Compose部署SpringBoot应用
-Docker Compose是一个用于定义和运行多个docker容器应用的工具。使用Compose你可以用YAML文件来配置你的应用服务，然后使用一个命令，你就可以部署你配置的所有服务了。
+							开发工具Postman接口调试利器入门篇
+Postman是一款API接口调试工具，使用它可以很方便的对接口进行测试，并且后端人员可以将自己的调试结果导出，方便前端人员调试。
 
--安装-下载Docker Compose1curl -L https://get.daocloud.io/docker/compose/releases/download/1.24.0/docker-compose-`uname -s`-`uname -m` &gt; /usr/local/bin/docker-compose
+-安装-下载地址：https://www.getpostman.com/downloads/-下载完安装包后直接双击安装即可。-设置-主题设置
+这里不得不说，Postman的界面还是做的很好的，比起Swagger来说好多了，Postman默认提供了两种主题，一种亮色和一种暗色，可以通过左上角的File-&gt;Settings按钮打开。
 
--修改该...
+
+
+
+
+-调整字体大小
+可能界面默认的字体大小并不适合你，尤其是大屏幕的电脑...
 						
 					</div>
 					
@@ -429,9 +446,9 @@ Docker Compose是一个用于定义和运行多个docker容器应用的工具。
 
 
 
-	<a href="/2021/08/24/%E4%BD%BF%E7%94%A8Docker%20Compose%E9%83%A8%E7%BD%B2SpringBoot%E5%BA%94%E7%94%A8/" itemprop="url">
-		<time datetime="2021-08-23T17:50:03.564Z" itemprop="datePublished">
-	  		2021-08-24
+	<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Postman%E6%8E%A5%E5%8F%A3%E8%B0%83%E8%AF%95%E5%88%A9%E5%99%A8%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-26T10:21:39.462Z" itemprop="datePublished">
+	  		2021-08-26
 	  </time>
 	</a> 
 
@@ -444,7 +461,7 @@ Docker Compose是一个用于定义和运行多个docker容器应用的工具。
 
 						
 							<span class="right">      	
-								<a href="/2021/08/24/%E4%BD%BF%E7%94%A8Docker%20Compose%E9%83%A8%E7%BD%B2SpringBoot%E5%BA%94%E7%94%A8/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Postman%E6%8E%A5%E5%8F%A3%E8%B0%83%E8%AF%95%E5%88%A9%E5%99%A8%E5%85%A5%E9%97%A8%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -455,26 +472,21 @@ Docker Compose是一个用于定义和运行多个docker容器应用的工具。
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/23/%E4%BD%BF%E7%94%A8Dockerfile%E4%B8%BASpringBoot%E5%BA%94%E7%94%A8%E6%9E%84%E5%BB%BADocker%E9%95%9C%E5%83%8F/" itemprop="url">
-		使用Dockerfile为SpringBoot应用构建Docker镜像
+	<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Navicat%E5%AE%9E%E7%94%A8%E5%8A%9F%E8%83%BD%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		开发工具Navicat实用功能入门篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							使用Dockerfile为SpringBoot应用构建Docker镜像
-上次写过一篇使用Maven插件构建Docker镜像 ，讲述了通过docker-maven-plugin来构建docker镜像的方式，此种方式需要依赖自建的Registry镜像仓库。本文将讲述另一种方式，使用Dockerfile来构建docker镜像，此种方式不需要依赖自建的镜像仓库，只需要应用的jar包和一个Dockerfile文件即可。
+							开发工具Navicat实用功能入门篇
+当我们要对数据库做有风险的操作时需要对数据库备份，每次上线项目时，线上与线下数据库结构总会有不一致的情况，本文将讲解如何利用Navicat来方便的解决这两个问题。
 
--Dockerfile常用指令-ADD
-用于复制文件，格式：
+-Navicat
+Navicat是一套快速、可靠的数据库管理工具，专为简化数据库的管理及降低系统管理成本而设。它的设计符合数据库管理员、开发人员及中小企业的需要。Navicat 是以直觉化的图形用户界面而建的，让你可以以安全并且简单的方式创建、组织、访问并共用信息。
 
-1ADD &lt;src&gt; &lt;dest&gt;
-
-
-示例：
-
-12# 将当前目录下的mall-tiny...
+-注意：本教程采用的时Navicat12版本，下载地址：https://www.navicat.com.cn/downl...
 						
 					</div>
 					
@@ -489,9 +501,9 @@ Docker Compose是一个用于定义和运行多个docker容器应用的工具。
 
 
 
-	<a href="/2021/08/23/%E4%BD%BF%E7%94%A8Dockerfile%E4%B8%BASpringBoot%E5%BA%94%E7%94%A8%E6%9E%84%E5%BB%BADocker%E9%95%9C%E5%83%8F/" itemprop="url">
-		<time datetime="2021-08-23T15:57:26.732Z" itemprop="datePublished">
-	  		2021-08-23
+	<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Navicat%E5%AE%9E%E7%94%A8%E5%8A%9F%E8%83%BD%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-25T20:15:22.695Z" itemprop="datePublished">
+	  		2021-08-26
 	  </time>
 	</a> 
 
@@ -504,7 +516,7 @@ Docker Compose是一个用于定义和运行多个docker容器应用的工具。
 
 						
 							<span class="right">      	
-								<a href="/2021/08/23/%E4%BD%BF%E7%94%A8Dockerfile%E4%B8%BASpringBoot%E5%BA%94%E7%94%A8%E6%9E%84%E5%BB%BADocker%E9%95%9C%E5%83%8F/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Navicat%E5%AE%9E%E7%94%A8%E5%8A%9F%E8%83%BD%E5%85%A5%E9%97%A8%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -515,21 +527,36 @@ Docker Compose是一个用于定义和运行多个docker容器应用的工具。
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/23/%E4%BD%BF%E7%94%A8Maven%E6%8F%92%E4%BB%B6%E4%B8%BASpringBoot%E5%BA%94%E7%94%A8%E6%9E%84%E5%BB%BADocker%E9%95%9C%E5%83%8F/" itemprop="url">
-		使用Maven插件为SpringBoot应用构建Docker镜像
+	<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7IDEA%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE%E5%8F%8A%E6%8E%A8%E8%8D%90%E6%8F%92%E4%BB%B6%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		开发工具IDEA常用设置及推荐插件入门篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							使用Maven插件为SpringBoot应用构建Docker镜像
-本文主要介绍如何使用Maven插件将SpringBoot应用打包为Docker镜像，并上传到私有镜像仓库Docker Registry的过程。
+							开发工具IDEA常用设置及推荐插件入门篇
+本文主要记录IDEA的一些常用设置，IDEA与Eclipse的常用快捷键对比及推荐一些好用的插件。
 
--Docker Registry-Docker Registry 2.0搭建1docker run -d -p 5000:5000 --restart=always --name registry2 registry:2
+-基本设置-设置界面风格及修改外部UI尺寸大小
+
+-打开IDEA时设置不重新打开最近的项目
+IDEA默认会打开最近的项目，有时候我们需要自己选择要打开的项目，不勾选该选项可以实现。
 
 
-如果遇到镜像下载不下来的情况，需要修改 /etc/docker/daemon.json 文件并添加上 registry-mirrors 键值，然后重启doc...
+
+-设置IDEA的快捷键
+
+-设置代码字体大小
+
+-设置项目文件编码格式
+
+-设置代码提示的匹配模式
+
+-设置新建类文件的类注释模版
+
+-IDEA和Eclipse常用快捷键对比
+友情提示：IDEA可以设置为Eclipse风格的快捷键，在File-&gt;Setti...
 						
 					</div>
 					
@@ -544,9 +571,9 @@ Docker Compose是一个用于定义和运行多个docker容器应用的工具。
 
 
 
-	<a href="/2021/08/23/%E4%BD%BF%E7%94%A8Maven%E6%8F%92%E4%BB%B6%E4%B8%BASpringBoot%E5%BA%94%E7%94%A8%E6%9E%84%E5%BB%BADocker%E9%95%9C%E5%83%8F/" itemprop="url">
-		<time datetime="2021-08-23T15:39:27.102Z" itemprop="datePublished">
-	  		2021-08-23
+	<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7IDEA%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE%E5%8F%8A%E6%8E%A8%E8%8D%90%E6%8F%92%E4%BB%B6%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-25T19:37:28.636Z" itemprop="datePublished">
+	  		2021-08-26
 	  </time>
 	</a> 
 
@@ -559,7 +586,7 @@ Docker Compose是一个用于定义和运行多个docker容器应用的工具。
 
 						
 							<span class="right">      	
-								<a href="/2021/08/23/%E4%BD%BF%E7%94%A8Maven%E6%8F%92%E4%BB%B6%E4%B8%BASpringBoot%E5%BA%94%E7%94%A8%E6%9E%84%E5%BB%BADocker%E9%95%9C%E5%83%8F/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7IDEA%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE%E5%8F%8A%E6%8E%A8%E8%8D%90%E6%8F%92%E4%BB%B6%E5%85%A5%E9%97%A8%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -570,22 +597,21 @@ Docker Compose是一个用于定义和运行多个docker容器应用的工具。
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/23/%E9%85%8D%E7%BD%AE%E5%AE%B9%E5%99%A8%E4%B8%AD%E7%9A%84host/" itemprop="url">
-		配置容器中的host
+	<a href="/2021/08/26/Flyway%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%81%E7%A7%BB%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8/" itemprop="url">
+		Flyway数据库迁移工具入门
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							简介
-我们在配置服务器的时候经常会修改域名映射, 也就是/etc/hosts文件, 
-但是即便如此简单点的东西在网上写也是乱七八糟, 所以这里记录一个真正能用的方法.
+							Flyway数据库迁移工具入门
+当我们的应用升级时往往会伴随着数据库表结构的升级，此时就需要迁移数据库的表结构。一般我们会使用工具或者脚本来实现，手动操作毕竟有一定风险，要是能在应用启动时自动升级数据库表结构就好了！Flyway正是这么一款工具，通过Flyway和SpringBoot结合使用，在应用启动时就可以自动升级数据库表结构，非常方便，推荐给大家！
 
-文章主要使用两种配置方法(命令配置和docker-compose配置):1. 命令行配置
---add-host 使用该参数可以配置多个host.
+-Flyway简介
+Flyway是一款数据库迁移工具，它让数据库迁移变得更加简单。它能像Git一样对数据库进行版本控制，支持命令行工具、Maven插件、第三方工具（比如SpringBoot）等多种使用方式。
 
-1234567891011➜  Desktop docker run -it --add-host host1:192.168.1.1 --add-host host2:192.168.1.2 alpine/ # cat /etc/hosts127.0.0.1   local...
+-Flyway具有如下特...
 						
 					</div>
 					
@@ -600,9 +626,9 @@ Docker Compose是一个用于定义和运行多个docker容器应用的工具。
 
 
 
-	<a href="/2021/08/23/%E9%85%8D%E7%BD%AE%E5%AE%B9%E5%99%A8%E4%B8%AD%E7%9A%84host/" itemprop="url">
-		<time datetime="2021-08-23T15:19:30.985Z" itemprop="datePublished">
-	  		2021-08-23
+	<a href="/2021/08/26/Flyway%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%81%E7%A7%BB%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8/" itemprop="url">
+		<time datetime="2021-08-25T18:51:02.815Z" itemprop="datePublished">
+	  		2021-08-26
 	  </time>
 	</a> 
 
@@ -615,7 +641,7 @@ Docker Compose是一个用于定义和运行多个docker容器应用的工具。
 
 						
 							<span class="right">      	
-								<a href="/2021/08/23/%E9%85%8D%E7%BD%AE%E5%AE%B9%E5%99%A8%E4%B8%AD%E7%9A%84host/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/26/Flyway%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%81%E7%A7%BB%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -626,24 +652,19 @@ Docker Compose是一个用于定义和运行多个docker容器应用的工具。
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/23/%E5%AE%89%E8%A3%85tomcat%E8%BF%90%E8%A1%8Cwar%E5%8C%85/" itemprop="url">
-		安装tomcat运行war包
+	<a href="/2021/08/26/MyBatis%E9%9B%86%E6%88%90Dynamic%20SQL/" itemprop="url">
+		MyBatis集成Dynamic SQL
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							简介
-开源小型web服务器 ，完全免费，主要用于中小型web项目，只支持Servlet和JSP 等少量javaee规范（就是JavaWeb编程接口）
+							MyBatis集成Dynamic SQL
+当我们使用MyBatis的时候，需要在mapper.xml中书写大量的SQL语句。当我们使用MyBatis Generator（MBG）作为代码生成器时，也会生成大量的mapper.xml文件。其实从MBG 1.3.6版本以后，MyBatis官方已经推荐使用Dynamic SQL，使用这一新特性基本就不用写mapper.xml文件了，使用起来非常方便，推荐给大家！
 
-第一步快速开始
-这里介绍两种方法(官方镜像安装和Dockerfile安装):
-
-1. docker官方镜像安装
-首先拉取镜像, 会自动拉取最新版本 - docker pull tomcat
-
-1234567891011121314151617[root@master ~]# docker pull tomcatUsing default tag: latestTrying to pull repository docker.io/libr...
+-Dynamic SQL简介
+在我们使用Spring的时候，有XML和Java两种配置方式。在使用SpringBoot时，已经推荐使用Java配置，基本不用xml配置了。使用Dyna...
 						
 					</div>
 					
@@ -658,9 +679,9 @@ Docker Compose是一个用于定义和运行多个docker容器应用的工具。
 
 
 
-	<a href="/2021/08/23/%E5%AE%89%E8%A3%85tomcat%E8%BF%90%E8%A1%8Cwar%E5%8C%85/" itemprop="url">
-		<time datetime="2021-08-23T14:48:45.684Z" itemprop="datePublished">
-	  		2021-08-23
+	<a href="/2021/08/26/MyBatis%E9%9B%86%E6%88%90Dynamic%20SQL/" itemprop="url">
+		<time datetime="2021-08-25T17:16:59.942Z" itemprop="datePublished">
+	  		2021-08-26
 	  </time>
 	</a> 
 
@@ -673,7 +694,7 @@ Docker Compose是一个用于定义和运行多个docker容器应用的工具。
 
 						
 							<span class="right">      	
-								<a href="/2021/08/23/%E5%AE%89%E8%A3%85tomcat%E8%BF%90%E8%A1%8Cwar%E5%8C%85/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/26/MyBatis%E9%9B%86%E6%88%90Dynamic%20SQL/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -684,19 +705,21 @@ Docker Compose是一个用于定义和运行多个docker容器应用的工具。
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/23/docker-compose%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" itemprop="url">
-		docker-compose使用教程
+	<a href="/2021/08/26/%E4%B8%80%E6%AC%BEJava%E4%BB%A3%E7%A0%81%E5%8A%9F%E8%83%BD%E5%A2%9E%E5%BC%BA%E5%BA%93Lombok%E5%85%A5%E9%97%A8/" itemprop="url">
+		一款Java代码功能增强库Lombok入门
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							简介英文解释
-Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a Compose file to configure your application’s services. Then, using a single command, you create and start all the services from your configuration.
+							一款Java代码功能增强库Lombok入门
+最近IDEA 2020最后一个版本发布了，已经内置了Lombok插件，SpringBoot 2.1.x之后的版本也在Starter中内置了Lombok依赖。为什么他们都要支持Lombok呢？今天我来讲讲Lombok的使用，看看它有何神奇之处！
 
-中文解释
-Compose是一个用于定义和运行多容器Docker应用程序的工...
+-Lombok简介
+Lombok是一款Java代码功能增强库，在Github上已有9.8k+Star。它会自动集成到你的编辑器和构建工具中，从而使你的Java代码更加生动有趣。通过Lombok的注解，你可以不用再写getter、setter、equals等方法，Lombok将在编译时为你自动生成。
+
+-...
 						
 					</div>
 					
@@ -711,9 +734,9 @@ Compose是一个用于定义和运行多容器Docker应用程序的工...
 
 
 
-	<a href="/2021/08/23/docker-compose%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" itemprop="url">
-		<time datetime="2021-08-23T14:26:06.260Z" itemprop="datePublished">
-	  		2021-08-23
+	<a href="/2021/08/26/%E4%B8%80%E6%AC%BEJava%E4%BB%A3%E7%A0%81%E5%8A%9F%E8%83%BD%E5%A2%9E%E5%BC%BA%E5%BA%93Lombok%E5%85%A5%E9%97%A8/" itemprop="url">
+		<time datetime="2021-08-25T16:37:22.943Z" itemprop="datePublished">
+	  		2021-08-26
 	  </time>
 	</a> 
 
@@ -726,7 +749,7 @@ Compose是一个用于定义和运行多容器Docker应用程序的工...
 
 						
 							<span class="right">      	
-								<a href="/2021/08/23/docker-compose%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/26/%E4%B8%80%E6%AC%BEJava%E4%BB%A3%E7%A0%81%E5%8A%9F%E8%83%BD%E5%A2%9E%E5%BC%BA%E5%BA%93Lombok%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -737,42 +760,24 @@ Compose是一个用于定义和运行多容器Docker应用程序的工...
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/23/Linux%E9%98%B2%E7%81%AB%E5%A2%99Firewall%E5%92%8CIptables%E7%9A%84%E4%BD%BF%E7%94%A8/" itemprop="url">
-		Linux防火墙Firewall和Iptables的使用
+	<a href="/2021/08/26/MyBatis%E9%9B%86%E6%88%90MBG/" itemprop="url">
+		MyBatis集成MBG
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							简介Linux防火墙Firewall和Iptables的使用
+							MyBatis集成MBG- 简介
+MyBatis Generator（简称MBG）是MyBatis官方提供的代码生成工具。可以通过数据库表直接生成实体类、单表CRUD代码、mapper.xml文件，从而解放我们的双手！
 
-Linux中有两种防火墙软件，ConterOS7.0以上使用的是firewall，ConterOS7.0以下使用的是iptables，本文将分别介绍两种防火墙软件的使用。
+-开始使用
+首先我们通过一个入门示例将MBG用起来，该示例会包含基础的CRUD操作。
 
--Firewall
-开启防火墙：
+-集成MBG
+在pom.xml中添加如下依赖，主要添加了MyBatis、PageHelper、Druid、MBG和MySQL驱动等依赖；
 
-1systemctl start firewalld
-
-
-关闭防火墙：
-
-1systemctl stop firewalld
-
-
-查看防火墙状态：
-
-1systemctl status firewalld
-
-
-设置开机启动：
-
-1systemctl enable firewalld
-
-
-禁用开机启动：
-
-1system...
+1234567891011121314151617181920212223242526272829303132&lt;dependencies&...
 						
 					</div>
 					
@@ -787,9 +792,9 @@ Linux中有两种防火墙软件，ConterOS7.0以上使用的是firewall，Conte
 
 
 
-	<a href="/2021/08/23/Linux%E9%98%B2%E7%81%AB%E5%A2%99Firewall%E5%92%8CIptables%E7%9A%84%E4%BD%BF%E7%94%A8/" itemprop="url">
-		<time datetime="2021-08-23T14:21:22.848Z" itemprop="datePublished">
-	  		2021-08-23
+	<a href="/2021/08/26/MyBatis%E9%9B%86%E6%88%90MBG/" itemprop="url">
+		<time datetime="2021-08-25T16:15:56.844Z" itemprop="datePublished">
+	  		2021-08-26
 	  </time>
 	</a> 
 
@@ -802,7 +807,7 @@ Linux中有两种防火墙软件，ConterOS7.0以上使用的是firewall，Conte
 
 						
 							<span class="right">      	
-								<a href="/2021/08/23/Linux%E9%98%B2%E7%81%AB%E5%A2%99Firewall%E5%92%8CIptables%E7%9A%84%E4%BD%BF%E7%94%A8/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/26/MyBatis%E9%9B%86%E6%88%90MBG/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
