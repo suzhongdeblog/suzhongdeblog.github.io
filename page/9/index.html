@@ -232,22 +232,52 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/29/Elasticsearch%E5%8D%87%E7%BA%A77.x%E7%89%88%E6%9C%AC/" itemprop="url">
-		Elasticsearch升级7.x版本
+	<a href="/2021/08/31/IntelliJ%20IDEA%20%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%AE%B2%E8%A7%A3Win%E5%92%8CLinux/" itemprop="url">
+		IntelliJ IDEA 常用快捷键讲解Win和Linux
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							Elasticsearch升级7.x版本
-最近想把我的mall项目升级下，支持SpringBoot 2.3.0 版本。升级过程中发现需要升级Elasticsearch到7.x版本，学习过我的mall项目的朋友应该知道， 我用的Elasticsearch是6.x版本，升级到7.x以后ElasticsearchTemplate都不让用了。本文记录了Elasticsearch从6.x升级到7.x所遇到的一些问题，给大家排排坑！
-
--版本选择
-既然我们要升级到Elasticsearch7.x版本，首先要选择合适的版本。如何选择合适的版本，这里有个小技巧分享给大家。
+							IntelliJ IDEA 常用快捷键讲解Win和LinuxCtrl
 
 
-首先我们可以在pom.xm...
+快捷键
+介绍
+
+
+
+Ctrl + F
+在当前文件进行文本查找 （必备）
+
+
+Ctrl + R
+在当前文件进行文本替换 （必备）
+
+
+Ctrl + Z
+撤销 （必备）
+
+
+Ctrl + Y
+删除光标所在行 或 删除选中的行 （必备）
+
+
+Ctrl + X
+剪切光标所在行 或 剪切选择内容
+
+
+Ctrl + C
+复制光标所在行 或 复制选择内容
+
+
+Ctrl + D
+复制光标所在行 或 复制选择内容，并把复制内容插入光标位置下面 （必备）
+
+
+Ctrl + W
+递进式选择代码块。可选中光标所在的单词或段落，连续按会在原...
 						
 					</div>
 					
@@ -262,9 +292,9 @@
 
 
 
-	<a href="/2021/08/29/Elasticsearch%E5%8D%87%E7%BA%A77.x%E7%89%88%E6%9C%AC/" itemprop="url">
-		<time datetime="2021-08-29T14:42:56.165Z" itemprop="datePublished">
-	  		2021-08-29
+	<a href="/2021/08/31/IntelliJ%20IDEA%20%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%AE%B2%E8%A7%A3Win%E5%92%8CLinux/" itemprop="url">
+		<time datetime="2021-08-30T17:01:06.624Z" itemprop="datePublished">
+	  		2021-08-31
 	  </time>
 	</a> 
 
@@ -277,7 +307,7 @@
 
 						
 							<span class="right">      	
-								<a href="/2021/08/29/Elasticsearch%E5%8D%87%E7%BA%A77.x%E7%89%88%E6%9C%AC/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/31/IntelliJ%20IDEA%20%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%AE%B2%E8%A7%A3Win%E5%92%8CLinux/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -288,27 +318,25 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/29/%E7%BB%99Swagger%E5%8D%87%E7%BA%A7%E4%BA%86%E6%96%B0%E7%89%88%E6%9C%AC%E6%B2%A1%E6%83%B3%E5%88%B0%E5%B1%85%E7%84%B6%E6%9C%89%E8%BF%99%E4%B9%88%E5%A4%9A%E5%9D%91/" itemprop="url">
-		给Swagger升级了新版本没想到居然有这么多坑
+	<a href="/2021/08/31/IntelliJ%20IDEA%20%E8%AF%A6%E7%BB%86%E5%9B%BE%E8%A7%A3%E6%9C%80%E5%B8%B8%E7%94%A8%E7%9A%84%E9%85%8D%E7%BD%AE/" itemprop="url">
+		IntelliJ IDEA 详细图解最常用的配置
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							给Swagger升级了新版本没想到居然有这么多坑
-看着mall项目中古老的Swagger API文档样式，这次我终于下定决心要给它升个级了。升级过程中遇到了好多坑，不过只要用好Maven，这些都不是个事！
+							IntelliJ IDEA 详细图解最常用的配置-前言
+刚刚使用IntelliJ IDEA 编辑器的时候，会有很多设置，会方便以后的开发。比如：设置文件字体大小，代码自动完成提示，版本管理，本地代码历史，自动导入包，修改注释，修改tab的显示的数量和行数，打开项目方式，等等一大堆东西。总结一下，免得下次换了系统，还得再找一遍配置。
 
--选择升级版本
-首先我们选择下需要升级的版本，直接去Maven仓库看下，哪个版本使用的比较多。虽然有最新版本2.10.x，但是几乎没什么人用，而上一个版本2.9.x使用的人却很多，看样子还是2.9.x版本比较稳定，我们选择升级到2.9.2版本。
+-设置外观和字体大小
 
+设置弹窗状态栏的字体大小
 
-
--升级Swagger
-接下来我们就可以开始升级Swagger版本了，原来项目里用的是2.7.0版本。
+-设置编辑器的快捷键，也就是keymap
 
 
-由于mall项目使用父项目来...
+这个是修改咱习惯的快捷键映射表，因为我是从eclipse转来的，估计大部分都和我差不多啦，那就可以在这配置成eclipse的快捷键映射表，那么就没有必要再去记一...
 						
 					</div>
 					
@@ -323,9 +351,9 @@
 
 
 
-	<a href="/2021/08/29/%E7%BB%99Swagger%E5%8D%87%E7%BA%A7%E4%BA%86%E6%96%B0%E7%89%88%E6%9C%AC%E6%B2%A1%E6%83%B3%E5%88%B0%E5%B1%85%E7%84%B6%E6%9C%89%E8%BF%99%E4%B9%88%E5%A4%9A%E5%9D%91/" itemprop="url">
-		<time datetime="2021-08-29T14:29:19.325Z" itemprop="datePublished">
-	  		2021-08-29
+	<a href="/2021/08/31/IntelliJ%20IDEA%20%E8%AF%A6%E7%BB%86%E5%9B%BE%E8%A7%A3%E6%9C%80%E5%B8%B8%E7%94%A8%E7%9A%84%E9%85%8D%E7%BD%AE/" itemprop="url">
+		<time datetime="2021-08-30T16:30:34.495Z" itemprop="datePublished">
+	  		2021-08-31
 	  </time>
 	</a> 
 
@@ -338,7 +366,7 @@
 
 						
 							<span class="right">      	
-								<a href="/2021/08/29/%E7%BB%99Swagger%E5%8D%87%E7%BA%A7%E4%BA%86%E6%96%B0%E7%89%88%E6%9C%AC%E6%B2%A1%E6%83%B3%E5%88%B0%E5%B1%85%E7%84%B6%E6%9C%89%E8%BF%99%E4%B9%88%E5%A4%9A%E5%9D%91/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/31/IntelliJ%20IDEA%20%E8%AF%A6%E7%BB%86%E5%9B%BE%E8%A7%A3%E6%9C%80%E5%B8%B8%E7%94%A8%E7%9A%84%E9%85%8D%E7%BD%AE/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -349,25 +377,18 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/29/RabbitMQ%E5%AE%9E%E7%8E%B0%E5%BB%B6%E8%BF%9F%E6%B6%88%E6%81%AF%E5%B1%85%E7%84%B6%E5%A6%82%E6%AD%A4%E7%AE%80%E5%8D%95/" itemprop="url">
-		RabbitMQ实现延迟消息居然如此简单
+	<a href="/2021/08/31/IntelliJ%20IDEA%20%E5%AF%B9%E7%A1%AC%E4%BB%B6%E7%9A%84%E8%A6%81%E6%B1%82/" itemprop="url">
+		IntelliJ IDEA 对硬件的要求
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							RabbitMQ实现延迟消息居然如此简单
-RabbitMQ实现延迟消息的方式有两种，一种是使用死信队列实现，另一种是使用延迟插件实现。死信队列实现我们以前曾经讲过，具体参考《mall整合RabbitMQ实现延迟消息》，这次我们讲个更简单的，使用延迟插件实现。
-
--学前准备
-学习本文需要对RabbitMQ有所了解，还不了解的朋友可以看下：《花了3天总结的RabbitMQ实用技巧，有点东西！》
-
--插件安装
-首先我们需要下载并安装RabbitMQ的延迟插件。
-
-
-去RabbitMQ的官网下载插件，插件地址：https://www.rabbitmq.com/community-plugins....
+							IntelliJ IDEA 对硬件的要求IntelliJ IDEA 对硬件的要求看上去不是很高。可是实际在开发中其实并不是这样的，特别是开发 Java Web 的项目的计算机，2G根本不够，4G 内存是基本不够用的。
+他之所以快，是因为给代码建了很多索引，这些个索引都是需要空间的，这个空间必须得是内存。
+我们现在来假设一种国内常见的开发环境：
+有 一个在开发的 Java Web 项目，它使用的框架为主流的：Struts + Spring + Hibernate，使用者三个框架的过程中，我们要引入大量的框架架包，在我们的 Web 容器启动时，这些框架架包就要占用大量的内存，而且 Intel...
 						
 					</div>
 					
@@ -382,9 +403,9 @@ RabbitMQ实现延迟消息的方式有两种，一种是使用死信队列实现
 
 
 
-	<a href="/2021/08/29/RabbitMQ%E5%AE%9E%E7%8E%B0%E5%BB%B6%E8%BF%9F%E6%B6%88%E6%81%AF%E5%B1%85%E7%84%B6%E5%A6%82%E6%AD%A4%E7%AE%80%E5%8D%95/" itemprop="url">
-		<time datetime="2021-08-29T13:51:17.006Z" itemprop="datePublished">
-	  		2021-08-29
+	<a href="/2021/08/31/IntelliJ%20IDEA%20%E5%AF%B9%E7%A1%AC%E4%BB%B6%E7%9A%84%E8%A6%81%E6%B1%82/" itemprop="url">
+		<time datetime="2021-08-30T16:18:51.867Z" itemprop="datePublished">
+	  		2021-08-31
 	  </time>
 	</a> 
 
@@ -397,7 +418,7 @@ RabbitMQ实现延迟消息的方式有两种，一种是使用死信队列实现
 
 						
 							<span class="right">      	
-								<a href="/2021/08/29/RabbitMQ%E5%AE%9E%E7%8E%B0%E5%BB%B6%E8%BF%9F%E6%B6%88%E6%81%AF%E5%B1%85%E7%84%B6%E5%A6%82%E6%AD%A4%E7%AE%80%E5%8D%95/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/31/IntelliJ%20IDEA%20%E5%AF%B9%E7%A1%AC%E4%BB%B6%E7%9A%84%E8%A6%81%E6%B1%82/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -408,22 +429,27 @@ RabbitMQ实现延迟消息的方式有两种，一种是使用死信队列实现
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/29/Elasticsearch%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E5%95%86%E5%93%81%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" itemprop="url">
-		Elasticsearch项目实战商品搜索功能设计与实现
+	<a href="/2021/08/31/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7IntelliJ%20IDEA%E6%95%99%E7%A8%8B%E5%BA%8F%E7%AB%A0%E6%A6%82%E8%A7%88/" itemprop="url">
+		开发工具IntelliJ IDEA教程序章概览
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							Elasticsearch项目实战商品搜索功能设计与实现
-上次写了一篇《Elasticsearch快速入门，掌握这些刚刚好！》，带大家学习了下Elasticsearch的基本用法，这次我们来篇实战教程，以mall项目中的商品搜索为例，把Elasticsearch用起来！
+							开发工具IntelliJ IDEA教程序章概览-简介
+IntelliJ IDEA 主要用于支持 Java、Scala、Groovy 等语言的开发工具，同时具备支持目前主流的技术和框架，擅长于企业应用、移动应用和 Web 应用的开发。
 
--中文分词器
-由于商品搜索会涉及中文搜索，Elasticsearch需要安装插件才可以支持，我们先来了解下中文分词器，这里使用的是IKAnalyzer。在《Elasticsearch快速入门，掌握这些刚刚好！》中已经讲过其安装方式，这里直接讲解它的用法。
+-1.硬件要求
+请阅读文章:《IntelliJ IDEA 对硬件的要求》
 
--使用IKAnalyzer
-使用默认分词器，可以发现默认分词器...
+-2.常用配置
+请阅读文章:《IntelliJ IDEA 详细图解最常用的配置》
+
+-3.IntelliJ IDEA 修改内存大小，使得idea运行更流畅。
+请阅读文章:《IntelliJ IDEA 修改内存大小Mac》
+
+-4.Intellij IDEA debug断点调试技巧与...
 						
 					</div>
 					
@@ -438,9 +464,9 @@ RabbitMQ实现延迟消息的方式有两种，一种是使用死信队列实现
 
 
 
-	<a href="/2021/08/29/Elasticsearch%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E5%95%86%E5%93%81%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" itemprop="url">
-		<time datetime="2021-08-29T12:50:33.706Z" itemprop="datePublished">
-	  		2021-08-29
+	<a href="/2021/08/31/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7IntelliJ%20IDEA%E6%95%99%E7%A8%8B%E5%BA%8F%E7%AB%A0%E6%A6%82%E8%A7%88/" itemprop="url">
+		<time datetime="2021-08-30T16:07:26.223Z" itemprop="datePublished">
+	  		2021-08-31
 	  </time>
 	</a> 
 
@@ -453,7 +479,7 @@ RabbitMQ实现延迟消息的方式有两种，一种是使用死信队列实现
 
 						
 							<span class="right">      	
-								<a href="/2021/08/29/Elasticsearch%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E5%95%86%E5%93%81%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/31/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7IntelliJ%20IDEA%E6%95%99%E7%A8%8B%E5%BA%8F%E7%AB%A0%E6%A6%82%E8%A7%88/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -464,22 +490,25 @@ RabbitMQ实现延迟消息的方式有两种，一种是使用死信队列实现
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/29/%E4%BD%BF%E7%94%A8Redis+AOP%E4%BC%98%E5%8C%96%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E5%8A%9F%E8%83%BD/" itemprop="url">
-		使用Redis+AOP优化权限管理功能
+	<a href="/2021/08/30/mall%E5%AD%A6%E4%B9%A0%E6%89%80%E9%9C%80%E7%9F%A5%E8%AF%86%E7%82%B9/" itemprop="url">
+		mall学习所需知识点
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							使用Redis+AOP优化权限管理功能
-之前有很多朋友提过，mall项目中的权限管理功能有性能问题，因为每次访问接口进行权限校验时都会从数据库中去查询用户信息。最近对这个问题进行了优化，通过Redis+AOP解决了该问题，下面来讲下我的优化思路。
+							mall学习所需知识点
+由于mall项目涉及到很多知识点，比如SpringBoot、ElasticSearch、Redis、Mongodb等，本教程不会详细讲述这些，只会讲述本项目相关部分，所以推荐以下资料。对其中一些知识点并不熟悉的同学，可以看下下面推荐的资料。
 
--前置知识
-学习本文需要一些Spring Data Redis的知识，不了解的朋友可以看下《Spring Data Redis 最佳实践！》。 还需要一些Spring AOP的知识，不了解的朋友可以看下《SpringBoot应用中使用AOP记录接口访问日志》。
+-推荐资料-IDEA
+《IntelliJ-IDEA-Tutorial》：https://github.com/judasn/IntelliJ-IDEA-Tutorial
 
--问题重现
-在mall-security模块中有一个过滤器，当用户登录后，请求会...
+
+特别全的IDEA使用教程，可以学到很多实用的技巧。
+
+-Spring
+《Spring实战（第4版）》：https://book.douban.com/s...
 						
 					</div>
 					
@@ -494,9 +523,9 @@ RabbitMQ实现延迟消息的方式有两种，一种是使用死信队列实现
 
 
 
-	<a href="/2021/08/29/%E4%BD%BF%E7%94%A8Redis+AOP%E4%BC%98%E5%8C%96%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E5%8A%9F%E8%83%BD/" itemprop="url">
-		<time datetime="2021-08-29T12:43:59.029Z" itemprop="datePublished">
-	  		2021-08-29
+	<a href="/2021/08/30/mall%E5%AD%A6%E4%B9%A0%E6%89%80%E9%9C%80%E7%9F%A5%E8%AF%86%E7%82%B9/" itemprop="url">
+		<time datetime="2021-08-30T13:20:00.282Z" itemprop="datePublished">
+	  		2021-08-30
 	  </time>
 	</a> 
 
@@ -509,7 +538,7 @@ RabbitMQ实现延迟消息的方式有两种，一种是使用死信队列实现
 
 						
 							<span class="right">      	
-								<a href="/2021/08/29/%E4%BD%BF%E7%94%A8Redis+AOP%E4%BC%98%E5%8C%96%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E5%8A%9F%E8%83%BD/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/30/mall%E5%AD%A6%E4%B9%A0%E6%89%80%E9%9C%80%E7%9F%A5%E8%AF%86%E7%82%B9/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -520,25 +549,23 @@ RabbitMQ实现延迟消息的方式有两种，一种是使用死信队列实现
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/29/SpringBoot%E4%B8%AD%E5%A4%84%E7%90%86%E6%A0%A1%E9%AA%8C%E9%80%BB%E8%BE%91%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E5%BC%8F/" itemprop="url">
-		SpringBoot中处理校验逻辑的两种方式
+	<a href="/2021/08/30/mall%E6%9E%B6%E6%9E%84%E5%8F%8A%E5%8A%9F%E8%83%BD%E6%A6%82%E8%A7%88/" itemprop="url">
+		mall架构及功能概览
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							SpringBoot中处理校验逻辑的两种方式
-平时在开发接口的时候，常常会需要对参数进行校验，这里提供两种处理校验逻辑的方式。一种是使用Hibernate Validator来处理，另一种是使用全局异常来处理，下面我们讲下这两种方式的用法。
+							mall架构及功能概览
+mall架构、功能及数据库结构概览
 
--Hibernate Validator
-Hibernate Validator是SpringBoot内置的校验框架，只要集成了SpringBoot就自动集成了它，我们可以通过在对象上面使用它提供的注解来完成参数校验。
+-mall项目简介
+mall项目是一套电商系统，包括前台商城系统及后台管理系统，基于SpringBoot+MyBatis实现。 前台商城系统包含首页门户、商品推荐、商品搜索、商品展示、购物车、订单流程、会员中心、客户服务、帮助中心等模块。 后台管理系统包含商品管理、订单管理、会员管理、促销管理、运营管理、内容管理、统计报表、财务管理、权限管理、设置等模块。
 
--常用注解
-我们先来了解下常用的注解，对Hibernate Validator所提供的校验功能有个印象。
-
-
-@Null：被注释...
+-项目演示
+后台项目演示：http://www.macrozheng.com/admin/index.html
+移动端项目演示：http://www.macrozheng...
 						
 					</div>
 					
@@ -553,9 +580,9 @@ Hibernate Validator是SpringBoot内置的校验框架，只要集成了SpringBoo
 
 
 
-	<a href="/2021/08/29/SpringBoot%E4%B8%AD%E5%A4%84%E7%90%86%E6%A0%A1%E9%AA%8C%E9%80%BB%E8%BE%91%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E5%BC%8F/" itemprop="url">
-		<time datetime="2021-08-29T09:57:01.521Z" itemprop="datePublished">
-	  		2021-08-29
+	<a href="/2021/08/30/mall%E6%9E%B6%E6%9E%84%E5%8F%8A%E5%8A%9F%E8%83%BD%E6%A6%82%E8%A7%88/" itemprop="url">
+		<time datetime="2021-08-30T12:51:12.109Z" itemprop="datePublished">
+	  		2021-08-30
 	  </time>
 	</a> 
 
@@ -568,7 +595,7 @@ Hibernate Validator是SpringBoot内置的校验框架，只要集成了SpringBoo
 
 						
 							<span class="right">      	
-								<a href="/2021/08/29/SpringBoot%E4%B8%AD%E5%A4%84%E7%90%86%E6%A0%A1%E9%AA%8C%E9%80%BB%E8%BE%91%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E5%BC%8F/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/30/mall%E6%9E%B6%E6%9E%84%E5%8F%8A%E5%8A%9F%E8%83%BD%E6%A6%82%E8%A7%88/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -579,22 +606,23 @@ Hibernate Validator是SpringBoot内置的校验框架，只要集成了SpringBoo
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/29/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E6%90%9E%E5%AE%9A%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E7%BB%93%E5%90%88Vue%E5%AE%9E%E7%8E%B0%E8%8F%9C%E5%8D%95%E7%9A%84%E5%8A%A8%E6%80%81%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6/" itemprop="url">
-		手把手教你搞定权限管理结合Vue实现菜单的动态权限控制
+	<a href="/2021/08/30/%E5%95%86%E5%93%81SKU%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1%E4%B8%8E%E4%BC%98%E5%8C%96/" itemprop="url">
+		商品SKU功能设计与优化
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							手把手教你搞定权限管理结合Vue实现菜单的动态权限控制
-权限管理在后端项目中主要体现在对接口访问权限的控制，在前端项目中主要体现在对菜单访问权限的控制。在《手把手教你搞定权限管理，结合Spring Security实现接口的动态权限控制！》中我们实现了对后端接口的动态权限控制，今天我们讲下如何结合Vue来实现菜单的动态权限控制。
+							商品SKU功能设计与优化
+原来的商品SKU设计存在着两个问题，一个是SKU表设计上面比较固化，无法扩展。另一个是当修改了商品信息之后，商品SKU的ID会发生变化，由于购物车表和订单商品表都关联了商品SKU的ID，这样就会导致匹配不上。最近对这两个问题做了点优化，下面来聊聊优化的思路。
 
--使用技术
-mall-admin-web实现菜单的动态权限控制使用到了两种技术，一种是Vue Router，另一种是Vuex，我们先来了解下这两种技术。
+-商品的SPU和SKU
+首先我们来了解下商品SPU和SKU的概念，可能很多没有接触过电商的朋友都不了解。
 
--Vue Router
-Vue Router是Vue.js官方的路由管理器。路由就是一个路径，当我们访问...
+
+SPU（Standard Product Unit ）:指的是标准商品单位，商品信息聚合的最小单位，是一组可复用、易检索的标准化信息的集合，该集合描述了一个商品的特性；
+SKU（Stock Kee...
 						
 					</div>
 					
@@ -609,9 +637,9 @@ Vue Router是Vue.js官方的路由管理器。路由就是一个路径，当我�
 
 
 
-	<a href="/2021/08/29/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E6%90%9E%E5%AE%9A%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E7%BB%93%E5%90%88Vue%E5%AE%9E%E7%8E%B0%E8%8F%9C%E5%8D%95%E7%9A%84%E5%8A%A8%E6%80%81%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6/" itemprop="url">
-		<time datetime="2021-08-29T09:44:32.331Z" itemprop="datePublished">
-	  		2021-08-29
+	<a href="/2021/08/30/%E5%95%86%E5%93%81SKU%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1%E4%B8%8E%E4%BC%98%E5%8C%96/" itemprop="url">
+		<time datetime="2021-08-30T09:59:37.340Z" itemprop="datePublished">
+	  		2021-08-30
 	  </time>
 	</a> 
 
@@ -624,7 +652,7 @@ Vue Router是Vue.js官方的路由管理器。路由就是一个路径，当我�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/29/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E6%90%9E%E5%AE%9A%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E7%BB%93%E5%90%88Vue%E5%AE%9E%E7%8E%B0%E8%8F%9C%E5%8D%95%E7%9A%84%E5%8A%A8%E6%80%81%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/30/%E5%95%86%E5%93%81SKU%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1%E4%B8%8E%E4%BC%98%E5%8C%96/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -635,24 +663,25 @@ Vue Router是Vue.js官方的路由管理器。路由就是一个路径，当我�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/29/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E6%90%9E%E5%AE%9A%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E7%BB%93%E5%90%88SpringSecurity%E5%AE%9E%E7%8E%B0%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%8A%A8%E6%80%81%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6/" itemprop="url">
-		手把手教你搞定权限管理结合SpringSecurity实现接口的动态权限控制
+	<a href="/2021/08/30/%E5%A4%A7%E5%AE%B6%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5%E7%9A%84%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E5%8A%9F%E8%83%BD/" itemprop="url">
+		大家心心念念的权限管理功能
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							手把手教你搞定权限管理结合SpringSecurity实现接口的动态权限控制
-权限控管理作为后台管理系统中必要的功能，mall项目中结合Spring Security实现了基于路径的动态权限控制，可以对后台接口访问进行细粒度的控制，今天我们来讲下它的后端实现原理。
+							大家心心念念的权限管理功能
+mall项目的权限管理功能发布啦！权限管理作为后台管理系统的必要功能，mall项目之前的权限管理并不完善。最近我对原先的权限管理进行了重新设计，打造了一套切实可用的权限管理功能。
 
--前置知识
-学习本文需要一些Spring Security的知识，对Spring Security不太了解的朋友可以看下以下文章。
+-功能清单
+菜单管理：可以实现对后台管理系统左侧菜单的管理，支持更换图标、更换名称、控制菜单显示和排序；
+资源管理：实现了基于访问路径的后台动态权限控制，控制的权限可以精确到接口级别；
+角色管理：可以自定义角色，并为角色分配菜单和资源；
+后台用户管理：可以对后台用户进行管理并分配角色，支持分配多个角色。
 
-
-mall整合SpringSecurity和JWT实现认证和授权（一）
-mall整合SpringSecurity和JWT实现认证和授权（二）
-仅需四步，整合SpringSecurity+JWT...
+-功能介绍
+接下了我们对权限管理功能做个介绍，演示一个完整的权限管理的流程。...
 						
 					</div>
 					
@@ -667,9 +696,9 @@ mall整合SpringSecurity和JWT实现认证和授权（二）
 
 
 
-	<a href="/2021/08/29/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E6%90%9E%E5%AE%9A%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E7%BB%93%E5%90%88SpringSecurity%E5%AE%9E%E7%8E%B0%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%8A%A8%E6%80%81%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6/" itemprop="url">
-		<time datetime="2021-08-29T08:55:40.453Z" itemprop="datePublished">
-	  		2021-08-29
+	<a href="/2021/08/30/%E5%A4%A7%E5%AE%B6%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5%E7%9A%84%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E5%8A%9F%E8%83%BD/" itemprop="url">
+		<time datetime="2021-08-30T09:47:35.390Z" itemprop="datePublished">
+	  		2021-08-30
 	  </time>
 	</a> 
 
@@ -682,7 +711,7 @@ mall整合SpringSecurity和JWT实现认证和授权（二）
 
 						
 							<span class="right">      	
-								<a href="/2021/08/29/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E6%90%9E%E5%AE%9A%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E7%BB%93%E5%90%88SpringSecurity%E5%AE%9E%E7%8E%B0%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%8A%A8%E6%80%81%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/30/%E5%A4%A7%E5%AE%B6%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5%E7%9A%84%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E5%8A%9F%E8%83%BD/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -693,25 +722,21 @@ mall整合SpringSecurity和JWT实现认证和授权（二）
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/29/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E9%A1%B9%E7%9B%AE%E5%BC%95%E5%85%A5SpringCloudGateway%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%B8%AA%E9%97%AE%E9%A2%98/" itemprop="url">
-		前后端分离项目引入SpringCloudGateway遇到的一个问题
+	<a href="/2021/08/30/%E8%90%A5%E9%94%80%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%B8%89/" itemprop="url">
+		营销模块数据库表解析三
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							前后端分离项目引入SpringCloudGateway遇到的一个问题
-随着项目架构的越来越复杂，引入了新的技术，新的问题也在产生，本文将讲述一个由于网关引起的前端调用问题。
+							营销模块数据库表解析三
+本文主要对首页内容推荐功能相关表进行解析，采用数据库表与功能对照的形式。
 
--问题产生
-我的mall项目升级到微服务架构以后，加入了基于Spring Cloud Gateway的网关系统，前端调用相关服务时应该统一从网关进行调用，本以为前端直接调用网关没啥问题，后来发现会产生无法调用的情况，下面我们来记录下这个问题以及解决思路。
+-相关表结构-首页品牌推荐表
+用于管理首页显示的品牌制造商直供信息。
 
--问题重现与解决
-这里我们以mall-swarm中的代码为例来演示下该问题的产生与解决。
-
-
-首先我们先把mall-registry、mall-config、m...
+123456789create table sms_home_brand(   id                   bigint not null auto_increment,   brand_id             bigint comment &#x27;商品品牌id&#x27;,   brand_name           varchar(64) comment &#x27;商品品牌名称&#x27...
 						
 					</div>
 					
@@ -726,9 +751,9 @@ mall整合SpringSecurity和JWT实现认证和授权（二）
 
 
 
-	<a href="/2021/08/29/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E9%A1%B9%E7%9B%AE%E5%BC%95%E5%85%A5SpringCloudGateway%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%B8%AA%E9%97%AE%E9%A2%98/" itemprop="url">
-		<time datetime="2021-08-29T08:49:21.943Z" itemprop="datePublished">
-	  		2021-08-29
+	<a href="/2021/08/30/%E8%90%A5%E9%94%80%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%B8%89/" itemprop="url">
+		<time datetime="2021-08-30T09:28:25.651Z" itemprop="datePublished">
+	  		2021-08-30
 	  </time>
 	</a> 
 
@@ -741,7 +766,7 @@ mall整合SpringSecurity和JWT实现认证和授权（二）
 
 						
 							<span class="right">      	
-								<a href="/2021/08/29/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E9%A1%B9%E7%9B%AE%E5%BC%95%E5%85%A5SpringCloudGateway%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%B8%AA%E9%97%AE%E9%A2%98/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/30/%E8%90%A5%E9%94%80%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%B8%89/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -752,32 +777,21 @@ mall整合SpringSecurity和JWT实现认证和授权（二）
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/29/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E9%A1%B9%E7%9B%AE%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E5%AD%98%E5%82%A8/" itemprop="url">
-		前后端分离项目如何优雅实现文件存储
+	<a href="/2021/08/30/%E8%90%A5%E9%94%80%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%BA%8C/" itemprop="url">
+		营销模块数据库表解析二
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							前后端分离项目如何优雅实现文件存储
-在上一节中我们讲到了使用MinIO来自建对象存储服务，这次我们来讲下MinIO如何结合SpringBoot和Vue来实现文件存储。
+							营销模块数据库表解析二
+本文主要对优惠券功能相关表进行解析，采用数据库表与功能对照的形式。
 
--学前准备
-学习本文需要一些MinIO的基础知识，还不了解的小伙伴可以参考下：Github标星19K+Star，10分钟自建对象存储服务！
+-相关表结构-优惠券表
+用于存储优惠券信息，需要注意的是优惠券的使用类型：0-&gt;全场通用；1-&gt;指定分类；2-&gt;指定商品，不同使用类型的优惠券使用范围不一样。
 
--结合SpringBoot使用
-接下来我们将结合SpringBoot来实现一个完整的图片上传与删除操作。
-
-
-上传流程示意图：
-
-
-
-
-在pom.xml中添加MinIO的相关依赖：
-
-123456&lt;!--MinIO JAVA SDK--&gt;&lt;dependency&g...
+12345678910111213141516171819202122create table sms_coupon(   id                   bigint not null auto_increment,   type                 int(1) comment &#x27;优...
 						
 					</div>
 					
@@ -792,9 +806,9 @@ mall整合SpringSecurity和JWT实现认证和授权（二）
 
 
 
-	<a href="/2021/08/29/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E9%A1%B9%E7%9B%AE%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E5%AD%98%E5%82%A8/" itemprop="url">
-		<time datetime="2021-08-29T08:41:37.587Z" itemprop="datePublished">
-	  		2021-08-29
+	<a href="/2021/08/30/%E8%90%A5%E9%94%80%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%BA%8C/" itemprop="url">
+		<time datetime="2021-08-30T09:22:01.169Z" itemprop="datePublished">
+	  		2021-08-30
 	  </time>
 	</a> 
 
@@ -807,7 +821,7 @@ mall整合SpringSecurity和JWT实现认证和授权（二）
 
 						
 							<span class="right">      	
-								<a href="/2021/08/29/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E9%A1%B9%E7%9B%AE%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E5%AD%98%E5%82%A8/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/30/%E8%90%A5%E9%94%80%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%A7%A3%E6%9E%90%E4%BA%8C/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>

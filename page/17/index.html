@@ -232,19 +232,24 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/25/ElasticAPM%E5%AE%9E%E7%8E%B0%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%BA%94%E7%94%A8%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7/" itemprop="url">
-		ElasticAPM实现微服务应用性能监控
+	<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7GitLab10%E5%88%86%E9%92%9F%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84Git%E4%BB%93%E5%BA%93%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		开发工具GitLab10分钟搭建自己的Git仓库入门篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							ElasticAPM实现微服务应用性能监控
-当微服务系统越来越庞大，各个服务间的调用关系也变得越来越复杂，需要一个工具来帮忙理清请求调用的服务链路。之前在《Spring Cloud Sleuth：分布式请求链路跟踪》一文中使用的是Sleuth+Zipkin的解决方案，最近发现应用性能监控（Application Performance Monitoring，APM）也可以很好地解决该问题。对比SkyWalking和Elastic APM之后，发现Elastic APM更胜一筹，今天我们来一波Elastic APM的使用实践！
+							开发工具GitLab10分钟搭建自己的Git仓库入门篇
+GitLab是一款使用MIT许可证的基于网络的Git仓库管理工具，我们可以使用它来搭建自己的Git仓库，本文将介绍如何使用Gitlab在Linux下快速搭建Git仓库。
 
--Elastic APM 简介
-Elastic APM是基于...
+-Gitlab服务端搭建
+在Linux（CenterOS7.6）下我们会以Docker的方式来安装Gitlab，对Docker不了解的朋友可以参考：开发者必备Docker命令。
+
+-下载Gitlab的Docker镜像1docker pull gitlab/gitlab-ce
+
+-运行如下命令来启动Gitlab
+需要注意的是我们的Gitlab的http服务运行在宿主...
 						
 					</div>
 					
@@ -259,9 +264,9 @@ Elastic APM是基于...
 
 
 
-	<a href="/2021/08/25/ElasticAPM%E5%AE%9E%E7%8E%B0%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%BA%94%E7%94%A8%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7/" itemprop="url">
-		<time datetime="2021-08-25T04:40:09.963Z" itemprop="datePublished">
-	  		2021-08-25
+	<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7GitLab10%E5%88%86%E9%92%9F%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84Git%E4%BB%93%E5%BA%93%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-26T13:45:38.032Z" itemprop="datePublished">
+	  		2021-08-26
 	  </time>
 	</a> 
 
@@ -274,7 +279,7 @@ Elastic APM是基于...
 
 						
 							<span class="right">      	
-								<a href="/2021/08/25/ElasticAPM%E5%AE%9E%E7%8E%B0%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%BA%94%E7%94%A8%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7GitLab10%E5%88%86%E9%92%9F%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84Git%E4%BB%93%E5%BA%93%E5%85%A5%E9%97%A8%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -285,25 +290,26 @@ Elastic APM是基于...
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/25/PowerJob%E5%AE%9E%E7%8E%B0%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E5%85%A5%E9%97%A8/" itemprop="url">
-		PowerJob实现任务调度入门
+	<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Postman%E6%8E%A5%E5%8F%A3%E8%B0%83%E8%AF%95%E5%88%A9%E5%99%A8%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		开发工具Postman接口调试利器入门篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							PowerJob实现任务调度入门
-在微服务系统中，经常会有用到任务调度的场景。比如每天定时同步数据、定时生成业务报表、定期清理日志等。今天给大家推荐一个分布式调度框架，助你你轻松完成任务调度工作！
+							开发工具Postman接口调试利器入门篇
+Postman是一款API接口调试工具，使用它可以很方便的对接口进行测试，并且后端人员可以将自己的调试结果导出，方便前端人员调试。
 
--PowerJob 简介
-PowerJob是全新一代分布式调度与计算框架，能让你轻松完成任务的调度与繁杂任务的分布式计算。
+-安装-下载地址：https://www.getpostman.com/downloads/-下载完安装包后直接双击安装即可。-设置-主题设置
+这里不得不说，Postman的界面还是做的很好的，比起Swagger来说好多了，Postman默认提供了两种主题，一种亮色和一种暗色，可以通过左上角的File-&gt;Settings按钮打开。
 
--主要特性：
-使用简单：提供前端Web界面，允许开发者可视化完成调度任务的管理及查看任务运行状态和日志。
-定时策略完善：支持CRON表达式、固定频率、固定延迟和API四种定时调度策略。
-执行模式丰富：支持单机、广播、Map、MapReduce四种执行模式。
-依赖精简：...
+
+
+
+
+-调整字体大小
+可能界面默认的字体大小并不适合你，尤其是大屏幕的电脑...
 						
 					</div>
 					
@@ -318,9 +324,9 @@ PowerJob是全新一代分布式调度与计算框架，能让你轻松完成任
 
 
 
-	<a href="/2021/08/25/PowerJob%E5%AE%9E%E7%8E%B0%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E5%85%A5%E9%97%A8/" itemprop="url">
-		<time datetime="2021-08-24T21:29:33.043Z" itemprop="datePublished">
-	  		2021-08-25
+	<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Postman%E6%8E%A5%E5%8F%A3%E8%B0%83%E8%AF%95%E5%88%A9%E5%99%A8%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-26T10:21:39.462Z" itemprop="datePublished">
+	  		2021-08-26
 	  </time>
 	</a> 
 
@@ -333,7 +339,7 @@ PowerJob是全新一代分布式调度与计算框架，能让你轻松完成任
 
 						
 							<span class="right">      	
-								<a href="/2021/08/25/PowerJob%E5%AE%9E%E7%8E%B0%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Postman%E6%8E%A5%E5%8F%A3%E8%B0%83%E8%AF%95%E5%88%A9%E5%99%A8%E5%85%A5%E9%97%A8%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -344,19 +350,21 @@ PowerJob是全新一代分布式调度与计算框架，能让你轻松完成任
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/25/MyBatis%E7%9A%84CRUD%E6%8F%92%E4%BB%B6%E5%85%A5%E9%97%A8/" itemprop="url">
-		MyBatis的CRUD插件入门
+	<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Navicat%E5%AE%9E%E7%94%A8%E5%8A%9F%E8%83%BD%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		开发工具Navicat实用功能入门篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							MyBatis的CRUD插件入门
-相信很多朋友在项目中使用的ORM框架都是MyBatis，如果单用MyBatis来操作数据库的话，需要手写很多单表查询的SQL实现。这时候我们往往会选择一个增强工具来实现这些单表CRUD操作，这里推荐一款好用的工具MyBatis-Plus！
+							开发工具Navicat实用功能入门篇
+当我们要对数据库做有风险的操作时需要对数据库备份，每次上线项目时，线上与线下数据库结构总会有不一致的情况，本文将讲解如何利用Navicat来方便的解决这两个问题。
 
--MyBatis-Plus简介
-MyBatis-Plus（简称 MP）是一个 MyBatis 的增强工具，在 MyBatis 的基础上只做增强不做改变，为简化开发、提高效率而生。MyBatis-Plus 提供了代码生成器，可以一键生成controller、service、mapper、model、mapper.xml...
+-Navicat
+Navicat是一套快速、可靠的数据库管理工具，专为简化数据库的管理及降低系统管理成本而设。它的设计符合数据库管理员、开发人员及中小企业的需要。Navicat 是以直觉化的图形用户界面而建的，让你可以以安全并且简单的方式创建、组织、访问并共用信息。
+
+-注意：本教程采用的时Navicat12版本，下载地址：https://www.navicat.com.cn/downl...
 						
 					</div>
 					
@@ -371,9 +379,9 @@ MyBatis-Plus（简称 MP）是一个 MyBatis 的增强工具，在 MyBatis 的�
 
 
 
-	<a href="/2021/08/25/MyBatis%E7%9A%84CRUD%E6%8F%92%E4%BB%B6%E5%85%A5%E9%97%A8/" itemprop="url">
-		<time datetime="2021-08-24T21:04:59.949Z" itemprop="datePublished">
-	  		2021-08-25
+	<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Navicat%E5%AE%9E%E7%94%A8%E5%8A%9F%E8%83%BD%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-25T20:15:22.695Z" itemprop="datePublished">
+	  		2021-08-26
 	  </time>
 	</a> 
 
@@ -386,7 +394,7 @@ MyBatis-Plus（简称 MP）是一个 MyBatis 的增强工具，在 MyBatis 的�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/25/MyBatis%E7%9A%84CRUD%E6%8F%92%E4%BB%B6%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Navicat%E5%AE%9E%E7%94%A8%E5%8A%9F%E8%83%BD%E5%85%A5%E9%97%A8%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -397,21 +405,316 @@ MyBatis-Plus（简称 MP）是一个 MyBatis 的增强工具，在 MyBatis 的�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/25/Hutool%E5%B7%A5%E5%85%B7%E7%B1%BB%E5%BA%93%E5%85%A5%E9%97%A8/" itemprop="url">
-		Hutool工具类库入门
+	<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7IDEA%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE%E5%8F%8A%E6%8E%A8%E8%8D%90%E6%8F%92%E4%BB%B6%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		开发工具IDEA常用设置及推荐插件入门篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							Hutool工具类库入门
-Hutool是一个小而全的Java工具类库，它帮助我们简化每一行代码，避免重复造轮子。如果你有需要用到某些工具类的时候，不妨在Hutool里面找找。本文总结了平时常用的16个工具类，希望对大家有所帮助！
+							开发工具IDEA常用设置及推荐插件入门篇
+本文主要记录IDEA的一些常用设置，IDEA与Eclipse的常用快捷键对比及推荐一些好用的插件。
+
+-基本设置-设置界面风格及修改外部UI尺寸大小
+
+-打开IDEA时设置不重新打开最近的项目
+IDEA默认会打开最近的项目，有时候我们需要自己选择要打开的项目，不勾选该选项可以实现。
+
+
+
+-设置IDEA的快捷键
+
+-设置代码字体大小
+
+-设置项目文件编码格式
+
+-设置代码提示的匹配模式
+
+-设置新建类文件的类注释模版
+
+-IDEA和Eclipse常用快捷键对比
+友情提示：IDEA可以设置为Eclipse风格的快捷键，在File-&gt;Setti...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7IDEA%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE%E5%8F%8A%E6%8E%A8%E8%8D%90%E6%8F%92%E4%BB%B6%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-25T19:37:28.636Z" itemprop="datePublished">
+	  		2021-08-26
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7IDEA%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE%E5%8F%8A%E6%8E%A8%E8%8D%90%E6%8F%92%E4%BB%B6%E5%85%A5%E9%97%A8%E7%AF%87/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/26/Flyway%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%81%E7%A7%BB%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8/" itemprop="url">
+		Flyway数据库迁移工具入门
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							Flyway数据库迁移工具入门
+当我们的应用升级时往往会伴随着数据库表结构的升级，此时就需要迁移数据库的表结构。一般我们会使用工具或者脚本来实现，手动操作毕竟有一定风险，要是能在应用启动时自动升级数据库表结构就好了！Flyway正是这么一款工具，通过Flyway和SpringBoot结合使用，在应用启动时就可以自动升级数据库表结构，非常方便，推荐给大家！
+
+-Flyway简介
+Flyway是一款数据库迁移工具，它让数据库迁移变得更加简单。它能像Git一样对数据库进行版本控制，支持命令行工具、Maven插件、第三方工具（比如SpringBoot）等多种使用方式。
+
+-Flyway具有如下特...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/26/Flyway%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%81%E7%A7%BB%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8/" itemprop="url">
+		<time datetime="2021-08-25T18:51:02.815Z" itemprop="datePublished">
+	  		2021-08-26
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/26/Flyway%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%81%E7%A7%BB%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/26/MyBatis%E9%9B%86%E6%88%90Dynamic%20SQL/" itemprop="url">
+		MyBatis集成Dynamic SQL
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							MyBatis集成Dynamic SQL
+当我们使用MyBatis的时候，需要在mapper.xml中书写大量的SQL语句。当我们使用MyBatis Generator（MBG）作为代码生成器时，也会生成大量的mapper.xml文件。其实从MBG 1.3.6版本以后，MyBatis官方已经推荐使用Dynamic SQL，使用这一新特性基本就不用写mapper.xml文件了，使用起来非常方便，推荐给大家！
+
+-Dynamic SQL简介
+在我们使用Spring的时候，有XML和Java两种配置方式。在使用SpringBoot时，已经推荐使用Java配置，基本不用xml配置了。使用Dyna...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/26/MyBatis%E9%9B%86%E6%88%90Dynamic%20SQL/" itemprop="url">
+		<time datetime="2021-08-25T17:16:59.942Z" itemprop="datePublished">
+	  		2021-08-26
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/26/MyBatis%E9%9B%86%E6%88%90Dynamic%20SQL/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/26/%E4%B8%80%E6%AC%BEJava%E4%BB%A3%E7%A0%81%E5%8A%9F%E8%83%BD%E5%A2%9E%E5%BC%BA%E5%BA%93Lombok%E5%85%A5%E9%97%A8/" itemprop="url">
+		一款Java代码功能增强库Lombok入门
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							一款Java代码功能增强库Lombok入门
+最近IDEA 2020最后一个版本发布了，已经内置了Lombok插件，SpringBoot 2.1.x之后的版本也在Starter中内置了Lombok依赖。为什么他们都要支持Lombok呢？今天我来讲讲Lombok的使用，看看它有何神奇之处！
+
+-Lombok简介
+Lombok是一款Java代码功能增强库，在Github上已有9.8k+Star。它会自动集成到你的编辑器和构建工具中，从而使你的Java代码更加生动有趣。通过Lombok的注解，你可以不用再写getter、setter、equals等方法，Lombok将在编译时为你自动生成。
+
+-...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/26/%E4%B8%80%E6%AC%BEJava%E4%BB%A3%E7%A0%81%E5%8A%9F%E8%83%BD%E5%A2%9E%E5%BC%BA%E5%BA%93Lombok%E5%85%A5%E9%97%A8/" itemprop="url">
+		<time datetime="2021-08-25T16:37:22.943Z" itemprop="datePublished">
+	  		2021-08-26
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/26/%E4%B8%80%E6%AC%BEJava%E4%BB%A3%E7%A0%81%E5%8A%9F%E8%83%BD%E5%A2%9E%E5%BC%BA%E5%BA%93Lombok%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/26/MyBatis%E9%9B%86%E6%88%90MBG/" itemprop="url">
+		MyBatis集成MBG
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							MyBatis集成MBG- 简介
+MyBatis Generator（简称MBG）是MyBatis官方提供的代码生成工具。可以通过数据库表直接生成实体类、单表CRUD代码、mapper.xml文件，从而解放我们的双手！
+
+-开始使用
+首先我们通过一个入门示例将MBG用起来，该示例会包含基础的CRUD操作。
+
+-集成MBG
+在pom.xml中添加如下依赖，主要添加了MyBatis、PageHelper、Druid、MBG和MySQL驱动等依赖；
+
+1234567891011121314151617181920212223242526272829303132&lt;dependencies&...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/26/MyBatis%E9%9B%86%E6%88%90MBG/" itemprop="url">
+		<time datetime="2021-08-25T16:15:56.844Z" itemprop="datePublished">
+	  		2021-08-26
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/26/MyBatis%E9%9B%86%E6%88%90MBG/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/2021/08/25/Harbor%E4%B8%80%E6%AC%BE%E5%BC%80%E6%BA%90%E7%9A%84Docker%E9%95%9C%E5%83%8F%E4%BB%93%E5%BA%93%E6%9C%8D%E5%8A%A1/" itemprop="url">
+		Harbor一款开源的Docker镜像仓库服务
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							Harbor一款开源的Docker镜像仓库服务
+平时经常用Docker来部署各种环境，发现从DockerHub上下载镜像有时候比较慢。第三方的镜像还可以使用一些国内的镜像仓库来加速，如果我们自己构建的镜像那就不行了。这时候搭建一个私有的镜像仓库很有必要，最近发现Harbor这个企业级镜像仓库，非常好用且功能强大，推荐给大家！
+
+-Harbor简介
+Harbor是一款开源的Docker镜像仓库服务，在Github上目前有13.4k+Star。提供了基于角色的镜像访问机制，可以保护你的镜像安全。
 
 -安装
-Hutool的安装非常简单，Maven项目中只需在pom.xml添加以下依赖即可。
+学习开源项目的第一步，一般都是把它运行起来，我们先来把Harbor运行起来吧！
 
-12345&lt;dependency&gt;    &lt;groupId&gt;cn.hutool&lt;/groupId&gt;    &lt;artifactId&gt;hutool-all&lt;/artifactId&gt;    &lt;version&...
+
+下...
 						
 					</div>
 					
@@ -426,8 +729,8 @@ Hutool的安装非常简单，Maven项目中只需在pom.xml添加以下依赖�
 
 
 
-	<a href="/2021/08/25/Hutool%E5%B7%A5%E5%85%B7%E7%B1%BB%E5%BA%93%E5%85%A5%E9%97%A8/" itemprop="url">
-		<time datetime="2021-08-24T20:39:05.772Z" itemprop="datePublished">
+	<a href="/2021/08/25/Harbor%E4%B8%80%E6%AC%BE%E5%BC%80%E6%BA%90%E7%9A%84Docker%E9%95%9C%E5%83%8F%E4%BB%93%E5%BA%93%E6%9C%8D%E5%8A%A1/" itemprop="url">
+		<time datetime="2021-08-25T15:34:12.841Z" itemprop="datePublished">
 	  		2021-08-25
 	  </time>
 	</a> 
@@ -441,7 +744,7 @@ Hutool的安装非常简单，Maven项目中只需在pom.xml添加以下依赖�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/25/Hutool%E5%B7%A5%E5%85%B7%E7%B1%BB%E5%BA%93%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/25/Harbor%E4%B8%80%E6%AC%BE%E5%BC%80%E6%BA%90%E7%9A%84Docker%E9%95%9C%E5%83%8F%E4%BB%93%E5%BA%93%E6%9C%8D%E5%8A%A1/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -452,27 +755,19 @@ Hutool的安装非常简单，Maven项目中只需在pom.xml添加以下依赖�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/25/Maven%E4%BC%98%E7%A7%80%E6%8F%92%E4%BB%B6fabric8io%E5%87%BA%E5%93%81/" itemprop="url">
-		Maven优秀插件fabric8io出品
+	<a href="/2021/08/25/YApi%E7%BB%93%E5%90%88Swagger%E4%BD%BF%E7%94%A8%E6%9E%9C%E7%84%B6%E5%BE%88%E5%BC%BA%E5%A4%A7/" itemprop="url">
+		YApi结合Swagger使用果然很强大
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							Maven优秀插件fabric8io出品
-最近又发现了一款好用的Maven插件，fabric8io出品的docker-maven-plugin，可以把SpringBoot应用方便的部署到Docker容器中去。该插件可以实现打包镜像、推送到镜像仓库、运行应用等一系列操作，本文将对其用法进行详细介绍，希望对大家有所帮助！
+							YApi结合Swagger使用果然很强大
+Swagger经常被人吐槽界面不够好看、功能不够强大，其实有很多工具可以和Swagger结合使用，结合之后就会变得非常好用。之前写过一篇文章《Swagger界面丑、功能弱怎么破？用Postman增强下就给力了！》，有朋友留言说YApi也很好用。最近体验了一把YApi，发现确实不错，推荐给大家！
 
--安装私有镜像仓库
-由于之后我们需要推送到私有镜像仓库，我们预先安装好，使用的是Docker公司开发的私有镜像仓库Registry。
-
-
-下载Registry的Docker镜像；
-
-1docker pull registry:2
-
-
-使用Docker容器运行Registr...
+-YApi简介
+YApi是高效、易用、功能强大的API管理平台，旨在为开发、产品、测试人员提供更优雅的接口管理服务。YApi在Github上已累计获得了18K+Star，具有优秀的交互体验，YApi不仅提供了常用的接口管理功能，还提供了权限管理、Mock...
 						
 					</div>
 					
@@ -487,8 +782,8 @@ Hutool的安装非常简单，Maven项目中只需在pom.xml添加以下依赖�
 
 
 
-	<a href="/2021/08/25/Maven%E4%BC%98%E7%A7%80%E6%8F%92%E4%BB%B6fabric8io%E5%87%BA%E5%93%81/" itemprop="url">
-		<time datetime="2021-08-24T19:55:37.046Z" itemprop="datePublished">
+	<a href="/2021/08/25/YApi%E7%BB%93%E5%90%88Swagger%E4%BD%BF%E7%94%A8%E6%9E%9C%E7%84%B6%E5%BE%88%E5%BC%BA%E5%A4%A7/" itemprop="url">
+		<time datetime="2021-08-25T14:26:53.062Z" itemprop="datePublished">
 	  		2021-08-25
 	  </time>
 	</a> 
@@ -502,284 +797,7 @@ Hutool的安装非常简单，Maven项目中只需在pom.xml添加以下依赖�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/25/Maven%E4%BC%98%E7%A7%80%E6%8F%92%E4%BB%B6fabric8io%E5%87%BA%E5%93%81/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/08/25/Filebeat%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%97%A5%E5%BF%97%E9%87%87%E9%9B%86%E5%99%A8%E5%85%A5%E9%97%A8/" itemprop="url">
-		Filebeat轻量级日志采集器入门
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							Filebeat轻量级日志采集器入门
-之前我们搭建的ELK日志收集系统，主要是用来收集SpringBoot应用的日志。其原理是应用通过Logstash插件，使用TCP向Logstash传输日志，从而存储到Elasticsearch中去。但是有很多中间件的日志都是直接存储在文件中的，比如Nginx、Elasticsearch和MySQL，此时我们就需要一个搬运工来把日志搬到Elasticsearch中去，Filebeat正是这样一个日志搬运工，本文将详细介绍它的使用方法，希望对大家有所帮助。
-
--Filebeat简介
-Filebeat是一款轻量级日志采集器，可用于转发和汇总日志与文件。Fi...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/08/25/Filebeat%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%97%A5%E5%BF%97%E9%87%87%E9%9B%86%E5%99%A8%E5%85%A5%E9%97%A8/" itemprop="url">
-		<time datetime="2021-08-24T19:15:07.361Z" itemprop="datePublished">
-	  		2021-08-25
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/08/25/Filebeat%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%97%A5%E5%BF%97%E9%87%87%E9%9B%86%E5%99%A8%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/08/25/Kibana%E8%AE%BE%E7%BD%AE%E7%99%BB%E5%BD%95%E8%AE%A4%E8%AF%81/" itemprop="url">
-		Kibana设置登录认证
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							Kibana设置登录认证
-在《你居然还去服务器上捞日志，搭个日志收集系统难道不香么！》一文中我们介绍过ELK日志收集系统的搭建，由于我们的Kibana没有任何安全保护机制，如果部署到公网上去的话，任何人都可以查看你的日志了。日志暴露在网络上可不是件好事情，今天教大家如何给Kibana设置登录认证来保护它。
-
--实现原理
-由于Kibana的日志信息都存储在Elasticsearch中，所以只要给Elasticsearch开启X-PACK中的安全功能，并给预置的账号设置好密码即可。Elasticsearch设置好之后，就可以在Kibana中对用户、角色、权限进行管理了，本文使用的ELK组件版...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/08/25/Kibana%E8%AE%BE%E7%BD%AE%E7%99%BB%E5%BD%95%E8%AE%A4%E8%AF%81/" itemprop="url">
-		<time datetime="2021-08-24T18:25:39.760Z" itemprop="datePublished">
-	  		2021-08-25
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/08/25/Kibana%E8%AE%BE%E7%BD%AE%E7%99%BB%E5%BD%95%E8%AE%A4%E8%AF%81/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/08/25/Docker%E6%9C%8D%E5%8A%A1%E5%BC%80%E6%94%BE%E4%BA%86%E8%BF%99%E4%B8%AA%E7%AB%AF%E5%8F%A3%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%88%86%E5%88%86%E9%92%9F%E5%8F%98%E8%82%89%E6%9C%BA/" itemprop="url">
-		Docker服务开放了这个端口服务器分分钟变肉机
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							Docker服务开放了这个端口服务器分分钟变肉机
-之前有很多朋友提过，当使用docker-maven-plugin打包SpringBoot应用的Docker镜像时，服务器需要开放2375端口。由于开放了端口没有做任何安全保护，会引起安全漏洞，被人入侵、挖矿、CPU飙升这些情况都有发生，今天我们来聊聊如何解决这个问题。
-
--问题产生的原因
-首先我们要明白问题产生的原因，才能更好地解决问题！
-
-
-Docker为了实现集群管理，提供了远程管理的端口。Docker Daemon作为守护进程运行在后台，可以执行发送到管理端口上的Docker命令。
-
-
-当我们修改docker.service文件，修...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/08/25/Docker%E6%9C%8D%E5%8A%A1%E5%BC%80%E6%94%BE%E4%BA%86%E8%BF%99%E4%B8%AA%E7%AB%AF%E5%8F%A3%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%88%86%E5%88%86%E9%92%9F%E5%8F%98%E8%82%89%E6%9C%BA/" itemprop="url">
-		<time datetime="2021-08-24T18:06:55.665Z" itemprop="datePublished">
-	  		2021-08-25
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/08/25/Docker%E6%9C%8D%E5%8A%A1%E5%BC%80%E6%94%BE%E4%BA%86%E8%BF%99%E4%B8%AA%E7%AB%AF%E5%8F%A3%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%88%86%E5%88%86%E9%92%9F%E5%8F%98%E8%82%89%E6%9C%BA/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/08/25/knife4j%E6%96%87%E6%A1%A3%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7/" itemprop="url">
-		knife4j文档生成工具
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							knife4j文档生成工具
-Swagger作为一款API文档生成工具，虽然功能已经很完善了，但是还是有些不足的地方。偶然发现knife4j弥补了这些不足，赋予了Swagger更多的功能，今天我们来讲下它的使用方法。
-
--knife4j简介
-knife4j是springfox-swagger的增强UI实现，为Java开发者在使用Swagger的时候，提供了简洁、强大的接口文档体验。knife4j完全遵循了springfox-swagger中的使用方式，并在此基础上做了增强功能，如果你用过Swagger，你就可以无缝切换到knife4j。
-
--快速开始
-接下来我们来介绍下如何在SpringB...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/08/25/knife4j%E6%96%87%E6%A1%A3%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7/" itemprop="url">
-		<time datetime="2021-08-24T17:43:12.501Z" itemprop="datePublished">
-	  		2021-08-25
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/08/25/knife4j%E6%96%87%E6%A1%A3%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/08/25/JWT%E5%BA%93%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/" itemprop="url">
-		JWT库快速入门
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							JWT库快速入门
-以前一直使用的是jjwt这个JWT库，虽然小巧够用, 但对JWT的一些细节封装的不是很好。最近发现了一个更好用的JWT库nimbus-jose-jwt，简单易用，API非常易于理解，对称加密和非对称加密算法都支持，推荐给大家！
-
--简介
-nimbus-jose-jwt是最受欢迎的JWT开源库，基于Apache 2.0开源协议，支持所有标准的签名(JWS)和加密(JWE)算法。
-
--JWT概念关系
-这里我们需要了解下JWT、JWS、JWE三者之间的关系，其实JWT(JSON Web Token)指的是一种规范，这种规范允许我们使用JWT在两个组织之间传递安全可靠的信息。而...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/08/25/JWT%E5%BA%93%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/" itemprop="url">
-		<time datetime="2021-08-24T17:07:30.620Z" itemprop="datePublished">
-	  		2021-08-25
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/08/25/JWT%E5%BA%93%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/25/YApi%E7%BB%93%E5%90%88Swagger%E4%BD%BF%E7%94%A8%E6%9E%9C%E7%84%B6%E5%BE%88%E5%BC%BA%E5%A4%A7/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>

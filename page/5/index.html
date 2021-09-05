@@ -232,21 +232,16 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/31/Spring%E7%9A%84IoC%E5%85%A5%E9%97%A8/" itemprop="url">
-		Spring的IoC入门
+	<a href="/2021/09/02/%E4%BD%BF%E7%94%A8CGLIB%E5%AE%9E%E7%8E%B0AOP%E5%8A%9F%E8%83%BD%E4%B8%8EAOP%E6%A6%82%E5%BF%B5%E8%A7%A3%E9%87%8A/" itemprop="url">
+		使用CGLIB实现AOP功能与AOP概念解释
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							Spring的IoC入门-下载Spring的开发包
-Spring的官网是https://spring.io/，Spring的开发包的下载地址是https://repo.spring.io/libs-release-local/org/springframework/spring/，上面说过，我下载的是spring-framework-4.2.4.RELEASE这个版本的Spring。解压缩之后，可发现Spring开发包的目录结构如下。
-
-
-
--创建web项目，引入Spring的开发包
-首先创建一个动态web项目，例如spring_demo01，然后导入Spring框架相关依赖jar包，要...
+							使用CGLIB实现AOP功能与AOP概念解释-使用CGLIB实现AOP功能
+在Java里面，我们要产生某个对象的代理对象，这个对象必须要有一个特点，即这个对象必须实现一个接口，动态代理技术只能基于接口进行代理。有时候我们在做开发的时候，这个对象就没有实现接口，有人可能会说，它既然没有接口，那我就给它定义一个接口，这是不行的，因为有时候我们拿到一个对象，而这个对象是服务器产生给我们的，是服务器提供给我们的，又不是我们自己写的，动不动就给它定义一个接口，给它找个爸爸，哪那行呢？但我们现在要对它进行增强，这时用动态代理技术就不行了，动态代理技术只能是基于接口，那如果这个对象没有接口，又该怎么做...
 						
 					</div>
 					
@@ -261,9 +256,9 @@ Spring的官网是https://spring.io/，Spring的开发包的下载地址是https
 
 
 
-	<a href="/2021/08/31/Spring%E7%9A%84IoC%E5%85%A5%E9%97%A8/" itemprop="url">
-		<time datetime="2021-08-31T15:31:54.502Z" itemprop="datePublished">
-	  		2021-08-31
+	<a href="/2021/09/02/%E4%BD%BF%E7%94%A8CGLIB%E5%AE%9E%E7%8E%B0AOP%E5%8A%9F%E8%83%BD%E4%B8%8EAOP%E6%A6%82%E5%BF%B5%E8%A7%A3%E9%87%8A/" itemprop="url">
+		<time datetime="2021-09-02T13:16:47.215Z" itemprop="datePublished">
+	  		2021-09-02
 	  </time>
 	</a> 
 
@@ -276,7 +271,7 @@ Spring的官网是https://spring.io/，Spring的开发包的下载地址是https
 
 						
 							<span class="right">      	
-								<a href="/2021/08/31/Spring%E7%9A%84IoC%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/02/%E4%BD%BF%E7%94%A8CGLIB%E5%AE%9E%E7%8E%B0AOP%E5%8A%9F%E8%83%BD%E4%B8%8EAOP%E6%A6%82%E5%BF%B5%E8%A7%A3%E9%87%8A/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -287,29 +282,18 @@ Spring的官网是https://spring.io/，Spring的开发包的下载地址是https
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/31/JAVA%E6%A1%86%E6%9E%B6Spring%E6%95%99%E7%A8%8B%E5%BA%8F%E7%AB%A0%E6%A6%82%E8%A7%88/" itemprop="url">
-		JAVA框架Spring教程序章概览
+	<a href="/2021/09/02/%E8%AE%A9Spring%E8%87%AA%E5%8A%A8%E6%89%AB%E6%8F%8F%E5%92%8C%E7%AE%A1%E7%90%86Bean/" itemprop="url">
+		让Spring自动扫描和管理Bean
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							JAVA框架Spring教程序章概览-简介
-Spring是一个开源框架，Spring是J2EE应用程序框架，是轻量级的IoC和AOP的容器框架，主要是针对javaBean的生命周期进行管理的轻量级容器，可以单独使用，也可以和Struts框架，ibatis框架等组合使用，框架的主要优势之一就是其分层架构。
-简单来说，Spring是一个分层的JavaSE/EEfull-stack（一站式）轻量级开源框架。
+							让Spring自动扫描和管理Bean
+前面的例子我们都是使用XML的bean定义来配置组件。在一个稍大的项目中，通常会有上百个组件，如果这些组件采用XML的bean定义来配置，显然会增加配置文件的体积，查找及维护起来也不太方便。Spring2.5为我们引入了组件自动扫描机制，它可以在类路径底下寻找标注了@Component、@Service、@Controller、@Repository注解的类，并把这些类纳入进Spring容器中管理。它的作用和在XML文件中使用bean节点配置组件是一样的。要使用自动扫描机制，我们需要打开以下配置信息：
 
--为什么学习Spring
-方便解耦，简化开发
-AOP编程的支持
-声明式事务的支持
-方便程序的测试
-方便集成各种优秀的框架
-降低Java EE API的使用难度
-
--框架架构
-
--Spri...
+123456789101112&lt;?xml...
 						
 					</div>
 					
@@ -324,9 +308,9 @@ AOP编程的支持
 
 
 
-	<a href="/2021/08/31/JAVA%E6%A1%86%E6%9E%B6Spring%E6%95%99%E7%A8%8B%E5%BA%8F%E7%AB%A0%E6%A6%82%E8%A7%88/" itemprop="url">
-		<time datetime="2021-08-31T14:33:58.675Z" itemprop="datePublished">
-	  		2021-08-31
+	<a href="/2021/09/02/%E8%AE%A9Spring%E8%87%AA%E5%8A%A8%E6%89%AB%E6%8F%8F%E5%92%8C%E7%AE%A1%E7%90%86Bean/" itemprop="url">
+		<time datetime="2021-09-02T12:54:58.839Z" itemprop="datePublished">
+	  		2021-09-02
 	  </time>
 	</a> 
 
@@ -339,7 +323,7 @@ AOP编程的支持
 
 						
 							<span class="right">      	
-								<a href="/2021/08/31/JAVA%E6%A1%86%E6%9E%B6Spring%E6%95%99%E7%A8%8B%E5%BA%8F%E7%AB%A0%E6%A6%82%E8%A7%88/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/02/%E8%AE%A9Spring%E8%87%AA%E5%8A%A8%E6%89%AB%E6%8F%8F%E5%92%8C%E7%AE%A1%E7%90%86Bean/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -350,30 +334,22 @@ AOP编程的支持
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E7%A5%9E%E5%99%A8%E6%8F%92%E4%BB%B6/" itemprop="url">
-		IntelliJ IDEA 中神器插件
+	<a href="/2021/09/02/%E4%BD%BF%E7%94%A8@Autowire%E6%B3%A8%E8%A7%A3%E4%B8%8E%E8%87%AA%E5%8A%A8%E8%A3%85%E9%85%8D/" itemprop="url">
+		使用@Autowire注解与自动装配
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							IntelliJ IDEA 中神器插件
-IDEA 插件安装 步骤IDEA里面，选择打开 File –&gt; Settings –&gt; Plugins
-在Plugins里面, 可以搜索需要的插件 **(下面的标题)**，然后安装
+							使用@Autowire注解与自动装配
 
+前面我们已经学会使用@Resource注解注入属性，并且我们还编码剖析了@Resource注解的实现原理。现在我们来学习使用@Autowire注解注入属性，本文是建立在编码剖析@Resource注解的实现原理的案例基础上的。
 
-如下图:
+-用@Autowire注解完成属性装配
+@Autowire注解和@Resource一样，同样也可以标注在字段或属性的setter方法上，但它默认按类型装配。我们将@Autowire注解标注在字段上，如将PersonServiceBean类的代码修改为：
 
-
-
-
-
--1.Lombok
-Lombok能以简单的注解形式来简化java代码，提高开发人员的开发效率。
-
-
-例如开发中经常需要写的javabean，都需要花时间去添加相应的getter/setter，也许还要去写构造器、equals 等方法，而且需要维护，当属性多时会出现大量的getter/setter方法，这些显得很冗长也没有太多技术含量，...
+123456789101112public class PersonS...
 						
 					</div>
 					
@@ -388,9 +364,9 @@ Lombok能以简单的注解形式来简化java代码，提高开发人员的开�
 
 
 
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E7%A5%9E%E5%99%A8%E6%8F%92%E4%BB%B6/" itemprop="url">
-		<time datetime="2021-08-31T13:14:55.457Z" itemprop="datePublished">
-	  		2021-08-31
+	<a href="/2021/09/02/%E4%BD%BF%E7%94%A8@Autowire%E6%B3%A8%E8%A7%A3%E4%B8%8E%E8%87%AA%E5%8A%A8%E8%A3%85%E9%85%8D/" itemprop="url">
+		<time datetime="2021-09-02T10:13:14.877Z" itemprop="datePublished">
+	  		2021-09-02
 	  </time>
 	</a> 
 
@@ -403,7 +379,7 @@ Lombok能以简单的注解形式来简化java代码，提高开发人员的开�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E7%A5%9E%E5%99%A8%E6%8F%92%E4%BB%B6/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/02/%E4%BD%BF%E7%94%A8@Autowire%E6%B3%A8%E8%A7%A3%E4%B8%8E%E8%87%AA%E5%8A%A8%E8%A3%85%E9%85%8D/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -414,34 +390,25 @@ Lombok能以简单的注解形式来简化java代码，提高开发人员的开�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E5%85%B3%E9%97%AD%E5%8F%82%E6%95%B0%E6%8F%90%E7%A4%BA/" itemprop="url">
-		IntelliJ IDEA 中关闭参数提示
+	<a href="/2021/09/02/%E7%BC%96%E7%A0%81%E5%89%96%E6%9E%90@Resource%E6%B3%A8%E8%A7%A3%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/" itemprop="url">
+		编码剖析@Resource注解的实现原理
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							IntelliJ IDEA 中关闭参数提示
-在 IntelliJ IDEA 2016.3.4(64) 这个版本更新之后，发现在代码中，方法调用的地方，会显示一些方法参数的提示，点不到，也不是一下就能看懂，对于阅读代码，很是不得劲。所以，还是找到地方，给他关闭了吧。具体现象，如下图：
+							编码剖析@Resource注解的实现原理
+上文我们已经学会使用@Resource注解注入属性。学是学会了，但也仅限于会使用而已，故我们要深入剖析其内部原理，才算真正明白。接下来我们就来编码剖析@Resource注解的实现原理，但这都是建立在用@Resource注解完成属性装配的案例基础上的。由于我们要使用dom4j工具来读取Sping的配置文件——beans.xml，所以需要将dom4j所需的jar包导入项目中。dom4j所需的jar包为：
 
 
+dom4j-1.6.1.jar
+jaxen-1.1-beta-6.jar
 
 
-如何关闭 intelliJ IDEA 的参数提示功能：
+使用dom4j工具读取到诸如
 
-
-
-
-如上操作即可关闭这个提示功能。
-暂时，我是不接受这个功能有什么好的地方。
-
-
-管了之后，这下代码看着就舒爽多啦。
-
-
-
-
+123&lt;bean id=&q...
 						
 					</div>
 					
@@ -456,9 +423,9 @@ Lombok能以简单的注解形式来简化java代码，提高开发人员的开�
 
 
 
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E5%85%B3%E9%97%AD%E5%8F%82%E6%95%B0%E6%8F%90%E7%A4%BA/" itemprop="url">
-		<time datetime="2021-08-31T09:49:26.548Z" itemprop="datePublished">
-	  		2021-08-31
+	<a href="/2021/09/02/%E7%BC%96%E7%A0%81%E5%89%96%E6%9E%90@Resource%E6%B3%A8%E8%A7%A3%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/" itemprop="url">
+		<time datetime="2021-09-02T10:01:40.666Z" itemprop="datePublished">
+	  		2021-09-02
 	  </time>
 	</a> 
 
@@ -471,7 +438,7 @@ Lombok能以简单的注解形式来简化java代码，提高开发人员的开�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E5%85%B3%E9%97%AD%E5%8F%82%E6%95%B0%E6%8F%90%E7%A4%BA/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/02/%E7%BC%96%E7%A0%81%E5%89%96%E6%9E%90@Resource%E6%B3%A8%E8%A7%A3%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -482,42 +449,28 @@ Lombok能以简单的注解形式来简化java代码，提高开发人员的开�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E8%AE%BE%E7%BD%AE%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F/" itemprop="url">
-		IntelliJ IDEA 中设置字体大小
+	<a href="/2021/09/02/%E7%94%A8@Resource%E6%B3%A8%E8%A7%A3%E5%AE%8C%E6%88%90%E5%B1%9E%E6%80%A7%E8%A3%85%E9%85%8D/" itemprop="url">
+		用@Resource注解完成属性装配
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							IntelliJ IDEA 中设置字体大小
-在使用这个intelliJ IDEA (JetBrains PyCharm)编辑器的时候，可能刚刚开始要设置合适的字体大小，但是除了设置，编辑代码时的文本的字体大小外。
-在现实console，就是那个log框的字体也是很小。这个地方的设置，也不是一下两下就能找到的。
+							用@Resource注解完成属性装配
+前面我们讲过spring的依赖注入有两种方式：
 
 
-*一开始未设置字体大小的图：*
+使用构造器注入。
+使用属性setter方法注入。
 
 
+但其实还有一种注入方式，我们没讲，那就是使用Field注入（用于注解方式）。在详细讲解这种方式之前，我们还须知道以下的知识点。注入依赖对象可以采用手工装配或自动装配，在实际应用中建议使用手工装配，因为自动装配会产生未知情况，开发人员无法预见最终的装配结果。手工装配依赖对象，在这种方式中又有两种编程方式：
 
 
-*1，设置普通文本的字体大小*
-这就是我们写代码的地方的字体大小的设置。
+在xml配置文件中，通过在bean节点下配置，如：
 
-
-
-
-*2，设置log的字体大小*
-这个是设置下面显示log，报错信息的地方的字体大小。
-
-
-
-
-最后，都设置完之后，的整体效果。
-
-
-
-
-*3，设置界面字体的大...
+1234&lt;bean id=&quot;personService&quot; c...
 						
 					</div>
 					
@@ -532,9 +485,9 @@ Lombok能以简单的注解形式来简化java代码，提高开发人员的开�
 
 
 
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E8%AE%BE%E7%BD%AE%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F/" itemprop="url">
-		<time datetime="2021-08-31T09:44:19.813Z" itemprop="datePublished">
-	  		2021-08-31
+	<a href="/2021/09/02/%E7%94%A8@Resource%E6%B3%A8%E8%A7%A3%E5%AE%8C%E6%88%90%E5%B1%9E%E6%80%A7%E8%A3%85%E9%85%8D/" itemprop="url">
+		<time datetime="2021-09-02T09:41:24.537Z" itemprop="datePublished">
+	  		2021-09-02
 	  </time>
 	</a> 
 
@@ -547,7 +500,7 @@ Lombok能以简单的注解形式来简化java代码，提高开发人员的开�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E8%AE%BE%E7%BD%AE%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/02/%E7%94%A8@Resource%E6%B3%A8%E8%A7%A3%E5%AE%8C%E6%88%90%E5%B1%9E%E6%80%A7%E8%A3%85%E9%85%8D/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -558,27 +511,21 @@ Lombok能以简单的注解形式来简化java代码，提高开发人员的开�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AAjdk%E7%89%88%E6%9C%AC/" itemprop="url">
-		IntelliJ IDEA 中如何配置多个jdk版本
+	<a href="/2021/09/02/Spring%E5%A6%82%E4%BD%95%E8%A3%85%E9%85%8D%E5%90%84%E7%A7%8D%E9%9B%86%E5%90%88%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%B1%9E%E6%80%A7/" itemprop="url">
+		Spring如何装配各种集合类型的属性
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							IntelliJ IDEA 中如何配置多个jdk版本
-有时候需要看Java源码，但是 Java 1.7 和 Java 1.8的差别的关系，有时候你想查看不同jdk版本的Java源码。或者你的项目需要测试不同Java jdk 版本的通用与否。那么这个编辑器支持多个版本的jdk同时存在，可以自由的切换具体实现，看下图，一次配置，可以随便使用，省事 安心。
+							Spring如何装配各种集合类型的属性
+在前面我们已经会注入基本类型对象和其他bean，现在我们就来学习如何注入各种集合类型。
 
+-Spring如何装配各种集合类型的属性
+首先新建一个普通的Java Project，名称为spring_collection，并迅速搭建好Spring的开发环境。接着在src目录下新建一个cn.itcast.service包，并在该包下创建PersonService接口，其代码为：
 
-
-
-
-
-
-这是选择的是1.8版本的jdk
-
-一般像使用eclipse的时候，还得整个环境变量，但是我的这个1.7的时候，好像也没修改环境变量，我的那个测试用 的helloworld项目的Java照样跑起来啦。
-不知道是不是这个配置可以无...
+123456789101112public interface PersonService &#123;    Set&lt;String&gt; getSets();    ...
 						
 					</div>
 					
@@ -593,9 +540,9 @@ Lombok能以简单的注解形式来简化java代码，提高开发人员的开�
 
 
 
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AAjdk%E7%89%88%E6%9C%AC/" itemprop="url">
-		<time datetime="2021-08-31T09:30:59.721Z" itemprop="datePublished">
-	  		2021-08-31
+	<a href="/2021/09/02/Spring%E5%A6%82%E4%BD%95%E8%A3%85%E9%85%8D%E5%90%84%E7%A7%8D%E9%9B%86%E5%90%88%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%B1%9E%E6%80%A7/" itemprop="url">
+		<time datetime="2021-09-02T09:34:04.448Z" itemprop="datePublished">
+	  		2021-09-02
 	  </time>
 	</a> 
 
@@ -608,7 +555,7 @@ Lombok能以简单的注解形式来简化java代码，提高开发人员的开�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AAjdk%E7%89%88%E6%9C%AC/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/02/Spring%E5%A6%82%E4%BD%95%E8%A3%85%E9%85%8D%E5%90%84%E7%A7%8D%E9%9B%86%E5%90%88%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%B1%9E%E6%80%A7/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -619,29 +566,23 @@ Lombok能以简单的注解形式来简化java代码，提高开发人员的开�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E5%88%9B%E5%BB%BA%E7%B1%BB%E6%B3%A8%E9%87%8A%E6%A8%A1%E6%9D%BF%E5%92%8C%E6%96%B9%E6%B3%95%E6%B3%A8%E9%87%8A%E6%A8%A1%E6%9D%BF/" itemprop="url">
-		IntelliJ IDEA 中创建类注释模板和方法注释模板
+	<a href="/2021/09/02/Spring+JDBC%E7%BB%84%E5%90%88%E5%BC%80%E5%8F%91/" itemprop="url">
+		Spring+JDBC组合开发
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							IntelliJ IDEA 中创建类注释模板和方法注释模板
-  在使用Idea的时候，它的注释模板很简单，不够详细；所有大多数开发者都想设置一个比较详细的注释模板，我现在把我了解的创建类注释模板和方法注释模板的操作记录下来，分享给大家
-
-
-我们需要定义的注释模板如下：类注释模板：
+							Spring+JDBC组合开发-搭建和配置Spring与JDBC整合的环境
+使用Spring+JDBC集成步骤如下：第一步，配置数据源。我们使用DBCP数据库连接池。我们首先在Eclipse中新建一个普通的Java Project，名称为springAndJDBC。接着导入所需Jar包到项目中，所需Jar包共有：
 
 
 
 
-方法注释模板：
+然后我们在Sping配置文件中——beans.xml配置数据源，即在beans.xml中加入如下内容：
 
-
-
-
-一、设置IDEA 中的类注释模板File -&gt; Settings -&gt; Editor -&gt; File and Code Templates -&gt; Files选择Class , Interface ，Enum 等等，我们都可以看到，在右侧区域中，在publi...
+12345678910111213141516&lt;bean id=&quot;dataSource&quot; class=&quot;org.apache.c...
 						
 					</div>
 					
@@ -656,9 +597,9 @@ Lombok能以简单的注解形式来简化java代码，提高开发人员的开�
 
 
 
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E5%88%9B%E5%BB%BA%E7%B1%BB%E6%B3%A8%E9%87%8A%E6%A8%A1%E6%9D%BF%E5%92%8C%E6%96%B9%E6%B3%95%E6%B3%A8%E9%87%8A%E6%A8%A1%E6%9D%BF/" itemprop="url">
-		<time datetime="2021-08-31T07:07:44.340Z" itemprop="datePublished">
-	  		2021-08-31
+	<a href="/2021/09/02/Spring+JDBC%E7%BB%84%E5%90%88%E5%BC%80%E5%8F%91/" itemprop="url">
+		<time datetime="2021-09-02T08:31:18.745Z" itemprop="datePublished">
+	  		2021-09-02
 	  </time>
 	</a> 
 
@@ -671,7 +612,7 @@ Lombok能以简单的注解形式来简化java代码，提高开发人员的开�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E5%88%9B%E5%BB%BA%E7%B1%BB%E6%B3%A8%E9%87%8A%E6%A8%A1%E6%9D%BF%E5%92%8C%E6%96%B9%E6%B3%95%E6%B3%A8%E9%87%8A%E6%A8%A1%E6%9D%BF/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/02/Spring+JDBC%E7%BB%84%E5%90%88%E5%BC%80%E5%8F%91/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -682,31 +623,19 @@ Lombok能以简单的注解形式来简化java代码，提高开发人员的开�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%A0%81%E7%9A%84%E5%BF%AB%E6%8D%B7%E7%BC%96%E8%BE%91%E6%A8%A1%E6%9D%BF/" itemprop="url">
-		IntelliJ IDEA 中如何设置代码的快捷编辑模板
+	<a href="/2021/09/02/Hibernate-5.0.7+Struts-2.3.24+Spring-4.2.4%E4%B8%89%E5%A4%A7%E6%A1%86%E6%9E%B6%E7%BA%AF%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F%E7%9A%84%E6%95%B4%E5%90%88/" itemprop="url">
+		Hibernate-5.0.7+Struts-2.3.24+Spring-4.2.4三大框架纯注解方式的整合
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							IntelliJ IDEA 中如何设置代码的快捷编辑模板
-看到老师在给你示范的时候，是不是sys，一回车，就直接System.out.println(“自己敲要输出的东西”);然后，估计你学习的时候，老师用的是eclipse编辑器，当你换了这个IntelliJ IDEA编辑器的时候，就不知道在哪设置了吧。
+							Hibernate-5.0.7+Struts-2.3.24+Spring-4.2.4三大框架纯注解方式的整合
+还记得我在《Spring入门第十讲——Hibernate-5.0.7+Struts-2.3.24+Spring-4.2.4三大框架整合开发》这一讲中介绍SSH三大框架整合的时候，说过这三个框架的整合一共有三种方式，其中前两种方式已经讲过了，本讲介绍第三种方式，即纯注解的方式。
 
-
-看下图，示范如何设置：
-
-
-
-
-
-
-图中只是简单的示范了一下，告诉你这个在哪找，然后自己要用什么模板，就可以自己在这地方设置了。我就有如下几个设置：
-
-
-for循环：fori效果如下：   for (int i = 0; i &lt; ; i++) {
-   }
-123&gt;fo...
+-搭建SSH注解开发的环境-创建web项目，引入jar包
+创建一个web项目，例如ssh3，并引入相关的jar包，那到底引入哪些jar包呢？相信你看过我的这篇文章——《Spring入门第十讲——Hiber...
 						
 					</div>
 					
@@ -721,9 +650,9 @@ for循环：fori效果如下：   for (int i = 0; i &lt; ; i++) {
 
 
 
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%A0%81%E7%9A%84%E5%BF%AB%E6%8D%B7%E7%BC%96%E8%BE%91%E6%A8%A1%E6%9D%BF/" itemprop="url">
-		<time datetime="2021-08-31T06:54:27.282Z" itemprop="datePublished">
-	  		2021-08-31
+	<a href="/2021/09/02/Hibernate-5.0.7+Struts-2.3.24+Spring-4.2.4%E4%B8%89%E5%A4%A7%E6%A1%86%E6%9E%B6%E7%BA%AF%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F%E7%9A%84%E6%95%B4%E5%90%88/" itemprop="url">
+		<time datetime="2021-09-02T08:10:08.817Z" itemprop="datePublished">
+	  		2021-09-02
 	  </time>
 	</a> 
 
@@ -736,7 +665,7 @@ for循环：fori效果如下：   for (int i = 0; i &lt; ; i++) {
 
 						
 							<span class="right">      	
-								<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%A0%81%E7%9A%84%E5%BF%AB%E6%8D%B7%E7%BC%96%E8%BE%91%E6%A8%A1%E6%9D%BF/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/02/Hibernate-5.0.7+Struts-2.3.24+Spring-4.2.4%E4%B8%89%E5%A4%A7%E6%A1%86%E6%9E%B6%E7%BA%AF%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F%E7%9A%84%E6%95%B4%E5%90%88/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -747,29 +676,19 @@ for循环：fori效果如下：   for (int i = 0; i &lt; ; i++) {
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE%E5%90%8C%E6%97%B6%E6%89%93%E5%BC%80%E5%A4%9A%E4%B8%AA%E6%96%87%E4%BB%B6%E4%B8%94%E5%88%86%E8%A1%8C%E6%98%BE%E7%A4%BA/" itemprop="url">
-		IntelliJ IDEA 中如何设置同时打开多个文件且分行显示
+	<a href="/2021/09/02/Spring%E7%9A%84Hibernate%E6%A8%A1%E6%9D%BF%E4%B8%8E%E5%BB%B6%E8%BF%9F%E5%8A%A0%E8%BD%BD%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/" itemprop="url">
+		Spring的Hibernate模板与延迟加载问题的解决
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							IntelliJ IDEA 中如何设置同时打开多个文件且分行显示
-有时候要是打开多个文件，要么都显示在一行，要么因为空间不足，就给省略显示，这样看着，或者点着，都不是很方便IntelliJ IDEA 这个编辑器就提供了应对办法，要是知道怎么设置，那是最好，不知道的可以参考如下图的修改：1，修改上限值，可以最多显示30个tabs，2，多行显示，不会拥挤在一行，或者干脆就收缩起来。
+							Spring的Hibernate模板与延迟加载问题的解决
+在上一讲中，我们已经学会了Hibernate-5.0.7、Struts-2.3.24和Spring-4.2.4这三个框架的整合。现在，我在其基础上讲解两个知识点，一个是Spring中Hibernate模板的使用，一个是使用Spring如何解决延迟加载问题。温馨提示：如果有小伙伴没看过前一讲，那么接下来你就别扯蛋了，劝你回去看看。
 
-
-具体显示效果如下：
-
-
-
-
-
-
-
-
-
-
+-Spring的Hibernate模板
+在Spring和Hibernate整合的过程中，Spring提供了一个Hibernate的模板类（即HibernateTemplate类），它可以用来简化Hibe...
 						
 					</div>
 					
@@ -784,9 +703,9 @@ for循环：fori效果如下：   for (int i = 0; i &lt; ; i++) {
 
 
 
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE%E5%90%8C%E6%97%B6%E6%89%93%E5%BC%80%E5%A4%9A%E4%B8%AA%E6%96%87%E4%BB%B6%E4%B8%94%E5%88%86%E8%A1%8C%E6%98%BE%E7%A4%BA/" itemprop="url">
-		<time datetime="2021-08-31T06:44:57.309Z" itemprop="datePublished">
-	  		2021-08-31
+	<a href="/2021/09/02/Spring%E7%9A%84Hibernate%E6%A8%A1%E6%9D%BF%E4%B8%8E%E5%BB%B6%E8%BF%9F%E5%8A%A0%E8%BD%BD%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/" itemprop="url">
+		<time datetime="2021-09-01T19:53:09.695Z" itemprop="datePublished">
+	  		2021-09-02
 	  </time>
 	</a> 
 
@@ -799,7 +718,7 @@ for循环：fori效果如下：   for (int i = 0; i &lt; ; i++) {
 
 						
 							<span class="right">      	
-								<a href="/2021/08/31/IntelliJ%20IDEA%20%E4%B8%AD%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE%E5%90%8C%E6%97%B6%E6%89%93%E5%BC%80%E5%A4%9A%E4%B8%AA%E6%96%87%E4%BB%B6%E4%B8%94%E5%88%86%E8%A1%8C%E6%98%BE%E7%A4%BA/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/02/Spring%E7%9A%84Hibernate%E6%A8%A1%E6%9D%BF%E4%B8%8E%E5%BB%B6%E8%BF%9F%E5%8A%A0%E8%BD%BD%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -810,25 +729,26 @@ for循环：fori效果如下：   for (int i = 0; i &lt; ; i++) {
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E5%A6%82%E4%BD%95%E9%87%8D%E5%91%BD%E5%90%8D%E5%8F%98%E9%87%8F%E6%96%87%E4%BB%B6%E6%96%87%E4%BB%B6%E5%A4%B9/" itemprop="url">
-		IntelliJ IDEA 如何重命名变量文件文件夹
+	<a href="/2021/09/02/Hibernate-5.0.7+Struts-2.3.24+Spring-4.2.4%E4%B8%89%E5%A4%A7%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88%E5%BC%80%E5%8F%91/" itemprop="url">
+		Hibernate-5.0.7+Struts-2.3.24+Spring-4.2.4三大框架整合开发
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							IntelliJ IDEA 如何重命名变量文件文件夹
-我表示，我在刚刚使用这个编辑器的时候，还真不知道怎么去重命名一个变量，重命名一个文件，或者一个文件夹。
-理论上讲，你要是改动一个地方，那么，其他所有引用的地方，应该跟着都给自动的改了的。
-不然，你一个个的改，要是引用的地方多了去了，那不改死你啊。
-所以，这肯定有个方便快捷的地方来实现这个功能的。说这么多，也就一个快捷键的事。
-（有兄台表示：我这个是eclipse的快捷键。没错，这就是eclipse上的快捷键吧，这个是可以设置的）
+							Hibernate-5.0.7+Struts-2.3.24+Spring-4.2.4三大框架整合开发-回顾SSH框架
+至此，Hibernate-5.0.7、Struts-2.3.24和Spring-4.2.4这三个框架，我们已经都过了一遍了。现在，咱就要学习如何整合这三个框架进行开发了。在这之前，咱就来先回顾一下这三个框架。
 
 
 
+-SSH框架整合思想
+Hibernate-5.0.7、Struts-2.3.24和Spring-4.2.4这三个框架都会应用在JavaEE三层结构中，每一层都用到了不同的框架。SSH框架整合的思想可以用下图来表示。
 
-至于这个快捷键，不要太在意，因为，我们使用的系统不同，键盘映射不同，也就是keymap不同，可能有...
+
+
+-SSH框架的整合
+Hibernate...
 						
 					</div>
 					
@@ -843,9 +763,9 @@ for循环：fori效果如下：   for (int i = 0; i &lt; ; i++) {
 
 
 
-	<a href="/2021/08/31/IntelliJ%20IDEA%20%E5%A6%82%E4%BD%95%E9%87%8D%E5%91%BD%E5%90%8D%E5%8F%98%E9%87%8F%E6%96%87%E4%BB%B6%E6%96%87%E4%BB%B6%E5%A4%B9/" itemprop="url">
-		<time datetime="2021-08-30T20:44:46.498Z" itemprop="datePublished">
-	  		2021-08-31
+	<a href="/2021/09/02/Hibernate-5.0.7+Struts-2.3.24+Spring-4.2.4%E4%B8%89%E5%A4%A7%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88%E5%BC%80%E5%8F%91/" itemprop="url">
+		<time datetime="2021-09-01T18:34:48.083Z" itemprop="datePublished">
+	  		2021-09-02
 	  </time>
 	</a> 
 
@@ -858,7 +778,7 @@ for循环：fori效果如下：   for (int i = 0; i &lt; ; i++) {
 
 						
 							<span class="right">      	
-								<a href="/2021/08/31/IntelliJ%20IDEA%20%E5%A6%82%E4%BD%95%E9%87%8D%E5%91%BD%E5%90%8D%E5%8F%98%E9%87%8F%E6%96%87%E4%BB%B6%E6%96%87%E4%BB%B6%E5%A4%B9/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/02/Hibernate-5.0.7+Struts-2.3.24+Spring-4.2.4%E4%B8%89%E5%A4%A7%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88%E5%BC%80%E5%8F%91/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>

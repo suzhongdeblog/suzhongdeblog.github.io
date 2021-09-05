@@ -232,19 +232,38 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/27/SpringCloudConfig%E4%B9%8B%E5%A4%96%E9%83%A8%E9%9B%86%E4%B8%AD%E5%8C%96%E9%85%8D%E7%BD%AE%E7%AE%A1%E7%90%86%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		SpringCloudConfig之外部集中化配置管理进阶篇
+	<a href="/2021/08/29/mall%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EJenkins%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
+		mall在Linux环境基于Jenkins自动化部署部署篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							SpringCloudConfig之外部集中化配置管理进阶篇
-Spring Cloud Config 可以为微服务架构中的应用提供集中化的外部配置支持，它分为服务端和客户端两个部分，本文将对其用法进行详细介绍。
+							mall在Linux环境基于Jenkins自动化部署部署篇
+本文是mall项目的专属Jenkins自动化部署方法。
 
--Spring Cloud Config 简介
-Spring Cloud Config 分为服务端和客户端两个部分。服务端被称为分布式配置中心，它是个独立的应用，可以从配置仓库获取配置信息并提供给客户端使用。客户端可以通过配置中心来获取配置信息，在启动时加载配置。Spring Cloud Config 的配置中心默认采用Git来存储配置信息，所以天然就支持配置信息的版本管理，并...
+-Jenkins的基本使用
+关于Jenkins的基本使用可以参考：使用Jenkins一键打包部署SpringBoot应用，就是这么6！
+
+-执行脚本准备
+首先我们先把需要远程执行的脚本准备好。
+
+
+脚本文件都存放在了mall项目的/document/sh目录下：
+上传脚本前在IDEA中修改所有脚本文件的换行符格式为LF，否则脚本会无法执行；
+
+
+
+
+将所有脚本文件上传到指定目录，这里我们上传到/mydata/sh目录下；
+
+
+
+
+将所有脚本文件都修改为可执行文件:
+
+1c...
 						
 					</div>
 					
@@ -259,9 +278,9 @@ Spring Cloud Config 分为服务端和客户端两个部分。服务端被称为
 
 
 
-	<a href="/2021/08/27/SpringCloudConfig%E4%B9%8B%E5%A4%96%E9%83%A8%E9%9B%86%E4%B8%AD%E5%8C%96%E9%85%8D%E7%BD%AE%E7%AE%A1%E7%90%86%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		<time datetime="2021-08-27T15:19:19.699Z" itemprop="datePublished">
-	  		2021-08-27
+	<a href="/2021/08/29/mall%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EJenkins%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-28T16:38:43.021Z" itemprop="datePublished">
+	  		2021-08-29
 	  </time>
 	</a> 
 
@@ -274,7 +293,7 @@ Spring Cloud Config 分为服务端和客户端两个部分。服务端被称为
 
 						
 							<span class="right">      	
-								<a href="/2021/08/27/SpringCloudConfig%E4%B9%8B%E5%A4%96%E9%83%A8%E9%9B%86%E4%B8%AD%E5%8C%96%E9%85%8D%E7%BD%AE%E7%AE%A1%E7%90%86%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/29/mall%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EJenkins%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E9%83%A8%E7%BD%B2%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -285,22 +304,22 @@ Spring Cloud Config 分为服务端和客户端两个部分。服务端被称为
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/27/SpringCloudZuul%E4%B9%8BAPI%E7%BD%91%E5%85%B3%E6%9C%8D%E5%8A%A1%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		SpringCloudZuul之API网关服务进阶篇
+	<a href="/2021/08/29/mall%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EDockerCompose%E5%AE%B9%E5%99%A8%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
+		mall在Linux环境基于DockerCompose容器下的部署篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							SpringCloudZuul之API网关服务进阶篇
-Spring Cloud Zuul 是Spring Cloud Netflix 子项目的核心组件之一，可以作为微服务架构中的API网关使用，支持动态路由与过滤功能，本文将对其用法进行详细介绍。
+							mall在Linux环境基于DockerCompose容器下的部署篇
+最简单的mall在Linux下部署方式，使用两个Docker Compose脚本即可完成部署。第一个脚本用于部署mall运行所依赖的服务（MySQL、Redis、Nginx、RabbitMQ、MongoDB、Elasticsearch、Logstash、Kibana），第二个脚本用于部署mall中的应用（mall-admin、mall-search、mall-portal）。
 
--Zuul简介
-API网关为微服务架构中的服务提供了统一的访问入口，客户端通过API网关访问相关服务。API网关的定义类似于设计模式中的门面模式，它相当于整个微服务架构中的门面，所有客户端的访问都通过它来进行路由及过滤。它实现了请求路由、负载均衡、校验过滤、服务容错、服务聚合等功能。
+-docker环境搭建及使用
+具体参考：开发者必备Docker命令
 
--创建一个zuul-proxy模块
-这里我们创建一个zu...
+-docker-compose环境搭建及使用
+具体参考：使用Docker...
 						
 					</div>
 					
@@ -315,9 +334,9 @@ API网关为微服务架构中的服务提供了统一的访问入口，客户�
 
 
 
-	<a href="/2021/08/27/SpringCloudZuul%E4%B9%8BAPI%E7%BD%91%E5%85%B3%E6%9C%8D%E5%8A%A1%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		<time datetime="2021-08-27T13:12:18.732Z" itemprop="datePublished">
-	  		2021-08-27
+	<a href="/2021/08/29/mall%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EDockerCompose%E5%AE%B9%E5%99%A8%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-28T16:01:30.199Z" itemprop="datePublished">
+	  		2021-08-29
 	  </time>
 	</a> 
 
@@ -330,7 +349,7 @@ API网关为微服务架构中的服务提供了统一的访问入口，客户�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/27/SpringCloudZuul%E4%B9%8BAPI%E7%BD%91%E5%85%B3%E6%9C%8D%E5%8A%A1%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/29/mall%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EDockerCompose%E5%AE%B9%E5%99%A8%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -341,19 +360,26 @@ API网关为微服务架构中的服务提供了统一的访问入口，客户�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/27/SpringCloudOpenFeign%E5%A3%B0%E6%98%8E%E5%BC%8F%E7%9A%84%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		SpringCloudOpenFeign声明式的服务调用工具进阶篇
+	<a href="/2021/08/28/mall%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EDocker%E5%AE%B9%E5%99%A8%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
+		mall在Linux环境基于Docker容器下的部署篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							SpringCloudOpenFeign声明式的服务调用工具进阶篇
-Spring Cloud OpenFeign 是声明式的服务调用工具，它整合了Ribbon和Hystrix，拥有负载均衡和服务容错功能，本文将对其用法进行详细介绍。
+							mall在Linux环境基于Docker容器下的部署篇
+本文主要以图文的形式讲解mall在Linux环境下的部署，涉及在Docker容器中安装MySQL、Redis、Nginx、RabbitMQ、MongoDB、Elasticsearch、Logstash、Kibana，以及SpringBoot应用部署，基于CenterOS7.6。
 
--Feign简介
-Feign是声明式的服务调用工具，我们只需创建一个接口并用注解的方式来配置它，就可以实现对某个服务接口的调用，简化了直接使用RestTemplate来调用服务接口的开发量。Feign具备可插拔的注解支持，同时支持Feign注解、JAX-RS注解及SpringMvc注解。当使用Feign时，Spring Cloud集成了Ribbon和Eur...
+-Docker环境安装
+安装yum-utils：
+
+1yum install -y yum-utils device-mapper-persistent-data lvm2
+
+
+为yum源添加docker仓库位置：
+
+1yum-config-manager...
 						
 					</div>
 					
@@ -368,9 +394,9 @@ Feign是声明式的服务调用工具，我们只需创建一个接口并用注
 
 
 
-	<a href="/2021/08/27/SpringCloudOpenFeign%E5%A3%B0%E6%98%8E%E5%BC%8F%E7%9A%84%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		<time datetime="2021-08-27T10:02:16.017Z" itemprop="datePublished">
-	  		2021-08-27
+	<a href="/2021/08/28/mall%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EDocker%E5%AE%B9%E5%99%A8%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-28T13:30:44.517Z" itemprop="datePublished">
+	  		2021-08-28
 	  </time>
 	</a> 
 
@@ -383,7 +409,7 @@ Feign是声明式的服务调用工具，我们只需创建一个接口并用注
 
 						
 							<span class="right">      	
-								<a href="/2021/08/27/SpringCloudOpenFeign%E5%A3%B0%E6%98%8E%E5%BC%8F%E7%9A%84%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/28/mall%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EDocker%E5%AE%B9%E5%99%A8%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -394,22 +420,32 @@ Feign是声明式的服务调用工具，我们只需创建一个接口并用注
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/27/SpringCloudHystrixDashboard%E6%96%AD%E8%B7%AF%E5%99%A8%E6%89%A7%E8%A1%8C%E7%9B%91%E6%8E%A7%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		SpringCloudHystrixDashboard断路器执行监控进阶篇
+	<a href="/2021/08/28/mall%E5%9C%A8Windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
+		Docker环境下秒建Redis集群
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							SpringCloudHystrixDashboard断路器执行监控进阶篇
-Hystrix Dashboard 是Spring Cloud中查看Hystrix实例执行情况的一种仪表盘组件，支持查看单个实例和查看集群实例，本文将对其用法进行详细介绍。
+							mall在Windows环境下的部署篇
+本文主要以图文的形式讲解mall项目所需环境在windows下的安装，主要包括IDEA、Mysql、Redis、Mongodb、RabbitMQ、Elasticsearch、Logstash、Kibana、OSS。
 
--简介
-Hystrix提供了Hystrix Dashboard来实时监控HystrixCommand方法的执行情况。 Hystrix Dashboard可以有效地反映出每个Hystrix实例的运行情况，帮助我们快速发现系统中的问题，从而采取对应措施。
+-IDEA
+关于IDEA的安装与使用请参考：https://github.com/judasn/IntelliJ-IDEA-Tutorial
+搜索插件仓库，安装插件Lombok；
 
--Hystrix 单个实例监控
-我们先通过使用Hystrix Dashboard监控单个...
+
+
+
+将项目下载到本地，然后直接打开。
+
+
+
+
+
+-Mysql
+下载并安装mysql5.7版本，下载地址：https://dev.mysql.com/do...
 						
 					</div>
 					
@@ -424,9 +460,9 @@ Hystrix提供了Hystrix Dashboard来实时监控HystrixCommand方法的执行情
 
 
 
-	<a href="/2021/08/27/SpringCloudHystrixDashboard%E6%96%AD%E8%B7%AF%E5%99%A8%E6%89%A7%E8%A1%8C%E7%9B%91%E6%8E%A7%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		<time datetime="2021-08-27T09:41:38.079Z" itemprop="datePublished">
-	  		2021-08-27
+	<a href="/2021/08/28/mall%E5%9C%A8Windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-28T10:00:36.489Z" itemprop="datePublished">
+	  		2021-08-28
 	  </time>
 	</a> 
 
@@ -439,7 +475,7 @@ Hystrix提供了Hystrix Dashboard来实时监控HystrixCommand方法的执行情
 
 						
 							<span class="right">      	
-								<a href="/2021/08/27/SpringCloudHystrixDashboard%E6%96%AD%E8%B7%AF%E5%99%A8%E6%89%A7%E8%A1%8C%E7%9B%91%E6%8E%A7%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/28/mall%E5%9C%A8Windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -450,19 +486,23 @@ Hystrix提供了Hystrix Dashboard来实时监控HystrixCommand方法的执行情
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/27/SpringCloudHystrix%E6%9C%8D%E5%8A%A1%E5%AE%B9%E9%94%99%E4%BF%9D%E6%8A%A4%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		SpringCloudHystrix服务容错保护进阶篇
+	<a href="/2021/08/28/SpringCloud%E4%B9%8BSwagger%E5%BE%AE%E6%9C%8D%E5%8A%A1%E8%81%9A%E5%90%88%E6%96%87%E6%A1%A3%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		SpringCloud之Swagger微服务聚合文档进阶篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							SpringCloudHystrix服务容错保护进阶篇
-Spring Cloud Hystrix 是Spring Cloud Netflix 子项目的核心组件之一，具有服务容错及线程隔离等一系列服务保护功能，本文将对其用法进行详细介绍。
+							SpringCloud之Swagger微服务聚合文档进阶篇
+记得我的mall-swarm微服务项目中，没有做API文档聚合，访问每个服务的API文档都需要访问单独的swagger-ui.html页面，既然我们使用了微服务，就应该有统一的API文档入口，最近发现knife4j有这方面的支持，本文将详细介绍其实现，希望对大家有所帮助！
 
--Hystrix 简介
-在微服务架构中，服务与服务之间通过远程调用的方式进行通信，一旦某个被调用的服务发生了故障，其依赖服务也会发生故障，此时就会发生故障的蔓延，最终导致系统瘫痪。Hystrix实现了断路器模式，当某个服务发生故障时，通过断路器的监控，给调用方返回一个错误响应，而不是长时间的等待，这样就不会使得调用方由于长时间得不到响应而占用线程，从而...
+-前置知识
+我们将采用Nacos作为注册中心，Gateway作为网关，使用knife4j来生成API文档，对这些技术不了解的朋友可以看下下面的文章。
+
+
+Spring Cloud Gateway：新一代API网关服务
+Spring Cloud Alibaba...
 						
 					</div>
 					
@@ -477,9 +517,9 @@ Spring Cloud Hystrix 是Spring Cloud Netflix 子项目的核心组件之一，�
 
 
 
-	<a href="/2021/08/27/SpringCloudHystrix%E6%9C%8D%E5%8A%A1%E5%AE%B9%E9%94%99%E4%BF%9D%E6%8A%A4%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		<time datetime="2021-08-27T09:14:10.138Z" itemprop="datePublished">
-	  		2021-08-27
+	<a href="/2021/08/28/SpringCloud%E4%B9%8BSwagger%E5%BE%AE%E6%9C%8D%E5%8A%A1%E8%81%9A%E5%90%88%E6%96%87%E6%A1%A3%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-28T09:20:56.992Z" itemprop="datePublished">
+	  		2021-08-28
 	  </time>
 	</a> 
 
@@ -492,7 +532,7 @@ Spring Cloud Hystrix 是Spring Cloud Netflix 子项目的核心组件之一，�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/27/SpringCloudHystrix%E6%9C%8D%E5%8A%A1%E5%AE%B9%E9%94%99%E4%BF%9D%E6%8A%A4%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/28/SpringCloud%E4%B9%8BSwagger%E5%BE%AE%E6%9C%8D%E5%8A%A1%E8%81%9A%E5%90%88%E6%96%87%E6%A1%A3%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -503,22 +543,22 @@ Spring Cloud Hystrix 是Spring Cloud Netflix 子项目的核心组件之一，�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/27/SpringCloudRibbon%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E7%9A%84%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		SpringCloudRibbon负载均衡的服务调用进阶篇
+	<a href="/2021/08/28/SpringCloud%E4%B9%8BOauth2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%A4%84%E7%90%86%E7%BB%93%E6%9E%9C%E7%9A%84%E6%9C%80%E4%BD%B3%E6%96%B9%E6%A1%88%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		SpringCloud之Oauth2自定义处理结果的最佳方案进阶篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							SpringCloudRibbon负载均衡的服务调用进阶篇
-Spring Cloud Ribbon 是Spring Cloud Netflix 子项目的核心组件之一，主要给服务间调用及API网关转发提供负载均衡的功能，本文将对其用法进行详细介绍。
+							SpringCloud之Oauth2自定义处理结果的最佳方案进阶篇
+在《微服务权限终极解决方案，Spring Cloud Gateway + Oauth2 实现统一认证和鉴权！》一文中我们介绍了Oauth2在微服务中的使用，但是我们没有自定义Oauth2默认的处理结果。有时候我们真的很希望Oauth2中的认证授权能返回我们指定格式的结果，比如登录认证的结果、网关鉴权不通过的结果等等。本文将详细介绍Oauth2中自定义处理结果的方案，希望对大家有所帮助！
 
--Ribbon简介
-在微服务架构中，很多服务都会部署多个，其他服务去调用该服务的时候，如何保证负载均衡是个不得不去考虑的问题。负载均衡可以增加系统的可用性和扩展性，当我们使用RestTemplate来调用其他服务时，Ribbon可以很方便的实现负载均衡功能。
+-解决什么问题
+自定义Oauth2处理结果，主要是为了统一接口返回信息的格式，从下面几个方面着手。
 
--RestTemplate的使用
-RestTemplate是一个HTTP客户端，使...
+
+自定义Oauth2登录认证成功...
 						
 					</div>
 					
@@ -533,9 +573,9 @@ RestTemplate是一个HTTP客户端，使...
 
 
 
-	<a href="/2021/08/27/SpringCloudRibbon%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E7%9A%84%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		<time datetime="2021-08-27T08:38:57.421Z" itemprop="datePublished">
-	  		2021-08-27
+	<a href="/2021/08/28/SpringCloud%E4%B9%8BOauth2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%A4%84%E7%90%86%E7%BB%93%E6%9E%9C%E7%9A%84%E6%9C%80%E4%BD%B3%E6%96%B9%E6%A1%88%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-28T08:41:08.768Z" itemprop="datePublished">
+	  		2021-08-28
 	  </time>
 	</a> 
 
@@ -548,7 +588,7 @@ RestTemplate是一个HTTP客户端，使...
 
 						
 							<span class="right">      	
-								<a href="/2021/08/27/SpringCloudRibbon%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E7%9A%84%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/28/SpringCloud%E4%B9%8BOauth2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%A4%84%E7%90%86%E7%BB%93%E6%9E%9C%E7%9A%84%E6%9C%80%E4%BD%B3%E6%96%B9%E6%A1%88%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -559,19 +599,23 @@ RestTemplate是一个HTTP客户端，使...
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/27/SpringCloudEureka%E6%9C%8D%E5%8A%A1%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		SpringCloudEureka服务注册与发现进阶篇
+	<a href="/2021/08/28/SpringCloudGateway%E4%B9%8BOauth2%E5%AE%9E%E7%8E%B0%E7%BB%9F%E4%B8%80%E8%AE%A4%E8%AF%81%E5%92%8C%E9%89%B4%E6%9D%83%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		SpringCloudGateway之Oauth2实现统一认证和鉴权进阶篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							SpringCloudEureka服务注册与发现进阶篇
-Spring Cloud Eureka是Spring Cloud Netflix 子项目的核心组件之一，主要用于微服务架构中的服务治理。 本文将对搭建Eureka注册中心，搭建Eureka客户端，搭建Eureka集群及给Eureka注册中心添加登录认证进行介绍。
+							SpringCloudGateway之Oauth2实现统一认证和鉴权进阶篇
+最近发现了一个很好的微服务权限解决方案，可以通过认证服务进行统一认证，然后通过网关来统一校验认证和鉴权。此方案为目前最新方案，仅支持Spring Boot 2.2.0、Spring Cloud Hoxton 以上版本，本文将详细介绍该方案的实现，希望对大家有所帮助！
 
--Eureka简介
-在微服务架构中往往会有一个注册中心，每个微服务都会向注册中心去注册自己的地址及端口信息，注册中心维护着服务名称与服务实例的对应关系。每个微服务都会定时从注册中心获取服务列表，同时汇报自己的运行情况，这样当有的服务需要调用其他服务时，就可以从自己获取到的...
+-前置知识
+我们将采用Nacos作为注册中心，Gateway作为网关，使用nimbus-jose-jwtJWT库操作JWT令牌，对这些技术不了解的朋友可以看下下面的文章。
+
+
+Spring Cloud Gateway：新一代API网关服务
+Spri...
 						
 					</div>
 					
@@ -586,9 +630,9 @@ Spring Cloud Eureka是Spring Cloud Netflix 子项目的核心组件之一，主�
 
 
 
-	<a href="/2021/08/27/SpringCloudEureka%E6%9C%8D%E5%8A%A1%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		<time datetime="2021-08-27T07:25:56.824Z" itemprop="datePublished">
-	  		2021-08-27
+	<a href="/2021/08/28/SpringCloudGateway%E4%B9%8BOauth2%E5%AE%9E%E7%8E%B0%E7%BB%9F%E4%B8%80%E8%AE%A4%E8%AF%81%E5%92%8C%E9%89%B4%E6%9D%83%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-28T08:13:53.478Z" itemprop="datePublished">
+	  		2021-08-28
 	  </time>
 	</a> 
 
@@ -601,7 +645,7 @@ Spring Cloud Eureka是Spring Cloud Netflix 子项目的核心组件之一，主�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/27/SpringCloudEureka%E6%9C%8D%E5%8A%A1%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/28/SpringCloudGateway%E4%B9%8BOauth2%E5%AE%9E%E7%8E%B0%E7%BB%9F%E4%B8%80%E8%AE%A4%E8%AF%81%E5%92%8C%E9%89%B4%E6%9D%83%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -612,23 +656,24 @@ Spring Cloud Eureka是Spring Cloud Netflix 子项目的核心组件之一，主�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/27/SpringCloud%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84%E6%A6%82%E8%A7%88%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		SpringCloud整体架构概览进阶篇
+	<a href="/2021/08/28/SpringCloud%E4%B9%8B%E4%BD%BF%E7%94%A8Seata%E5%BD%BB%E5%BA%95%E8%A7%A3%E5%86%B3Spring%20Cloud%E4%B8%AD%E7%9A%84%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1%E9%97%AE%E9%A2%98%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		SpringCloud之使用Seata彻底解决Spring Cloud中的分布式事务问题进阶篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							SpringCloud整体架构概览进阶篇-什么是SpringCloud-目标
-协调任何服务，简化分布式系统开发。
+							SpringCloud之使用Seata彻底解决Spring Cloud中的分布式事务问题进阶篇
+Seata是Alibaba开源的一款分布式事务解决方案，致力于提供高性能和简单易用的分布式事务服务，本文将通过一个简单的下单业务场景来对其用法进行详细介绍。
 
--简介
-构建分布式系统不应该是复杂的，SpringCloud对常见的分布式系统模式提供了简单易用的编程模型，帮助开发者构建弹性、可靠、协调的应用程序。 SpringCloud是在SpringBoot的基础上构建的，使开发者可以轻松入门并快速提高工作效率。 SpringCloud为开发人员提供了快速构建分布式系统架构的工具，例如配置管理，服务发现，断路器，智能路由，微代理，控制总线，一次性令牌，全局锁定，领导选举，分布式会话，集群状态等。
+-什么是分布式事务问题？-单体应用
+单体应用中，一个业务操作需要调用三个模块完成，此时数据的一致性由本地事务来保证。
 
--整体架构
 
--SpringClo...
+
+-微服务应用
+随着业务需求的变化，单体应用被拆分成微服务应用，原来的三个模块被拆分成三个独立的应用，分别使用独立的数据源，业务操作需要调用三个服务来完成。此时每个服务内部的数据一致性由本地事务来保证，但是全局的数据...
 						
 					</div>
 					
@@ -643,9 +688,9 @@ Spring Cloud Eureka是Spring Cloud Netflix 子项目的核心组件之一，主�
 
 
 
-	<a href="/2021/08/27/SpringCloud%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84%E6%A6%82%E8%A7%88%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
-		<time datetime="2021-08-27T06:42:02.640Z" itemprop="datePublished">
-	  		2021-08-27
+	<a href="/2021/08/28/SpringCloud%E4%B9%8B%E4%BD%BF%E7%94%A8Seata%E5%BD%BB%E5%BA%95%E8%A7%A3%E5%86%B3Spring%20Cloud%E4%B8%AD%E7%9A%84%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1%E9%97%AE%E9%A2%98%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-28T07:32:22.230Z" itemprop="datePublished">
+	  		2021-08-28
 	  </time>
 	</a> 
 
@@ -658,7 +703,7 @@ Spring Cloud Eureka是Spring Cloud Netflix 子项目的核心组件之一，主�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/27/SpringCloud%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84%E6%A6%82%E8%A7%88%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/28/SpringCloud%E4%B9%8B%E4%BD%BF%E7%94%A8Seata%E5%BD%BB%E5%BA%95%E8%A7%A3%E5%86%B3Spring%20Cloud%E4%B8%AD%E7%9A%84%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1%E9%97%AE%E9%A2%98%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -669,27 +714,23 @@ Spring Cloud Eureka是Spring Cloud Netflix 子项目的核心组件之一，主�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7MySQLWorkbench%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
-		开发工具Postman接口调试工具入门篇
+	<a href="/2021/08/28/SpringCloudAlibaba%E4%B9%8BSentinel%E5%AE%9E%E7%8E%B0%E7%86%94%E6%96%AD%E4%B8%8E%E9%99%90%E6%B5%81%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		SpringCloudAlibaba之Sentinel实现熔断与限流进阶篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							开发工具MySQLWorkbench客户端工具入门篇
-在我们选择工具的时候，往往会优先选择那些免费又好用的工具！Navicat作为一款付费软件，虽然功能强大，但也阻止不了我们探索新工具的步伐。最近体验了一把MySQL的官方客户端工具MySQL Workbench，本文将对其和Navicat做个对比，看看它能否取代Navicat!
+							SpringCloudAlibaba之Sentinel实现熔断与限流进阶篇
+Spring Cloud Alibaba 致力于提供微服务开发的一站式解决方案，Sentinel 作为其核心组件之一，具有熔断与限流等一系列服务保护功能，本文将对其用法进行详细介绍。
 
--安装
-我们先把MySQL Workbench安装好，其中有个小坑需要注意下。
+-Sentinel简介
+随着微服务的流行，服务和服务之间的稳定性变得越来越重要。 Sentinel 以流量为切入点，从流量控制、熔断降级、系统负载保护等多个维度保护服务的稳定性。
 
-
-首先我们需要下载MySQL Workbench的安装包，下载地址：https://dev.mysql.com/downloads/workbench/
-
-
-
-
-下载完成后我们双...
+-Sentinel具有如下特性:
+丰富的应用场景：承接了阿里巴巴近 10 年的双十一大促流量的核心场景，例如秒杀，可以实时熔断下游不可用应用；
+完备的...
 						
 					</div>
 					
@@ -704,9 +745,9 @@ Spring Cloud Eureka是Spring Cloud Netflix 子项目的核心组件之一，主�
 
 
 
-	<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7MySQLWorkbench%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
-		<time datetime="2021-08-26T21:38:19.953Z" itemprop="datePublished">
-	  		2021-08-27
+	<a href="/2021/08/28/SpringCloudAlibaba%E4%B9%8BSentinel%E5%AE%9E%E7%8E%B0%E7%86%94%E6%96%AD%E4%B8%8E%E9%99%90%E6%B5%81%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-28T07:00:25.769Z" itemprop="datePublished">
+	  		2021-08-28
 	  </time>
 	</a> 
 
@@ -719,7 +760,7 @@ Spring Cloud Eureka是Spring Cloud Netflix 子项目的核心组件之一，主�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7MySQLWorkbench%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8%E7%AF%87/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/28/SpringCloudAlibaba%E4%B9%8BSentinel%E5%AE%9E%E7%8E%B0%E7%86%94%E6%96%AD%E4%B8%8E%E9%99%90%E6%B5%81%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -730,22 +771,23 @@ Spring Cloud Eureka是Spring Cloud Netflix 子项目的核心组件之一，主�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Postman%E6%8E%A5%E5%8F%A3%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
-		开发工具Postman接口调试工具入门篇
+	<a href="/2021/08/28/SpringCloudAlibaba%E4%B9%8BNacos%20%E4%BD%9C%E4%B8%BA%E6%B3%A8%E5%86%8C%E4%B8%AD%E5%BF%83%E5%92%8C%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83%E4%BD%BF%E7%94%A8%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		SpringCloudAlibaba之Nacos 作为注册中心和配置中心使用进阶篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							开发工具Postman接口调试工具入门篇
-在使用Swagger的时候，你是否会有这种感觉：提交参数为JSON没法格式化，参数错了查找麻烦，返回结果没法折叠，太长了没法看！Swagger结合Postman使用后这一情况有很大改变，今天我们来讲下如何使用Postman增强Swagger的功能，希望对大家有所帮助！
+							SpringCloudAlibaba之Nacos 作为注册中心和配置中心使用进阶篇
+Spring Cloud Alibaba 致力于提供微服务开发的一站式解决方案，Nacos 作为其核心组件之一，可以作为注册中心和配置中心使用，本文将对其用法进行详细介绍。
 
--Postman使用
-Postman是一款非常好用的接口调试工具，界面漂亮且功能强大，对Postman不了解的可以看下《Postman：API接口调试利器》。
+-Nacos简介
+Nacos 致力于帮助您发现、配置和管理微服务。Nacos 提供了一组简单易用的特性集，帮助您快速实现动态服务发现、服务配置、服务元数据及流量管理。
 
--Swagger结合Postman使用
-下面介绍下如何将Swagger API导入到Postman中去，然后使用Pos...
+-Nacos 具有如下特性:
+服务发现和服务健康监测：支持基于DNS和基于RPC的服务发现，支持对服务的实时的健康检查，阻止向不健康的主机或服务实例发送请求；
+动态...
 						
 					</div>
 					
@@ -760,9 +802,9 @@ Postman是一款非常好用的接口调试工具，界面漂亮且功能强大�
 
 
 
-	<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Postman%E6%8E%A5%E5%8F%A3%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
-		<time datetime="2021-08-26T21:27:42.614Z" itemprop="datePublished">
-	  		2021-08-27
+	<a href="/2021/08/28/SpringCloudAlibaba%E4%B9%8BNacos%20%E4%BD%9C%E4%B8%BA%E6%B3%A8%E5%86%8C%E4%B8%AD%E5%BF%83%E5%92%8C%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83%E4%BD%BF%E7%94%A8%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-27T21:07:15.412Z" itemprop="datePublished">
+	  		2021-08-28
 	  </time>
 	</a> 
 
@@ -775,7 +817,7 @@ Postman是一款非常好用的接口调试工具，界面漂亮且功能强大�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/27/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Postman%E6%8E%A5%E5%8F%A3%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8%E7%AF%87/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/28/SpringCloudAlibaba%E4%B9%8BNacos%20%E4%BD%9C%E4%B8%BA%E6%B3%A8%E5%86%8C%E4%B8%AD%E5%BF%83%E5%92%8C%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83%E4%BD%BF%E7%94%A8%E8%BF%9B%E9%98%B6%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
