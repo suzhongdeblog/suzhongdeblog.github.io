@@ -232,22 +232,22 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/29/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E9%A1%B9%E7%9B%AE%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/" itemprop="url">
-		前后端分离项目如何解决跨域问题
+	<a href="/2021/08/29/Elasticsearch%E5%8D%87%E7%BA%A77.x%E7%89%88%E6%9C%AC/" itemprop="url">
+		Elasticsearch升级7.x版本
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							前后端分离项目如何解决跨域问题
-跨域资源共享（CORS）是前后端分离项目很常见的问题，本文主要介绍当SpringBoot应用整合SpringSecurity以后如何解决该问题。
+							Elasticsearch升级7.x版本
+最近想把我的mall项目升级下，支持SpringBoot 2.3.0 版本。升级过程中发现需要升级Elasticsearch到7.x版本，学习过我的mall项目的朋友应该知道， 我用的Elasticsearch是6.x版本，升级到7.x以后ElasticsearchTemplate都不让用了。本文记录了Elasticsearch从6.x升级到7.x所遇到的一些问题，给大家排排坑！
 
--什么是跨域问题
-CORS全称Cross-Origin Resource Sharing，意为跨域资源共享。当一个资源去访问另一个不同域名或者同域名不同端口的资源时，就会发出跨域请求。如果此时另一个资源不允许其进行跨域资源访问，那么访问的那个资源就会遇到跨域问题。
+-版本选择
+既然我们要升级到Elasticsearch7.x版本，首先要选择合适的版本。如何选择合适的版本，这里有个小技巧分享给大家。
 
--跨域问题演示及解决
-我们使用mall项目的源代码来演示一下跨域问题。此时前端代码运行在8090端口上，后端代码运行在8080端口上，由于其域名都...
+
+首先我们可以在pom.xm...
 						
 					</div>
 					
@@ -262,8 +262,8 @@ CORS全称Cross-Origin Resource Sharing，意为跨域资源共享。当一个�
 
 
 
-	<a href="/2021/08/29/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E9%A1%B9%E7%9B%AE%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/" itemprop="url">
-		<time datetime="2021-08-29T07:51:51.228Z" itemprop="datePublished">
+	<a href="/2021/08/29/Elasticsearch%E5%8D%87%E7%BA%A77.x%E7%89%88%E6%9C%AC/" itemprop="url">
+		<time datetime="2021-08-29T14:42:56.165Z" itemprop="datePublished">
 	  		2021-08-29
 	  </time>
 	</a> 
@@ -277,7 +277,7 @@ CORS全称Cross-Origin Resource Sharing，意为跨域资源共享。当一个�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/29/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E9%A1%B9%E7%9B%AE%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/29/Elasticsearch%E5%8D%87%E7%BA%A77.x%E7%89%88%E6%9C%AC/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -288,25 +288,27 @@ CORS全称Cross-Origin Resource Sharing，意为跨域资源共享。当一个�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/29/SpringBoot%E5%BA%94%E7%94%A8%E6%95%B4%E5%90%88ELK%E5%AE%9E%E7%8E%B0%E6%97%A5%E5%BF%97%E6%94%B6%E9%9B%86/" itemprop="url">
-		SpringBoot应用整合ELK实现日志收集
+	<a href="/2021/08/29/%E7%BB%99Swagger%E5%8D%87%E7%BA%A7%E4%BA%86%E6%96%B0%E7%89%88%E6%9C%AC%E6%B2%A1%E6%83%B3%E5%88%B0%E5%B1%85%E7%84%B6%E6%9C%89%E8%BF%99%E4%B9%88%E5%A4%9A%E5%9D%91/" itemprop="url">
+		给Swagger升级了新版本没想到居然有这么多坑
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							SpringBoot应用整合ELK实现日志收集
-ELK即Elasticsearch、Logstash、Kibana,组合起来可以搭建线上日志系统，本文主要讲解使用ELK来收集SpringBoot应用产生的日志。
+							给Swagger升级了新版本没想到居然有这么多坑
+看着mall项目中古老的Swagger API文档样式，这次我终于下定决心要给它升个级了。升级过程中遇到了好多坑，不过只要用好Maven，这些都不是个事！
 
--学习前需要了解的内容
-开发者必备Docker命令
-使用Docker Compose部署SpringBoot应用
-SpringBoot应用中使用AOP记录接口访问日志
+-选择升级版本
+首先我们选择下需要升级的版本，直接去Maven仓库看下，哪个版本使用的比较多。虽然有最新版本2.10.x，但是几乎没什么人用，而上一个版本2.9.x使用的人却很多，看样子还是2.9.x版本比较稳定，我们选择升级到2.9.2版本。
 
--ELK中各个服务的作用
-Elasticsearch:用于存储收集到的日志信息；
-Logstash:用于收集日志，SpringBoot应用整合了Logstash以后会把日志发送给Logstash,Logstas...
+
+
+-升级Swagger
+接下来我们就可以开始升级Swagger版本了，原来项目里用的是2.7.0版本。
+
+
+由于mall项目使用父项目来...
 						
 					</div>
 					
@@ -321,8 +323,8 @@ Logstash:用于收集日志，SpringBoot应用整合了Logstash以后会把日�
 
 
 
-	<a href="/2021/08/29/SpringBoot%E5%BA%94%E7%94%A8%E6%95%B4%E5%90%88ELK%E5%AE%9E%E7%8E%B0%E6%97%A5%E5%BF%97%E6%94%B6%E9%9B%86/" itemprop="url">
-		<time datetime="2021-08-29T07:34:26.807Z" itemprop="datePublished">
+	<a href="/2021/08/29/%E7%BB%99Swagger%E5%8D%87%E7%BA%A7%E4%BA%86%E6%96%B0%E7%89%88%E6%9C%AC%E6%B2%A1%E6%83%B3%E5%88%B0%E5%B1%85%E7%84%B6%E6%9C%89%E8%BF%99%E4%B9%88%E5%A4%9A%E5%9D%91/" itemprop="url">
+		<time datetime="2021-08-29T14:29:19.325Z" itemprop="datePublished">
 	  		2021-08-29
 	  </time>
 	</a> 
@@ -336,7 +338,7 @@ Logstash:用于收集日志，SpringBoot应用整合了Logstash以后会把日�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/29/SpringBoot%E5%BA%94%E7%94%A8%E6%95%B4%E5%90%88ELK%E5%AE%9E%E7%8E%B0%E6%97%A5%E5%BF%97%E6%94%B6%E9%9B%86/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/29/%E7%BB%99Swagger%E5%8D%87%E7%BA%A7%E4%BA%86%E6%96%B0%E7%89%88%E6%9C%AC%E6%B2%A1%E6%83%B3%E5%88%B0%E5%B1%85%E7%84%B6%E6%9C%89%E8%BF%99%E4%B9%88%E5%A4%9A%E5%9D%91/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -347,22 +349,25 @@ Logstash:用于收集日志，SpringBoot应用整合了Logstash以后会把日�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/29/SpringBoot%E5%BA%94%E7%94%A8%E4%B8%AD%E4%BD%BF%E7%94%A8AOP%E8%AE%B0%E5%BD%95%E6%8E%A5%E5%8F%A3%E8%AE%BF%E9%97%AE%E6%97%A5%E5%BF%97/" itemprop="url">
-		SpringBoot应用中使用AOP记录接口访问日志
+	<a href="/2021/08/29/RabbitMQ%E5%AE%9E%E7%8E%B0%E5%BB%B6%E8%BF%9F%E6%B6%88%E6%81%AF%E5%B1%85%E7%84%B6%E5%A6%82%E6%AD%A4%E7%AE%80%E5%8D%95/" itemprop="url">
+		RabbitMQ实现延迟消息居然如此简单
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							SpringBoot应用中使用AOP记录接口访问日志
-本文主要讲述AOP在mall项目中的应用，通过在controller层建一个切面来实现接口访问的统一日志记录。
+							RabbitMQ实现延迟消息居然如此简单
+RabbitMQ实现延迟消息的方式有两种，一种是使用死信队列实现，另一种是使用延迟插件实现。死信队列实现我们以前曾经讲过，具体参考《mall整合RabbitMQ实现延迟消息》，这次我们讲个更简单的，使用延迟插件实现。
 
--AOP
-AOP为Aspect Oriented Programming的缩写，意为：面向切面编程，通过预编译方式和运行期动态代理实现程序功能的统一维护的一种技术。利用AOP可以对业务逻辑的各个部分进行隔离，从而使得业务逻辑各部分之间的耦合度降低，提高程序的可重用性，同时提高了开发的效率。
+-学前准备
+学习本文需要对RabbitMQ有所了解，还不了解的朋友可以看下：《花了3天总结的RabbitMQ实用技巧，有点东西！》
 
--AOP的相关术语-通知（Advice）
-通知描述了切面要完成的工作以及何时执行。比如我们的日志切面需要记录每个接口调用时长，就需要...
+-插件安装
+首先我们需要下载并安装RabbitMQ的延迟插件。
+
+
+去RabbitMQ的官网下载插件，插件地址：https://www.rabbitmq.com/community-plugins....
 						
 					</div>
 					
@@ -377,8 +382,8 @@ AOP为Aspect Oriented Programming的缩写，意为：面向切面编程，通�
 
 
 
-	<a href="/2021/08/29/SpringBoot%E5%BA%94%E7%94%A8%E4%B8%AD%E4%BD%BF%E7%94%A8AOP%E8%AE%B0%E5%BD%95%E6%8E%A5%E5%8F%A3%E8%AE%BF%E9%97%AE%E6%97%A5%E5%BF%97/" itemprop="url">
-		<time datetime="2021-08-29T07:12:55.775Z" itemprop="datePublished">
+	<a href="/2021/08/29/RabbitMQ%E5%AE%9E%E7%8E%B0%E5%BB%B6%E8%BF%9F%E6%B6%88%E6%81%AF%E5%B1%85%E7%84%B6%E5%A6%82%E6%AD%A4%E7%AE%80%E5%8D%95/" itemprop="url">
+		<time datetime="2021-08-29T13:51:17.006Z" itemprop="datePublished">
 	  		2021-08-29
 	  </time>
 	</a> 
@@ -392,7 +397,7 @@ AOP为Aspect Oriented Programming的缩写，意为：面向切面编程，通�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/29/SpringBoot%E5%BA%94%E7%94%A8%E4%B8%AD%E4%BD%BF%E7%94%A8AOP%E8%AE%B0%E5%BD%95%E6%8E%A5%E5%8F%A3%E8%AE%BF%E9%97%AE%E6%97%A5%E5%BF%97/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/29/RabbitMQ%E5%AE%9E%E7%8E%B0%E5%BB%B6%E8%BF%9F%E6%B6%88%E6%81%AF%E5%B1%85%E7%84%B6%E5%A6%82%E6%AD%A4%E7%AE%80%E5%8D%95/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -403,26 +408,22 @@ AOP为Aspect Oriented Programming的缩写，意为：面向切面编程，通�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/29/MyBatis%20Generator%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E4%B8%AD%E8%B8%A9%E8%BF%87%E7%9A%84%E4%B8%80%E4%B8%AA%E5%9D%91/" itemprop="url">
-		MyBatis Generator使用过程中踩过的一个坑
+	<a href="/2021/08/29/Elasticsearch%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E5%95%86%E5%93%81%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" itemprop="url">
+		Elasticsearch项目实战商品搜索功能设计与实现
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							MyBatis Generator使用过程中踩过的一个坑
-在使用MyBatis Generator生成代码的过程中，曾经遇到一个坑，每次生成mapper.xml的时候并不是直接覆盖原文件，而是在原文件中追加了新的内容，导致运行项目出错，本文主要讲解如何解决这个问题。
+							Elasticsearch项目实战商品搜索功能设计与实现
+上次写了一篇《Elasticsearch快速入门，掌握这些刚刚好！》，带大家学习了下Elasticsearch的基本用法，这次我们来篇实战教程，以mall项目中的商品搜索为例，把Elasticsearch用起来！
 
--问题重现-示例代码
-使用的是mall-tiny-02的代码，代码地址：https://github.com/macrozheng/mall-learning/tree/master/mall-tiny-02
+-中文分词器
+由于商品搜索会涉及中文搜索，Elasticsearch需要安装插件才可以支持，我们先来了解下中文分词器，这里使用的是IKAnalyzer。在《Elasticsearch快速入门，掌握这些刚刚好！》中已经讲过其安装方式，这里直接讲解它的用法。
 
--直接运行MallTinyApplication的main函数
-发现正常运行，启动成功！
-
-
-
--运行代码生成器...
+-使用IKAnalyzer
+使用默认分词器，可以发现默认分词器...
 						
 					</div>
 					
@@ -437,8 +438,8 @@ AOP为Aspect Oriented Programming的缩写，意为：面向切面编程，通�
 
 
 
-	<a href="/2021/08/29/MyBatis%20Generator%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E4%B8%AD%E8%B8%A9%E8%BF%87%E7%9A%84%E4%B8%80%E4%B8%AA%E5%9D%91/" itemprop="url">
-		<time datetime="2021-08-29T06:25:12.979Z" itemprop="datePublished">
+	<a href="/2021/08/29/Elasticsearch%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E5%95%86%E5%93%81%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" itemprop="url">
+		<time datetime="2021-08-29T12:50:33.706Z" itemprop="datePublished">
 	  		2021-08-29
 	  </time>
 	</a> 
@@ -452,7 +453,7 @@ AOP为Aspect Oriented Programming的缩写，意为：面向切面编程，通�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/29/MyBatis%20Generator%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E4%B8%AD%E8%B8%A9%E8%BF%87%E7%9A%84%E4%B8%80%E4%B8%AA%E5%9D%91/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/29/Elasticsearch%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E5%95%86%E5%93%81%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -463,26 +464,22 @@ AOP为Aspect Oriented Programming的缩写，意为：面向切面编程，通�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/29/%E6%88%91%E5%B8%B8%E7%94%A8%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E6%8A%80%E5%B7%A7%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
-		我常用的自动化部署技巧部署篇
+	<a href="/2021/08/29/%E4%BD%BF%E7%94%A8Redis+AOP%E4%BC%98%E5%8C%96%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E5%8A%9F%E8%83%BD/" itemprop="url">
+		使用Redis+AOP优化权限管理功能
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							我常用的自动化部署技巧部署篇
-SpringBoot+Jenkins自动化部署技巧，远程部署同样适用，附通用自动化脚本！本文将从半自动化部署讲起，到自动化部署，讲解一套生产环境切实可用的自动化部署方案！
+							使用Redis+AOP优化权限管理功能
+之前有很多朋友提过，mall项目中的权限管理功能有性能问题，因为每次访问接口进行权限校验时都会从数据库中去查询用户信息。最近对这个问题进行了优化，通过Redis+AOP解决了该问题，下面来讲下我的优化思路。
 
--半自动化部署
-之前写过的SpringBoot应用打包Docker镜像都是通过Maven插件来实现的，由于远程服务器需要开发2375端口，存在一定的安全隐患。这次介绍另一种方法，使用DockerFile+Jar+自动化脚本的形式来部署。由于需要一定的手动操作，我把它称之为半自动化部署。
+-前置知识
+学习本文需要一些Spring Data Redis的知识，不了解的朋友可以看下《Spring Data Redis 最佳实践！》。 还需要一些Spring AOP的知识，不了解的朋友可以看下《SpringBoot应用中使用AOP记录接口访问日志》。
 
--项目打包
-这次我们不使用Docker的Maven插件来打包，先在pom.xml中注释掉它；
-
-
-
-...
+-问题重现
+在mall-security模块中有一个过滤器，当用户登录后，请求会...
 						
 					</div>
 					
@@ -497,8 +494,8 @@ SpringBoot+Jenkins自动化部署技巧，远程部署同样适用，附通用�
 
 
 
-	<a href="/2021/08/29/%E6%88%91%E5%B8%B8%E7%94%A8%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E6%8A%80%E5%B7%A7%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
-		<time datetime="2021-08-28T20:50:41.265Z" itemprop="datePublished">
+	<a href="/2021/08/29/%E4%BD%BF%E7%94%A8Redis+AOP%E4%BC%98%E5%8C%96%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E5%8A%9F%E8%83%BD/" itemprop="url">
+		<time datetime="2021-08-29T12:43:59.029Z" itemprop="datePublished">
 	  		2021-08-29
 	  </time>
 	</a> 
@@ -512,7 +509,7 @@ SpringBoot+Jenkins自动化部署技巧，远程部署同样适用，附通用�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/29/%E6%88%91%E5%B8%B8%E7%94%A8%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E6%8A%80%E5%B7%A7%E9%83%A8%E7%BD%B2%E7%AF%87/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/29/%E4%BD%BF%E7%94%A8Redis+AOP%E4%BC%98%E5%8C%96%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E5%8A%9F%E8%83%BD/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -523,22 +520,25 @@ SpringBoot+Jenkins自动化部署技巧，远程部署同样适用，附通用�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/29/mall-swarm%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE%E5%9C%A8K8S%E4%B8%8B%E7%9A%84%E5%AE%9E%E8%B7%B5%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
-		mall-swarm微服务项目在K8S下的实践部署篇
+	<a href="/2021/08/29/SpringBoot%E4%B8%AD%E5%A4%84%E7%90%86%E6%A0%A1%E9%AA%8C%E9%80%BB%E8%BE%91%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E5%BC%8F/" itemprop="url">
+		SpringBoot中处理校验逻辑的两种方式
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							mall-swarm微服务项目在K8S下的实践部署篇
-由于K8S目前实在是太火了，之前一直说要给mall项目出个K8S部署方案，这次它来啦！在更新完K8S系列教程后，是时候来波实践了，拿mall-swarm项目来实践真的是刚刚好。如果你有在Docker下部署该项目的经历，而且已经学习了我的K8S系列教程的话，相信你能够轻松上手！
+							SpringBoot中处理校验逻辑的两种方式
+平时在开发接口的时候，常常会需要对参数进行校验，这里提供两种处理校验逻辑的方式。一种是使用Hibernate Validator来处理，另一种是使用全局异常来处理，下面我们讲下这两种方式的用法。
 
--服务器规划
-我们先来说下服务器规划吧，之前一直使用的是单机部署所有服务，这次我们使用两台服务器来部署。
+-Hibernate Validator
+Hibernate Validator是SpringBoot内置的校验框架，只要集成了SpringBoot就自动集成了它，我们可以通过在对象上面使用它提供的注解来完成参数校验。
+
+-常用注解
+我们先来了解下常用的注解，对Hibernate Validator所提供的校验功能有个印象。
 
 
-基础服务器（192.168.3.101）：用于部署mall-swarm的依赖服务，包括MySql、Redis、Elasticsearch等与应用无关的...
+@Null：被注释...
 						
 					</div>
 					
@@ -553,8 +553,8 @@ SpringBoot+Jenkins自动化部署技巧，远程部署同样适用，附通用�
 
 
 
-	<a href="/2021/08/29/mall-swarm%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE%E5%9C%A8K8S%E4%B8%8B%E7%9A%84%E5%AE%9E%E8%B7%B5%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
-		<time datetime="2021-08-28T20:00:06.606Z" itemprop="datePublished">
+	<a href="/2021/08/29/SpringBoot%E4%B8%AD%E5%A4%84%E7%90%86%E6%A0%A1%E9%AA%8C%E9%80%BB%E8%BE%91%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E5%BC%8F/" itemprop="url">
+		<time datetime="2021-08-29T09:57:01.521Z" itemprop="datePublished">
 	  		2021-08-29
 	  </time>
 	</a> 
@@ -568,7 +568,7 @@ SpringBoot+Jenkins自动化部署技巧，远程部署同样适用，附通用�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/29/mall-swarm%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE%E5%9C%A8K8S%E4%B8%8B%E7%9A%84%E5%AE%9E%E8%B7%B5%E9%83%A8%E7%BD%B2%E7%AF%87/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/29/SpringBoot%E4%B8%AD%E5%A4%84%E7%90%86%E6%A0%A1%E9%AA%8C%E9%80%BB%E8%BE%91%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E5%BC%8F/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -579,22 +579,22 @@ SpringBoot+Jenkins自动化部署技巧，远程部署同样适用，附通用�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/29/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84%E4%B8%8B%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E4%BD%BF%E7%94%A8Jenkins%E6%9D%A5%E5%AE%9E%E7%8E%B0%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
-		微服务架构下的自动化部署使用Jenkins来实现部署篇
+	<a href="/2021/08/29/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E6%90%9E%E5%AE%9A%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E7%BB%93%E5%90%88Vue%E5%AE%9E%E7%8E%B0%E8%8F%9C%E5%8D%95%E7%9A%84%E5%8A%A8%E6%80%81%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6/" itemprop="url">
+		手把手教你搞定权限管理结合Vue实现菜单的动态权限控制
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							微服务架构下的自动化部署使用Jenkins来实现部署篇
-之前对mall-swarm项目做了升级，注册中心和配置中心都改为使用Nacos，但是Jenkins的自动化部署文档一直都没更新。有些朋友参考原来的文档部署有点小问题，这次对mall-swarm的自动化部署文档做个升级，希望对大家有所帮助！
+							手把手教你搞定权限管理结合Vue实现菜单的动态权限控制
+权限管理在后端项目中主要体现在对接口访问权限的控制，在前端项目中主要体现在对菜单访问权限的控制。在《手把手教你搞定权限管理，结合Spring Security实现接口的动态权限控制！》中我们实现了对后端接口的动态权限控制，今天我们讲下如何结合Vue来实现菜单的动态权限控制。
 
--Jenkins的基本使用
-使用该部署方案需要对Jenkins有所了解，关于Jenkins的基本使用可以参考：《使用Jenkins一键打包部署SpringBoot应用，就是这么6！》
+-使用技术
+mall-admin-web实现菜单的动态权限控制使用到了两种技术，一种是Vue Router，另一种是Vuex，我们先来了解下这两种技术。
 
--部署准备
-部署之前需要先安装mall-swarm需要的依赖服务，并打包好所有应用的Docker镜像。由于之前...
+-Vue Router
+Vue Router是Vue.js官方的路由管理器。路由就是一个路径，当我们访问...
 						
 					</div>
 					
@@ -609,8 +609,8 @@ SpringBoot+Jenkins自动化部署技巧，远程部署同样适用，附通用�
 
 
 
-	<a href="/2021/08/29/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84%E4%B8%8B%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E4%BD%BF%E7%94%A8Jenkins%E6%9D%A5%E5%AE%9E%E7%8E%B0%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
-		<time datetime="2021-08-28T18:07:24.947Z" itemprop="datePublished">
+	<a href="/2021/08/29/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E6%90%9E%E5%AE%9A%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E7%BB%93%E5%90%88Vue%E5%AE%9E%E7%8E%B0%E8%8F%9C%E5%8D%95%E7%9A%84%E5%8A%A8%E6%80%81%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6/" itemprop="url">
+		<time datetime="2021-08-29T09:44:32.331Z" itemprop="datePublished">
 	  		2021-08-29
 	  </time>
 	</a> 
@@ -624,7 +624,7 @@ SpringBoot+Jenkins自动化部署技巧，远程部署同样适用，附通用�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/29/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84%E4%B8%8B%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E4%BD%BF%E7%94%A8Jenkins%E6%9D%A5%E5%AE%9E%E7%8E%B0%E9%83%A8%E7%BD%B2%E7%AF%87/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/29/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E6%90%9E%E5%AE%9A%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E7%BB%93%E5%90%88Vue%E5%AE%9E%E7%8E%B0%E8%8F%9C%E5%8D%95%E7%9A%84%E5%8A%A8%E6%80%81%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -635,38 +635,24 @@ SpringBoot+Jenkins自动化部署技巧，远程部署同样适用，附通用�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/29/mall-swarm%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EDocker%E5%AE%B9%E5%99%A8%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
-		mall-swarm在Linux环境基于Docker容器下的部署部署篇
+	<a href="/2021/08/29/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E6%90%9E%E5%AE%9A%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E7%BB%93%E5%90%88SpringSecurity%E5%AE%9E%E7%8E%B0%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%8A%A8%E6%80%81%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6/" itemprop="url">
+		手把手教你搞定权限管理结合SpringSecurity实现接口的动态权限控制
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							mall-swarm在Linux环境基于Docker容器下的部署部署篇
-本文以mall-swarm项目为例，主要介绍一个微服务架构的电商项目如何在Docker容器下部署，涉及到大量系统组件的部署及多个Spring Cloud微服务应用的部署，基于CentOS7.6。
+							手把手教你搞定权限管理结合SpringSecurity实现接口的动态权限控制
+权限控管理作为后台管理系统中必要的功能，mall项目中结合Spring Security实现了基于路径的动态权限控制，可以对后台接口访问进行细粒度的控制，今天我们来讲下它的后端实现原理。
 
--环境搭建-基础环境部署
-mall-swarm运行需要的系统组件如下，使用Docker Compose 批量安装更方便，Docker Compose使用请参考：使用Docker Compose部署SpringBoot应用 。
-
-
+-前置知识
+学习本文需要一些Spring Security的知识，对Spring Security不太了解的朋友可以看下以下文章。
 
 
-组件
-版本号
-
-
-
-Mysql
-5.7
-
-
-Redis
-5.0
-
-
-MongoDb
-4.3...
+mall整合SpringSecurity和JWT实现认证和授权（一）
+mall整合SpringSecurity和JWT实现认证和授权（二）
+仅需四步，整合SpringSecurity+JWT...
 						
 					</div>
 					
@@ -681,8 +667,8 @@ MongoDb
 
 
 
-	<a href="/2021/08/29/mall-swarm%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EDocker%E5%AE%B9%E5%99%A8%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
-		<time datetime="2021-08-28T17:20:34.589Z" itemprop="datePublished">
+	<a href="/2021/08/29/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E6%90%9E%E5%AE%9A%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E7%BB%93%E5%90%88SpringSecurity%E5%AE%9E%E7%8E%B0%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%8A%A8%E6%80%81%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6/" itemprop="url">
+		<time datetime="2021-08-29T08:55:40.453Z" itemprop="datePublished">
 	  		2021-08-29
 	  </time>
 	</a> 
@@ -696,7 +682,7 @@ MongoDb
 
 						
 							<span class="right">      	
-								<a href="/2021/08/29/mall-swarm%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EDocker%E5%AE%B9%E5%99%A8%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E9%83%A8%E7%BD%B2%E7%AF%87/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/29/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E6%90%9E%E5%AE%9A%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E7%BB%93%E5%90%88SpringSecurity%E5%AE%9E%E7%8E%B0%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%8A%A8%E6%80%81%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -707,24 +693,25 @@ MongoDb
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/29/mall-swarm%E5%9C%A8Windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
-		mall-swarm在Windows环境下的部署部署篇
+	<a href="/2021/08/29/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E9%A1%B9%E7%9B%AE%E5%BC%95%E5%85%A5SpringCloudGateway%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%B8%AA%E9%97%AE%E9%A2%98/" itemprop="url">
+		前后端分离项目引入SpringCloudGateway遇到的一个问题
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							mall-swarm在Windows环境下的部署部署篇-开发环境搭建
-mall-swarm中使用到的环境和mall项目中大致相同，具体可以查看mall在Windows环境下的部署。
+							前后端分离项目引入SpringCloudGateway遇到的一个问题
+随着项目架构的越来越复杂，引入了新的技术，新的问题也在产生，本文将讲述一个由于网关引起的前端调用问题。
 
--简易环境搭建流程
-安装IDEA并导入项目源码；
-安装MySQL，创建一个mall数据库，并导入/document/sql/mall.sql文件；
-安装Redis、Elasticsearch、MongoDB、RabbitMQ等环境。
+-问题产生
+我的mall项目升级到微服务架构以后，加入了基于Spring Cloud Gateway的网关系统，前端调用相关服务时应该统一从网关进行调用，本以为前端直接调用网关没啥问题，后来发现会产生无法调用的情况，下面我们来记录下这个问题以及解决思路。
 
--Nacos注册中心搭建
-由于使用了Nacos注册中心，我们需要先搭建Nacos注册中心，下载地址：https://github.com/alibaba/nacos/rele...
+-问题重现与解决
+这里我们以mall-swarm中的代码为例来演示下该问题的产生与解决。
+
+
+首先我们先把mall-registry、mall-config、m...
 						
 					</div>
 					
@@ -739,8 +726,8 @@ mall-swarm中使用到的环境和mall项目中大致相同，具体可以查看
 
 
 
-	<a href="/2021/08/29/mall-swarm%E5%9C%A8Windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E9%83%A8%E7%BD%B2%E7%AF%87/" itemprop="url">
-		<time datetime="2021-08-28T17:12:18.588Z" itemprop="datePublished">
+	<a href="/2021/08/29/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E9%A1%B9%E7%9B%AE%E5%BC%95%E5%85%A5SpringCloudGateway%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%B8%AA%E9%97%AE%E9%A2%98/" itemprop="url">
+		<time datetime="2021-08-29T08:49:21.943Z" itemprop="datePublished">
 	  		2021-08-29
 	  </time>
 	</a> 
@@ -754,7 +741,7 @@ mall-swarm中使用到的环境和mall项目中大致相同，具体可以查看
 
 						
 							<span class="right">      	
-								<a href="/2021/08/29/mall-swarm%E5%9C%A8Windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E9%83%A8%E7%BD%B2%E7%AF%87/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/29/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E9%A1%B9%E7%9B%AE%E5%BC%95%E5%85%A5SpringCloudGateway%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%B8%AA%E9%97%AE%E9%A2%98/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -765,24 +752,32 @@ mall-swarm中使用到的环境和mall项目中大致相同，具体可以查看
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/29/mall%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2/" itemprop="url">
-		mall前端项目的安装与部署
+	<a href="/2021/08/29/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E9%A1%B9%E7%9B%AE%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E5%AD%98%E5%82%A8/" itemprop="url">
+		前后端分离项目如何优雅实现文件存储
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							mall前端项目的安装与部署
-本文主要讲解mall前端项目mall-admin-web的在Windows和Linux环境下的安装及部署。
+							前后端分离项目如何优雅实现文件存储
+在上一节中我们讲到了使用MinIO来自建对象存储服务，这次我们来讲下MinIO如何结合SpringBoot和Vue来实现文件存储。
 
--Windows下的安装及部署-下载nodejs并安装
-下载地址：https://nodejs.org/dist/v8.9.4/node-v8.9.4-x64.msi
+-学前准备
+学习本文需要一些MinIO的基础知识，还不了解的小伙伴可以参考下：Github标星19K+Star，10分钟自建对象存储服务！
 
--下载mall-admin-web的代码
-下载地址（github）：https://github.com/macrozheng/mall-admin-web 下载地址（码云）：https://gitee.com/macrozheng/mall-admin-web
+-结合SpringBoot使用
+接下来我们将结合SpringBoot来实现一个完整的图片上传与删除操作。
 
--从IDEA中打开...
+
+上传流程示意图：
+
+
+
+
+在pom.xml中添加MinIO的相关依赖：
+
+123456&lt;!--MinIO JAVA SDK--&gt;&lt;dependency&g...
 						
 					</div>
 					
@@ -797,8 +792,8 @@ mall-swarm中使用到的环境和mall项目中大致相同，具体可以查看
 
 
 
-	<a href="/2021/08/29/mall%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2/" itemprop="url">
-		<time datetime="2021-08-28T16:53:16.864Z" itemprop="datePublished">
+	<a href="/2021/08/29/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E9%A1%B9%E7%9B%AE%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E5%AD%98%E5%82%A8/" itemprop="url">
+		<time datetime="2021-08-29T08:41:37.587Z" itemprop="datePublished">
 	  		2021-08-29
 	  </time>
 	</a> 
@@ -812,7 +807,7 @@ mall-swarm中使用到的环境和mall项目中大致相同，具体可以查看
 
 						
 							<span class="right">      	
-								<a href="/2021/08/29/mall%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/29/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E9%A1%B9%E7%9B%AE%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E5%AD%98%E5%82%A8/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>

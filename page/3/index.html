@@ -232,18 +232,19 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/09/03/%E7%BC%96%E7%A0%81%E5%89%96%E6%9E%90Spring%E7%AE%A1%E7%90%86Bean%E7%9A%84%E5%8E%9F%E7%90%86/" itemprop="url">
-		编码剖析Spring管理Bean的原理
+	<a href="/2021/09/04/Spring%20Boot%202%E5%BA%95%E5%B1%82%E6%B3%A8%E8%A7%A3%E7%AF%87%EF%BC%9A@ConfigurationProperties%E9%85%8D%E7%BD%AE%E7%BB%91%E5%AE%9A/" itemprop="url">
+		Spring Boot 2底层注解篇：@ConfigurationProperties配置绑定
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							编码剖析Spring管理Bean的原理
-在Spring的第一个案例中，我们已经知道了怎么将bean交给Spring容器进行管理，并且明白了怎么从Spring容器中获取bean。那我们就有一个疑问了：Spring是如何创建并管理bean的呢？现在我们就来编码剖析Spring管理Bean的原理。本文是在Spring的第一个案例的基础上展开的。我们要使用dom4j读取Sping的配置文件——beans.xml
+							Spring Boot 2底层注解篇：@ConfigurationProperties配置绑定
+在这篇文章中，我们再来说一个Spring Boot的底层注解，即@ConfigurationProperties。
 
-123456789&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;beans xmlns=&qu...
+-@ConfigurationProperties注解出现的背景
+我们还是举一个例子来说明吧！我们总是习惯于把经常爱变化的一些东西配到配置文件里面，比如我们小时候在学Java的时候，尤其是在数据库开发的时候，是不是经常要把数据库的连接信息，诸如数据库的url连接地址、账号、密码以及数据库连接池的大小等等，配到properties配置文件中啊！然后，未来等到我们需要创建数据库连接...
 						
 					</div>
 					
@@ -258,9 +259,9 @@
 
 
 
-	<a href="/2021/09/03/%E7%BC%96%E7%A0%81%E5%89%96%E6%9E%90Spring%E7%AE%A1%E7%90%86Bean%E7%9A%84%E5%8E%9F%E7%90%86/" itemprop="url">
-		<time datetime="2021-09-02T21:04:12.937Z" itemprop="datePublished">
-	  		2021-09-03
+	<a href="/2021/09/04/Spring%20Boot%202%E5%BA%95%E5%B1%82%E6%B3%A8%E8%A7%A3%E7%AF%87%EF%BC%9A@ConfigurationProperties%E9%85%8D%E7%BD%AE%E7%BB%91%E5%AE%9A/" itemprop="url">
+		<time datetime="2021-09-03T18:56:53.195Z" itemprop="datePublished">
+	  		2021-09-04
 	  </time>
 	</a> 
 
@@ -273,7 +274,7 @@
 
 						
 							<span class="right">      	
-								<a href="/2021/09/03/%E7%BC%96%E7%A0%81%E5%89%96%E6%9E%90Spring%E7%AE%A1%E7%90%86Bean%E7%9A%84%E5%8E%9F%E7%90%86/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/04/Spring%20Boot%202%E5%BA%95%E5%B1%82%E6%B3%A8%E8%A7%A3%E7%AF%87%EF%BC%9A@ConfigurationProperties%E9%85%8D%E7%BD%AE%E7%BB%91%E5%AE%9A/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -284,21 +285,24 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/09/03/%E7%BC%96%E5%86%99Spring%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%A1%88%E4%BE%8B%E5%B9%B6%E6%B5%8B%E8%AF%95Spring%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" itemprop="url">
-		编写Spring的第一个案例并测试Spring的开发环境
+	<a href="/2021/09/04/Spring%20Boot%202%E5%BA%95%E5%B1%82%E6%B3%A8%E8%A7%A3%E7%AF%87%EF%BC%9A%E4%BD%BF%E7%94%A8@ImportResource%E6%B3%A8%E8%A7%A3%E5%AF%BC%E5%85%A5Spring%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/" itemprop="url">
+		Spring Boot 2底层注解篇：使用@ImportResource注解导入Spring配置文件
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							编写Spring的第一个案例并测试Spring的开发环境
-Spring4.2.5的开发环境搭建好了之后，我们来编写Spring的第一个案例，并测试Spring的开发环境。首先在Eclipse中新建一个普通的Java Project，名称为spring_first，迅速搭建好Spring4.2.5的开发环境。然后在src目录下新建一个cn.itcast.service包，并在该包下创建一个接口——PersonService.java，其代码如下：
+							Spring Boot 2底层注解篇：使用@ImportResource注解导入Spring配置文件
+在这篇文章中，我们再来看一个Spring Boot的底层注解，即@ImportResource。
 
-12345public interface PersonService &#123;    void save();&#125;
+-@ImportResource注解概述
+@ImportResource，翻译过来就是导入资源的意思。
 
+-@ImportResource注解的使用场景
+该注解的使用场景是什么呢？我们不妨来看一下。我们以前一般是在Spring的配置文件里面使用&lt;bean&gt;标签来给容器中导入非常多的组件的，就像下面这样。
 
-在Spr...
+12345678910111213141516&lt;?xml vers...
 						
 					</div>
 					
@@ -313,9 +317,9 @@ Spring4.2.5的开发环境搭建好了之后，我们来编写Spring的第一个
 
 
 
-	<a href="/2021/09/03/%E7%BC%96%E5%86%99Spring%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%A1%88%E4%BE%8B%E5%B9%B6%E6%B5%8B%E8%AF%95Spring%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" itemprop="url">
-		<time datetime="2021-09-02T20:46:46.415Z" itemprop="datePublished">
-	  		2021-09-03
+	<a href="/2021/09/04/Spring%20Boot%202%E5%BA%95%E5%B1%82%E6%B3%A8%E8%A7%A3%E7%AF%87%EF%BC%9A%E4%BD%BF%E7%94%A8@ImportResource%E6%B3%A8%E8%A7%A3%E5%AF%BC%E5%85%A5Spring%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/" itemprop="url">
+		<time datetime="2021-09-03T18:04:04.535Z" itemprop="datePublished">
+	  		2021-09-04
 	  </time>
 	</a> 
 
@@ -328,7 +332,7 @@ Spring4.2.5的开发环境搭建好了之后，我们来编写Spring的第一个
 
 						
 							<span class="right">      	
-								<a href="/2021/09/03/%E7%BC%96%E5%86%99Spring%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%A1%88%E4%BE%8B%E5%B9%B6%E6%B5%8B%E8%AF%95Spring%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/04/Spring%20Boot%202%E5%BA%95%E5%B1%82%E6%B3%A8%E8%A7%A3%E7%AF%87%EF%BC%9A%E4%BD%BF%E7%94%A8@ImportResource%E6%B3%A8%E8%A7%A3%E5%AF%BC%E5%85%A5Spring%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -339,24 +343,27 @@ Spring4.2.5的开发环境搭建好了之后，我们来编写Spring的第一个
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/09/03/%E6%90%AD%E5%BB%BASpring4.x.x%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" itemprop="url">
-		搭建Spring4.x.x开发环境
+	<a href="/2021/09/04/Spring%20Boot%202%E5%BA%95%E5%B1%82%E6%B3%A8%E8%A7%A3%E7%AF%87%EF%BC%9A@Conditional%E6%9D%A1%E4%BB%B6%E8%A3%85%E9%85%8D/" itemprop="url">
+		Spring Boot 2底层注解篇：@Conditional条件装配
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							搭建Spring4.x.x开发环境
-先去Spring官网下载Spring4.x.x开发包(本人使用的版本是Spring4.2.5)，这个网上有一大堆博客有介绍，故省略。下载下来之后，我就来详细说明如何在Eclipse中搭建Spring4.2.5开发环境。
+							Spring Boot 2底层注解篇：@Conditional条件装配
+在这一篇文章中，我们再来说一个Spring Boot的底层注解，即@Conditional。
+
+-@Conditional注解-概述
+@Conditional，按照英语翻译过来，应该就是按照什么条件的意思，也就是我们说的条件装配，指的就是当满足@Conditional指定的条件时，才给容器中注入相关的组件，或者是干相应的事。
 
 
-首先在Eclipse中新建一个普通Java Project，名为spring_first。
+我们不妨查看一下@Conditional注解的继承关系，如下图所示，发现它还是一个根注解，它下面派生出了非常多的注解。
 
-接着我们就要导入Spring需要的jar包，进入到下载并解压的spring-framework-4.2.5.RELEASE的目录中，进入libs文件夹，找到如下jar包：
 
-spring-core-4.2.5.RELEASE.jar
-spr...
+
+
+接下来，我就来为大家分别介绍一下这些派生注解的功能。当然了，我...
 						
 					</div>
 					
@@ -371,9 +378,9 @@ spr...
 
 
 
-	<a href="/2021/09/03/%E6%90%AD%E5%BB%BASpring4.x.x%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" itemprop="url">
-		<time datetime="2021-09-02T20:33:37.083Z" itemprop="datePublished">
-	  		2021-09-03
+	<a href="/2021/09/04/Spring%20Boot%202%E5%BA%95%E5%B1%82%E6%B3%A8%E8%A7%A3%E7%AF%87%EF%BC%9A@Conditional%E6%9D%A1%E4%BB%B6%E8%A3%85%E9%85%8D/" itemprop="url">
+		<time datetime="2021-09-03T17:31:24.283Z" itemprop="datePublished">
+	  		2021-09-04
 	  </time>
 	</a> 
 
@@ -386,7 +393,7 @@ spr...
 
 						
 							<span class="right">      	
-								<a href="/2021/09/03/%E6%90%AD%E5%BB%BASpring4.x.x%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/04/Spring%20Boot%202%E5%BA%95%E5%B1%82%E6%B3%A8%E8%A7%A3%E7%AF%87%EF%BC%9A@Conditional%E6%9D%A1%E4%BB%B6%E8%A3%85%E9%85%8D/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -397,24 +404,17 @@ spr...
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/09/03/Spring%E7%AE%80%E4%BB%8B/" itemprop="url">
-		Spring简介
+	<a href="/2021/09/04/Spring%20Boot%202%E5%BA%95%E5%B1%82%E6%B3%A8%E8%A7%A3%E7%AF%87%EF%BC%9A%E4%BD%BF%E7%94%A8@Import%E6%B3%A8%E8%A7%A3%E5%AF%BC%E5%85%A5%E7%BB%84%E4%BB%B6/" itemprop="url">
+		Spring Boot 2底层注解篇：使用@Import注解导入组件
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							Spring简介
-阿昀以一个初学者的身份学习Spring框架，并按照一个小白的思路详细总结学习过程中的知识点，整理成一个系列，供后来人借鉴。
-
--Spring是什么
-Spring是一个开源的控制反转(Inversion of Control，IoC)和面向切面(AOP)的容器框架，它的主要目得是简化企业开发。
-
--控制反转(IOC)
-大概以前，业务逻辑层的代码很有可能这样写：
-
-1234567public class PersonServiceBean &#123;     private PersonDao personDao = new PersonDaoBean();      p...
+							Spring Boot 2底层注解篇：使用@Import注解导入组件
+在前一篇文章中，我们说了一下使用@Configuration注解结合@Bean注解来向容器中注册组件，以及Spring Boot给我们带来的两种配置模式，即Full模式和Lite模式。在这一篇文章中，咱们就来说说给容器中注册组件的其他方法，因为我们以前的方法也是可以使用的嘛！
+例如，我们可以给类上标注一个@Component注解，以代表该类是一个组件，或者标注一个@Controller注解，以代表它是一个控制器，或者标注一个@Service注解，以代表它是一个业务逻辑组件，或者标注一个@Repository注解，以代表...
 						
 					</div>
 					
@@ -429,9 +429,9 @@ Spring是一个开源的控制反转(Inversion of Control，IoC)和面向切面(
 
 
 
-	<a href="/2021/09/03/Spring%E7%AE%80%E4%BB%8B/" itemprop="url">
-		<time datetime="2021-09-02T20:04:27.723Z" itemprop="datePublished">
-	  		2021-09-03
+	<a href="/2021/09/04/Spring%20Boot%202%E5%BA%95%E5%B1%82%E6%B3%A8%E8%A7%A3%E7%AF%87%EF%BC%9A%E4%BD%BF%E7%94%A8@Import%E6%B3%A8%E8%A7%A3%E5%AF%BC%E5%85%A5%E7%BB%84%E4%BB%B6/" itemprop="url">
+		<time datetime="2021-09-03T16:46:06.872Z" itemprop="datePublished">
+	  		2021-09-04
 	  </time>
 	</a> 
 
@@ -444,7 +444,7 @@ Spring是一个开源的控制反转(Inversion of Control，IoC)和面向切面(
 
 						
 							<span class="right">      	
-								<a href="/2021/09/03/Spring%E7%AE%80%E4%BB%8B/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/04/Spring%20Boot%202%E5%BA%95%E5%B1%82%E6%B3%A8%E8%A7%A3%E7%AF%87%EF%BC%9A%E4%BD%BF%E7%94%A8@Import%E6%B3%A8%E8%A7%A3%E5%AF%BC%E5%85%A5%E7%BB%84%E4%BB%B6/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -455,16 +455,22 @@ Spring是一个开源的控制反转(Inversion of Control，IoC)和面向切面(
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/09/03/Spring4.2.5+Hibernate4.3.11+Struts2.3.24%E6%95%B4%E5%90%88%E5%BC%80%E5%8F%91/" itemprop="url">
-		Spring4.2.5+Hibernate4.3.11+Struts2.3.24整合开发
+	<a href="/2021/09/04/Spring%20Boot%202%E5%BA%95%E5%B1%82%E6%B3%A8%E8%A7%A3%E7%AF%87%EF%BC%9A@Configuration%E8%AF%A6%E8%A7%A3/" itemprop="url">
+		Spring Boot 2底层注解篇：@Configuration详解
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							Spring4.2.5+Hibernate4.3.11+Struts2.3.24整合开发
-前面我们已经学会了Spring4.2.5+Hibernate4.3.11+Struts1.3.8的整合开发，现在再来学习Spring4.2.5+Hibernate4.3.11+Struts2.3.24的整合开发应该是得心应手的事了，但我们还是有必要说一下，下面开始本文的介绍。在学习Spring4.2.5+Hibernate4.3.11+Struts2.3.24的整合开发时，不要一口气的把这3个框架整合好，而是应该分步整合，通常应该先整合Spring4.2.5+Hibernate4.3.11这2个框架...
+							Spring Boot 2底层注解篇：@Configuration详解
+为了后面能深入的掌握Spring Boot的自动配置原理，我们得先来看一下Spring Boot的一些底层注解，要知道它们是如何完成相关功能的。首先，我们来看一下怎么给容器里面添加组件。
+我在这儿准备了两个组件，它们分别是：
+
+
+用户，即User类
+
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748package com.meimeixia.boot.bean;/*** @author lia...
 						
 					</div>
 					
@@ -479,9 +485,9 @@ Spring是一个开源的控制反转(Inversion of Control，IoC)和面向切面(
 
 
 
-	<a href="/2021/09/03/Spring4.2.5+Hibernate4.3.11+Struts2.3.24%E6%95%B4%E5%90%88%E5%BC%80%E5%8F%91/" itemprop="url">
-		<time datetime="2021-09-02T19:41:15.182Z" itemprop="datePublished">
-	  		2021-09-03
+	<a href="/2021/09/04/Spring%20Boot%202%E5%BA%95%E5%B1%82%E6%B3%A8%E8%A7%A3%E7%AF%87%EF%BC%9A@Configuration%E8%AF%A6%E8%A7%A3/" itemprop="url">
+		<time datetime="2021-09-03T16:11:03.562Z" itemprop="datePublished">
+	  		2021-09-04
 	  </time>
 	</a> 
 
@@ -494,7 +500,7 @@ Spring是一个开源的控制反转(Inversion of Control，IoC)和面向切面(
 
 						
 							<span class="right">      	
-								<a href="/2021/09/03/Spring4.2.5+Hibernate4.3.11+Struts2.3.24%E6%95%B4%E5%90%88%E5%BC%80%E5%8F%91/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/04/Spring%20Boot%202%E5%BA%95%E5%B1%82%E6%B3%A8%E8%A7%A3%E7%AF%87%EF%BC%9A@Configuration%E8%AF%A6%E8%A7%A3/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -505,18 +511,22 @@ Spring是一个开源的控制反转(Inversion of Control，IoC)和面向切面(
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/09/03/Spring%E6%8F%90%E4%BE%9B%E7%9A%84CharacterEncoding%E5%92%8COpenSessionInView%E5%8A%9F%E8%83%BD/" itemprop="url">
-		Spring提供的CharacterEncoding和OpenSessionInView功能
+	<a href="/2021/09/03/Spring%20Boot%202%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8%E7%AF%87%EF%BC%9ASpring%20Boot%E7%9A%84%E8%87%AA%E5%8A%A8%E9%85%8D%E7%BD%AE%E7%89%B9%E6%80%A7/" itemprop="url">
+		Spring Boot 2基础入门篇：Spring Boot的自动配置特性
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							Spring提供的CharacterEncoding和OpenSessionInView功能
-前面我们以一种更加优雅的方式集成了Spring4.2.5+Hibernate4.3.11+Struts1.3.8，但是在实际开发中我们会碰到两个问题，在此先不言表，只通过例子将其引出来。我们先在SSH项目的根目录WebRoot下新建一个JSP页面——index.jsp，即项目首页，其内容为：
+							Spring Boot 2基础入门篇：Spring Boot的自动配置特性-Spring Boot特点
+在这一篇文章中，我们就来说下Spring Boot给我们提供的第二大优秀特性，即自动配置。
 
-1234567891011121314151617&lt;%@ page language=&quot;java&quot; contentType=&quot;text/html; charset=UT...
+-自动配置
+通过编写咱们的第一个Spring Boot的Hello World入门小程序，我们深刻体会到了Spring Boot帮我们自动配好了好多东西，例如帮我们自动配好了Tomcat开发场景。
+
+-自动配好Tomcat开发场景
+不管Spring Boot帮我们自动配好了什么东西，我们都得做这样两步，第一步是如果你想要自动配好Tomcat开发场景，那么你就得必须先引入Tomcat开发场景的依...
 						
 					</div>
 					
@@ -531,8 +541,8 @@ Spring是一个开源的控制反转(Inversion of Control，IoC)和面向切面(
 
 
 
-	<a href="/2021/09/03/Spring%E6%8F%90%E4%BE%9B%E7%9A%84CharacterEncoding%E5%92%8COpenSessionInView%E5%8A%9F%E8%83%BD/" itemprop="url">
-		<time datetime="2021-09-02T19:24:14.676Z" itemprop="datePublished">
+	<a href="/2021/09/03/Spring%20Boot%202%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8%E7%AF%87%EF%BC%9ASpring%20Boot%E7%9A%84%E8%87%AA%E5%8A%A8%E9%85%8D%E7%BD%AE%E7%89%B9%E6%80%A7/" itemprop="url">
+		<time datetime="2021-09-03T15:26:59.304Z" itemprop="datePublished">
 	  		2021-09-03
 	  </time>
 	</a> 
@@ -546,7 +556,7 @@ Spring是一个开源的控制反转(Inversion of Control，IoC)和面向切面(
 
 						
 							<span class="right">      	
-								<a href="/2021/09/03/Spring%E6%8F%90%E4%BE%9B%E7%9A%84CharacterEncoding%E5%92%8COpenSessionInView%E5%8A%9F%E8%83%BD/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/03/Spring%20Boot%202%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8%E7%AF%87%EF%BC%9ASpring%20Boot%E7%9A%84%E8%87%AA%E5%8A%A8%E9%85%8D%E7%BD%AE%E7%89%B9%E6%80%A7/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -557,21 +567,21 @@ Spring是一个开源的控制反转(Inversion of Control，IoC)和面向切面(
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/09/03/%E4%B8%BASpring%E9%9B%86%E6%88%90%E7%9A%84Hibernate%E9%85%8D%E7%BD%AE%E4%BA%8C%E7%BA%A7%E7%BC%93%E5%AD%98/" itemprop="url">
-		为Spring集成的Hibernate配置二级缓存
+	<a href="/2021/09/03/Spring%20Boot%202%E7%95%AA%E5%A4%96%E7%AF%87%EF%BC%9A%E8%A7%A3%E5%86%B3Plugin%20-org.springframework.boot-spring-boot-maven-plugin--not%20found%E9%94%99%E8%AF%AF/" itemprop="url">
+		Spring Boot 2番外篇：解决Plugin -org.springframework.boot-spring-boot-maven-plugin--not found错误
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							为Spring集成的Hibernate配置二级缓存
-前面我们已经集成了Spring4.2.5+Hibernate4.3.11+Struts1.3.8了，接下来我们就要为Spring4.2.5集成的Hibernate4.3.11配置二级缓存了，因为在企业开发中，会大量使用到Hibernate的二级缓存。由于要在SSH项目中使用到Hibernate4.3.11的二级缓存，所以我们需要向项目中导入Hibernate4.3.11中与二级缓存相关的jar文件，所以要导入如下jar文件：
+							Spring Boot 2番外篇：解决Plugin -org.springframework.boot-spring-boot-maven-plugin–not found错误-问题描述
+我在写完第一个Spring Boot的Hello World入门小程序之后，本来是啥事都没有的，过了个两天吧，发现用IDEA打开之前新建的Spring Boot项目，pom.xml文件里面引入的spring-boot-maven-plugin插件突然就变红了，用图说话。
 
 
 
 
-注意：以上三个jar文件都要导入到项目中，否则会出现各种异常，比如类找不到等等。这样，总共需要向SSH项...
+我把鼠标放在该插件上，提示我说报了个Plugin &#39;org.springframework.boot:spring-b...
 						
 					</div>
 					
@@ -586,8 +596,8 @@ Spring是一个开源的控制反转(Inversion of Control，IoC)和面向切面(
 
 
 
-	<a href="/2021/09/03/%E4%B8%BASpring%E9%9B%86%E6%88%90%E7%9A%84Hibernate%E9%85%8D%E7%BD%AE%E4%BA%8C%E7%BA%A7%E7%BC%93%E5%AD%98/" itemprop="url">
-		<time datetime="2021-09-02T19:03:34.901Z" itemprop="datePublished">
+	<a href="/2021/09/03/Spring%20Boot%202%E7%95%AA%E5%A4%96%E7%AF%87%EF%BC%9A%E8%A7%A3%E5%86%B3Plugin%20-org.springframework.boot-spring-boot-maven-plugin--not%20found%E9%94%99%E8%AF%AF/" itemprop="url">
+		<time datetime="2021-09-03T15:05:28.325Z" itemprop="datePublished">
 	  		2021-09-03
 	  </time>
 	</a> 
@@ -601,7 +611,7 @@ Spring是一个开源的控制反转(Inversion of Control，IoC)和面向切面(
 
 						
 							<span class="right">      	
-								<a href="/2021/09/03/%E4%B8%BASpring%E9%9B%86%E6%88%90%E7%9A%84Hibernate%E9%85%8D%E7%BD%AE%E4%BA%8C%E7%BA%A7%E7%BC%93%E5%AD%98/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/03/Spring%20Boot%202%E7%95%AA%E5%A4%96%E7%AF%87%EF%BC%9A%E8%A7%A3%E5%86%B3Plugin%20-org.springframework.boot-spring-boot-maven-plugin--not%20found%E9%94%99%E8%AF%AF/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -612,21 +622,19 @@ Spring是一个开源的控制反转(Inversion of Control，IoC)和面向切面(
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/09/03/Spring4.2.5+Hibernate4.3.11+Struts1.3.8%E9%9B%86%E6%88%90%E6%96%B9%E6%A1%88%E4%BA%8C/" itemprop="url">
-		Spring4.2.5+Hibernate4.3.11+Struts1.3.8集成方案二
+	<a href="/2021/09/03/Spring%20Boot%202%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8%E7%AF%87%EF%BC%9ASpring%20Boot%E7%9A%84%E4%BE%9D%E8%B5%96%E7%AE%A1%E7%90%86%E7%89%B9%E6%80%A7/" itemprop="url">
+		Spring Boot 2基础入门篇：Spring Boot的依赖管理特性
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							Spring4.2.5+Hibernate4.3.11+Struts1.3.8集成方案二
-前面我们已经集成了Spring4.2.5+Hibernate4.3.11+Struts1.3.8，但是集成的方案并不完美，因为我们在Action里面每次要取得Spring容器实例，都必须有这样的代码：
+							Spring Boot 2基础入门篇：Spring Boot的依赖管理特性
+在上一篇文章中，我们通过编写咱们的第一个Spring Boot的Hello World入门小程序，体会到了Spring Boot的强大与便捷。其实，我要说的是，它的这些功能都是基于其给我们提供的两大优秀特性而来的。那Spring Boot给我们提供的是哪两大优秀特性呢？我就直接告诉大家得了，一个是依赖管理，一个是自动配置，在这篇文章中，我们先来说一下Spring Boot的依赖管理机制。
 
-12WebApplicationContext ctx = WebApplicationContextUtils.getWebApplicationContext(                this.getServlet().getServletContext());
-
-
-是不是很招人烦啊！而...
+-Spring Boot特点
+我们可以清楚地看到，咱们的第一个Spring Boot的Hello World入门小程序的最大...
 						
 					</div>
 					
@@ -641,8 +649,8 @@ Spring是一个开源的控制反转(Inversion of Control，IoC)和面向切面(
 
 
 
-	<a href="/2021/09/03/Spring4.2.5+Hibernate4.3.11+Struts1.3.8%E9%9B%86%E6%88%90%E6%96%B9%E6%A1%88%E4%BA%8C/" itemprop="url">
-		<time datetime="2021-09-02T18:28:39.829Z" itemprop="datePublished">
+	<a href="/2021/09/03/Spring%20Boot%202%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8%E7%AF%87%EF%BC%9ASpring%20Boot%E7%9A%84%E4%BE%9D%E8%B5%96%E7%AE%A1%E7%90%86%E7%89%B9%E6%80%A7/" itemprop="url">
+		<time datetime="2021-09-03T13:25:33.006Z" itemprop="datePublished">
 	  		2021-09-03
 	  </time>
 	</a> 
@@ -656,7 +664,7 @@ Spring是一个开源的控制反转(Inversion of Control，IoC)和面向切面(
 
 						
 							<span class="right">      	
-								<a href="/2021/09/03/Spring4.2.5+Hibernate4.3.11+Struts1.3.8%E9%9B%86%E6%88%90%E6%96%B9%E6%A1%88%E4%BA%8C/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/03/Spring%20Boot%202%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8%E7%AF%87%EF%BC%9ASpring%20Boot%E7%9A%84%E4%BE%9D%E8%B5%96%E7%AE%A1%E7%90%86%E7%89%B9%E6%80%A7/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -667,21 +675,22 @@ Spring是一个开源的控制反转(Inversion of Control，IoC)和面向切面(
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/09/03/Spring4.2.5+Hibernate4.3.11+Struts1.3.8%E9%9B%86%E6%88%90%E6%96%B9%E6%A1%88%E4%B8%80/" itemprop="url">
-		Spring4.2.5+Hibernate4.3.11+Struts1.3.8集成方案一
+	<a href="/2021/09/03/Spring%20Boot%202%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8%E7%AF%87%EF%BC%9AHello%20World%E5%85%A5%E9%97%A8/" itemprop="url">
+		Spring Boot 2基础入门篇：Hello World入门
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							Spring4.2.5+Hibernate4.3.11+Struts1.3.8集成方案一
-前面我们已经集成了Spring4.2.5+Hibernate4.3.11这两个框架，现在是时候集成web层框架——Struts1.3.8了。本文是是建立在Spring4.2.5+Hibernate4.3.11组合开发基础之上的。我们首先向SSH项目中导入Struts1.3.8框架所需的jar文件，如图所示：
+							Spring Boot 2基础入门篇：Hello World入门
+在这篇文章中，我们就来编写一个Spring Boot的Hello World入门程序，来体会一下Spring Boot的用法。
+
+-系统要求
+Spring Boot对我们的系统是有要求的，即Java必须是8及以上版本，以及Maven必须是3.3及以上版本。当然，这也在Spring Boot的官方文档里面说的很清楚了，下面会给出Spring Boot官方文档的地址。
 
 
-
-
-注意：Hibernate4.3.11中已经存在一个antlr-2.7.7.jar，所以把Struts中的antlr-2.7.2.jar删除，避免jar冲突。除此之外，千万不要忘了向SSH...
+Spring Boot官方文档的地址：https://docs.spring.io/spring-boot/docs/current/reference/h...
 						
 					</div>
 					
@@ -696,8 +705,8 @@ Spring是一个开源的控制反转(Inversion of Control，IoC)和面向切面(
 
 
 
-	<a href="/2021/09/03/Spring4.2.5+Hibernate4.3.11+Struts1.3.8%E9%9B%86%E6%88%90%E6%96%B9%E6%A1%88%E4%B8%80/" itemprop="url">
-		<time datetime="2021-09-02T17:57:32.478Z" itemprop="datePublished">
+	<a href="/2021/09/03/Spring%20Boot%202%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8%E7%AF%87%EF%BC%9AHello%20World%E5%85%A5%E9%97%A8/" itemprop="url">
+		<time datetime="2021-09-03T09:13:13.479Z" itemprop="datePublished">
 	  		2021-09-03
 	  </time>
 	</a> 
@@ -711,7 +720,7 @@ Spring是一个开源的控制反转(Inversion of Control，IoC)和面向切面(
 
 						
 							<span class="right">      	
-								<a href="/2021/09/03/Spring4.2.5+Hibernate4.3.11+Struts1.3.8%E9%9B%86%E6%88%90%E6%96%B9%E6%A1%88%E4%B8%80/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/03/Spring%20Boot%202%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8%E7%AF%87%EF%BC%9AHello%20World%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -722,23 +731,17 @@ Spring是一个开源的控制反转(Inversion of Control，IoC)和面向切面(
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/09/03/Spring4.2.5+Hibernate4.3.11%E7%BB%84%E5%90%88%E5%BC%80%E5%8F%91/" itemprop="url">
-		Spring4.2.5+Hibernate4.3.11组合开发
+	<a href="/2021/09/03/JAVA%E6%A1%86%E6%9E%B6SpringBoot%E6%95%99%E7%A8%8B%E5%BA%8F%E7%AB%A0%E6%A6%82%E8%A7%88/" itemprop="url">
+		JAVA框架SpringBoot教程序章概览
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							Spring4.2.5+Hibernate4.3.11组合开发-搭建和配置Spring与Hibernate整合的环境
-今天我们来学习Spring4.2.5+Hibernate4.3.11+Struts1.3.8整合开发。在整合开发时，不要一口气的把这3个框架整合好，而是应该分步整合，通常应该先整合Spring4.2.5+Hibernate4.3.11这2个框架，这2个框架整合好之后，再来整合Struts1.3.8框架。我们首先新建一个动态web项目，名称为SSH，顺便将项目的整个编码设置为UTF-8，如图所示：
-
-
-
-
-
-
-现在我们来分步集成Spring4.2.5+Hibernate4....
+							JAVA框架SpringBoot教程序章概览-Spring能做什么？-Spring的能力
+首先，咱们来看一下Spring与Spring Boot它们之间的区别和联系，而且我们要学好Spring Boot，也应该对Spring的整个生态圈要有所了解。大家之前已经或多或少地学过Spring了，知道它有非常多的功能，比如IoC（做容器）、AOP（做切面），以及我们可以用Spring MVC来进行一个Web应用的开发等等，这些都是Spring框架给我们带来的基本功能。
+当然，整个Spring到底能做什么，我们也可以来参照官网的解释。Spring的官网地址是https://spring.io/，我...
 						
 					</div>
 					
@@ -753,8 +756,8 @@ Spring是一个开源的控制反转(Inversion of Control，IoC)和面向切面(
 
 
 
-	<a href="/2021/09/03/Spring4.2.5+Hibernate4.3.11%E7%BB%84%E5%90%88%E5%BC%80%E5%8F%91/" itemprop="url">
-		<time datetime="2021-09-02T17:43:06.027Z" itemprop="datePublished">
+	<a href="/2021/09/03/JAVA%E6%A1%86%E6%9E%B6SpringBoot%E6%95%99%E7%A8%8B%E5%BA%8F%E7%AB%A0%E6%A6%82%E8%A7%88/" itemprop="url">
+		<time datetime="2021-09-03T08:07:24.530Z" itemprop="datePublished">
 	  		2021-09-03
 	  </time>
 	</a> 
@@ -768,7 +771,7 @@ Spring是一个开源的控制反转(Inversion of Control，IoC)和面向切面(
 
 						
 							<span class="right">      	
-								<a href="/2021/09/03/Spring4.2.5+Hibernate4.3.11%E7%BB%84%E5%90%88%E5%BC%80%E5%8F%91/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/03/JAVA%E6%A1%86%E6%9E%B6SpringBoot%E6%95%99%E7%A8%8B%E5%BA%8F%E7%AB%A0%E6%A6%82%E8%A7%88/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>

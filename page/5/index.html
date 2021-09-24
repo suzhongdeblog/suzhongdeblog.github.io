@@ -232,16 +232,21 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/09/02/%E4%BD%BF%E7%94%A8CGLIB%E5%AE%9E%E7%8E%B0AOP%E5%8A%9F%E8%83%BD%E4%B8%8EAOP%E6%A6%82%E5%BF%B5%E8%A7%A3%E9%87%8A/" itemprop="url">
-		使用CGLIB实现AOP功能与AOP概念解释
+	<a href="/2021/09/03/Spring4.2.5+Hibernate4.3.11+Struts1.3.8%E9%9B%86%E6%88%90%E6%96%B9%E6%A1%88%E4%B8%80/" itemprop="url">
+		Spring4.2.5+Hibernate4.3.11+Struts1.3.8集成方案一
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							使用CGLIB实现AOP功能与AOP概念解释-使用CGLIB实现AOP功能
-在Java里面，我们要产生某个对象的代理对象，这个对象必须要有一个特点，即这个对象必须实现一个接口，动态代理技术只能基于接口进行代理。有时候我们在做开发的时候，这个对象就没有实现接口，有人可能会说，它既然没有接口，那我就给它定义一个接口，这是不行的，因为有时候我们拿到一个对象，而这个对象是服务器产生给我们的，是服务器提供给我们的，又不是我们自己写的，动不动就给它定义一个接口，给它找个爸爸，哪那行呢？但我们现在要对它进行增强，这时用动态代理技术就不行了，动态代理技术只能是基于接口，那如果这个对象没有接口，又该怎么做...
+							Spring4.2.5+Hibernate4.3.11+Struts1.3.8集成方案一
+前面我们已经集成了Spring4.2.5+Hibernate4.3.11这两个框架，现在是时候集成web层框架——Struts1.3.8了。本文是是建立在Spring4.2.5+Hibernate4.3.11组合开发基础之上的。我们首先向SSH项目中导入Struts1.3.8框架所需的jar文件，如图所示：
+
+
+
+
+注意：Hibernate4.3.11中已经存在一个antlr-2.7.7.jar，所以把Struts中的antlr-2.7.2.jar删除，避免jar冲突。除此之外，千万不要忘了向SSH...
 						
 					</div>
 					
@@ -256,9 +261,9 @@
 
 
 
-	<a href="/2021/09/02/%E4%BD%BF%E7%94%A8CGLIB%E5%AE%9E%E7%8E%B0AOP%E5%8A%9F%E8%83%BD%E4%B8%8EAOP%E6%A6%82%E5%BF%B5%E8%A7%A3%E9%87%8A/" itemprop="url">
-		<time datetime="2021-09-02T13:16:47.215Z" itemprop="datePublished">
-	  		2021-09-02
+	<a href="/2021/09/03/Spring4.2.5+Hibernate4.3.11+Struts1.3.8%E9%9B%86%E6%88%90%E6%96%B9%E6%A1%88%E4%B8%80/" itemprop="url">
+		<time datetime="2021-09-02T17:57:32.478Z" itemprop="datePublished">
+	  		2021-09-03
 	  </time>
 	</a> 
 
@@ -271,7 +276,7 @@
 
 						
 							<span class="right">      	
-								<a href="/2021/09/02/%E4%BD%BF%E7%94%A8CGLIB%E5%AE%9E%E7%8E%B0AOP%E5%8A%9F%E8%83%BD%E4%B8%8EAOP%E6%A6%82%E5%BF%B5%E8%A7%A3%E9%87%8A/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/03/Spring4.2.5+Hibernate4.3.11+Struts1.3.8%E9%9B%86%E6%88%90%E6%96%B9%E6%A1%88%E4%B8%80/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -282,18 +287,23 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/09/02/%E8%AE%A9Spring%E8%87%AA%E5%8A%A8%E6%89%AB%E6%8F%8F%E5%92%8C%E7%AE%A1%E7%90%86Bean/" itemprop="url">
-		让Spring自动扫描和管理Bean
+	<a href="/2021/09/03/Spring4.2.5+Hibernate4.3.11%E7%BB%84%E5%90%88%E5%BC%80%E5%8F%91/" itemprop="url">
+		Spring4.2.5+Hibernate4.3.11组合开发
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							让Spring自动扫描和管理Bean
-前面的例子我们都是使用XML的bean定义来配置组件。在一个稍大的项目中，通常会有上百个组件，如果这些组件采用XML的bean定义来配置，显然会增加配置文件的体积，查找及维护起来也不太方便。Spring2.5为我们引入了组件自动扫描机制，它可以在类路径底下寻找标注了@Component、@Service、@Controller、@Repository注解的类，并把这些类纳入进Spring容器中管理。它的作用和在XML文件中使用bean节点配置组件是一样的。要使用自动扫描机制，我们需要打开以下配置信息：
+							Spring4.2.5+Hibernate4.3.11组合开发-搭建和配置Spring与Hibernate整合的环境
+今天我们来学习Spring4.2.5+Hibernate4.3.11+Struts1.3.8整合开发。在整合开发时，不要一口气的把这3个框架整合好，而是应该分步整合，通常应该先整合Spring4.2.5+Hibernate4.3.11这2个框架，这2个框架整合好之后，再来整合Struts1.3.8框架。我们首先新建一个动态web项目，名称为SSH，顺便将项目的整个编码设置为UTF-8，如图所示：
 
-123456789101112&lt;?xml...
+
+
+
+
+
+现在我们来分步集成Spring4.2.5+Hibernate4....
 						
 					</div>
 					
@@ -308,9 +318,9 @@
 
 
 
-	<a href="/2021/09/02/%E8%AE%A9Spring%E8%87%AA%E5%8A%A8%E6%89%AB%E6%8F%8F%E5%92%8C%E7%AE%A1%E7%90%86Bean/" itemprop="url">
-		<time datetime="2021-09-02T12:54:58.839Z" itemprop="datePublished">
-	  		2021-09-02
+	<a href="/2021/09/03/Spring4.2.5+Hibernate4.3.11%E7%BB%84%E5%90%88%E5%BC%80%E5%8F%91/" itemprop="url">
+		<time datetime="2021-09-02T17:43:06.027Z" itemprop="datePublished">
+	  		2021-09-03
 	  </time>
 	</a> 
 
@@ -323,7 +333,7 @@
 
 						
 							<span class="right">      	
-								<a href="/2021/09/02/%E8%AE%A9Spring%E8%87%AA%E5%8A%A8%E6%89%AB%E6%8F%8F%E5%92%8C%E7%AE%A1%E7%90%86Bean/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/03/Spring4.2.5+Hibernate4.3.11%E7%BB%84%E5%90%88%E5%BC%80%E5%8F%91/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -334,22 +344,18 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/09/02/%E4%BD%BF%E7%94%A8@Autowire%E6%B3%A8%E8%A7%A3%E4%B8%8E%E8%87%AA%E5%8A%A8%E8%A3%85%E9%85%8D/" itemprop="url">
-		使用@Autowire注解与自动装配
+	<a href="/2021/09/03/%E4%BD%BF%E7%94%A8Spring%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E5%AE%9E%E7%8E%B0%E4%BA%8B%E5%8A%A1%E7%AE%A1%E7%90%86/" itemprop="url">
+		使用Spring配置文件实现事务管理
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							使用@Autowire注解与自动装配
+							使用Spring配置文件实现事务管理
+前面我们讲解了使用Spring注解方式来管理事务，现在我们就来学习使用Spring配置文件实现事务管理。本文是建立在使用Spring注解方式管理事务与传播行为详解案例基础之上的。首先我们在cn.itcast.service.impl包下再新建一个业务bean——PersonServiceBean2.java，其代码为：
 
-前面我们已经学会使用@Resource注解注入属性，并且我们还编码剖析了@Resource注解的实现原理。现在我们来学习使用@Autowire注解注入属性，本文是建立在编码剖析@Resource注解的实现原理的案例基础上的。
-
--用@Autowire注解完成属性装配
-@Autowire注解和@Resource一样，同样也可以标注在字段或属性的setter方法上，但它默认按类型装配。我们将@Autowire注解标注在字段上，如将PersonServiceBean类的代码修改为：
-
-123456789101112public class PersonS...
+12345678910111213141516171819202122232425262728293031323334353637383940414243/** * 使用JdbcTemplate进行insert/update/del...
 						
 					</div>
 					
@@ -364,9 +370,9 @@
 
 
 
-	<a href="/2021/09/02/%E4%BD%BF%E7%94%A8@Autowire%E6%B3%A8%E8%A7%A3%E4%B8%8E%E8%87%AA%E5%8A%A8%E8%A3%85%E9%85%8D/" itemprop="url">
-		<time datetime="2021-09-02T10:13:14.877Z" itemprop="datePublished">
-	  		2021-09-02
+	<a href="/2021/09/03/%E4%BD%BF%E7%94%A8Spring%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E5%AE%9E%E7%8E%B0%E4%BA%8B%E5%8A%A1%E7%AE%A1%E7%90%86/" itemprop="url">
+		<time datetime="2021-09-02T17:24:38.020Z" itemprop="datePublished">
+	  		2021-09-03
 	  </time>
 	</a> 
 
@@ -379,7 +385,7 @@
 
 						
 							<span class="right">      	
-								<a href="/2021/09/02/%E4%BD%BF%E7%94%A8@Autowire%E6%B3%A8%E8%A7%A3%E4%B8%8E%E8%87%AA%E5%8A%A8%E8%A3%85%E9%85%8D/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/03/%E4%BD%BF%E7%94%A8Spring%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E5%AE%9E%E7%8E%B0%E4%BA%8B%E5%8A%A1%E7%AE%A1%E7%90%86/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -390,25 +396,16 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/09/02/%E7%BC%96%E7%A0%81%E5%89%96%E6%9E%90@Resource%E6%B3%A8%E8%A7%A3%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/" itemprop="url">
-		编码剖析@Resource注解的实现原理
+	<a href="/2021/09/03/%E4%BD%BF%E7%94%A8Spring%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F%E7%AE%A1%E7%90%86%E4%BA%8B%E5%8A%A1%E4%B8%8E%E4%BC%A0%E6%92%AD%E8%A1%8C%E4%B8%BA%E8%AF%A6%E8%A7%A3/" itemprop="url">
+		使用Spring注解方式管理事务与传播行为详解
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							编码剖析@Resource注解的实现原理
-上文我们已经学会使用@Resource注解注入属性。学是学会了，但也仅限于会使用而已，故我们要深入剖析其内部原理，才算真正明白。接下来我们就来编码剖析@Resource注解的实现原理，但这都是建立在用@Resource注解完成属性装配的案例基础上的。由于我们要使用dom4j工具来读取Sping的配置文件——beans.xml，所以需要将dom4j所需的jar包导入项目中。dom4j所需的jar包为：
-
-
-dom4j-1.6.1.jar
-jaxen-1.1-beta-6.jar
-
-
-使用dom4j工具读取到诸如
-
-123&lt;bean id=&q...
+							使用Spring注解方式管理事务与传播行为详解-使用Spring注解方式管理事务
+前面讲解了怎么使用@Transactional注解声明PersonServiceBean底下所有的业务方法需要事务管理，那么事务是如何来管理的呢？我们知道当每个业务方法执行的时候，它都会打开事务，在业务方法执行结束之后，它就会结束事务。那么它什么时候决定这个事务提交，什么时候决定这个事务回滚呢？原先我们手工控制事务的时候，通常这个事务的提交或回滚是由我们来操纵的，那现在我们采用容器的声明式事务管理，那我们如何知道事务什么时候提交，什么时候回滚呢？答案是：Spring容器默认情况下对运行时异常，它会进行事务的...
 						
 					</div>
 					
@@ -423,9 +420,9 @@ jaxen-1.1-beta-6.jar
 
 
 
-	<a href="/2021/09/02/%E7%BC%96%E7%A0%81%E5%89%96%E6%9E%90@Resource%E6%B3%A8%E8%A7%A3%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/" itemprop="url">
-		<time datetime="2021-09-02T10:01:40.666Z" itemprop="datePublished">
-	  		2021-09-02
+	<a href="/2021/09/03/%E4%BD%BF%E7%94%A8Spring%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F%E7%AE%A1%E7%90%86%E4%BA%8B%E5%8A%A1%E4%B8%8E%E4%BC%A0%E6%92%AD%E8%A1%8C%E4%B8%BA%E8%AF%A6%E8%A7%A3/" itemprop="url">
+		<time datetime="2021-09-02T17:02:40.575Z" itemprop="datePublished">
+	  		2021-09-03
 	  </time>
 	</a> 
 
@@ -438,7 +435,7 @@ jaxen-1.1-beta-6.jar
 
 						
 							<span class="right">      	
-								<a href="/2021/09/02/%E7%BC%96%E7%A0%81%E5%89%96%E6%9E%90@Resource%E6%B3%A8%E8%A7%A3%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/03/%E4%BD%BF%E7%94%A8Spring%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F%E7%AE%A1%E7%90%86%E4%BA%8B%E5%8A%A1%E4%B8%8E%E4%BC%A0%E6%92%AD%E8%A1%8C%E4%B8%BA%E8%AF%A6%E8%A7%A3/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -449,28 +446,19 @@ jaxen-1.1-beta-6.jar
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/09/02/%E7%94%A8@Resource%E6%B3%A8%E8%A7%A3%E5%AE%8C%E6%88%90%E5%B1%9E%E6%80%A7%E8%A3%85%E9%85%8D/" itemprop="url">
-		用@Resource注解完成属性装配
+	<a href="/2021/09/03/%E5%9C%A8Eclipse%E4%B8%8A%E5%AE%89%E8%A3%85Spring%20Tool%20Suite/" itemprop="url">
+		在Eclipse上安装Spring Tool Suite
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							用@Resource注解完成属性装配
-前面我们讲过spring的依赖注入有两种方式：
+							在Eclipse上安装Spring Tool Suite-Spring Tool Suite介绍
+Spring Tool Suite是一个基于Eclipse IDE开发环境中的用于开发Spring应用程序的工具，提供了开箱即用的环境用于实现、调试和部署你的Spring应用，包括为关键的服务器和云计算、Git、Maven、AspectJ和最新的Eclipse版本提供整合支持。Eclipse集成Spring Tool Suite插件有两种方式，一个是在线安装，一个是本地安装，两种方法大同小异。这里就以本地安装为例进行说明。
 
-
-使用构造器注入。
-使用属性setter方法注入。
-
-
-但其实还有一种注入方式，我们没讲，那就是使用Field注入（用于注解方式）。在详细讲解这种方式之前，我们还须知道以下的知识点。注入依赖对象可以采用手工装配或自动装配，在实际应用中建议使用手工装配，因为自动装配会产生未知情况，开发人员无法预见最终的装配结果。手工装配依赖对象，在这种方式中又有两种编程方式：
-
-
-在xml配置文件中，通过在bean节点下配置，如：
-
-1234&lt;bean id=&quot;personService&quot; c...
+-在Eclipse上安装Spring Tool Suite插件
+首...
 						
 					</div>
 					
@@ -485,9 +473,9 @@ jaxen-1.1-beta-6.jar
 
 
 
-	<a href="/2021/09/02/%E7%94%A8@Resource%E6%B3%A8%E8%A7%A3%E5%AE%8C%E6%88%90%E5%B1%9E%E6%80%A7%E8%A3%85%E9%85%8D/" itemprop="url">
-		<time datetime="2021-09-02T09:41:24.537Z" itemprop="datePublished">
-	  		2021-09-02
+	<a href="/2021/09/03/%E5%9C%A8Eclipse%E4%B8%8A%E5%AE%89%E8%A3%85Spring%20Tool%20Suite/" itemprop="url">
+		<time datetime="2021-09-02T16:38:19.213Z" itemprop="datePublished">
+	  		2021-09-03
 	  </time>
 	</a> 
 
@@ -500,7 +488,7 @@ jaxen-1.1-beta-6.jar
 
 						
 							<span class="right">      	
-								<a href="/2021/09/02/%E7%94%A8@Resource%E6%B3%A8%E8%A7%A3%E5%AE%8C%E6%88%90%E5%B1%9E%E6%80%A7%E8%A3%85%E9%85%8D/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/03/%E5%9C%A8Eclipse%E4%B8%8A%E5%AE%89%E8%A3%85Spring%20Tool%20Suite/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -511,21 +499,25 @@ jaxen-1.1-beta-6.jar
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/09/02/Spring%E5%A6%82%E4%BD%95%E8%A3%85%E9%85%8D%E5%90%84%E7%A7%8D%E9%9B%86%E5%90%88%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%B1%9E%E6%80%A7/" itemprop="url">
-		Spring如何装配各种集合类型的属性
+	<a href="/2021/09/03/Spring%E7%AE%A1%E7%90%86%E7%9A%84Bean%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/" itemprop="url">
+		Spring管理的Bean的生命周期
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							Spring如何装配各种集合类型的属性
-在前面我们已经会注入基本类型对象和其他bean，现在我们就来学习如何注入各种集合类型。
+							Spring管理的Bean的生命周期-bean的初始化时机
+前面讲解了Spring容器管理的bean的作用域。接着我们就要思考一个问题：bean到底是在什么时候才进行实例化的呢？我们以这个问题为引子来展开本文的说明。bean对象无外乎是在以下两个时刻进行实例化的：
 
--Spring如何装配各种集合类型的属性
-首先新建一个普通的Java Project，名称为spring_collection，并迅速搭建好Spring的开发环境。接着在src目录下新建一个cn.itcast.service包，并在该包下创建PersonService接口，其代码为：
 
-123456789101112public interface PersonService &#123;    Set&lt;String&gt; getSets();    ...
+调用getBean()方法时。
+Spring容器启动时。
+
+
+那么bean对象到底是在哪个时刻进行实例化的，这与Bean的作用域有着某种联系。我们以配置Spring管理的bean的作用域的案例为基础进行深入探讨。为了能够清楚地看到bean对象的实例化，我们需要修改PersonServiceBean类的代码为：
+
+12345...
 						
 					</div>
 					
@@ -540,9 +532,9 @@ jaxen-1.1-beta-6.jar
 
 
 
-	<a href="/2021/09/02/Spring%E5%A6%82%E4%BD%95%E8%A3%85%E9%85%8D%E5%90%84%E7%A7%8D%E9%9B%86%E5%90%88%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%B1%9E%E6%80%A7/" itemprop="url">
-		<time datetime="2021-09-02T09:34:04.448Z" itemprop="datePublished">
-	  		2021-09-02
+	<a href="/2021/09/03/Spring%E7%AE%A1%E7%90%86%E7%9A%84Bean%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/" itemprop="url">
+		<time datetime="2021-09-02T16:07:40.941Z" itemprop="datePublished">
+	  		2021-09-03
 	  </time>
 	</a> 
 
@@ -555,7 +547,7 @@ jaxen-1.1-beta-6.jar
 
 						
 							<span class="right">      	
-								<a href="/2021/09/02/Spring%E5%A6%82%E4%BD%95%E8%A3%85%E9%85%8D%E5%90%84%E7%A7%8D%E9%9B%86%E5%90%88%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%B1%9E%E6%80%A7/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/03/Spring%E7%AE%A1%E7%90%86%E7%9A%84Bean%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -566,23 +558,25 @@ jaxen-1.1-beta-6.jar
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/09/02/Spring+JDBC%E7%BB%84%E5%90%88%E5%BC%80%E5%8F%91/" itemprop="url">
-		Spring+JDBC组合开发
+	<a href="/2021/09/02/%E7%BC%96%E7%A0%81%E5%89%96%E6%9E%90Spring%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5%E7%9A%84%E5%8E%9F%E7%90%86/" itemprop="url">
+		编码剖析Spring依赖注入的原理
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							Spring+JDBC组合开发-搭建和配置Spring与JDBC整合的环境
-使用Spring+JDBC集成步骤如下：第一步，配置数据源。我们使用DBCP数据库连接池。我们首先在Eclipse中新建一个普通的Java Project，名称为springAndJDBC。接着导入所需Jar包到项目中，所需Jar包共有：
+							编码剖析Spring依赖注入的原理-Spring的依赖注入
+前面我们就已经讲过所谓依赖注入就是指：在运行期，由外部容器动态地将依赖对象注入到组件中。Spring的依赖注入有两种方式：
 
 
+通过构造器参数，让容器把创建好的依赖对象注入。
+使用setter方法进行注入。
 
 
-然后我们在Sping配置文件中——beans.xml配置数据源，即在beans.xml中加入如下内容：
+现在我们使用第二种方式进行依赖注入。以Spring管理的Bean的生命周期的案例为基础展开本文的说明。首先在src目录下新建一个cn.itcast.dao包，并在该包下新建一个接口——PersonDao.java，其代码为：
 
-12345678910111213141516&lt;bean id=&quot;dataSource&quot; class=&quot;org.apache.c...
+12345public interface PersonDao &#123;    void ...
 						
 					</div>
 					
@@ -597,8 +591,8 @@ jaxen-1.1-beta-6.jar
 
 
 
-	<a href="/2021/09/02/Spring+JDBC%E7%BB%84%E5%90%88%E5%BC%80%E5%8F%91/" itemprop="url">
-		<time datetime="2021-09-02T08:31:18.745Z" itemprop="datePublished">
+	<a href="/2021/09/02/%E7%BC%96%E7%A0%81%E5%89%96%E6%9E%90Spring%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5%E7%9A%84%E5%8E%9F%E7%90%86/" itemprop="url">
+		<time datetime="2021-09-02T15:32:23.719Z" itemprop="datePublished">
 	  		2021-09-02
 	  </time>
 	</a> 
@@ -612,7 +606,7 @@ jaxen-1.1-beta-6.jar
 
 						
 							<span class="right">      	
-								<a href="/2021/09/02/Spring+JDBC%E7%BB%84%E5%90%88%E5%BC%80%E5%8F%91/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/02/%E7%BC%96%E7%A0%81%E5%89%96%E6%9E%90Spring%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5%E7%9A%84%E5%8E%9F%E7%90%86/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -623,19 +617,18 @@ jaxen-1.1-beta-6.jar
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/09/02/Hibernate-5.0.7+Struts-2.3.24+Spring-4.2.4%E4%B8%89%E5%A4%A7%E6%A1%86%E6%9E%B6%E7%BA%AF%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F%E7%9A%84%E6%95%B4%E5%90%88/" itemprop="url">
-		Hibernate-5.0.7+Struts-2.3.24+Spring-4.2.4三大框架纯注解方式的整合
+	<a href="/2021/09/02/%E7%BC%96%E7%A0%81%E5%89%96%E6%9E%90Spring%E8%A3%85%E9%85%8D%E5%9F%BA%E6%9C%AC%E5%B1%9E%E6%80%A7%E7%9A%84%E5%8E%9F%E7%90%86/" itemprop="url">
+		编码剖析Spring装配基本属性的原理
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							Hibernate-5.0.7+Struts-2.3.24+Spring-4.2.4三大框架纯注解方式的整合
-还记得我在《Spring入门第十讲——Hibernate-5.0.7+Struts-2.3.24+Spring-4.2.4三大框架整合开发》这一讲中介绍SSH三大框架整合的时候，说过这三个框架的整合一共有三种方式，其中前两种方式已经讲过了，本讲介绍第三种方式，即纯注解的方式。
+							编码剖析Spring装配基本属性的原理
+上回我们已经讲到了Spring依赖注入的第一种方式，现在我们来详解第二种方式，须知这一切都是以编码剖析Spring依赖注入的原理案例为基础的。我们将Spring的配置文件——beans.xml的内容改为：
 
--搭建SSH注解开发的环境-创建web项目，引入jar包
-创建一个web项目，例如ssh3，并引入相关的jar包，那到底引入哪些jar包呢？相信你看过我的这篇文章——《Spring入门第十讲——Hiber...
+123456789101112131415161718192021&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;beans xmlns=&quot;http://www.springframework.org/schema/beans&quot;    x...
 						
 					</div>
 					
@@ -650,8 +643,8 @@ jaxen-1.1-beta-6.jar
 
 
 
-	<a href="/2021/09/02/Hibernate-5.0.7+Struts-2.3.24+Spring-4.2.4%E4%B8%89%E5%A4%A7%E6%A1%86%E6%9E%B6%E7%BA%AF%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F%E7%9A%84%E6%95%B4%E5%90%88/" itemprop="url">
-		<time datetime="2021-09-02T08:10:08.817Z" itemprop="datePublished">
+	<a href="/2021/09/02/%E7%BC%96%E7%A0%81%E5%89%96%E6%9E%90Spring%E8%A3%85%E9%85%8D%E5%9F%BA%E6%9C%AC%E5%B1%9E%E6%80%A7%E7%9A%84%E5%8E%9F%E7%90%86/" itemprop="url">
+		<time datetime="2021-09-02T15:13:33.179Z" itemprop="datePublished">
 	  		2021-09-02
 	  </time>
 	</a> 
@@ -665,7 +658,7 @@ jaxen-1.1-beta-6.jar
 
 						
 							<span class="right">      	
-								<a href="/2021/09/02/Hibernate-5.0.7+Struts-2.3.24+Spring-4.2.4%E4%B8%89%E5%A4%A7%E6%A1%86%E6%9E%B6%E7%BA%AF%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F%E7%9A%84%E6%95%B4%E5%90%88/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/02/%E7%BC%96%E7%A0%81%E5%89%96%E6%9E%90Spring%E8%A3%85%E9%85%8D%E5%9F%BA%E6%9C%AC%E5%B1%9E%E6%80%A7%E7%9A%84%E5%8E%9F%E7%90%86/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -676,19 +669,18 @@ jaxen-1.1-beta-6.jar
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/09/02/Spring%E7%9A%84Hibernate%E6%A8%A1%E6%9D%BF%E4%B8%8E%E5%BB%B6%E8%BF%9F%E5%8A%A0%E8%BD%BD%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/" itemprop="url">
-		Spring的Hibernate模板与延迟加载问题的解决
+	<a href="/2021/09/02/%E4%BD%BF%E7%94%A8Spring%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E5%AE%9E%E7%8E%B0AOP/" itemprop="url">
+		使用Spring配置文件实现AOP
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							Spring的Hibernate模板与延迟加载问题的解决
-在上一讲中，我们已经学会了Hibernate-5.0.7、Struts-2.3.24和Spring-4.2.4这三个框架的整合。现在，我在其基础上讲解两个知识点，一个是Spring中Hibernate模板的使用，一个是使用Spring如何解决延迟加载问题。温馨提示：如果有小伙伴没看过前一讲，那么接下来你就别扯蛋了，劝你回去看看。
+							使用Spring配置文件实现AOP
+前面我们已经学会了使用Spring的注解方式实现AOP，现在我们就要学习使用Spring配置文件实现AOP。本文是建立在使用Spring的注解方式实现AOP的细节的案例的基础之上的。我们首先将MyInterceptor类的代码修改为：
 
--Spring的Hibernate模板
-在Spring和Hibernate整合的过程中，Spring提供了一个Hibernate的模板类（即HibernateTemplate类），它可以用来简化Hibe...
+12345678910111213141516171819202122232425262728293031/** * 切面 * @author li ayun * */@Aspectpublic class MyInterceptor &#123;    public void doAccessCheck() &#12...
 						
 					</div>
 					
@@ -703,8 +695,8 @@ jaxen-1.1-beta-6.jar
 
 
 
-	<a href="/2021/09/02/Spring%E7%9A%84Hibernate%E6%A8%A1%E6%9D%BF%E4%B8%8E%E5%BB%B6%E8%BF%9F%E5%8A%A0%E8%BD%BD%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/" itemprop="url">
-		<time datetime="2021-09-01T19:53:09.695Z" itemprop="datePublished">
+	<a href="/2021/09/02/%E4%BD%BF%E7%94%A8Spring%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E5%AE%9E%E7%8E%B0AOP/" itemprop="url">
+		<time datetime="2021-09-02T14:41:01.600Z" itemprop="datePublished">
 	  		2021-09-02
 	  </time>
 	</a> 
@@ -718,7 +710,7 @@ jaxen-1.1-beta-6.jar
 
 						
 							<span class="right">      	
-								<a href="/2021/09/02/Spring%E7%9A%84Hibernate%E6%A8%A1%E6%9D%BF%E4%B8%8E%E5%BB%B6%E8%BF%9F%E5%8A%A0%E8%BD%BD%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/02/%E4%BD%BF%E7%94%A8Spring%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E5%AE%9E%E7%8E%B0AOP/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -729,26 +721,22 @@ jaxen-1.1-beta-6.jar
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/09/02/Hibernate-5.0.7+Struts-2.3.24+Spring-4.2.4%E4%B8%89%E5%A4%A7%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88%E5%BC%80%E5%8F%91/" itemprop="url">
-		Hibernate-5.0.7+Struts-2.3.24+Spring-4.2.4三大框架整合开发
+	<a href="/2021/09/02/%E4%BD%BF%E7%94%A8Spring%E7%9A%84%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0AOP%E5%85%A5%E9%97%A8/" itemprop="url">
+		使用Spring的注解方式实现AOP入门
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							Hibernate-5.0.7+Struts-2.3.24+Spring-4.2.4三大框架整合开发-回顾SSH框架
-至此，Hibernate-5.0.7、Struts-2.3.24和Spring-4.2.4这三个框架，我们已经都过了一遍了。现在，咱就要学习如何整合这三个框架进行开发了。在这之前，咱就来先回顾一下这三个框架。
+							使用Spring的注解方式实现AOP入门
+首先在Eclipse中新建一个普通的Java Project，名称为springAOP。为了使用Spring的注解方式进行面向切面编程，需要在springAOP项目中加入与AOP相关的jar包，spring aop需要额外的jar包有：
 
 
-
--SSH框架整合思想
-Hibernate-5.0.7、Struts-2.3.24和Spring-4.2.4这三个框架都会应用在JavaEE三层结构中，每一层都用到了不同的框架。SSH框架整合的思想可以用下图来表示。
-
-
-
--SSH框架的整合
-Hibernate...
+com.springsource.org.aopalliance-1.0.0.jar
+com.springsource.org.aspectj.weaver-1.6.8.RELEASE.jar
+spring-aop-4.2.5.RELEASE.jar
+spring-aspects-4.2.5.RELEASE....
 						
 					</div>
 					
@@ -763,8 +751,8 @@ Hibernate...
 
 
 
-	<a href="/2021/09/02/Hibernate-5.0.7+Struts-2.3.24+Spring-4.2.4%E4%B8%89%E5%A4%A7%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88%E5%BC%80%E5%8F%91/" itemprop="url">
-		<time datetime="2021-09-01T18:34:48.083Z" itemprop="datePublished">
+	<a href="/2021/09/02/%E4%BD%BF%E7%94%A8Spring%E7%9A%84%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0AOP%E5%85%A5%E9%97%A8/" itemprop="url">
+		<time datetime="2021-09-02T14:23:10.949Z" itemprop="datePublished">
 	  		2021-09-02
 	  </time>
 	</a> 
@@ -778,7 +766,7 @@ Hibernate...
 
 						
 							<span class="right">      	
-								<a href="/2021/09/02/Hibernate-5.0.7+Struts-2.3.24+Spring-4.2.4%E4%B8%89%E5%A4%A7%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88%E5%BC%80%E5%8F%91/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/02/%E4%BD%BF%E7%94%A8Spring%E7%9A%84%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0AOP%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>

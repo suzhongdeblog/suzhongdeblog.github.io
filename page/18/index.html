@@ -232,22 +232,22 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/25/SpringBoot%E5%AE%98%E6%96%B9%E6%8F%92%E4%BB%B6Docker%E5%85%A5%E9%97%A8/" itemprop="url">
-		SpringBoot官方插件Docker入门
+	<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7VirtualBox%E4%B8%ADLinux%E6%93%8D%E4%BD%9C%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		开发工具VirtualBox中Linux操作入门篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							SpringBoot官方插件Docker入门
-为了方便为SpringBoot应用构建Docker镜像，我们经常会使用Maven插件来打包镜像。之前一直使用的是第三方插件，有spotify和fabric8出品的两种docker-maven-plugin。最近SpringBoot 2.4.0发布了，官方插件也增加了对Docker的支持，体验了一把发现也很好用，推荐给大家！
+							开发工具VirtualBox中Linux操作入门篇
+本文将从虚拟机安装、Linux系统安装、SSH客户端工具使用三方面来详细介绍Linux系统的安装及使用。
 
--第三方插件使用
-我们先了解下第三方插件的使用，方便和官方插件做对比，fabric8插件使用具体可以参考《还在手动部署SpringBoot应用？试试这个自动化插件！》。
+-虚拟机安装
+VirtualBox 是一款开源虚拟机软件，由Sun公司出品，现在则由Oracle进行开发。VirtualBox号称是最强的免费虚拟机软件，它性能优异且简单易用。可虚拟的系统包括Windows、Linux、MacOS、Android等操作系统！本文将使用VirtualBox作为虚拟机来安装Linux系统。
 
-
-值得注意的是，在我们使用插件时，需要自己定义镜...
+-VirtualBox的安装
+我们先下载VirtualBox安装包，下载地址：https://www.virt...
 						
 					</div>
 					
@@ -262,9 +262,9 @@
 
 
 
-	<a href="/2021/08/25/SpringBoot%E5%AE%98%E6%96%B9%E6%8F%92%E4%BB%B6Docker%E5%85%A5%E9%97%A8/" itemprop="url">
-		<time datetime="2021-08-25T10:39:38.994Z" itemprop="datePublished">
-	  		2021-08-25
+	<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7VirtualBox%E4%B8%ADLinux%E6%93%8D%E4%BD%9C%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-26T15:09:36.394Z" itemprop="datePublished">
+	  		2021-08-26
 	  </time>
 	</a> 
 
@@ -277,7 +277,7 @@
 
 						
 							<span class="right">      	
-								<a href="/2021/08/25/SpringBoot%E5%AE%98%E6%96%B9%E6%8F%92%E4%BB%B6Docker%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7VirtualBox%E4%B8%ADLinux%E6%93%8D%E4%BD%9C%E5%85%A5%E9%97%A8%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -288,19 +288,32 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/25/Elasticsearch%E4%BD%BF%E7%94%A8SQL%E6%9F%A5%E8%AF%A2%E5%85%A5%E9%97%A8/" itemprop="url">
-		Elasticsearch使用SQL查询入门
+	<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7IDEA%E4%B8%AD%E7%9A%84Git%E6%93%8D%E4%BD%9C%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		开发工具IDEA中的Git操作入门篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							Elasticsearch使用SQL查询入门
-平时使用Elasticsearch的时候，偶尔会在Kibana中使用Query DSL来查询数据。每次要用到Query DSL时都基本忘光了，需要重新在回顾一遍，最近发现Elasticsearch已经支持SQL查询了（6.3版本以后），整理了下其用法，希望对大家有所帮助！
+							开发工具IDEA中的Git操作入门篇
+大家在使用Git时，都会选择一种Git客户端，在IDEA中内置了这种客户端，可以让你不需要使用Git命令就可以方便地进行操作，本文将讲述IDEA中的一些常用Git操作。
 
--简介
-Elasticsearch SQL是一个X-Pack组件，它允许针对Elasticsearch实时执行类似SQL的查询。无论使用REST接口，命令行还是JDBC，任何客户端都可以使用SQL对Elasticsearch中的数据进行原生搜索和聚合数据。可以将Elast...
+-环境准备
+使用前需要安装一个远程的Git仓库和本地的Git客户端，具体参考：10分钟搭建自己的Git仓库。
+
+由于IDEA中的Git插件需要依赖本地Git客户端，所以需要进行如下配置：
+
+
+
+
+-操作流程
+我们这里使用mall-tiny项目的源代码来演示，尽可能还原一个正式的操作流程。
+
+-在Gitlab中创建一个项目并添加README文件
+
+-clone项目到本地
+打开从Git...
 						
 					</div>
 					
@@ -315,9 +328,9 @@ Elasticsearch SQL是一个X-Pack组件，它允许针对Elasticsearch实时执�
 
 
 
-	<a href="/2021/08/25/Elasticsearch%E4%BD%BF%E7%94%A8SQL%E6%9F%A5%E8%AF%A2%E5%85%A5%E9%97%A8/" itemprop="url">
-		<time datetime="2021-08-25T10:02:21.393Z" itemprop="datePublished">
-	  		2021-08-25
+	<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7IDEA%E4%B8%AD%E7%9A%84Git%E6%93%8D%E4%BD%9C%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-26T15:07:51.468Z" itemprop="datePublished">
+	  		2021-08-26
 	  </time>
 	</a> 
 
@@ -330,7 +343,7 @@ Elasticsearch SQL是一个X-Pack组件，它允许针对Elasticsearch实时执�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/25/Elasticsearch%E4%BD%BF%E7%94%A8SQL%E6%9F%A5%E8%AF%A2%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7IDEA%E4%B8%AD%E7%9A%84Git%E6%93%8D%E4%BD%9C%E5%85%A5%E9%97%A8%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -341,25 +354,24 @@ Elasticsearch SQL是一个X-Pack组件，它允许针对Elasticsearch实时执�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/25/%E5%BC%80%E5%8F%91%E8%80%85SpringBoot%E5%85%A5%E9%97%A8/" itemprop="url">
-		开发者SpringBoot入门
+	<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7GitLab10%E5%88%86%E9%92%9F%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84Git%E4%BB%93%E5%BA%93%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		开发工具GitLab10分钟搭建自己的Git仓库入门篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							开发者SpringBoot入门
-天天在用SpringBoot，但有些SpringBoot的实用知识点却不是很清楚！最近又对SpringBoot中的实用知识点做了个总结，相信对从Spring过渡到SpringBoot的朋友会很有帮助！
+							开发工具GitLab10分钟搭建自己的Git仓库入门篇
+GitLab是一款使用MIT许可证的基于网络的Git仓库管理工具，我们可以使用它来搭建自己的Git仓库，本文将介绍如何使用Gitlab在Linux下快速搭建Git仓库。
 
--前言
-首先我们来了解下为什么要有SpringBoot？
+-Gitlab服务端搭建
+在Linux（CenterOS7.6）下我们会以Docker的方式来安装Gitlab，对Docker不了解的朋友可以参考：开发者必备Docker命令。
 
+-下载Gitlab的Docker镜像1docker pull gitlab/gitlab-ce
 
-Spring作为J2EE的轻量级代替品，让我们无需开发重量级的Enterprise JavaBean（EJB），通过依赖注入和面向切面编程，使用简单的Java对象（POJO）即可实现EJB的功能。
-
-
-虽然Spring的组件代码是轻量级的，但它的配置却是重量级的。即使后来Spring引入了基于注...
+-运行如下命令来启动Gitlab
+需要注意的是我们的Gitlab的http服务运行在宿主...
 						
 					</div>
 					
@@ -374,9 +386,9 @@ Spring作为J2EE的轻量级代替品，让我们无需开发重量级的Enterpr
 
 
 
-	<a href="/2021/08/25/%E5%BC%80%E5%8F%91%E8%80%85SpringBoot%E5%85%A5%E9%97%A8/" itemprop="url">
-		<time datetime="2021-08-25T09:19:24.456Z" itemprop="datePublished">
-	  		2021-08-25
+	<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7GitLab10%E5%88%86%E9%92%9F%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84Git%E4%BB%93%E5%BA%93%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-26T13:45:38.032Z" itemprop="datePublished">
+	  		2021-08-26
 	  </time>
 	</a> 
 
@@ -389,7 +401,7 @@ Spring作为J2EE的轻量级代替品，让我们无需开发重量级的Enterpr
 
 						
 							<span class="right">      	
-								<a href="/2021/08/25/%E5%BC%80%E5%8F%91%E8%80%85SpringBoot%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7GitLab10%E5%88%86%E9%92%9F%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84Git%E4%BB%93%E5%BA%93%E5%85%A5%E9%97%A8%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -400,22 +412,26 @@ Spring作为J2EE的轻量级代替品，让我们无需开发重量级的Enterpr
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/25/canal%E5%AF%B9MySQL%E7%9A%84%E5%A2%9E%E9%87%8F%E6%95%B0%E6%8D%AE%E8%BF%9B%E8%A1%8C%E5%AE%9E%E6%97%B6%E5%90%8C%E6%AD%A5/" itemprop="url">
-		canal对MySQL的增量数据进行实时同步
+	<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Postman%E6%8E%A5%E5%8F%A3%E8%B0%83%E8%AF%95%E5%88%A9%E5%99%A8%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		开发工具Postman接口调试利器入门篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							canal对MySQL的增量数据进行实时同步
-mall项目中的商品搜索功能，一直都没有做实时数据同步。最近发现阿里巴巴开源的canal可以把MySQL中的数据实时同步到Elasticsearch中，能很好地解决数据同步问题。今天我们来讲讲canal的使用，希望对大家有所帮助！
+							开发工具Postman接口调试利器入门篇
+Postman是一款API接口调试工具，使用它可以很方便的对接口进行测试，并且后端人员可以将自己的调试结果导出，方便前端人员调试。
 
--canal简介
-canal主要用途是对MySQL数据库增量日志进行解析，提供增量数据的订阅和消费，简单说就是可以对MySQL的增量数据进行实时同步，支持同步到MySQL、Elasticsearch、HBase等数据存储中去。
+-安装-下载地址：https://www.getpostman.com/downloads/-下载完安装包后直接双击安装即可。-设置-主题设置
+这里不得不说，Postman的界面还是做的很好的，比起Swagger来说好多了，Postman默认提供了两种主题，一种亮色和一种暗色，可以通过左上角的File-&gt;Settings按钮打开。
 
--canal工作原理
-canal会模拟MySQL主库和从库的交互协议，从而伪装成My...
+
+
+
+
+-调整字体大小
+可能界面默认的字体大小并不适合你，尤其是大屏幕的电脑...
 						
 					</div>
 					
@@ -430,9 +446,9 @@ canal会模拟MySQL主库和从库的交互协议，从而伪装成My...
 
 
 
-	<a href="/2021/08/25/canal%E5%AF%B9MySQL%E7%9A%84%E5%A2%9E%E9%87%8F%E6%95%B0%E6%8D%AE%E8%BF%9B%E8%A1%8C%E5%AE%9E%E6%97%B6%E5%90%8C%E6%AD%A5/" itemprop="url">
-		<time datetime="2021-08-25T08:38:07.530Z" itemprop="datePublished">
-	  		2021-08-25
+	<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Postman%E6%8E%A5%E5%8F%A3%E8%B0%83%E8%AF%95%E5%88%A9%E5%99%A8%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-26T10:21:39.462Z" itemprop="datePublished">
+	  		2021-08-26
 	  </time>
 	</a> 
 
@@ -445,7 +461,7 @@ canal会模拟MySQL主库和从库的交互协议，从而伪装成My...
 
 						
 							<span class="right">      	
-								<a href="/2021/08/25/canal%E5%AF%B9MySQL%E7%9A%84%E5%A2%9E%E9%87%8F%E6%95%B0%E6%8D%AE%E8%BF%9B%E8%A1%8C%E5%AE%9E%E6%97%B6%E5%90%8C%E6%AD%A5/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Postman%E6%8E%A5%E5%8F%A3%E8%B0%83%E8%AF%95%E5%88%A9%E5%99%A8%E5%85%A5%E9%97%A8%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -456,24 +472,21 @@ canal会模拟MySQL主库和从库的交互协议，从而伪装成My...
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/25/SpringBoot%E6%95%B4%E5%90%88Swagger%E4%BD%BF%E7%94%A8%E5%AE%98%E6%96%B9Starter/" itemprop="url">
-		SpringBoot整合Swagger使用官方Starter
+	<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Navicat%E5%AE%9E%E7%94%A8%E5%8A%9F%E8%83%BD%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		开发工具Navicat实用功能入门篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							SpringBoot整合Swagger使用官方Starter
-之前项目中整合Swagger都是直接通过依赖springfox-swagger、springfox-swagger-ui两个jar包来实现的，最近发现springfox 3.0.0版本已经有了自己的SpringBoot Starter，使用起来更契合SpringBoot项目，非常方便，推荐给大家！
+							开发工具Navicat实用功能入门篇
+当我们要对数据库做有风险的操作时需要对数据库备份，每次上线项目时，线上与线下数据库结构总会有不一致的情况，本文将讲解如何利用Navicat来方便的解决这两个问题。
 
--使用官方Starter
-我们先使用官方Starter来整合Swagger看看是否够简单！
+-Navicat
+Navicat是一套快速、可靠的数据库管理工具，专为简化数据库的管理及降低系统管理成本而设。它的设计符合数据库管理员、开发人员及中小企业的需要。Navicat 是以直觉化的图形用户界面而建的，让你可以以安全并且简单的方式创建、组织、访问并共用信息。
 
-
-首先在pom.xml中添加springfox官方Swagger依赖；
-
-123456&lt;!--springfox swagger官...
+-注意：本教程采用的时Navicat12版本，下载地址：https://www.navicat.com.cn/downl...
 						
 					</div>
 					
@@ -488,9 +501,9 @@ canal会模拟MySQL主库和从库的交互协议，从而伪装成My...
 
 
 
-	<a href="/2021/08/25/SpringBoot%E6%95%B4%E5%90%88Swagger%E4%BD%BF%E7%94%A8%E5%AE%98%E6%96%B9Starter/" itemprop="url">
-		<time datetime="2021-08-25T08:14:53.953Z" itemprop="datePublished">
-	  		2021-08-25
+	<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Navicat%E5%AE%9E%E7%94%A8%E5%8A%9F%E8%83%BD%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-25T20:15:22.695Z" itemprop="datePublished">
+	  		2021-08-26
 	  </time>
 	</a> 
 
@@ -503,7 +516,7 @@ canal会模拟MySQL主库和从库的交互协议，从而伪装成My...
 
 						
 							<span class="right">      	
-								<a href="/2021/08/25/SpringBoot%E6%95%B4%E5%90%88Swagger%E4%BD%BF%E7%94%A8%E5%AE%98%E6%96%B9Starter/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Navicat%E5%AE%9E%E7%94%A8%E5%8A%9F%E8%83%BD%E5%85%A5%E9%97%A8%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -514,24 +527,36 @@ canal会模拟MySQL主库和从库的交互协议，从而伪装成My...
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/25/Nginx%E4%BB%8EHTTP%E5%8D%87%E7%BA%A7%E5%88%B0HTTPS%E6%94%AF%E6%8C%81%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E5%92%8CSpringBoot%E5%BA%94%E7%94%A8/" itemprop="url">
-		Nginx从HTTP升级到HTTPS支持静态网站和SpringBoot应用
+	<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7IDEA%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE%E5%8F%8A%E6%8E%A8%E8%8D%90%E6%8F%92%E4%BB%B6%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		开发工具IDEA常用设置及推荐插件入门篇
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							Nginx从HTTP升级到HTTPS支持静态网站和SpringBoot应用
-随着我们网站用户的增多，我们会逐渐意识到HTTPS加密的重要性。在不修改现有代码的情况下，要从HTTP升级到HTTPS，让Nginx支持HTTPS是个很好的选择。今天我们来讲下如何从Nginx入手，从HTTP升级到HTTPS，同时支持静态网站和SpringBoot应用，希望对大家有所帮助！
+							开发工具IDEA常用设置及推荐插件入门篇
+本文主要记录IDEA的一些常用设置，IDEA与Eclipse的常用快捷键对比及推荐一些好用的插件。
 
--生成SSL自签名证书
-虽然自签名证书浏览器认为并不是安全的，但是学习下SSL证书的生成还是很有必要的！
+-基本设置-设置界面风格及修改外部UI尺寸大小
+
+-打开IDEA时设置不重新打开最近的项目
+IDEA默认会打开最近的项目，有时候我们需要自己选择要打开的项目，不勾选该选项可以实现。
 
 
-首先创建SSL证书私钥，期间需要输入两次用户名和密码，生成文件为blog.key；
 
-1openssl genrs...
+-设置IDEA的快捷键
+
+-设置代码字体大小
+
+-设置项目文件编码格式
+
+-设置代码提示的匹配模式
+
+-设置新建类文件的类注释模版
+
+-IDEA和Eclipse常用快捷键对比
+友情提示：IDEA可以设置为Eclipse风格的快捷键，在File-&gt;Setti...
 						
 					</div>
 					
@@ -546,9 +571,9 @@ canal会模拟MySQL主库和从库的交互协议，从而伪装成My...
 
 
 
-	<a href="/2021/08/25/Nginx%E4%BB%8EHTTP%E5%8D%87%E7%BA%A7%E5%88%B0HTTPS%E6%94%AF%E6%8C%81%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E5%92%8CSpringBoot%E5%BA%94%E7%94%A8/" itemprop="url">
-		<time datetime="2021-08-25T07:49:27.765Z" itemprop="datePublished">
-	  		2021-08-25
+	<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7IDEA%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE%E5%8F%8A%E6%8E%A8%E8%8D%90%E6%8F%92%E4%BB%B6%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">
+		<time datetime="2021-08-25T19:37:28.636Z" itemprop="datePublished">
+	  		2021-08-26
 	  </time>
 	</a> 
 
@@ -561,7 +586,7 @@ canal会模拟MySQL主库和从库的交互协议，从而伪装成My...
 
 						
 							<span class="right">      	
-								<a href="/2021/08/25/Nginx%E4%BB%8EHTTP%E5%8D%87%E7%BA%A7%E5%88%B0HTTPS%E6%94%AF%E6%8C%81%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E5%92%8CSpringBoot%E5%BA%94%E7%94%A8/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/26/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7IDEA%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE%E5%8F%8A%E6%8E%A8%E8%8D%90%E6%8F%92%E4%BB%B6%E5%85%A5%E9%97%A8%E7%AF%87/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -572,19 +597,21 @@ canal会模拟MySQL主库和从库的交互协议，从而伪装成My...
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/25/SpringBoot%E5%AE%98%E6%96%B9%E6%94%AF%E6%8C%81%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E6%A1%86%E6%9E%B6Quartz/" itemprop="url">
-		SpringBoot官方支持任务调度框架Quartz
+	<a href="/2021/08/26/Flyway%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%81%E7%A7%BB%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8/" itemprop="url">
+		Flyway数据库迁移工具入门
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							SpringBoot官方支持任务调度框架Quartz
-之前我们讲过一个分布式任务调度框架PowerJob，可以通过可视化的方式来进行任务调度。但是有时候我们只是需要一个轻量级的任务调度功能，而PowerJob需要搭建调度中心未免有些重，这时候SpringBoot官方支持的任务调度框架Quartz就派上用场了！本文主要介绍Quartz在SpringBoot中的使用，让你在实现任务调度上有更多的选择！
+							Flyway数据库迁移工具入门
+当我们的应用升级时往往会伴随着数据库表结构的升级，此时就需要迁移数据库的表结构。一般我们会使用工具或者脚本来实现，手动操作毕竟有一定风险，要是能在应用启动时自动升级数据库表结构就好了！Flyway正是这么一款工具，通过Flyway和SpringBoot结合使用，在应用启动时就可以自动升级数据库表结构，非常方便，推荐给大家！
 
--Quartz简介
-Quartz是一款功能强大的开源任务调度框架，几乎可以集成到任何Java应用程序中（小到单机应用，大到分布式应用）。Quartz可用于创建简单或复杂的任务调度，用以执行数...
+-Flyway简介
+Flyway是一款数据库迁移工具，它让数据库迁移变得更加简单。它能像Git一样对数据库进行版本控制，支持命令行工具、Maven插件、第三方工具（比如SpringBoot）等多种使用方式。
+
+-Flyway具有如下特...
 						
 					</div>
 					
@@ -599,9 +626,9 @@ Quartz是一款功能强大的开源任务调度框架，几乎可以集成到�
 
 
 
-	<a href="/2021/08/25/SpringBoot%E5%AE%98%E6%96%B9%E6%94%AF%E6%8C%81%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E6%A1%86%E6%9E%B6Quartz/" itemprop="url">
-		<time datetime="2021-08-25T07:15:51.955Z" itemprop="datePublished">
-	  		2021-08-25
+	<a href="/2021/08/26/Flyway%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%81%E7%A7%BB%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8/" itemprop="url">
+		<time datetime="2021-08-25T18:51:02.815Z" itemprop="datePublished">
+	  		2021-08-26
 	  </time>
 	</a> 
 
@@ -614,7 +641,7 @@ Quartz是一款功能强大的开源任务调度框架，几乎可以集成到�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/25/SpringBoot%E5%AE%98%E6%96%B9%E6%94%AF%E6%8C%81%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E6%A1%86%E6%9E%B6Quartz/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/26/Flyway%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%81%E7%A7%BB%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -625,19 +652,19 @@ Quartz是一款功能强大的开源任务调度框架，几乎可以集成到�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/25/RabbitMQ%E5%AE%9E%E7%8E%B0%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF/" itemprop="url">
-		RabbitMQ实现即时通讯
+	<a href="/2021/08/26/MyBatis%E9%9B%86%E6%88%90Dynamic%20SQL/" itemprop="url">
+		MyBatis集成Dynamic SQL
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							RabbitMQ实现即时通讯
-有时候我们的项目中会用到即时通讯功能，比如电商系统中的客服聊天功能，还有在支付过程中，当用户支付成功后，第三方支付服务会回调我们的回调接口，此时我们需要通知前端支付成功。最近发现RabbitMQ可以很方便的实现即时通讯功能，如果你没有特殊的业务需求，甚至可以不写后端代码，今天给大家讲讲如何使用RabbitMQ来实现即时通讯！
+							MyBatis集成Dynamic SQL
+当我们使用MyBatis的时候，需要在mapper.xml中书写大量的SQL语句。当我们使用MyBatis Generator（MBG）作为代码生成器时，也会生成大量的mapper.xml文件。其实从MBG 1.3.6版本以后，MyBatis官方已经推荐使用Dynamic SQL，使用这一新特性基本就不用写mapper.xml文件了，使用起来非常方便，推荐给大家！
 
--MQTT协议
-MQTT（Message Queuing Telemetry Transport，消息队列遥测传输协议），是一种基于发布/订阅（publish/subscribe）模式的轻量级通讯协议，该协议构建于TCP/IP协议上。...
+-Dynamic SQL简介
+在我们使用Spring的时候，有XML和Java两种配置方式。在使用SpringBoot时，已经推荐使用Java配置，基本不用xml配置了。使用Dyna...
 						
 					</div>
 					
@@ -652,9 +679,9 @@ MQTT（Message Queuing Telemetry Transport，消息队列遥测传输协议）�
 
 
 
-	<a href="/2021/08/25/RabbitMQ%E5%AE%9E%E7%8E%B0%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF/" itemprop="url">
-		<time datetime="2021-08-25T06:45:46.569Z" itemprop="datePublished">
-	  		2021-08-25
+	<a href="/2021/08/26/MyBatis%E9%9B%86%E6%88%90Dynamic%20SQL/" itemprop="url">
+		<time datetime="2021-08-25T17:16:59.942Z" itemprop="datePublished">
+	  		2021-08-26
 	  </time>
 	</a> 
 
@@ -667,7 +694,7 @@ MQTT（Message Queuing Telemetry Transport，消息队列遥测传输协议）�
 
 						
 							<span class="right">      	
-								<a href="/2021/08/25/RabbitMQ%E5%AE%9E%E7%8E%B0%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/26/MyBatis%E9%9B%86%E6%88%90Dynamic%20SQL/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -678,19 +705,21 @@ MQTT（Message Queuing Telemetry Transport，消息队列遥测传输协议）�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/25/ElasticAPM%E5%AE%9E%E7%8E%B0%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%BA%94%E7%94%A8%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7/" itemprop="url">
-		ElasticAPM实现微服务应用性能监控
+	<a href="/2021/08/26/%E4%B8%80%E6%AC%BEJava%E4%BB%A3%E7%A0%81%E5%8A%9F%E8%83%BD%E5%A2%9E%E5%BC%BA%E5%BA%93Lombok%E5%85%A5%E9%97%A8/" itemprop="url">
+		一款Java代码功能增强库Lombok入门
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							ElasticAPM实现微服务应用性能监控
-当微服务系统越来越庞大，各个服务间的调用关系也变得越来越复杂，需要一个工具来帮忙理清请求调用的服务链路。之前在《Spring Cloud Sleuth：分布式请求链路跟踪》一文中使用的是Sleuth+Zipkin的解决方案，最近发现应用性能监控（Application Performance Monitoring，APM）也可以很好地解决该问题。对比SkyWalking和Elastic APM之后，发现Elastic APM更胜一筹，今天我们来一波Elastic APM的使用实践！
+							一款Java代码功能增强库Lombok入门
+最近IDEA 2020最后一个版本发布了，已经内置了Lombok插件，SpringBoot 2.1.x之后的版本也在Starter中内置了Lombok依赖。为什么他们都要支持Lombok呢？今天我来讲讲Lombok的使用，看看它有何神奇之处！
 
--Elastic APM 简介
-Elastic APM是基于...
+-Lombok简介
+Lombok是一款Java代码功能增强库，在Github上已有9.8k+Star。它会自动集成到你的编辑器和构建工具中，从而使你的Java代码更加生动有趣。通过Lombok的注解，你可以不用再写getter、setter、equals等方法，Lombok将在编译时为你自动生成。
+
+-...
 						
 					</div>
 					
@@ -705,9 +734,9 @@ Elastic APM是基于...
 
 
 
-	<a href="/2021/08/25/ElasticAPM%E5%AE%9E%E7%8E%B0%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%BA%94%E7%94%A8%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7/" itemprop="url">
-		<time datetime="2021-08-25T04:40:09.963Z" itemprop="datePublished">
-	  		2021-08-25
+	<a href="/2021/08/26/%E4%B8%80%E6%AC%BEJava%E4%BB%A3%E7%A0%81%E5%8A%9F%E8%83%BD%E5%A2%9E%E5%BC%BA%E5%BA%93Lombok%E5%85%A5%E9%97%A8/" itemprop="url">
+		<time datetime="2021-08-25T16:37:22.943Z" itemprop="datePublished">
+	  		2021-08-26
 	  </time>
 	</a> 
 
@@ -720,7 +749,7 @@ Elastic APM是基于...
 
 						
 							<span class="right">      	
-								<a href="/2021/08/25/ElasticAPM%E5%AE%9E%E7%8E%B0%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%BA%94%E7%94%A8%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/26/%E4%B8%80%E6%AC%BEJava%E4%BB%A3%E7%A0%81%E5%8A%9F%E8%83%BD%E5%A2%9E%E5%BC%BA%E5%BA%93Lombok%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -731,25 +760,24 @@ Elastic APM是基于...
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/25/PowerJob%E5%AE%9E%E7%8E%B0%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E5%85%A5%E9%97%A8/" itemprop="url">
-		PowerJob实现任务调度入门
+	<a href="/2021/08/26/MyBatis%E9%9B%86%E6%88%90MBG/" itemprop="url">
+		MyBatis集成MBG
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							PowerJob实现任务调度入门
-在微服务系统中，经常会有用到任务调度的场景。比如每天定时同步数据、定时生成业务报表、定期清理日志等。今天给大家推荐一个分布式调度框架，助你你轻松完成任务调度工作！
+							MyBatis集成MBG- 简介
+MyBatis Generator（简称MBG）是MyBatis官方提供的代码生成工具。可以通过数据库表直接生成实体类、单表CRUD代码、mapper.xml文件，从而解放我们的双手！
 
--PowerJob 简介
-PowerJob是全新一代分布式调度与计算框架，能让你轻松完成任务的调度与繁杂任务的分布式计算。
+-开始使用
+首先我们通过一个入门示例将MBG用起来，该示例会包含基础的CRUD操作。
 
--主要特性：
-使用简单：提供前端Web界面，允许开发者可视化完成调度任务的管理及查看任务运行状态和日志。
-定时策略完善：支持CRON表达式、固定频率、固定延迟和API四种定时调度策略。
-执行模式丰富：支持单机、广播、Map、MapReduce四种执行模式。
-依赖精简：...
+-集成MBG
+在pom.xml中添加如下依赖，主要添加了MyBatis、PageHelper、Druid、MBG和MySQL驱动等依赖；
+
+1234567891011121314151617181920212223242526272829303132&lt;dependencies&...
 						
 					</div>
 					
@@ -764,9 +792,9 @@ PowerJob是全新一代分布式调度与计算框架，能让你轻松完成任
 
 
 
-	<a href="/2021/08/25/PowerJob%E5%AE%9E%E7%8E%B0%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E5%85%A5%E9%97%A8/" itemprop="url">
-		<time datetime="2021-08-24T21:29:33.043Z" itemprop="datePublished">
-	  		2021-08-25
+	<a href="/2021/08/26/MyBatis%E9%9B%86%E6%88%90MBG/" itemprop="url">
+		<time datetime="2021-08-25T16:15:56.844Z" itemprop="datePublished">
+	  		2021-08-26
 	  </time>
 	</a> 
 
@@ -779,7 +807,7 @@ PowerJob是全新一代分布式调度与计算框架，能让你轻松完成任
 
 						
 							<span class="right">      	
-								<a href="/2021/08/25/PowerJob%E5%AE%9E%E7%8E%B0%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
+								<a href="/2021/08/26/MyBatis%E9%9B%86%E6%88%90MBG/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>

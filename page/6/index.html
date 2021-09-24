@@ -232,29 +232,18 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/09/02/%E4%BD%BF%E7%94%A8Spring%E7%9A%84%E4%BA%8B%E5%8A%A1%E7%AE%A1%E7%90%86/" itemprop="url">
-		使用Spring的事务管理
+	<a href="/2021/09/02/%E4%BD%BF%E7%94%A8Spring%E7%9A%84%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0AOP%E7%9A%84%E7%BB%86%E8%8A%82/" itemprop="url">
+		使用Spring的注解方式实现AOP的细节
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							使用Spring的事务管理-事务的回顾-什么是事务？
-事务是逻辑上的一组操作，组成这组操作的各个逻辑单元，要么一起成功，要么一起失败。
+							使用Spring的注解方式实现AOP的细节
+前面我们已经入门使用Spring的注解方式实现AOP了，现在我们再来学习使用Spring的注解方式实现AOP的一些细节。本文是建立在使用Spring的注解方式实现AOP入门的案例的基础之上的。本文是来讲解使用Spring的注解方式实现AOP的一些细节，其实说白了就是学习如何使用各种通知而已，例如前置通知、后置通知、异常通知、最终通知、环绕通知等，之前我们已经学习了前置通知，现在就来学习剩余的通知。我们先来看后置通知，此时须将MyInterceptor类的代码修改为：
 
--事务的特性
-
--不考虑隔离性会引发的安全性问题
-如果如果不考虑事务的隔离性，那么就会引发如下安全性问题。
-
-
-脏读：一个事务读取到了另一个事务的未提交数据；
-不可重复读：一个事务读取到了另一个事务提交的数据（主要是指update操作），会导致两次读取的结果不一致；
-虚读（也叫幻读）：一个事务读取到了另一个事务提交的数据（主要是指insert操作），会导致两次（也有可能是多次）读取结果不一致。
-
--解决读问题
-我们可以通过设置隔离级别来解决上述读的问题...
+12345678910111213141516171819202122/**...
 						
 					</div>
 					
@@ -269,8 +258,8 @@
 
 
 
-	<a href="/2021/09/02/%E4%BD%BF%E7%94%A8Spring%E7%9A%84%E4%BA%8B%E5%8A%A1%E7%AE%A1%E7%90%86/" itemprop="url">
-		<time datetime="2021-09-01T17:26:18.439Z" itemprop="datePublished">
+	<a href="/2021/09/02/%E4%BD%BF%E7%94%A8Spring%E7%9A%84%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0AOP%E7%9A%84%E7%BB%86%E8%8A%82/" itemprop="url">
+		<time datetime="2021-09-02T13:51:44.292Z" itemprop="datePublished">
 	  		2021-09-02
 	  </time>
 	</a> 
@@ -284,7 +273,7 @@
 
 						
 							<span class="right">      	
-								<a href="/2021/09/02/%E4%BD%BF%E7%94%A8Spring%E7%9A%84%E4%BA%8B%E5%8A%A1%E7%AE%A1%E7%90%86/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/02/%E4%BD%BF%E7%94%A8Spring%E7%9A%84%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0AOP%E7%9A%84%E7%BB%86%E8%8A%82/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -295,21 +284,16 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/09/02/%E4%BD%BF%E7%94%A8Spring%E7%9A%84JDBC%E6%A8%A1%E6%9D%BF/" itemprop="url">
-		使用Spring的JDBC模板
+	<a href="/2021/09/02/%E4%BD%BF%E7%94%A8JDK%E4%B8%AD%E7%9A%84Proxy%E6%8A%80%E6%9C%AF%E5%AE%9E%E7%8E%B0AOP%E5%8A%9F%E8%83%BD/" itemprop="url">
+		使用JDK中的Proxy技术实现AOP功能
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							使用Spring的JDBC模板
-Spring是一个分层的JavaSE/EEfull-stack（一站式）轻量级开源框架。它针对JavaEE三层中的每一层都提供了不同的解决技术，在dao层，Spring提供了JDBC模板的技术，可对数据库进行CRUD操作。Spring提供了很多持久层技术的模板类简化了编程，如下图所示。
-
-
-
-
-我这里说明一下：Spring框架对不同的持久层技术做了封装，如对传统的JDBC使用JdbcTemplate进行了封装，对Hibernate框架使用HibernateTemplate进行了封装。JdbcTemplate对JDBC进行了简单封装，使用类似于dbutils...
+							使用JDK中的Proxy技术实现AOP功能
+AOP技术在企业开发中或多或少都会用到，但用的最多的大概就是做权限系统时，在做权限系统时，我们可能需要粗粒度的权限控制和细粒度的权限控制，对于细粒度的权限控制，我们主要是对方法进行拦截，对方法进行拦截之后，判断用户是否是有权限，有权限就执行该方法，没有权限就不能执行该方法。现在我们借助一个例子来说明怎么使用JDK中的Proxy技术来实现AOP功能，并且不借助任何其他的框架。首先新建一个普通的Java Project，名称为AOP。接着在src目录下新建一个it.cast.service包，并在该包下创建PersonService接口，其代码为：...
 						
 					</div>
 					
@@ -324,8 +308,8 @@ Spring是一个分层的JavaSE/EEfull-stack（一站式）轻量级开源框架�
 
 
 
-	<a href="/2021/09/02/%E4%BD%BF%E7%94%A8Spring%E7%9A%84JDBC%E6%A8%A1%E6%9D%BF/" itemprop="url">
-		<time datetime="2021-09-01T16:39:58.311Z" itemprop="datePublished">
+	<a href="/2021/09/02/%E4%BD%BF%E7%94%A8JDK%E4%B8%AD%E7%9A%84Proxy%E6%8A%80%E6%9C%AF%E5%AE%9E%E7%8E%B0AOP%E5%8A%9F%E8%83%BD/" itemprop="url">
+		<time datetime="2021-09-02T13:31:25.314Z" itemprop="datePublished">
 	  		2021-09-02
 	  </time>
 	</a> 
@@ -339,7 +323,7 @@ Spring是一个分层的JavaSE/EEfull-stack（一站式）轻量级开源框架�
 
 						
 							<span class="right">      	
-								<a href="/2021/09/02/%E4%BD%BF%E7%94%A8Spring%E7%9A%84JDBC%E6%A8%A1%E6%9D%BF/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/02/%E4%BD%BF%E7%94%A8JDK%E4%B8%AD%E7%9A%84Proxy%E6%8A%80%E6%9C%AF%E5%AE%9E%E7%8E%B0AOP%E5%8A%9F%E8%83%BD/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -350,24 +334,16 @@ Spring是一个分层的JavaSE/EEfull-stack（一站式）轻量级开源框架�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/09/01/%E4%BD%BF%E7%94%A8Spring%E7%9A%84AOP%E7%9A%84%E6%B3%A8%E8%A7%A3%E5%BC%80%E5%8F%91/" itemprop="url">
-		使用Spring的AOP的注解开发
+	<a href="/2021/09/02/%E4%BD%BF%E7%94%A8CGLIB%E5%AE%9E%E7%8E%B0AOP%E5%8A%9F%E8%83%BD%E4%B8%8EAOP%E6%A6%82%E5%BF%B5%E8%A7%A3%E9%87%8A/" itemprop="url">
+		使用CGLIB实现AOP功能与AOP概念解释
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							使用Spring的AOP的注解开发
-在前一讲中，我已讲过Spring使用基于AspectJ的XML配置文件的方式进行AOP开发，现在我就来讲讲怎样使用基于AspectJ的注解的方式进行AOP开发。
-
--使用基于AspectJ的注解的方式进行AOP开发-创建web项目，引入jar包
-首先创建一个动态web项目，例如spring_demo03_aop，然后导入Spring框架相关依赖jar包，要导入哪些jar包呢？这里不废话，直接给出要导入的jar包。
-
-
-
--引入相关的配置文件
-首先，引入Spring的配置文件，在该文件中应引入aop约束，这样一开始applicationContext.x...
+							使用CGLIB实现AOP功能与AOP概念解释-使用CGLIB实现AOP功能
+在Java里面，我们要产生某个对象的代理对象，这个对象必须要有一个特点，即这个对象必须实现一个接口，动态代理技术只能基于接口进行代理。有时候我们在做开发的时候，这个对象就没有实现接口，有人可能会说，它既然没有接口，那我就给它定义一个接口，这是不行的，因为有时候我们拿到一个对象，而这个对象是服务器产生给我们的，是服务器提供给我们的，又不是我们自己写的，动不动就给它定义一个接口，给它找个爸爸，哪那行呢？但我们现在要对它进行增强，这时用动态代理技术就不行了，动态代理技术只能是基于接口，那如果这个对象没有接口，又该怎么做...
 						
 					</div>
 					
@@ -382,9 +358,9 @@ Spring是一个分层的JavaSE/EEfull-stack（一站式）轻量级开源框架�
 
 
 
-	<a href="/2021/09/01/%E4%BD%BF%E7%94%A8Spring%E7%9A%84AOP%E7%9A%84%E6%B3%A8%E8%A7%A3%E5%BC%80%E5%8F%91/" itemprop="url">
-		<time datetime="2021-09-01T15:53:36.882Z" itemprop="datePublished">
-	  		2021-09-01
+	<a href="/2021/09/02/%E4%BD%BF%E7%94%A8CGLIB%E5%AE%9E%E7%8E%B0AOP%E5%8A%9F%E8%83%BD%E4%B8%8EAOP%E6%A6%82%E5%BF%B5%E8%A7%A3%E9%87%8A/" itemprop="url">
+		<time datetime="2021-09-02T13:16:47.215Z" itemprop="datePublished">
+	  		2021-09-02
 	  </time>
 	</a> 
 
@@ -397,7 +373,7 @@ Spring是一个分层的JavaSE/EEfull-stack（一站式）轻量级开源框架�
 
 						
 							<span class="right">      	
-								<a href="/2021/09/01/%E4%BD%BF%E7%94%A8Spring%E7%9A%84AOP%E7%9A%84%E6%B3%A8%E8%A7%A3%E5%BC%80%E5%8F%91/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/02/%E4%BD%BF%E7%94%A8CGLIB%E5%AE%9E%E7%8E%B0AOP%E5%8A%9F%E8%83%BD%E4%B8%8EAOP%E6%A6%82%E5%BF%B5%E8%A7%A3%E9%87%8A/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -408,25 +384,18 @@ Spring是一个分层的JavaSE/EEfull-stack（一站式）轻量级开源框架�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/09/01/%E4%BD%BF%E7%94%A8Spring%E7%9A%84AOP%E7%9A%84XML%E5%BC%80%E5%8F%91/" itemprop="url">
-		使用Spring的AOP的XML开发
+	<a href="/2021/09/02/%E8%AE%A9Spring%E8%87%AA%E5%8A%A8%E6%89%AB%E6%8F%8F%E5%92%8C%E7%AE%A1%E7%90%86Bean/" itemprop="url">
+		让Spring自动扫描和管理Bean
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							使用Spring的AOP的XML开发-什么是AOP？
-Spring是用来解决实际开发中的一些问题的，AOP解决了OOP中遇到的一些问题，是OOP的延续和扩展。我们可从以下三个方面来理解AOP。
+							让Spring自动扫描和管理Bean
+前面的例子我们都是使用XML的bean定义来配置组件。在一个稍大的项目中，通常会有上百个组件，如果这些组件采用XML的bean定义来配置，显然会增加配置文件的体积，查找及维护起来也不太方便。Spring2.5为我们引入了组件自动扫描机制，它可以在类路径底下寻找标注了@Component、@Service、@Controller、@Repository注解的类，并把这些类纳入进Spring容器中管理。它的作用和在XML文件中使用bean节点配置组件是一样的。要使用自动扫描机制，我们需要打开以下配置信息：
 
-
-第一个方面：扩展功能不是通过修改源代码实现的，这可通过Struts2框架中的拦截器来理解；
-第二个方面：AOP采用横向抽取机制实现。要理解横向抽取机制，就必须先认识纵向抽取机制。例如有如下的一个类：
-
-12345public class UserDao &#123;	public void save() &#123;		添加的逻辑...	&#125;&#125;
-
-
-现在我们想在save()方...
+123456789101112&lt;?xml...
 						
 					</div>
 					
@@ -441,9 +410,9 @@ Spring是用来解决实际开发中的一些问题的，AOP解决了OOP中遇�
 
 
 
-	<a href="/2021/09/01/%E4%BD%BF%E7%94%A8Spring%E7%9A%84AOP%E7%9A%84XML%E5%BC%80%E5%8F%91/" itemprop="url">
-		<time datetime="2021-09-01T09:56:17.994Z" itemprop="datePublished">
-	  		2021-09-01
+	<a href="/2021/09/02/%E8%AE%A9Spring%E8%87%AA%E5%8A%A8%E6%89%AB%E6%8F%8F%E5%92%8C%E7%AE%A1%E7%90%86Bean/" itemprop="url">
+		<time datetime="2021-09-02T12:54:58.839Z" itemprop="datePublished">
+	  		2021-09-02
 	  </time>
 	</a> 
 
@@ -456,7 +425,7 @@ Spring是用来解决实际开发中的一些问题的，AOP解决了OOP中遇�
 
 						
 							<span class="right">      	
-								<a href="/2021/09/01/%E4%BD%BF%E7%94%A8Spring%E7%9A%84AOP%E7%9A%84XML%E5%BC%80%E5%8F%91/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/02/%E8%AE%A9Spring%E8%87%AA%E5%8A%A8%E6%89%AB%E6%8F%8F%E5%92%8C%E7%AE%A1%E7%90%86Bean/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -467,19 +436,22 @@ Spring是用来解决实际开发中的一些问题的，AOP解决了OOP中遇�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/09/01/%E4%BD%BF%E7%94%A8Spring%E7%9A%84IoC%E7%9A%84%E6%B3%A8%E8%A7%A3%E5%BC%80%E5%8F%91/" itemprop="url">
-		使用Spring的IoC的注解开发
+	<a href="/2021/09/02/%E4%BD%BF%E7%94%A8@Autowire%E6%B3%A8%E8%A7%A3%E4%B8%8E%E8%87%AA%E5%8A%A8%E8%A3%85%E9%85%8D/" itemprop="url">
+		使用@Autowire注解与自动装配
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							使用Spring的IoC的注解开发
-还记得在《Spring入门第三讲——Spring中Bean的配置与管理以及分模块开发的配置》这一讲中，我说过Spring进行Bean的管理有两种方式吗？其中一种是使用配置文件的方式，这个我们已经讲过了，还有一种是使用注解的方式，本讲就来讲一下Spring IoC的注解开发。那啥是注解呢？注解是代码中的特殊标记，它可以使用在类、方法、属性上面，使用它可以实现一些基本的功能，其写法是@注解名称(属性=属性值)。
+							使用@Autowire注解与自动装配
 
--Spring IoC注解开发的入门-创建web项目，引入Spring的开发包
-首先创建一个动态web项目，例如spring_demo02，然后...
+前面我们已经学会使用@Resource注解注入属性，并且我们还编码剖析了@Resource注解的实现原理。现在我们来学习使用@Autowire注解注入属性，本文是建立在编码剖析@Resource注解的实现原理的案例基础上的。
+
+-用@Autowire注解完成属性装配
+@Autowire注解和@Resource一样，同样也可以标注在字段或属性的setter方法上，但它默认按类型装配。我们将@Autowire注解标注在字段上，如将PersonServiceBean类的代码修改为：
+
+123456789101112public class PersonS...
 						
 					</div>
 					
@@ -494,9 +466,9 @@ Spring是用来解决实际开发中的一些问题的，AOP解决了OOP中遇�
 
 
 
-	<a href="/2021/09/01/%E4%BD%BF%E7%94%A8Spring%E7%9A%84IoC%E7%9A%84%E6%B3%A8%E8%A7%A3%E5%BC%80%E5%8F%91/" itemprop="url">
-		<time datetime="2021-08-31T20:50:27.933Z" itemprop="datePublished">
-	  		2021-09-01
+	<a href="/2021/09/02/%E4%BD%BF%E7%94%A8@Autowire%E6%B3%A8%E8%A7%A3%E4%B8%8E%E8%87%AA%E5%8A%A8%E8%A3%85%E9%85%8D/" itemprop="url">
+		<time datetime="2021-09-02T10:13:14.877Z" itemprop="datePublished">
+	  		2021-09-02
 	  </time>
 	</a> 
 
@@ -509,7 +481,7 @@ Spring是用来解决实际开发中的一些问题的，AOP解决了OOP中遇�
 
 						
 							<span class="right">      	
-								<a href="/2021/09/01/%E4%BD%BF%E7%94%A8Spring%E7%9A%84IoC%E7%9A%84%E6%B3%A8%E8%A7%A3%E5%BC%80%E5%8F%91/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/02/%E4%BD%BF%E7%94%A8@Autowire%E6%B3%A8%E8%A7%A3%E4%B8%8E%E8%87%AA%E5%8A%A8%E8%A3%85%E9%85%8D/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -520,35 +492,25 @@ Spring是用来解决实际开发中的一些问题的，AOP解决了OOP中遇�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/09/01/%E4%BD%BF%E7%94%A8Spring%E7%9A%84IoC%E5%AE%8C%E6%88%90CRM%E7%B3%BB%E7%BB%9F%E4%B8%AD%E4%BF%9D%E5%AD%98%E5%AE%A2%E6%88%B7%E7%9A%84%E6%93%8D%E4%BD%9C/" itemprop="url">
-		使用Spring的IoC完成CRM系统中保存客户的操作
+	<a href="/2021/09/02/%E7%BC%96%E7%A0%81%E5%89%96%E6%9E%90@Resource%E6%B3%A8%E8%A7%A3%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/" itemprop="url">
+		编码剖析@Resource注解的实现原理
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							使用Spring的IoC完成CRM系统中保存客户的操作-需求概述
-还记得我们在学习Struts2框架时提及的CRM系统吗？CRM系统中有一个客户信息管理模块，该模块包括的功能有：
+							编码剖析@Resource注解的实现原理
+上文我们已经学会使用@Resource注解注入属性。学是学会了，但也仅限于会使用而已，故我们要深入剖析其内部原理，才算真正明白。接下来我们就来编码剖析@Resource注解的实现原理，但这都是建立在用@Resource注解完成属性装配的案例基础上的。由于我们要使用dom4j工具来读取Sping的配置文件——beans.xml，所以需要将dom4j所需的jar包导入项目中。dom4j所需的jar包为：
 
 
-新增客户信息
-客户信息查询
-修改客户信息
-删除客户信息
+dom4j-1.6.1.jar
+jaxen-1.1-beta-6.jar
 
 
-而在本讲中，咱主要实现的是新增客户的功能。
+使用dom4j工具读取到诸如
 
-
-
--环境搭建-创建web项目，引入jar包
-创建一个web项目，例如spring4_crm，并引入相关的jar包，那引入哪些jar包呢？由于我们在web层使用的Struts2框架，所以得导入与Struts2框架开发相关的依赖jar包。
-
-
-
-
-我们还需要使用Spring框架对Bean进行管理，所以，还...
+123&lt;bean id=&q...
 						
 					</div>
 					
@@ -563,9 +525,9 @@ Spring是用来解决实际开发中的一些问题的，AOP解决了OOP中遇�
 
 
 
-	<a href="/2021/09/01/%E4%BD%BF%E7%94%A8Spring%E7%9A%84IoC%E5%AE%8C%E6%88%90CRM%E7%B3%BB%E7%BB%9F%E4%B8%AD%E4%BF%9D%E5%AD%98%E5%AE%A2%E6%88%B7%E7%9A%84%E6%93%8D%E4%BD%9C/" itemprop="url">
-		<time datetime="2021-08-31T17:17:51.432Z" itemprop="datePublished">
-	  		2021-09-01
+	<a href="/2021/09/02/%E7%BC%96%E7%A0%81%E5%89%96%E6%9E%90@Resource%E6%B3%A8%E8%A7%A3%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/" itemprop="url">
+		<time datetime="2021-09-02T10:01:40.666Z" itemprop="datePublished">
+	  		2021-09-02
 	  </time>
 	</a> 
 
@@ -578,7 +540,7 @@ Spring是用来解决实际开发中的一些问题的，AOP解决了OOP中遇�
 
 						
 							<span class="right">      	
-								<a href="/2021/09/01/%E4%BD%BF%E7%94%A8Spring%E7%9A%84IoC%E5%AE%8C%E6%88%90CRM%E7%B3%BB%E7%BB%9F%E4%B8%AD%E4%BF%9D%E5%AD%98%E5%AE%A2%E6%88%B7%E7%9A%84%E6%93%8D%E4%BD%9C/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/02/%E7%BC%96%E7%A0%81%E5%89%96%E6%9E%90@Resource%E6%B3%A8%E8%A7%A3%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -589,19 +551,28 @@ Spring是用来解决实际开发中的一些问题的，AOP解决了OOP中遇�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/09/01/Spring%E4%B8%ADBean%E7%9A%84%E9%85%8D%E7%BD%AE%E4%B8%8E%E7%AE%A1%E7%90%86%E4%BB%A5%E5%8F%8A%E5%88%86%E6%A8%A1%E5%9D%97%E5%BC%80%E5%8F%91%E7%9A%84%E9%85%8D%E7%BD%AE/" itemprop="url">
-		Spring中Bean的配置与管理以及分模块开发的配置
+	<a href="/2021/09/02/%E7%94%A8@Resource%E6%B3%A8%E8%A7%A3%E5%AE%8C%E6%88%90%E5%B1%9E%E6%80%A7%E8%A3%85%E9%85%8D/" itemprop="url">
+		用@Resource注解完成属性装配
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							Spring中Bean的配置与管理以及分模块开发的配置
-Spring中Bean的相关配置和管理，不过这都是基于XML文件的这种方式哟！温馨提示：初学者如果第一次学习Spring这个框架，那么还是建议先入门Spring再说，因此初学者可以看看我写的Spring入门第一讲，而在本讲中我写的一些代码都是基于第一讲基础上的，初学者猛然看到这讲，必然会感到很不适应的。
+							用@Resource注解完成属性装配
+前面我们讲过spring的依赖注入有两种方式：
 
--Bean的相关配置-&lt;bean&gt;标签中id和name属性的配置
-从之前编写的Spring配置文件中，我们可以发现&lt;bean&gt;标签中有一个id属性，其实它还有一个和id属性类似的name属性，根据它俩的值均...
+
+使用构造器注入。
+使用属性setter方法注入。
+
+
+但其实还有一种注入方式，我们没讲，那就是使用Field注入（用于注解方式）。在详细讲解这种方式之前，我们还须知道以下的知识点。注入依赖对象可以采用手工装配或自动装配，在实际应用中建议使用手工装配，因为自动装配会产生未知情况，开发人员无法预见最终的装配结果。手工装配依赖对象，在这种方式中又有两种编程方式：
+
+
+在xml配置文件中，通过在bean节点下配置，如：
+
+1234&lt;bean id=&quot;personService&quot; c...
 						
 					</div>
 					
@@ -616,9 +587,9 @@ Spring中Bean的相关配置和管理，不过这都是基于XML文件的这种�
 
 
 
-	<a href="/2021/09/01/Spring%E4%B8%ADBean%E7%9A%84%E9%85%8D%E7%BD%AE%E4%B8%8E%E7%AE%A1%E7%90%86%E4%BB%A5%E5%8F%8A%E5%88%86%E6%A8%A1%E5%9D%97%E5%BC%80%E5%8F%91%E7%9A%84%E9%85%8D%E7%BD%AE/" itemprop="url">
-		<time datetime="2021-08-31T16:14:29.575Z" itemprop="datePublished">
-	  		2021-09-01
+	<a href="/2021/09/02/%E7%94%A8@Resource%E6%B3%A8%E8%A7%A3%E5%AE%8C%E6%88%90%E5%B1%9E%E6%80%A7%E8%A3%85%E9%85%8D/" itemprop="url">
+		<time datetime="2021-09-02T09:41:24.537Z" itemprop="datePublished">
+	  		2021-09-02
 	  </time>
 	</a> 
 
@@ -631,7 +602,7 @@ Spring中Bean的相关配置和管理，不过这都是基于XML文件的这种�
 
 						
 							<span class="right">      	
-								<a href="/2021/09/01/Spring%E4%B8%ADBean%E7%9A%84%E9%85%8D%E7%BD%AE%E4%B8%8E%E7%AE%A1%E7%90%86%E4%BB%A5%E5%8F%8A%E5%88%86%E6%A8%A1%E5%9D%97%E5%BC%80%E5%8F%91%E7%9A%84%E9%85%8D%E7%BD%AE/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/02/%E7%94%A8@Resource%E6%B3%A8%E8%A7%A3%E5%AE%8C%E6%88%90%E5%B1%9E%E6%80%A7%E8%A3%85%E9%85%8D/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -642,33 +613,21 @@ Spring中Bean的相关配置和管理，不过这都是基于XML文件的这种�
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/09/01/Spring%E7%9A%84%E6%A0%87%E7%AD%BE%E6%97%A0%E6%8F%90%E7%A4%BA%E7%AC%A6%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/" itemprop="url">
-		Spring的标签无提示符的解决办法
+	<a href="/2021/09/02/Spring%E5%A6%82%E4%BD%95%E8%A3%85%E9%85%8D%E5%90%84%E7%A7%8D%E9%9B%86%E5%90%88%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%B1%9E%E6%80%A7/" itemprop="url">
+		Spring如何装配各种集合类型的属性
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							Spring的标签无提示符的解决办法-问题描述
-初学者在学习Spring框架的过程中，大概会碰到这样一个问题：在编写Spring框架的配置文件时，标签无提示符。本文就来解决掉这种问题。
+							Spring如何装配各种集合类型的属性
+在前面我们已经会注入基本类型对象和其他bean，现在我们就来学习如何注入各种集合类型。
 
--问题原因
-由于Spring的schema文件位于网络上，如果机器不能连接到网络，那么在编写配置信息的时候就无法出现提示信息了。
+-Spring如何装配各种集合类型的属性
+首先新建一个普通的Java Project，名称为spring_collection，并迅速搭建好Spring的开发环境。接着在src目录下新建一个cn.itcast.service包，并在该包下创建PersonService接口，其代码为：
 
--解决方案-解决方案一
-让机器上网，Eclipse会自动从网络上下载schema文件并缓存在硬盘上。
-
--解决方案二
-手动添加schema文件，方法如下：
-
-
-Windows→Preferences
-
-
-
-
-XML→XML Catalog→User Specified En...
+123456789101112public interface PersonService &#123;    Set&lt;String&gt; getSets();    ...
 						
 					</div>
 					
@@ -683,9 +642,9 @@ XML→XML Catalog→User Specified En...
 
 
 
-	<a href="/2021/09/01/Spring%E7%9A%84%E6%A0%87%E7%AD%BE%E6%97%A0%E6%8F%90%E7%A4%BA%E7%AC%A6%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/" itemprop="url">
-		<time datetime="2021-08-31T16:09:23.338Z" itemprop="datePublished">
-	  		2021-09-01
+	<a href="/2021/09/02/Spring%E5%A6%82%E4%BD%95%E8%A3%85%E9%85%8D%E5%90%84%E7%A7%8D%E9%9B%86%E5%90%88%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%B1%9E%E6%80%A7/" itemprop="url">
+		<time datetime="2021-09-02T09:34:04.448Z" itemprop="datePublished">
+	  		2021-09-02
 	  </time>
 	</a> 
 
@@ -698,7 +657,7 @@ XML→XML Catalog→User Specified En...
 
 						
 							<span class="right">      	
-								<a href="/2021/09/01/Spring%E7%9A%84%E6%A0%87%E7%AD%BE%E6%97%A0%E6%8F%90%E7%A4%BA%E7%AC%A6%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/02/Spring%E5%A6%82%E4%BD%95%E8%A3%85%E9%85%8D%E5%90%84%E7%A7%8D%E9%9B%86%E5%90%88%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%B1%9E%E6%80%A7/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -709,21 +668,23 @@ XML→XML Catalog→User Specified En...
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/31/Spring%E7%9A%84IoC%E5%85%A5%E9%97%A8/" itemprop="url">
-		Spring的IoC入门
+	<a href="/2021/09/02/Spring+JDBC%E7%BB%84%E5%90%88%E5%BC%80%E5%8F%91/" itemprop="url">
+		Spring+JDBC组合开发
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							Spring的IoC入门-下载Spring的开发包
-Spring的官网是https://spring.io/，Spring的开发包的下载地址是https://repo.spring.io/libs-release-local/org/springframework/spring/，上面说过，我下载的是spring-framework-4.2.4.RELEASE这个版本的Spring。解压缩之后，可发现Spring开发包的目录结构如下。
+							Spring+JDBC组合开发-搭建和配置Spring与JDBC整合的环境
+使用Spring+JDBC集成步骤如下：第一步，配置数据源。我们使用DBCP数据库连接池。我们首先在Eclipse中新建一个普通的Java Project，名称为springAndJDBC。接着导入所需Jar包到项目中，所需Jar包共有：
 
 
 
--创建web项目，引入Spring的开发包
-首先创建一个动态web项目，例如spring_demo01，然后导入Spring框架相关依赖jar包，要...
+
+然后我们在Sping配置文件中——beans.xml配置数据源，即在beans.xml中加入如下内容：
+
+12345678910111213141516&lt;bean id=&quot;dataSource&quot; class=&quot;org.apache.c...
 						
 					</div>
 					
@@ -738,9 +699,9 @@ Spring的官网是https://spring.io/，Spring的开发包的下载地址是https
 
 
 
-	<a href="/2021/08/31/Spring%E7%9A%84IoC%E5%85%A5%E9%97%A8/" itemprop="url">
-		<time datetime="2021-08-31T15:31:54.502Z" itemprop="datePublished">
-	  		2021-08-31
+	<a href="/2021/09/02/Spring+JDBC%E7%BB%84%E5%90%88%E5%BC%80%E5%8F%91/" itemprop="url">
+		<time datetime="2021-09-02T08:31:18.745Z" itemprop="datePublished">
+	  		2021-09-02
 	  </time>
 	</a> 
 
@@ -753,7 +714,7 @@ Spring的官网是https://spring.io/，Spring的开发包的下载地址是https
 
 						
 							<span class="right">      	
-								<a href="/2021/08/31/Spring%E7%9A%84IoC%E5%85%A5%E9%97%A8/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/02/Spring+JDBC%E7%BB%84%E5%90%88%E5%BC%80%E5%8F%91/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
@@ -764,29 +725,19 @@ Spring的官网是https://spring.io/，Spring的开发包的下载地址是https
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
-	<a href="/2021/08/31/JAVA%E6%A1%86%E6%9E%B6Spring%E6%95%99%E7%A8%8B%E5%BA%8F%E7%AB%A0%E6%A6%82%E8%A7%88/" itemprop="url">
-		JAVA框架Spring教程序章概览
+	<a href="/2021/09/02/Hibernate-5.0.7+Struts-2.3.24+Spring-4.2.4%E4%B8%89%E5%A4%A7%E6%A1%86%E6%9E%B6%E7%BA%AF%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F%E7%9A%84%E6%95%B4%E5%90%88/" itemprop="url">
+		Hibernate-5.0.7+Struts-2.3.24+Spring-4.2.4三大框架纯注解方式的整合
 	</a>
 
 					</div>
 
 					<div class="post-content">
 						
-							JAVA框架Spring教程序章概览-简介
-Spring是一个开源框架，Spring是J2EE应用程序框架，是轻量级的IoC和AOP的容器框架，主要是针对javaBean的生命周期进行管理的轻量级容器，可以单独使用，也可以和Struts框架，ibatis框架等组合使用，框架的主要优势之一就是其分层架构。
-简单来说，Spring是一个分层的JavaSE/EEfull-stack（一站式）轻量级开源框架。
+							Hibernate-5.0.7+Struts-2.3.24+Spring-4.2.4三大框架纯注解方式的整合
+还记得我在《Spring入门第十讲——Hibernate-5.0.7+Struts-2.3.24+Spring-4.2.4三大框架整合开发》这一讲中介绍SSH三大框架整合的时候，说过这三个框架的整合一共有三种方式，其中前两种方式已经讲过了，本讲介绍第三种方式，即纯注解的方式。
 
--为什么学习Spring
-方便解耦，简化开发
-AOP编程的支持
-声明式事务的支持
-方便程序的测试
-方便集成各种优秀的框架
-降低Java EE API的使用难度
-
--框架架构
-
--Spri...
+-搭建SSH注解开发的环境-创建web项目，引入jar包
+创建一个web项目，例如ssh3，并引入相关的jar包，那到底引入哪些jar包呢？相信你看过我的这篇文章——《Spring入门第十讲——Hiber...
 						
 					</div>
 					
@@ -801,9 +752,9 @@ AOP编程的支持
 
 
 
-	<a href="/2021/08/31/JAVA%E6%A1%86%E6%9E%B6Spring%E6%95%99%E7%A8%8B%E5%BA%8F%E7%AB%A0%E6%A6%82%E8%A7%88/" itemprop="url">
-		<time datetime="2021-08-31T14:33:58.675Z" itemprop="datePublished">
-	  		2021-08-31
+	<a href="/2021/09/02/Hibernate-5.0.7+Struts-2.3.24+Spring-4.2.4%E4%B8%89%E5%A4%A7%E6%A1%86%E6%9E%B6%E7%BA%AF%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F%E7%9A%84%E6%95%B4%E5%90%88/" itemprop="url">
+		<time datetime="2021-09-02T08:10:08.817Z" itemprop="datePublished">
+	  		2021-09-02
 	  </time>
 	</a> 
 
@@ -816,7 +767,7 @@ AOP编程的支持
 
 						
 							<span class="right">      	
-								<a href="/2021/08/31/JAVA%E6%A1%86%E6%9E%B6Spring%E6%95%99%E7%A8%8B%E5%BA%8F%E7%AB%A0%E6%A6%82%E8%A7%88/" title="View all" external="false">View all</a>	
+								<a href="/2021/09/02/Hibernate-5.0.7+Struts-2.3.24+Spring-4.2.4%E4%B8%89%E5%A4%A7%E6%A1%86%E6%9E%B6%E7%BA%AF%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F%E7%9A%84%E6%95%B4%E5%90%88/" title="View all" external="false">View all</a>	
 							</span>
 						
 					</div>
