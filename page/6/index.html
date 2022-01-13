@@ -232,6 +232,56 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
+	<a href="/2021/09/03/%E4%BD%BF%E7%94%A8Spring%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F%E7%AE%A1%E7%90%86%E4%BA%8B%E5%8A%A1%E4%B8%8E%E4%BC%A0%E6%92%AD%E8%A1%8C%E4%B8%BA%E8%AF%A6%E8%A7%A3/" itemprop="url">
+		使用Spring注解方式管理事务与传播行为详解
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							使用Spring注解方式管理事务与传播行为详解-使用Spring注解方式管理事务
+前面讲解了怎么使用@Transactional注解声明PersonServiceBean底下所有的业务方法需要事务管理，那么事务是如何来管理的呢？我们知道当每个业务方法执行的时候，它都会打开事务，在业务方法执行结束之后，它就会结束事务。那么它什么时候决定这个事务提交，什么时候决定这个事务回滚呢？原先我们手工控制事务的时候，通常这个事务的提交或回滚是由我们来操纵的，那现在我们采用容器的声明式事务管理，那我们如何知道事务什么时候提交，什么时候回滚呢？答案是：Spring容器默认情况下对运行时异常，它会进行事务的...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/09/03/%E4%BD%BF%E7%94%A8Spring%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F%E7%AE%A1%E7%90%86%E4%BA%8B%E5%8A%A1%E4%B8%8E%E4%BC%A0%E6%92%AD%E8%A1%8C%E4%B8%BA%E8%AF%A6%E8%A7%A3/" itemprop="url">
+		<time datetime="2021-09-02T17:02:40.575Z" itemprop="datePublished">
+	  		2021-09-03
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/09/03/%E4%BD%BF%E7%94%A8Spring%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F%E7%AE%A1%E7%90%86%E4%BA%8B%E5%8A%A1%E4%B8%8E%E4%BC%A0%E6%92%AD%E8%A1%8C%E4%B8%BA%E8%AF%A6%E8%A7%A3/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
 	<a href="/2021/09/03/%E5%9C%A8Eclipse%E4%B8%8A%E5%AE%89%E8%A3%85Spring%20Tool%20Suite/" itemprop="url">
 		在Eclipse上安装Spring Tool Suite
 	</a>
@@ -711,58 +761,6 @@ AOP技术在企业开发中或多或少都会用到，但用的最多的大概�
 				</div>
 			</div>
 		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/09/02/%E8%AE%A9Spring%E8%87%AA%E5%8A%A8%E6%89%AB%E6%8F%8F%E5%92%8C%E7%AE%A1%E7%90%86Bean/" itemprop="url">
-		让Spring自动扫描和管理Bean
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							让Spring自动扫描和管理Bean
-前面的例子我们都是使用XML的bean定义来配置组件。在一个稍大的项目中，通常会有上百个组件，如果这些组件采用XML的bean定义来配置，显然会增加配置文件的体积，查找及维护起来也不太方便。Spring2.5为我们引入了组件自动扫描机制，它可以在类路径底下寻找标注了@Component、@Service、@Controller、@Repository注解的类，并把这些类纳入进Spring容器中管理。它的作用和在XML文件中使用bean节点配置组件是一样的。要使用自动扫描机制，我们需要打开以下配置信息：
-
-123456789101112&lt;?xml...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/09/02/%E8%AE%A9Spring%E8%87%AA%E5%8A%A8%E6%89%AB%E6%8F%8F%E5%92%8C%E7%AE%A1%E7%90%86Bean/" itemprop="url">
-		<time datetime="2021-09-02T12:54:58.839Z" itemprop="datePublished">
-	  		2021-09-02
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/09/02/%E8%AE%A9Spring%E8%87%AA%E5%8A%A8%E6%89%AB%E6%8F%8F%E5%92%8C%E7%AE%A1%E7%90%86Bean/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
 	</div>
 
 	
@@ -826,7 +824,7 @@ AOP技术在企业开发中或多或少都会用到，但用的最多的大概�
 	<div class="copyright">
 		<p>
 			 
-				&copy;2017 - 2021, content by Sariay. All Rights Reserved.
+				&copy;2017 - 2022, content by Sariay. All Rights Reserved.
 			
 			
 				<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.

@@ -232,6 +232,65 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
+	<a href="/2021/08/24/%E5%9C%A8Docker%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E5%AE%89%E8%A3%85Nginx/" itemprop="url">
+		在Docker环境下的安装Nginx
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							-在Docker环境下的安装Nginx-下载nginx的docker镜像1docker pull nginx:1.10
+
+-从容器中拷贝nginx配置
+先运行一次容器（为了拷贝配置文件）：
+
+1234docker run -p 80:80 --name nginx \-v /mydata/nginx/html:/usr/share/nginx/html \-v /mydata/nginx/logs:/var/log/nginx  \-d nginx:1.10
+
+
+将容器内的配置文件拷贝到指定目录：
+
+1docker container cp nginx:/etc/nginx /mydat...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/08/24/%E5%9C%A8Docker%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E5%AE%89%E8%A3%85Nginx/" itemprop="url">
+		<time datetime="2021-08-23T18:28:46.737Z" itemprop="datePublished">
+	  		2021-08-24
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/08/24/%E5%9C%A8Docker%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E5%AE%89%E8%A3%85Nginx/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
 	<a href="/2021/08/24/Hutool%E4%B8%AD%E9%82%A3%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB%E5%92%8C%E6%96%B9%E6%B3%95/" itemprop="url">
 		Hutool中那些常用的工具类和方法
 	</a>
@@ -754,60 +813,6 @@ Docker是一个开源的应用容器引擎，让开发者可以打包应用及�
 				</div>
 			</div>
 		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/08/23/%E5%BC%80%E5%8F%91%E8%80%85Docker%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/" itemprop="url">
-		开发者Docker入门教程
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							Docker是什么?-官方解释1234Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口。 [1] - 摘自百度百科
-
--通俗易懂解释123456你可以把Docker理解成一个轻量化的虚拟机, 在上面我们可以部署我们的后台项目, 而且部署后的项目可移植性非常强, 我们可以把他们导出为Docker镜像, 这个镜像可以运行在任何装有Docker的环境中, 几分钟就可以在别的系统上构建出一套一模一样的后台
-
--第一步下载Docker
-下载地址...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/08/23/%E5%BC%80%E5%8F%91%E8%80%85Docker%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/" itemprop="url">
-		<time datetime="2021-08-23T14:21:22.843Z" itemprop="datePublished">
-	  		2021-08-23
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/08/23/%E5%BC%80%E5%8F%91%E8%80%85Docker%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
 	</div>
 
 	
@@ -871,7 +876,7 @@ Docker是一个开源的应用容器引擎，让开发者可以打包应用及�
 	<div class="copyright">
 		<p>
 			 
-				&copy;2017 - 2021, content by Sariay. All Rights Reserved.
+				&copy;2017 - 2022, content by Sariay. All Rights Reserved.
 			
 			
 				<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.

@@ -232,6 +232,64 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
+	<a href="/2021/12/16/%E5%B0%86%E4%B8%8B%E8%BD%BD%E5%88%B0%E6%9C%AC%E5%9C%B0%E7%9A%84JAR%E5%8C%85%E6%89%8B%E5%8A%A8%E6%B7%BB%E5%8A%A0%E5%88%B0Maven%E4%BB%93%E5%BA%93/" itemprop="url">
+		将下载到本地的JAR包手动添加到Maven仓库
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							-将下载到本地的JAR包手动添加到Maven仓库-语法
+很多时候我们需要的jar包在maven仓库上没有
+我们可以自己找到这个jar包，但是怎么通过在pom文件配置使用呢？
+需要我们手动将本地的jar包添加到本地maven仓库。
+前提是已经配置好maven环境变量
+使用mvn命令：
+
+1mvn install:install-file -Dfile=jar包的位置(参数一) -DgroupId=groupId(参数二) -DartifactId=artifactId(参数三) -Dversion=version(参数四) -Dpackaging=jar
+
+1mvn install:ins...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/12/16/%E5%B0%86%E4%B8%8B%E8%BD%BD%E5%88%B0%E6%9C%AC%E5%9C%B0%E7%9A%84JAR%E5%8C%85%E6%89%8B%E5%8A%A8%E6%B7%BB%E5%8A%A0%E5%88%B0Maven%E4%BB%93%E5%BA%93/" itemprop="url">
+		<time datetime="2021-12-15T18:06:21.967Z" itemprop="datePublished">
+	  		2021-12-16
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/12/16/%E5%B0%86%E4%B8%8B%E8%BD%BD%E5%88%B0%E6%9C%AC%E5%9C%B0%E7%9A%84JAR%E5%8C%85%E6%89%8B%E5%8A%A8%E6%B7%BB%E5%8A%A0%E5%88%B0Maven%E4%BB%93%E5%BA%93/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
 	<a href="/2021/11/29/hexo%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/" itemprop="url">
 		hexo命令大全
 	</a>
@@ -727,70 +785,6 @@ MySQL关是一种关系数据库管理系统，所使用的 SQL 语言是用于�
 				</div>
 			</div>
 		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/09/17/SpringBoot%E9%9B%86%E6%88%90MongoDB%E5%B0%8F%E7%99%BD%E7%AF%87/" itemprop="url">
-		SpringBoot集成MongoDB小白篇
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							-SpringBoot集成MongoDB小白篇
-
--准备工作
-介绍MongoDB与Spring Boo集成，并通过MongoRepository以及MongoTemplate来执行CRUD操作。
-
-
-Spring Boot：2.3.0.RELEASESpring Boot Data MongoDB：2.3.0.RELEASEMongoDB：4.2.6MongoDB Driver：4.0.3
-
-
-要操作的集合示例数据结构(即model)
-
-
-Department：String idString nameString descriptionArray employees
-
-
-Employee...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/09/17/SpringBoot%E9%9B%86%E6%88%90MongoDB%E5%B0%8F%E7%99%BD%E7%AF%87/" itemprop="url">
-		<time datetime="2021-09-17T13:00:09.717Z" itemprop="datePublished">
-	  		2021-09-17
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/09/17/SpringBoot%E9%9B%86%E6%88%90MongoDB%E5%B0%8F%E7%99%BD%E7%AF%87/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
 	</div>
 
 	
@@ -854,7 +848,7 @@ Employee...
 	<div class="copyright">
 		<p>
 			 
-				&copy;2017 - 2021, content by Sariay. All Rights Reserved.
+				&copy;2017 - 2022, content by Sariay. All Rights Reserved.
 			
 			
 				<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.

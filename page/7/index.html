@@ -232,6 +232,58 @@
 				<div class="post-text">
 					<div class="post-title" id="post-title-index">			
 						
+	<a href="/2021/09/02/%E8%AE%A9Spring%E8%87%AA%E5%8A%A8%E6%89%AB%E6%8F%8F%E5%92%8C%E7%AE%A1%E7%90%86Bean/" itemprop="url">
+		让Spring自动扫描和管理Bean
+	</a>
+
+					</div>
+
+					<div class="post-content">
+						
+							让Spring自动扫描和管理Bean
+前面的例子我们都是使用XML的bean定义来配置组件。在一个稍大的项目中，通常会有上百个组件，如果这些组件采用XML的bean定义来配置，显然会增加配置文件的体积，查找及维护起来也不太方便。Spring2.5为我们引入了组件自动扫描机制，它可以在类路径底下寻找标注了@Component、@Service、@Controller、@Repository注解的类，并把这些类纳入进Spring容器中管理。它的作用和在XML文件中使用bean节点配置组件是一样的。要使用自动扫描机制，我们需要打开以下配置信息：
+
+123456789101112&lt;?xml...
+						
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							Posted on
+							<i>
+								
+
+
+
+
+
+
+	<a href="/2021/09/02/%E8%AE%A9Spring%E8%87%AA%E5%8A%A8%E6%89%AB%E6%8F%8F%E5%92%8C%E7%AE%A1%E7%90%86Bean/" itemprop="url">
+		<time datetime="2021-09-02T12:54:58.839Z" itemprop="datePublished">
+	  		2021-09-02
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
+						
+
+
+
+						
+							<span class="right">      	
+								<a href="/2021/09/02/%E8%AE%A9Spring%E8%87%AA%E5%8A%A8%E6%89%AB%E6%8F%8F%E5%92%8C%E7%AE%A1%E7%90%86Bean/" title="View all" external="false">View all</a>	
+							</span>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<div class="post-text">
+					<div class="post-title" id="post-title-index">			
+						
 	<a href="/2021/09/02/%E4%BD%BF%E7%94%A8@Autowire%E6%B3%A8%E8%A7%A3%E4%B8%8E%E8%87%AA%E5%8A%A8%E8%A3%85%E9%85%8D/" itemprop="url">
 		使用@Autowire注解与自动装配
 	</a>
@@ -746,61 +798,6 @@ Hibernate...
 				</div>
 			</div>
 		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/09/02/%E4%BD%BF%E7%94%A8Spring%E7%9A%84JDBC%E6%A8%A1%E6%9D%BF/" itemprop="url">
-		使用Spring的JDBC模板
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							使用Spring的JDBC模板
-Spring是一个分层的JavaSE/EEfull-stack（一站式）轻量级开源框架。它针对JavaEE三层中的每一层都提供了不同的解决技术，在dao层，Spring提供了JDBC模板的技术，可对数据库进行CRUD操作。Spring提供了很多持久层技术的模板类简化了编程，如下图所示。
-
-
-
-
-我这里说明一下：Spring框架对不同的持久层技术做了封装，如对传统的JDBC使用JdbcTemplate进行了封装，对Hibernate框架使用HibernateTemplate进行了封装。JdbcTemplate对JDBC进行了简单封装，使用类似于dbutils...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/09/02/%E4%BD%BF%E7%94%A8Spring%E7%9A%84JDBC%E6%A8%A1%E6%9D%BF/" itemprop="url">
-		<time datetime="2021-09-01T16:39:58.311Z" itemprop="datePublished">
-	  		2021-09-02
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/09/02/%E4%BD%BF%E7%94%A8Spring%E7%9A%84JDBC%E6%A8%A1%E6%9D%BF/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
 	</div>
 
 	
@@ -864,7 +861,7 @@ Spring是一个分层的JavaSE/EEfull-stack（一站式）轻量级开源框架�
 	<div class="copyright">
 		<p>
 			 
-				&copy;2017 - 2021, content by Sariay. All Rights Reserved.
+				&copy;2017 - 2022, content by Sariay. All Rights Reserved.
 			
 			
 				<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
